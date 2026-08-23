@@ -1,0 +1,180 @@
+/* ============================================================
+   SANA — Design tokens (telemedicina · Argentina)
+   Independent health brand. 1:1 translatable to theme.ts.
+   Default palette: "Azul profundo + acento coral" (premium).
+   Alt palettes via [data-palette="mint"] / [data-palette="violet"].
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+:root {
+  /* ---- Brand ramp · BLUE (default) ---- */
+  --blue-50:  #EAF1FF;
+  --blue-100: #D6E3FF;
+  --blue-200: #AEC6FF;
+  --blue-300: #7CA1FB;
+  --blue-400: #4E7BF0;
+  --blue-500: #2C5BE0;
+  --blue-600: #1C44C4;
+  --blue-700: #16359C;
+  --blue-800: #122B73;
+  --blue-900: #0E2150;
+  --ink-night: #0B1733;   /* deep canvas for video / immersive */
+
+  /* ---- Warm accent · CORAL (shared across palettes) ---- */
+  --coral-100: #FFE7DF;
+  --coral-200: #FFCBB9;
+  --coral-300: #FFAB90;
+  --coral-400: #FF8C6A;
+  --coral-500: #FF6F4D;
+  --coral-600: #ED5333;
+
+  /* ---- Neutrals · cool slate ---- */
+  --ink-900: #0F1A2E;
+  --ink-800: #1C2A42;
+  --ink-700: #2D3C57;
+  --ink-600: #45556F;
+  --ink-500: #5E6E89;
+  --ink-400: #8593A8;
+  --ink-300: #AEB9CA;
+  --ink-200: #D2DAE5;
+  --ink-100: #E6EBF2;
+  --ink-50:  #F2F5FA;
+  --white:   #FFFFFF;
+
+  /* ---- Semantic ---- */
+  --success:      #14A06E;
+  --success-soft: #E2F6EE;
+  --warning:      #E8973A;
+  --warning-soft: #FCF0DF;
+  --danger:       #E14B4B;
+  --danger-soft:  #FCE9E9;
+  --info:         var(--blue-500);
+
+  /* ============================================================
+     ROLE TOKENS — components reference ONLY these.
+     Palettes override the role tokens, never the components.
+     ============================================================ */
+  --brand:        var(--blue-500);   /* primary fill / CTA            */
+  --brand-strong: var(--blue-700);   /* pressed / deep                */
+  --brand-hover:  var(--blue-600);
+  --brand-ink:    var(--blue-900);   /* dark headers / immersive top  */
+  --brand-night:  var(--ink-night);  /* full-dark surfaces (video)    */
+  --brand-soft:   var(--blue-50);    /* tinted backgrounds            */
+  --brand-soft-2: var(--blue-100);
+  --brand-line:   var(--blue-200);
+  --on-brand:     #FFFFFF;
+
+  --accent:       var(--coral-500);
+  --accent-strong:var(--coral-600);
+  --accent-soft:  var(--coral-100);
+  --on-accent:    #FFFFFF;
+
+  /* surfaces & text */
+  --bg:           #F6F8FC;
+  --surface:      #FFFFFF;
+  --surface-alt:  var(--ink-50);
+  --fg:           var(--ink-900);
+  --fg-secondary: var(--ink-600);
+  --fg-muted:     var(--ink-400);
+  --fg-on-dark:   rgba(255,255,255,0.92);
+  --fg-on-dark-2: rgba(255,255,255,0.62);
+  --border:       var(--ink-100);
+  --border-strong:var(--ink-200);
+
+  /* ---- Type ---- */
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --fs-micro: 12px;
+  --fs-caption: 13px;
+  --fs-small: 14px;
+  --fs-body: 16px;
+  --fs-18: 18px;
+  --fs-h3: 20px;
+  --fs-h2: 23px;
+  --fs-h1: 27px;
+  --fs-display: 32px;
+  --fs-hero: 40px;
+  --lh-tight: 1.12;
+  --lh-snug: 1.28;
+  --lh-normal: 1.5;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+
+  /* ---- Spacing · 4px grid ---- */
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 20px;
+  --space-7: 24px;
+  --space-8: 32px;
+  --space-9: 40px;
+  --space-10: 48px;
+  --space-12: 64px;
+
+  /* ---- Radii ---- */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px rgba(15,26,46,0.06), 0 1px 3px rgba(15,26,46,0.05);
+  --shadow-md: 0 4px 14px rgba(15,26,46,0.08), 0 1px 3px rgba(15,26,46,0.05);
+  --shadow-lg: 0 12px 32px rgba(15,26,46,0.12), 0 3px 8px rgba(15,26,46,0.06);
+  --shadow-xl: 0 24px 60px rgba(15,26,46,0.18), 0 8px 20px rgba(15,26,46,0.08);
+  --shadow-brand: 0 12px 30px rgba(44,91,224,0.30);
+  --shadow-accent: 0 12px 30px rgba(255,111,77,0.32);
+
+  /* ---- Motion ---- */
+  --dur-fast: 130ms;
+  --dur-base: 220ms;
+  --dur-slow: 360ms;
+  --ease-soft: cubic-bezier(.22,1,.36,1);
+  --ease-spring: cubic-bezier(.34,1.4,.5,1);
+}
+
+/* ===== Palette · BLUE (explicit, for pinned previews) ===== */
+[data-palette="blue"] {
+  --blue-50:#EAF1FF; --blue-100:#D6E3FF; --blue-200:#AEC6FF; --blue-300:#7CA1FB;
+  --blue-400:#4E7BF0; --blue-500:#2C5BE0; --blue-600:#1C44C4; --blue-700:#16359C;
+  --blue-800:#122B73; --blue-900:#0E2150; --ink-night:#0B1733;
+}
+
+/* ===== Palette · MINT (calma / bienestar) ===== */
+[data-palette="mint"] {
+  --blue-50:  #E4F6F1;
+  --blue-100: #C6ECE3;
+  --blue-200: #93DBCB;
+  --blue-300: #54C3AD;
+  --blue-400: #1FA98D;
+  --blue-500: #0E9377;
+  --blue-600: #0A7A63;
+  --blue-700: #08604E;
+  --blue-800: #074C3E;
+  --blue-900: #06382E;
+  --ink-night: #062821;
+}
+
+/* ===== Palette · VIOLET (tech-salud) ===== */
+[data-palette="violet"] {
+  --blue-50:  #EFEBFF;
+  --blue-100: #E0D8FF;
+  --blue-200: #C4B4FF;
+  --blue-300: #A38CFB;
+  --blue-400: #8467F2;
+  --blue-500: #6D4FE6;
+  --blue-600: #5A3DD0;
+  --blue-700: #4830A8;
+  --blue-800: #38267F;
+  --blue-900: #281A57;
+  --ink-night: #1A1140;
+}
+
+* { box-sizing: border-box; }
