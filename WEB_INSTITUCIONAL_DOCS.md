@@ -2,12 +2,13 @@
 
 ## 1. Objetivo de este repositorio
 
-Este repositorio conserva, compara y permite desplegar las dos versiones de la web institucional de Alvia sin depender del monorepo de producto.
+Este repositorio conserva, compara y permite desplegar las versiones de la web institucional de Alvia sin depender del monorepo de producto.
 
 | Versión | Ruta pública | Carpeta | Estado |
 |---|---|---|---|
 | V1 | <https://www.alvia.ar/> | `v1/` | Web institucional vigente al crear este repositorio |
 | V2 | <https://www.alvia.ar/v2/> | `v2/` | Nueva propuesta B2B publicada para revisión y comparación |
+| V3 | Sin publicación pública | `v3/` | Híbrido experimental: diseño V2 con contenido y profundidad de V1 |
 
 Snapshot inicial: 23 de agosto de 2026.
 
@@ -42,26 +43,31 @@ alvia-web/
 │   ├── theme.css
 │   └── assets/
 │       └── doctor-videoconsulta.png
-└── v2/
+├── v2/
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   └── assets/
+│       ├── app-paciente.png
+│       ├── console-medica.png
+│       ├── doctor-videoconsulta.png
+│       ├── mockup-operacion.png
+│       ├── mockup-postconsulta-medica.png
+│       ├── mockup-postconsulta-paciente.png
+│       ├── mockup-preconsulta-autorizacion.png
+│       └── mockup-preconsulta-copago.png
+└── v3/
     ├── index.html
     ├── styles.css
     ├── script.js
     └── assets/
-        ├── app-paciente.png
-        ├── console-medica.png
-        ├── doctor-videoconsulta.png
-        ├── mockup-operacion.png
-        ├── mockup-postconsulta-medica.png
-        ├── mockup-postconsulta-paciente.png
-        ├── mockup-preconsulta-autorizacion.png
-        └── mockup-preconsulta-copago.png
 ```
 
 `Alvia - Habla con Ventas.html` se conserva como archivo legado del snapshot de producción. La página de contacto enlazada por `v1/index.html` es `v1/contacto.html`.
 
 ## 4. Tecnología
 
-Las dos versiones son sitios estáticos:
+Todas las versiones son sitios estáticos:
 
 - HTML semántico;
 - CSS sin preprocesador;
@@ -73,7 +79,7 @@ Las dos versiones son sitios estáticos:
 - sin variables de entorno;
 - sin secretos dentro del repositorio.
 
-La V2 carga `DM Sans` y `Noto Serif` desde Google Fonts. Si esas fuentes no están disponibles, utiliza las familias de fallback declaradas en `styles.css`.
+V2 y V3 cargan `DM Sans` y `Noto Serif` desde Google Fonts. Si esas fuentes no están disponibles, utilizan las familias de fallback declaradas en sus respectivos `styles.css`.
 
 ## 5. Diferencias entre las versiones
 
@@ -93,6 +99,14 @@ La V2 carga `DM Sans` y `Noto Serif` desde Google Fonts. Si esas fuentes no est�
 - Incorpora capturas renderizadas del producto real.
 - Layout responsive con breakpoints en `1050px` y `700px`.
 - Menú móvil controlado por `script.js`.
+
+### V3
+
+- Mantiene la tipografía, la paleta y el ritmo editorial sobrio de V2.
+- Recupera de V1 el problema económico, la red propia, los controles por cobertura, la experiencia médica, la operación, seguridad y segmentos.
+- Presenta cuatro flujos reales: identidad, autorización, copago y prescripción.
+- Usa composiciones amplias y alternadas en lugar de acumular tarjetas comerciales.
+- Se mantiene como versión experimental hasta completar revisión de contenido y aprobación para publicar.
 
 ## 6. Assets de la V2
 
@@ -141,6 +155,7 @@ Abrir:
 ```text
 http://127.0.0.1:8080/v1/
 http://127.0.0.1:8080/v2/
+http://127.0.0.1:8080/v3/
 ```
 
 No abrir los HTML directamente con `file://`: un servidor HTTP local reproduce mejor el comportamiento de rutas, fuentes y assets.
