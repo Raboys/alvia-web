@@ -8,7 +8,7 @@ Este repositorio conserva, compara y permite desplegar las versiones de la web i
 |---|---|---|---|
 | V1 | <https://www.alvia.ar/> | `v1/` | Web institucional vigente al crear este repositorio |
 | V2 | <https://www.alvia.ar/v2/> | `v2/` | Nueva propuesta B2B publicada para revisión y comparación |
-| V3 | Sin publicación pública | `v3/` | Híbrido experimental: diseño V2 con contenido y profundidad de V1 |
+| V3 | <https://www.alvia.ar/v3/> | `v3/` | Híbrido publicado: diseño V2 con contenido y profundidad de V1 |
 
 Snapshot inicial: 23 de agosto de 2026.
 
@@ -106,7 +106,7 @@ V2 y V3 cargan `DM Sans` y `Noto Serif` desde Google Fonts. Si esas fuentes no e
 - Recupera de V1 el problema económico, la red propia, los controles por cobertura, la experiencia médica, la operación, seguridad y segmentos.
 - Presenta cuatro flujos reales: identidad, autorización, copago y prescripción.
 - Usa composiciones amplias y alternadas en lugar de acumular tarjetas comerciales.
-- Se mantiene como versión experimental hasta completar revisión de contenido y aprobación para publicar.
+- Se publica en `/v3/` para comparación, manteniendo V1 y V2 disponibles sin cambios.
 
 ## 6. Assets de la V2
 
@@ -174,8 +174,13 @@ Nginx — alvia.ar / www.alvia.ar
 ├── contacto.html
 ├── theme.css
 ├── assets/
-└── v2/
-    ├── index.html    → V2 en /v2/
+├── v2/
+│   ├── index.html    → V2 en /v2/
+│   ├── styles.css
+│   ├── script.js
+│   └── assets/
+└── v3/
+    ├── index.html
     ├── styles.css
     ├── script.js
     └── assets/
@@ -183,9 +188,9 @@ Nginx — alvia.ar / www.alvia.ar
 
 El server block usa una estrategia `try_files`: primero intenta servir un archivo institucional y, si no existe, deriva a rutas del backend de telemedicina. Por eso no deben crearse carpetas institucionales que colisionen con rutas de aplicación como `invitacion`, `invites`, `consultations`, `admin`, `doctor`, `firma`, `auth` o `internal`.
 
-Publicar `/v2/` no requiere editar ni recargar Nginx mientras se mantenga esta estructura.
+Publicar `/v2/` o `/v3/` no requiere editar ni recargar Nginx mientras se mantenga esta estructura.
 
-## 10. Despliegue de V2
+## 10. Despliegue de versiones
 
 El despliegue recomendado es atómico: copiar a un directorio temporal oculto y moverlo a la ruta pública al final.
 
@@ -200,6 +205,8 @@ sudo mv /var/www/alvia.ar/www/.v2-stage /var/www/alvia.ar/www/v2
 
 Para actualizar una V2 ya publicada, preparar primero un release nuevo, conservar un backup recuperable del directorio vigente y luego intercambiar ambos directorios mediante `mv`. No usar `rm -rf` ni sincronizaciones con `--delete` sobre el document root completo.
 
+V3 se despliega con el mismo procedimiento, cambiando `v2` y `.v2-stage` por `v3` y `.v3-stage`.
+
 La V1 vive en la raíz del document root. Su despliegue debe copiar únicamente los archivos conocidos de `v1/`; nunca borrar el document root porque allí también conviven `v2/` y rutas atendidas por la aplicación.
 
 ## 11. Verificación posterior al despliegue
@@ -208,21 +215,25 @@ Checklist mínimo:
 
 1. `https://www.alvia.ar/` continúa respondiendo `200`.
 2. `https://www.alvia.ar/v2/` responde `200`.
-3. CSS, JavaScript y PNG responden `200` con su tipo MIME correcto.
-4. Hero, navegación y CTA aparecen en desktop.
-5. Menú, columnas y galería funcionan a `390px` de ancho.
-6. No existe overflow horizontal.
-7. Los enlaces de WhatsApp, email e ingreso médico apuntan al destino correcto.
-8. La consola del navegador no muestra errores de recursos propios, aparte del favicon conocido que todavía no está definido.
-9. La portada V1 no cambió al actualizar V2.
+3. `https://www.alvia.ar/v3/` responde `200`.
+4. CSS, JavaScript y PNG responden `200` con su tipo MIME correcto.
+5. Hero, navegación y CTA aparecen en desktop.
+6. Menú, columnas y galería funcionan a `390px` de ancho.
+7. No existe overflow horizontal.
+8. Los enlaces de WhatsApp, email e ingreso médico apuntan al destino correcto.
+9. La consola del navegador no muestra errores de recursos propios, aparte del favicon conocido en V1/V2 que todavía no está definido.
+10. La portada V1 y la ruta V2 no cambian al actualizar V3.
 
 Ejemplos de verificación HTTP:
 
 ```bash
 curl -I https://www.alvia.ar/
 curl -I https://www.alvia.ar/v2/
+curl -I https://www.alvia.ar/v3/
 curl -I https://www.alvia.ar/v2/styles.css
 curl -I https://www.alvia.ar/v2/assets/mockup-operacion.png
+curl -I https://www.alvia.ar/v3/styles.css
+curl -I https://www.alvia.ar/v3/assets/mockup-preconsulta-copago.png
 ```
 
 ## 12. Limitaciones conocidas del snapshot inicial

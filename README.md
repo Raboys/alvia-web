@@ -1,10 +1,10 @@
 # Alvia Web Institucional
 
-Repositorio de las dos versiones estáticas de la web institucional de Alvia.
+Repositorio de las versiones estáticas de la web institucional de Alvia.
 
 - Producción actual: <https://www.alvia.ar/>
 - Versión 2 para comparación: <https://www.alvia.ar/v2/>
-- Versión 3: híbrido en evaluación, todavía sin publicación pública.
+- Versión 3 híbrida: <https://www.alvia.ar/v3/>
 
 ## Estructura
 
