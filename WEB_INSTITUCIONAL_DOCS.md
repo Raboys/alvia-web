@@ -116,7 +116,7 @@ V2 y V3 cargan `DM Sans` y `Noto Serif` desde Google Fonts. Si esas fuentes no e
 
 ### Capturas renderizadas de producto
 
-Las siguientes imágenes son renders rasterizados de interfaces implementadas en los canvases de producto de `telemed-starter`; no son ilustraciones genéricas creadas para la landing:
+Las siguientes imágenes son renders rasterizados de interfaces implementadas en los productos de `telemed-starter`; no son ilustraciones genéricas creadas para la landing:
 
 | Asset | Superficie representada |
 |---|---|
@@ -125,11 +125,11 @@ Las siguientes imágenes son renders rasterizados de interfaces implementadas en
 | `console-medica.png` | Consola médica durante la videoconsulta |
 | `mockup-postconsulta-paciente.png` | Receta electrónica disponible para el afiliado |
 | `mockup-postconsulta-medica.png` | Historial de consultas finalizadas, notas y recetas |
-| `mockup-operacion.png` | Portal institucional de capacidad y turnos |
+| `mockup-operacion.png` | Agenda institucional vigente: disponibilidad, reservas y horarios semanales |
 
 Los datos visibles son fixtures de demostración. No deben reemplazarse por datos reales de pacientes o profesionales.
 
-Los harnesses que regeneran estas imágenes permanecen en el monorepo privado `telemed-starter`, junto a los componentes fuente. Este repositorio contiene solamente los PNG finales necesarios para servir la web de forma independiente.
+Los harnesses que regeneran estas imágenes permanecen en el monorepo privado `telemed-starter`, junto a los componentes fuente. `mockup-operacion.png` se captura desde la implementación desplegada del portal con fixtures de demostración; las demás superficies se renderizan desde sus canvases sincronizados. Este repositorio contiene solamente los PNG finales necesarios para servir la web de forma independiente.
 
 ## 7. Enlaces y conversiones
 
