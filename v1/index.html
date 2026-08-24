@@ -370,7 +370,10 @@
   .feat-pt .ptx b { font-weight: 800; }
 
   /* --- identity (dark immersive) screen --- */
-  .pid { flex: 1; background: #0B1424; color: #fff; display: flex; flex-direction: column; position: relative; }
+  .pid { flex: 1; overflow: hidden; background: #0B1424; color: #fff; display: flex; flex-direction: column; position: relative; isolation: isolate; }
+  .pid .kyc-camera-bg { position: absolute; z-index: 0; inset: -12%; width: 124%; height: 124%; object-fit: cover; object-position: center; filter: blur(15px) brightness(.44) saturate(.72); transform: scale(1.55); pointer-events: none; }
+  .pid .kyc-camera-shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(7,15,28,.74), rgba(7,15,28,.22) 40%, rgba(7,15,28,.72)); pointer-events: none; }
+  .pid > :not(.kyc-camera-bg):not(.kyc-camera-shade) { position: relative; z-index: 2; }
   .pid .idtop { display: flex; align-items: center; gap: 8px; padding: 6px 14px 0; }
   .pid .idx { width: 30px; height: 30px; border-radius: 9px; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; color: #fff; }
   .pid .idtitle { flex: 1; text-align: center; font-family: var(--font-display); font-weight: 800; font-size: 13.5px; letter-spacing: -0.02em; margin-right: 30px; }
@@ -379,6 +382,7 @@
   .pid .ovwrap { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
   .pid .oval { position: relative; width: 150px; height: 198px; }
   .pid .oval .inner { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: radial-gradient(120% 100% at 50% 30%, #34526E, #142536); }
+  .pid .oval .kyc-camera-face { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.08); pointer-events: none; }
   .pid .oval .sil-head { position: absolute; left: 50%; top: 36px; transform: translateX(-50%); width: 70px; height: 86px; border-radius: 50%; background: rgba(255,255,255,0.17); }
   .pid .oval .sil-body { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 118px; height: 78px; border-radius: 60px 60px 0 0; background: rgba(255,255,255,0.12); }
   .pid .oval .ring { position: absolute; inset: -5px; border-radius: 50%; border: 2.5px dashed rgba(255,255,255,0.55); }
@@ -1166,6 +1170,8 @@
         <div class="phone">
           <div class="screen">
             <div class="pid">
+              <video class="kyc-feed kyc-camera-bg" src="assets/verificacion-identidad-kyc.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
+              <div class="kyc-camera-shade" aria-hidden="true"></div>
               <div class="pstatus dark"><span>9:41</span><span class="ic"><svg width="16" height="11" viewBox="0 0 18 12" fill="#fff"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg></span></div>
               <div class="idtop">
                 <div class="idx"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
@@ -1174,7 +1180,7 @@
               <div class="idinstr" data-es="Tu cobertura <b>PLAN ORO</b> no usa código. Validamos tu identidad con una foto." data-en="Your plan <b>PLAN ORO</b> doesn't use a code. We verify your identity with a photo.">Tu cobertura <b>PLAN ORO</b> no usa código. Validamos tu identidad con una foto.</div>
               <div class="ovwrap">
                 <div class="oval">
-                  <div class="inner"><span class="sil-head"></span><span class="sil-body"></span></div>
+                  <div class="inner"><video class="kyc-feed kyc-camera-face" src="assets/verificacion-identidad-kyc.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Afiliado realizando una prueba de vida por cámara"></video></div>
                   <div class="scan"></div>
                   <div class="ring"></div>
                 </div>
@@ -1835,7 +1841,7 @@
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
   /* ---------- feeds mudos de la videoconsulta ---------- */
-  document.querySelectorAll('.consult-video video').forEach(function (video) {
+  document.querySelectorAll('.consult-video video, .kyc-feed').forEach(function (video) {
     video.muted = true;
     video.defaultMuted = true;
     video.playsInline = true;
