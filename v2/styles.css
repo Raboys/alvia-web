@@ -147,8 +147,8 @@ h1, h2, h3 { color: var(--navy); font-family: var(--serif); font-weight: 700; }
 .live-consultation__controls svg { width: 50%; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .live-consultation__controls .live-consultation__end { width: 7.8cqw; aspect-ratio: 2.4; border-radius: 999px; background: #f14e5a; }
 .live-consultation__controls .live-consultation__end svg { width: 28%; fill: #fff; stroke: none; }
-.use-photo--phones { display: flex; align-items: flex-start; justify-content: center; gap: 18px; padding: 22px 18px 0; }
-.use-photo--phones img { width: auto; height: 298px; max-width: none; margin: 0; border-radius: 12px 12px 0 0; box-shadow: 0 10px 24px rgba(22, 22, 44, .14); }
+.use-photo--phones { display: flex; align-items: center; justify-content: center; gap: 18px; padding: 11px 18px; }
+.use-photo--phones img { width: auto; height: 298px; max-width: none; margin: 0; border-radius: 12px; box-shadow: 0 10px 24px rgba(22, 22, 44, .14); }
 .use-card h3 { margin: 28px 0 0; font: 700 24px/1.25 var(--serif); }
 .use-card p { margin: 16px 0 0; }
 .use-card .pill-link { margin-top: 16px; display: inline-block; }
@@ -294,7 +294,7 @@ footer { background: var(--navy); color: rgba(255, 255, 255, .72); padding: 96px
 
   .use-cases { padding: 100px 0; }
   .use-photo { height: 260px; }
-  .use-photo--phones { gap: 12px; padding-top: 18px; }
+  .use-photo--phones { gap: 12px; padding: 9px 12px; }
   .use-photo--phones img { height: 242px; }
   .use-card h3 { font-size: 21px; }
   .use-card p { margin: 12px 0 0; }

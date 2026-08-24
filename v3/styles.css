@@ -57,8 +57,8 @@ p { margin-top: 0; }
 .hero-audience { margin: 34px 0 0; color: var(--muted); font-size: 14px; }
 .hero-media { position: relative; min-width: 0; overflow: hidden; background: #cfdddb; }
 .hero-photo { width: 100%; height: 100%; object-fit: cover; object-position: 52% center; }
-.hero-product { position: absolute; z-index: 2; right: clamp(22px, 6vw, 96px); bottom: -210px; width: 238px; margin: 0; filter: drop-shadow(0 24px 32px rgba(22,22,44,.28)); }
-.hero-product img { width: 100%; border-radius: 30px 30px 0 0; }
+.hero-product { position: absolute; z-index: 2; right: clamp(22px, 6vw, 96px); bottom: 24px; width: 210px; margin: 0; filter: drop-shadow(0 24px 32px rgba(22,22,44,.28)); }
+.hero-product img { width: 100%; border-radius: 28px; }
 .hero-product figcaption { position: absolute; left: -145px; top: 168px; width: 184px; padding: 11px 14px; color: var(--navy); background: var(--white); border-radius: 10px; box-shadow: 0 8px 18px rgba(22,22,44,.18); font: 700 12px/1.4 var(--sans); }
 .hero-product figcaption span { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--green); }
 
@@ -111,8 +111,8 @@ p { margin-top: 0; }
 .feature li { position: relative; padding: 12px 0 12px 28px; border-top: 1px solid var(--line); font-size: 15px; }
 .feature li:last-child { border-bottom: 1px solid var(--line); }
 .feature li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 700; }
-.phone-shot, .identity-stage { width: 100%; height: 660px; margin: 0; display: flex; align-items: flex-start; justify-content: center; overflow: hidden; background: #dfe5e6; }
-.phone-shot img { width: auto; height: 720px; margin-top: 38px; filter: drop-shadow(0 20px 28px rgba(22,22,44,.2)); }
+.phone-shot, .identity-stage { width: 100%; height: 660px; margin: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #dfe5e6; }
+.phone-shot img { width: auto; height: 600px; margin: 0; border-radius: 26px; filter: drop-shadow(0 20px 28px rgba(22,22,44,.2)); }
 .feature-reverse .phone-shot { order: 1; }
 
 /* Rebuilt from V1 identity composition */
@@ -250,7 +250,7 @@ footer { padding: 88px 0 38px; color: rgba(255,255,255,.7); background: var(--na
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
   .hero-media { min-height: 500px; }
   .hero-photo { object-position: 52% center; }
-  .hero-product { right: 18px; bottom: -170px; width: 196px; }
+  .hero-product { right: 18px; bottom: 18px; width: 184px; }
   .hero-product figcaption { left: -125px; top: 128px; width: 150px; }
 
   .problem, .network, .control, .console-proof, .operation, .security, .segments { padding: 90px 0; }
@@ -272,7 +272,7 @@ footer { padding: 88px 0 38px; color: rgba(255,255,255,.7); background: var(--na
   .feature-copy, .feature-reverse .feature-copy { order: 1; max-width: none; padding: 0 0 38px; }
   .feature h3 { font-size: 27px; }
   .phone-shot, .identity-stage, .feature-reverse .phone-shot { order: 2; height: 540px; }
-  .phone-shot img { height: 580px; margin-top: 28px; }
+  .phone-shot img { height: 500px; margin: 0; border-radius: 22px; }
   .identity-phone { transform: scale(.82); }
 
   .doctor-photo { height: 360px; }
