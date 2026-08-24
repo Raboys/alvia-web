@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260824-video-feeds">
 </head>
 <body>
   <header class="masthead">
@@ -158,7 +158,25 @@
             <p>Validá identidad, cobertura y plan. Si corresponde, el afiliado paga el copago con tarjeta, transferencia o QR antes de la consulta. Cada cobro queda registrado.</p>
           </article>
           <article class="use-card">
-            <figure class="use-photo use-photo--product"><img src="assets/console-medica.png" alt="Consola médica real de Alvia"></figure>
+            <figure class="use-photo use-photo--product use-photo--consultation">
+              <div class="live-consultation">
+                <img class="live-consultation__base" src="assets/console-medica.png" alt="Consola médica real de Alvia durante una videoconsulta">
+                <video class="live-consultation__patient" src="assets/videoconsulta-paciente.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Paciente participando de la videoconsulta"></video>
+                <div class="live-consultation__shade" aria-hidden="true"></div>
+                <span class="live-consultation__role" aria-hidden="true">Paciente</span>
+                <div class="live-consultation__self">
+                  <video src="assets/videoconsulta-medica.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Médica participando de la videoconsulta"></video>
+                  <span aria-hidden="true">Vos</span>
+                </div>
+                <div class="live-consultation__patient-name" aria-hidden="true">Martín Pereyra <small>#4821</small></div>
+                <div class="live-consultation__hint" aria-hidden="true">Tocá la pantalla para activar el audio del paciente.</div>
+                <div class="live-consultation__controls" aria-hidden="true">
+                  <span><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+                  <span><svg viewBox="0 0 24 24"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h7A2.5 2.5 0 0 1 15 8.5v7A2.5 2.5 0 0 1 12.5 18h-7A2.5 2.5 0 0 1 3 15.5zM15 11l5-3v8l-5-3"/></svg></span>
+                  <span class="live-consultation__end"><svg viewBox="0 0 24 24"><path d="M5.5 13.5c4-3.5 9-3.5 13 0 .8.7 1 1 1.6.3l1.4-1.6c.6-.6.5-1.2-.2-1.8-5-4.3-12.6-4.3-17.6 0-.7.6-.8 1.2-.2 1.8L5 13.8c.5.6.8.4 1.5-.3z"/></svg></span>
+                </div>
+              </div>
+            </figure>
             <h3>Todo lo que el médico necesita, en una sola atención</h3>
             <p>Mientras atiende por video, consulta la historia clínica, documenta la consulta y emite recetas y órdenes sin cambiar de sistema.</p>
           </article>
@@ -328,6 +346,6 @@
       <span>Historia clínica conforme a la Ley 26.529</span>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260824-video-feeds"></script>
 </body>
 </html>
