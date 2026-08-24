@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260824-video-feeds">
+  <link rel="stylesheet" href="styles.css?v=20260824-kyc-video">
 </head>
 <body>
   <header class="masthead" id="inicio">
@@ -131,10 +131,12 @@
           </div>
           <div class="identity-stage" aria-label="Ejemplo de verificación de identidad en la app">
             <div class="identity-phone">
+              <video class="kyc-feed identity-camera-bg" src="assets/verificacion-identidad-kyc.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
+              <div class="identity-camera-shade" aria-hidden="true"></div>
               <div class="identity-top"><span>9:41</span><span>▮▮▮</span></div>
               <div class="identity-nav"><span>×</span><strong>Verificación de identidad</strong></div>
               <p>Tu cobertura <b>PLAN ORO</b> no usa código. Validamos tu identidad con una foto.</p>
-              <div class="face-frame"><i></i><span>Encuadrá tu rostro</span></div>
+              <div class="face-frame"><video class="kyc-feed identity-camera-face" src="assets/verificacion-identidad-kyc.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Afiliado realizando una prueba de vida por cámara"></video><span>Encuadrá tu rostro</span></div>
               <small>Se guarda encriptada como comprobante, con fecha y hora.</small>
               <button type="button" aria-label="Tomar foto">●</button>
             </div>
@@ -300,6 +302,6 @@
     </div>
     <div class="shell footer-bottom"><span>© 2026 Alvia</span><span>Historia clínica conforme a la Ley 26.529</span></div>
   </footer>
-  <script src="script.js?v=20260824-video-feeds"></script>
+  <script src="script.js?v=20260824-kyc-video"></script>
 </body>
 </html>

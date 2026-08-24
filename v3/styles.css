@@ -117,14 +117,16 @@ p { margin-top: 0; }
 
 /* Rebuilt from V1 identity composition */
 .identity-stage { align-items: center; background: var(--navy); }
-.identity-phone { width: 288px; height: 600px; padding: 14px 18px 18px; color: var(--white); background: #0b1733; border: 10px solid #0b0b0d; border-radius: 42px; box-shadow: 0 24px 48px rgba(0,0,0,.28); }
+.identity-phone { position: relative; isolation: isolate; overflow: hidden; width: 288px; height: 600px; padding: 14px 18px 18px; color: var(--white); background: #0b1733; border: 10px solid #0b0b0d; border-radius: 42px; box-shadow: 0 24px 48px rgba(0,0,0,.28); }
+.identity-camera-bg { position: absolute; z-index: 0; inset: -12%; width: 124%; height: 124%; object-fit: cover; object-position: center; filter: blur(17px) brightness(.48) saturate(.72); transform: scale(1.55); pointer-events: none; }
+.identity-camera-shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(7,15,32,.78), rgba(7,15,32,.16) 42%, rgba(7,15,32,.74)); pointer-events: none; }
+.identity-phone > :not(.identity-camera-bg):not(.identity-camera-shade) { position: relative; z-index: 2; }
 .identity-top { display: flex; justify-content: space-between; font-size: 10px; font-weight: 700; }
 .identity-nav { display: grid; grid-template-columns: 24px 1fr 24px; align-items: center; margin-top: 22px; font-size: 12px; text-align: center; }
 .identity-nav > span { font-size: 24px; font-weight: 400; }
 .identity-phone > p { margin: 24px 4px 0; color: rgba(255,255,255,.75); font-size: 12px; line-height: 1.45; text-align: center; }
 .face-frame { position: relative; width: 178px; height: 234px; margin: 27px auto 0; border: 2px solid rgba(160,220,229,.72); border-radius: 50% 50% 46% 46%; overflow: hidden; background: rgba(160,220,229,.08); }
-.face-frame i::before { content: ""; position: absolute; top: 56px; left: 63px; width: 52px; height: 64px; background: #263a5a; border-radius: 50%; }
-.face-frame i::after { content: ""; position: absolute; top: 110px; left: 32px; width: 114px; height: 120px; background: #263a5a; border-radius: 60px 60px 16px 16px; }
+.identity-camera-face { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.08); pointer-events: none; }
 .face-frame span { position: absolute; z-index: 2; left: 50%; bottom: 18px; transform: translateX(-50%); width: max-content; padding: 5px 10px; background: rgba(0,0,0,.5); border-radius: 12px; font-size: 9px; }
 .identity-phone small { display: block; width: 210px; margin: 16px auto 0; color: rgba(255,255,255,.56); font-size: 9px; text-align: center; }
 .identity-phone button { display: block; width: 55px; height: 55px; margin: 15px auto 0; color: var(--white); background: transparent; border: 3px solid var(--white); border-radius: 50%; font-size: 31px; line-height: 1; }

@@ -19,7 +19,7 @@ mainNav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
-document.querySelectorAll('.live-consultation video').forEach((video) => {
+document.querySelectorAll('.live-consultation video, .kyc-feed').forEach((video) => {
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
