@@ -13,3 +13,9 @@ mainNav?.querySelectorAll('a').forEach((link) => {
     mainNav.classList.remove('is-open');
   });
 });
+
+document.querySelectorAll('.live-consultation video').forEach((video) => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+});

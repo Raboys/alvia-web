@@ -649,6 +649,12 @@
     .consult-video { min-height: 200px !important; }
     .consult-hist { border-left: none !important; border-top: 1px solid var(--border) !important; }
   }
+  .consult-patient-feed { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+  .consult-video::after { content: ""; position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8,18,34,.08), transparent 38%, rgba(8,18,34,.5)); }
+  .consult-self-feed { position: absolute; z-index: 2; top: 14px; right: 14px; width: 92px; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid rgba(255,255,255,.26); border-radius: 9px; background: #1c3a66; box-shadow: 0 6px 16px rgba(0,0,0,.22); }
+  .consult-self-feed video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .consult-self-feed span { position: absolute; left: 6px; bottom: 5px; padding: 3px 5px; border-radius: 4px; background: rgba(4,13,26,.76); color: #fff; font-size: 9px; font-weight: 700; }
+  .consult-video > :not(.consult-patient-feed) { z-index: 3; }
 
   /* ============================================================
      MOBILE — sistema dedicado estilo Dialectica
@@ -1377,19 +1383,19 @@
         <div class="consult-card" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow-lg);overflow:hidden">
           <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border)">
             <div style="display:flex;align-items:center;gap:10px">
-              <div style="width:30px;height:30px;border-radius:50%;background:var(--brand-soft-2);color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11.5px">SG</div>
+              <div style="width:30px;height:30px;border-radius:50%;background:var(--brand-soft-2);color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11.5px">MP</div>
               <div>
-                <div style="font-weight:700;font-size:13px;color:var(--fg)">Sofía Giménez</div>
-                <div style="font-size:11px;color:var(--fg-muted)">PLAN ORO · DNI 38.452.119</div>
+                <div style="font-weight:700;font-size:13px;color:var(--fg)">Martín Pereyra</div>
+                <div style="font-size:11px;color:var(--fg-muted)">OSDE 210 · DNI 30.111.222</div>
               </div>
             </div>
             <div style="display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--fg-secondary)"><span style="width:7px;height:7px;border-radius:50%;background:#1F9D63;display:inline-block"></span><span data-es="En consulta · 04:12" data-en="In visit · 04:12">En consulta · 04:12</span></div>
           </div>
           <div class="consult-body" style="display:grid;grid-template-columns:1fr 208px">
             <div class="consult-video" style="position:relative;background:#0E2150;min-height:288px;display:flex;align-items:center;justify-content:center">
-              <div style="width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,0.12);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px">SG</div>
-              <div style="position:absolute;top:14px;right:14px;width:60px;height:44px;border-radius:8px;background:#1C3A66;border:1px solid rgba(255,255,255,0.18);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.85);font-size:11px;font-weight:700">MR</div>
-              <div style="position:absolute;left:14px;bottom:13px;color:rgba(255,255,255,0.9);font-size:12px;font-weight:600">Sofía Giménez</div>
+              <video class="consult-patient-feed" src="assets/videoconsulta-paciente.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Paciente participando de la videoconsulta"></video>
+              <div class="consult-self-feed"><video src="assets/videoconsulta-medica.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label="Médica participando de la videoconsulta"></video><span aria-hidden="true">Vos</span></div>
+              <div style="position:absolute;left:14px;bottom:13px;color:rgba(255,255,255,0.9);font-size:12px;font-weight:600">Martín Pereyra</div>
               <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:9px">
                 <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
                 <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h7A2.5 2.5 0 0 1 15 8.5v7A2.5 2.5 0 0 1 12.5 18h-7A2.5 2.5 0 0 1 3 15.5zM15 11l5-3v8l-5-3"/></svg></div>
@@ -1827,6 +1833,13 @@
     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+  /* ---------- feeds mudos de la videoconsulta ---------- */
+  document.querySelectorAll('.consult-video video').forEach(function (video) {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+  });
 
   /* ---------- hamburger menu ---------- */
   (function () {

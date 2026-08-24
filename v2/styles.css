@@ -130,6 +130,23 @@ h1, h2, h3 { color: var(--navy); font-family: var(--serif); font-weight: 700; }
 .use-photo--invert img { object-position: 52% 72%; }
 .use-photo--product { background: #eef2f7; }
 .use-photo--product img { object-fit: contain; width: auto; max-width: 86%; margin: 0 auto; }
+.use-photo--consultation { display: grid; place-items: center; padding: 18px; }
+.live-consultation { position: relative; width: 100%; aspect-ratio: 8 / 5; overflow: hidden; background: #0a1424; border: 1px solid rgba(22, 22, 44, .12); border-radius: 8px; box-shadow: 0 8px 22px rgba(10, 20, 36, .16); container-type: inline-size; }
+.live-consultation .live-consultation__base { position: relative; z-index: 0; display: block; width: 100%; max-width: none; height: 100%; margin: 0; object-fit: cover; }
+.live-consultation__patient { position: absolute; z-index: 1; left: 0; top: 7%; width: 69.45%; height: 93%; object-fit: cover; object-position: center 18%; background: #0a1424; }
+.live-consultation__shade { position: absolute; z-index: 2; left: 0; top: 7%; width: 69.45%; height: 93%; pointer-events: none; background: linear-gradient(180deg, rgba(8, 18, 34, .12), transparent 32%, transparent 66%, rgba(8, 18, 34, .55)); }
+.live-consultation__role { position: absolute; z-index: 4; top: 9.4%; right: 31.6%; padding: .45em .8em; border-radius: 999px; background: rgba(6, 17, 32, .86); color: #fff; font: 700 clamp(5px, 1.8cqw, 12px)/1 var(--sans); }
+.live-consultation__self { position: absolute; z-index: 5; left: 53.35%; top: 74%; width: 14.72%; height: 14.45%; overflow: hidden; border: 1px solid rgba(255, 255, 255, .24); border-radius: 6px; background: #132747; box-shadow: 0 4px 12px rgba(0, 0, 0, .24); }
+.live-consultation__self video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.live-consultation__self span { position: absolute; left: 5%; bottom: 6%; padding: .35em .55em; border-radius: 4px; background: rgba(4, 13, 26, .78); color: #fff; font: 700 clamp(4px, 1.45cqw, 10px)/1 var(--sans); }
+.live-consultation__patient-name { position: absolute; z-index: 4; left: 2.2%; bottom: 3.4%; padding: .55em .8em; border-radius: 5px; background: rgba(4, 13, 26, .74); color: #fff; font: 700 clamp(5px, 1.65cqw, 12px)/1 var(--sans); }
+.live-consultation__patient-name small { color: rgba(255, 255, 255, .58); font: inherit; font-weight: 500; }
+.live-consultation__hint { position: absolute; z-index: 4; left: 23.4%; bottom: 9.7%; padding: .45em .75em; border-radius: 5px; background: rgba(4, 13, 26, .82); color: #fff; font: 700 clamp(4px, 1.4cqw, 10px)/1 var(--sans); }
+.live-consultation__controls { position: absolute; z-index: 4; left: 22.7%; bottom: 2%; display: flex; align-items: center; gap: .7cqw; padding: .8cqw 1cqw; border: 1px solid rgba(255, 255, 255, .13); border-radius: 999px; background: rgba(4, 13, 26, .72); }
+.live-consultation__controls span { display: grid; width: 3.2cqw; min-width: 10px; aspect-ratio: 1; place-items: center; border-radius: 50%; background: rgba(255, 255, 255, .16); }
+.live-consultation__controls svg { width: 50%; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.live-consultation__controls .live-consultation__end { width: 7.8cqw; aspect-ratio: 2.4; border-radius: 999px; background: #f14e5a; }
+.live-consultation__controls .live-consultation__end svg { width: 28%; fill: #fff; stroke: none; }
 .use-photo--phones { display: flex; align-items: flex-start; justify-content: center; gap: 18px; padding: 22px 18px 0; }
 .use-photo--phones img { width: auto; height: 298px; max-width: none; margin: 0; border-radius: 12px 12px 0 0; box-shadow: 0 10px 24px rgba(22, 22, 44, .14); }
 .use-card h3 { margin: 28px 0 0; font: 700 24px/1.25 var(--serif); }
