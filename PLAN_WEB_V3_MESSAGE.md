@@ -3,9 +3,9 @@
 ## Estado
 
 - [x] Alcance y criterio editorial acordados
-- [ ] Reescritura y jerarquía implementadas
-- [ ] Revisión visual, responsive y accesibilidad
-- [ ] Claims y evidencia auditados
+- [x] Reescritura y jerarquía implementadas
+- [x] Revisión visual, responsive y accesibilidad
+- [x] Claims y evidencia auditados
 - [ ] Cambios integrados en `main`
 - [ ] Producción desplegada y verificada
 
