@@ -6,8 +6,16 @@
 - [x] Reescritura y jerarquía implementadas
 - [x] Revisión visual, responsive y accesibilidad
 - [x] Claims y evidencia auditados
-- [ ] Cambios integrados en `main`
-- [ ] Producción desplegada y verificada
+- [x] Cambios integrados en `main`
+- [x] Producción desplegada y verificada
+
+## Release
+
+- PR: [#9](https://github.com/Raboys/alvia-web/pull/9)
+- Commit integrado y desplegado: `7a178fa532cbd3c5786ff89857870ffe6b59ba94`
+- Publicado: 29 de agosto de 2026
+- Ruta: <https://www.alvia.ar/v3/>
+- Backup recuperable: `/var/www/alvia.ar/backups/20260829-185517-v3-message-evidence`
 
 ## Objetivo
 
