@@ -189,27 +189,14 @@ h4 { font-size: 21px; }
 .step-label { color: var(--aqua-300); }
 .operation-evidence { margin: 0; }
 .image-crop { position: relative; overflow: hidden; border-radius: 16px; background: #e8f0f1; }
-.operation-crop { height: 300px; border: 1px solid rgba(255, 255, 255, 0.25); }
-.operation-crop img { width: 100%; height: 100%; object-fit: cover; object-position: top left; }
-.operation-crop::before,
-.operation-crop::after,
-.authorization-crop::before,
-.authorization-crop::after,
-.copay-crop::before,
-.copay-crop::after,
-.medical-crop::before,
-.medical-crop::after,
-.patient-crop::before,
-.patient-crop::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  left: 0;
-  background: var(--navy-950);
-}
-.operation-crop::before { top: 0; height: 18%; }
-.operation-crop::after { bottom: 0; height: 55%; }
+.operation-crop { aspect-ratio: 16 / 10; border: 1px solid rgba(255, 255, 255, 0.25); }
+.operation-crop img { width: 100%; height: 100%; object-fit: contain; }
+.privacy-mask { position: absolute; z-index: 1; display: block; border-radius: 4px; background: #eef1f8; }
+.operation-mask-facility { top: 2.1%; left: 61.7%; width: 12.8%; height: 4.8%; }
+.operation-mask-account { top: 2%; left: 75.2%; width: 8.5%; height: 5%; }
+.operation-mask-person-one { top: 53.8%; left: 10.5%; width: 16%; height: 4.5%; background: white; }
+.operation-mask-person-two { top: 61.9%; left: 10.5%; width: 16%; height: 4.5%; background: white; }
+.operation-mask-site { top: 63.8%; left: 35%; width: 9%; height: 3.3%; background: white; }
 .operation-evidence figcaption { margin-top: 10px; color: #adc5d0; }
 .first-decision {
   grid-column: 1 / -1;
@@ -278,14 +265,19 @@ h4 { font-size: 21px; }
 .branch-pair b { display: block; }
 .success-state { margin: 16px 0 0; color: var(--muted); font-size: 14px; }
 .phone-evidence { margin: 0; }
-.phone-crop { width: 190px; height: 250px; margin: 0 auto; border: 1px solid var(--line); }
-.phone-crop img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-.authorization-crop img { object-position: center 70%; }
-.authorization-crop::before { top: 0; height: 42%; background: var(--navy-900); }
-.authorization-crop::after { bottom: 0; height: 42%; background: var(--navy-900); }
-.copay-crop img { object-position: center 67%; }
-.copay-crop::before { top: 0; height: 60%; background: var(--navy-900); }
-.copay-crop::after { bottom: 0; height: 28%; background: var(--navy-900); }
+.phone-crop { width: min(250px, 100%); height: auto; aspect-ratio: 780 / 1688; margin: 0 auto; border: 1px solid var(--line); background: #f2f5fa; }
+.phone-crop img { width: 100%; height: 100%; object-fit: contain; }
+.authorization-mask-coverage-top { top: 34.9%; left: 31%; width: 39%; height: 3.1%; background: #8e98a8; }
+.authorization-mask-coverage-label { top: 51.8%; left: 18%; width: 26%; height: 2.8%; background: white; }
+.authorization-mask-coverage-copy { top: 63.6%; left: 5.8%; width: 29%; height: 2.9%; background: white; }
+.authorization-mask-otp-one,
+.authorization-mask-otp-two { top: 70.2%; width: 11%; height: 5%; background: white; }
+.authorization-mask-otp-one { left: 19.7%; }
+.authorization-mask-otp-two { left: 37.4%; }
+.authorization-mask-coverage-link { top: 77.6%; left: 61%; width: 28%; height: 2.6%; background: white; }
+.copay-mask-coverage-top { top: 34.9%; left: 31%; width: 39%; height: 3.1%; background: #8e98a8; }
+.copay-mask-coverage-label { top: 51.5%; left: 12.8%; width: 28%; height: 3.1%; background: white; }
+.copay-mask-coverage-copy { top: 59%; left: 16.6%; width: 24%; height: 2.7%; background: white; }
 .phone-evidence figcaption { margin-top: 9px; text-align: center; }
 
 .identity-prototype {
@@ -348,14 +340,24 @@ h4 { font-size: 21px; }
 .clinical-stage > div:first-child p { color: #bed0d9; }
 .clinical-stage .stage-label { color: var(--aqua-300); }
 .medical-evidence, .patient-evidence { margin: 26px 0 0; }
-.medical-crop { height: 190px; }
-.medical-crop img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-.medical-crop::before { top: 0; height: 30%; background: #0f3147; }
-.medical-crop::after { bottom: 0; height: 52%; background: #0f3147; }
-.patient-crop { width: min(240px, 100%); height: 210px; margin: 0 auto; }
-.patient-crop img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-.patient-crop::before { top: 34%; bottom: 0; background: #0f3147; }
-.patient-crop::after { display: none; }
+.medical-crop { aspect-ratio: 16 / 10; background: #f8fafc; }
+.medical-crop img { width: 100%; height: 100%; object-fit: contain; }
+.medical-mask-clinician { top: 1.7%; left: 77%; width: 14%; height: 3.4%; background: white; }
+.medical-mask-patient-heading { top: 8.2%; left: 4.8%; width: 27%; height: 5.2%; background: white; }
+.medical-mask-patient-card { top: 22.7%; left: 2.3%; width: 65%; height: 10.5%; background: #fbfcfe; }
+.medical-mask-signed-by { top: 36%; left: 3%; width: 64%; height: 5.5%; background: #f2fbf6; }
+.medical-mask-motive { top: 43.5%; left: 2.2%; width: 65%; height: 8%; background: white; }
+.medical-mask-current { top: 51%; left: 2.2%; width: 65%; height: 8%; background: white; }
+.medical-mask-diagnosis { top: 58.5%; left: 2.2%; width: 65%; height: 8%; background: white; }
+.medical-mask-plan { top: 66%; left: 2.2%; width: 65%; height: 9%; background: white; }
+.medical-mask-notes { top: 25%; left: 71.2%; width: 28%; height: 40%; background: #faf9ff; }
+.patient-crop { width: min(280px, 100%); height: auto; aspect-ratio: 780 / 1688; margin: 0 auto; background: #f2f5fa; }
+.patient-crop img { width: 100%; height: 100%; object-fit: contain; }
+.patient-mask-document-number { top: 16.9%; left: 62%; width: 30%; height: 2.9%; background: white; }
+.patient-mask-person { top: 23.2%; left: 11%; width: 79%; height: 5.7%; background: white; }
+.patient-mask-medication { top: 34.5%; left: 11%; width: 77%; height: 10.7%; background: #f1f4f9; }
+.patient-mask-diagnosis { top: 50.5%; left: 11%; width: 76%; height: 3.1%; background: white; }
+.patient-mask-clinician { top: 55.5%; left: 8%; width: 84%; height: 9.5%; background: white; }
 .clinical figcaption { margin-top: 10px; color: #a9c3cf; }
 
 .agenda { width: min(1140px, calc(100% - 48px)); margin: 0 auto; padding: 104px 0; display: grid; grid-template-columns: 1fr .9fr; gap: 40px 70px; align-items: end; }
@@ -460,7 +462,6 @@ h4 { font-size: 21px; }
   .availability-start h2 { margin-bottom: 8px; font-size: 28px; }
   .availability-start .compact p:last-child { margin: 0; font-size: 13px; }
   .step-label { margin-bottom: 6px; font-size: 11px; }
-  .operation-crop { height: 235px; }
   .operation-evidence figcaption { font-size: 11px; }
   .first-decision { margin-bottom: -62px; padding: 14px; gap: 9px; border-width: 3px; }
   .first-decision span:first-child { font-size: 11px; }
@@ -480,7 +481,7 @@ h4 { font-size: 21px; }
   .control-copy h4 { font-size: 23px; }
   .branch-pair { grid-template-columns: 1fr; }
   .control-row .phone-evidence, .identity-prototype { width: 100%; }
-  .phone-crop { width: 176px; height: 230px; }
+  .phone-crop { width: min(270px, 100%); }
   .clearance-rule { grid-template-columns: 1fr; gap: 4px; font-size: 14px; }
 
   .modes { width: calc(100% - 36px); padding: 72px 0; }
@@ -491,10 +492,7 @@ h4 { font-size: 21px; }
 
   .clinical { padding: 72px 18px; }
   .clinical-stage { padding: 18px; }
-  .medical-crop { height: 170px; }
-  .medical-crop::before { height: 14%; }
-  .medical-crop::after { height: 72%; }
-  .patient-crop { height: 190px; }
+  .patient-crop { width: min(280px, 100%); }
 
   .agenda { width: calc(100% - 36px); padding: 70px 0; gap: 26px; }
   .agenda-map { padding: 14px; display: grid; grid-template-columns: 1fr; gap: 6px; border-radius: 16px; text-align: center; }

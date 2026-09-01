@@ -68,6 +68,11 @@
         <figure class="operation-evidence">
           <div class="image-crop operation-crop">
             <img src="../v3/assets/mockup-operacion.png" alt="Recorte del portal con las pestañas de disponibilidad y reservas de la agenda">
+            <span class="privacy-mask operation-mask-facility" aria-hidden="true"></span>
+            <span class="privacy-mask operation-mask-account" aria-hidden="true"></span>
+            <span class="privacy-mask operation-mask-person-one" aria-hidden="true"></span>
+            <span class="privacy-mask operation-mask-person-two" aria-hidden="true"></span>
+            <span class="privacy-mask operation-mask-site" aria-hidden="true"></span>
           </div>
           <figcaption>Portal de la organización · disponibilidad de la red en una misma agenda.</figcaption>
         </figure>
@@ -110,7 +115,15 @@
               <p class="success-state">Continúa sólo con autorización aprobada cuando es requerida.</p>
             </div>
             <figure class="phone-evidence">
-              <div class="image-crop phone-crop authorization-crop"><img src="../v3/assets/mockup-preconsulta-autorizacion.png" alt="Recorte de los campos para ingresar un código de autorización en Alvia"></div>
+              <div class="image-crop phone-crop authorization-crop">
+                <img src="../v3/assets/mockup-preconsulta-autorizacion.png" alt="Recorte de los campos para ingresar un código de autorización en Alvia">
+                <span class="privacy-mask authorization-mask-coverage-top" aria-hidden="true"></span>
+                <span class="privacy-mask authorization-mask-coverage-label" aria-hidden="true"></span>
+                <span class="privacy-mask authorization-mask-coverage-copy" aria-hidden="true"></span>
+                <span class="privacy-mask authorization-mask-otp-one" aria-hidden="true"></span>
+                <span class="privacy-mask authorization-mask-otp-two" aria-hidden="true"></span>
+                <span class="privacy-mask authorization-mask-coverage-link" aria-hidden="true"></span>
+              </div>
               <figcaption>Interfaz actual · autorización con fixture sintético.</figcaption>
             </figure>
           </article>
@@ -138,7 +151,12 @@
               <p class="success-state">Puede resolverse al reservar un turno, según la regla de cobertura.</p>
             </div>
             <figure class="phone-evidence">
-              <div class="image-crop phone-crop copay-crop"><img src="../v3/assets/mockup-preconsulta-copago.png" alt="Recorte del resumen de copago en Alvia"></div>
+              <div class="image-crop phone-crop copay-crop">
+                <img src="../v3/assets/mockup-preconsulta-copago.png" alt="Recorte del resumen de copago en Alvia">
+                <span class="privacy-mask copay-mask-coverage-top" aria-hidden="true"></span>
+                <span class="privacy-mask copay-mask-coverage-label" aria-hidden="true"></span>
+                <span class="privacy-mask copay-mask-coverage-copy" aria-hidden="true"></span>
+              </div>
               <figcaption>Interfaz actual · el monto visible es un fixture, no un precio comercial.</figcaption>
             </figure>
           </article>
@@ -202,7 +220,18 @@
             <p>Historia clínica firmada, recetas y documentos quedan asociados a la consulta.</p>
           </div>
           <figure class="medical-evidence">
-            <div class="image-crop medical-crop"><img src="../v3/assets/mockup-consulta-medica.png" alt="Recorte de la navegación médica entre historia clínica, recetas y documentos"></div>
+            <div class="image-crop medical-crop">
+              <img src="../v3/assets/mockup-consulta-medica.png" alt="Recorte de la navegación médica entre historia clínica, recetas y documentos">
+              <span class="privacy-mask medical-mask-clinician" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-patient-heading" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-patient-card" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-signed-by" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-motive" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-current" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-diagnosis" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-plan" aria-hidden="true"></span>
+              <span class="privacy-mask medical-mask-notes" aria-hidden="true"></span>
+            </div>
             <figcaption>Interfaz médica actual · navegación entre historia clínica, recetas y documentos.</figcaption>
           </figure>
         </article>
@@ -213,7 +242,14 @@
             <p>Si el profesional la emite, el documento queda disponible para el afiliado.</p>
           </div>
           <figure class="patient-evidence">
-            <div class="image-crop patient-crop"><img src="../v3/assets/mockup-postconsulta-paciente.png" alt="Encabezado de receta disponible en la aplicación del afiliado"></div>
+            <div class="image-crop patient-crop">
+              <img src="../v3/assets/mockup-postconsulta-paciente.png" alt="Encabezado de receta disponible en la aplicación del afiliado">
+              <span class="privacy-mask patient-mask-document-number" aria-hidden="true"></span>
+              <span class="privacy-mask patient-mask-person" aria-hidden="true"></span>
+              <span class="privacy-mask patient-mask-medication" aria-hidden="true"></span>
+              <span class="privacy-mask patient-mask-diagnosis" aria-hidden="true"></span>
+              <span class="privacy-mask patient-mask-clinician" aria-hidden="true"></span>
+            </div>
             <figcaption>Interfaz del afiliado · documento de demostración; la receta no es un gate previo.</figcaption>
           </figure>
         </article>
