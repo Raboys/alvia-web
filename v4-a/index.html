@@ -76,6 +76,7 @@
         <figure class="hero-proof">
           <div class="image-frame image-frame--wide">
             <img src="../v3/assets/mockup-consulta-medica.png" alt="Interfaz actual de Alvia con el estado de una videoconsulta en la plataforma médica" width="2880" height="1800">
+            <span class="privacy-mask privacy-mask--hero" aria-hidden="true"></span>
           </div>
           <figcaption><span>Interfaz actual</span> · Plataforma de videoconsulta para la atención online.</figcaption>
         </figure>
@@ -94,7 +95,7 @@
           </div>
         </div>
         <figure class="evidence evidence--operation">
-          <div class="image-frame">
+          <div class="image-frame operation-crop">
             <img src="../v3/assets/mockup-operacion.png" alt="Portal operativo de Alvia con disponibilidad, reservas y horarios de la red médica" width="1440" height="900" loading="lazy">
           </div>
           <figcaption><span>Portal actual</span> · Disponibilidad, reservas y horarios de la red en una misma agenda.</figcaption>
@@ -116,7 +117,7 @@
           <div class="shared-input">
             <span class="flow-label">Punto de partida</span>
             <strong>Disponibilidad publicada</strong>
-            <p>Padrón sólo si se requiere. La política puede pedir autorización, identidad, ambas o ninguna.</p>
+            <p>Padrón sólo si se requiere. Si el resultado es <strong>no elegible</strong>, <strong>indeterminado</strong> o <strong>no disponible</strong>, el ingreso se detiene: falla cerrado. La política puede pedir autorización, identidad, ambas o ninguna.</p>
           </div>
           <div class="mode-routes">
             <article>
@@ -143,14 +144,16 @@
 
         <div class="coverage-evidence">
           <figure class="phone-evidence phone-evidence--primary">
-            <div class="phone-frame">
-              <img src="../v3/assets/mockup-preconsulta-autorizacion.png" alt="Interfaz de autorización con ingreso de código de un uso cuando la cobertura lo requiere" width="780" height="1688" loading="lazy">
+            <div class="phone-frame phone-frame--auth">
+              <img src="../v3/assets/mockup-preconsulta-autorizacion.png" alt="Control de autorización con ingreso de un código de uso único" width="780" height="1688" loading="lazy">
+              <span class="privacy-mask privacy-mask--auth" aria-hidden="true"></span>
             </div>
             <figcaption><span>Interfaz implementada con fixtures</span> · Código de un uso cuando la cobertura lo requiere.</figcaption>
           </figure>
           <figure class="phone-evidence">
-            <div class="phone-frame">
-              <img src="../v3/assets/mockup-preconsulta-copago.png" alt="Interfaz de copago que aparece sólo cuando corresponde según la cobertura" width="780" height="1688" loading="lazy">
+            <div class="phone-frame phone-frame--copay">
+              <img src="../v3/assets/mockup-preconsulta-copago.png" alt="Control de copago con importe y medio de pago, mostrado sólo cuando corresponde" width="780" height="1688" loading="lazy">
+              <span class="privacy-mask privacy-mask--copay" aria-hidden="true"></span>
             </div>
             <figcaption><span>Interfaz implementada con fixtures</span> · El copago aparece y se resuelve sólo cuando corresponde.</figcaption>
           </figure>
@@ -172,7 +175,8 @@
         </div>
         <figure class="aftercare-proof">
           <div class="phone-frame phone-frame--light">
-            <img src="../v3/assets/mockup-postconsulta-paciente.png" alt="Postconsulta de Alvia con receta electrónica disponible para el afiliado" width="780" height="1688" loading="lazy">
+            <img src="../v3/assets/mockup-postconsulta-paciente.png" alt="Pantalla de receta con el contenido clínico oculto y acciones para descargar o compartir" width="780" height="1688" loading="lazy">
+            <span class="privacy-mask privacy-mask--post">Contenido clínico oculto en este prototipo</span>
           </div>
           <figcaption><span>Interfaz implementada con fixtures</span> · Receta electrónica disponible para descargar o compartir cuando corresponde.</figcaption>
         </figure>
@@ -189,5 +193,16 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <a class="wordmark wordmark--footer" href="#inicio" aria-label="Alvia, volver al inicio">alvia</a>
+      <p>© 2026 Alvia.</p>
+      <nav aria-label="Enlaces de utilidad">
+        <a href="https://doctor.alvia.ar/">Acceso médicos</a>
+        <a href="https://wa.me/541133578538?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Alvia" target="_blank" rel="noopener">Agendá una demo</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

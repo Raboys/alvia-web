@@ -410,6 +410,7 @@ figcaption span {
 }
 
 .image-frame {
+  position: relative;
   overflow: hidden;
   border: 1px solid #c8d7da;
   border-radius: var(--radius-md);
@@ -422,7 +423,23 @@ figcaption span {
 }
 
 .image-frame--wide img {
-  width: 100%;
+  width: 200%;
+  max-width: none;
+}
+
+.privacy-mask {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: #f7f9fb;
+}
+
+.privacy-mask--hero {
+  top: 42%;
+  left: 0;
+  width: 64%;
+  height: 25%;
+  border-radius: 0 8px 8px 0;
 }
 
 .section {
@@ -472,7 +489,13 @@ figcaption span {
 }
 
 .evidence--operation .image-frame img {
-  width: 100%;
+  width: 160%;
+  max-width: none;
+  transform: translate(-8%, -20%);
+}
+
+.operation-crop {
+  aspect-ratio: 3 / 1;
 }
 
 .section-heading {
@@ -593,6 +616,7 @@ figcaption span {
 }
 
 .phone-frame {
+  position: relative;
   max-width: 300px;
   margin-inline: auto;
   padding: 9px;
@@ -606,6 +630,70 @@ figcaption span {
 .phone-frame img {
   width: 100%;
   border-radius: 26px;
+}
+
+.phone-frame--auth,
+.phone-frame--copay {
+  aspect-ratio: 1.06 / 1;
+}
+
+.phone-frame--auth img,
+.phone-frame--copay img {
+  max-width: none;
+}
+
+.phone-frame--auth img {
+  transform: translateY(-53%);
+}
+
+.phone-frame--copay img {
+  transform: translateY(-44%);
+}
+
+.privacy-mask--auth {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 39%;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 18px;
+  background: #fff;
+  color: var(--navy-950);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.privacy-mask--auth::before {
+  content: "Código de autorización";
+}
+
+.privacy-mask--auth::after {
+  content: "";
+  position: absolute;
+  top: 145%;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background: #fff;
+}
+
+.privacy-mask--copay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 43%;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 18px;
+  background: #fff;
+  color: var(--navy-950);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.privacy-mask--copay::before {
+  content: "Copago de la consulta · si corresponde";
 }
 
 .phone-evidence--primary .phone-frame {
@@ -665,6 +753,24 @@ figcaption span {
   box-shadow: 0 24px 65px rgba(0, 0, 0, 0.32);
 }
 
+.privacy-mask--post {
+  top: 14%;
+  right: 8%;
+  bottom: 15%;
+  left: 8%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  border: 1px solid #dce5ed;
+  border-radius: 14px;
+  background: #f4f7fb;
+  color: #53687a;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+}
+
 .closing {
   padding: 72px 0;
   background: var(--navy-800);
@@ -699,6 +805,51 @@ figcaption span {
 .button--aqua:hover {
   border-color: var(--aqua-300);
   background: var(--aqua-300);
+}
+
+.site-footer {
+  padding: 24px 0;
+  border-top: 1px solid rgba(16, 55, 70, 0.14);
+  background: var(--white);
+}
+
+.site-footer__inner,
+.site-footer nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__inner {
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.wordmark--footer {
+  font-size: 24px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.site-footer nav {
+  gap: 22px;
+}
+
+.site-footer nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-footer nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 @media (max-width: 1050px) {
@@ -1065,6 +1216,22 @@ figcaption span {
 
   .closing .button {
     width: 100%;
+  }
+
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .site-footer p {
+    margin-left: auto;
+  }
+
+  .site-footer nav {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
   }
 }
 
