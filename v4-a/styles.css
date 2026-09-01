@@ -439,39 +439,58 @@ figcaption span {
 }
 
 .privacy-mask--hero {
-  top: 15%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-top: 1px solid rgba(203, 217, 220, 0.75);
-  background: linear-gradient(
-    to bottom,
-    rgba(247, 249, 251, 0.62) 0%,
-    rgba(247, 249, 251, 0.74) 78%,
-    #f7f9fb 92%
-  );
-  backdrop-filter: blur(12px);
+  inset: 0;
+  background:
+    linear-gradient(#f7f9fb 0 0) 84.6% 2.6% / 9% 4% no-repeat,
+    linear-gradient(#f7f9fb 0 0) 2.5% 12.5% / 18.5% 4% no-repeat,
+    linear-gradient(#f7f9fb 0 0) 22.5% 12.5% / 11% 4% no-repeat;
 }
 
-.privacy-mask--hero::before,
-.privacy-mask--hero::after {
-  content: "";
-  position: absolute;
+.privacy-mask--hero-tabs {
+  top: 23.5%;
+  right: 1%;
+  left: 2%;
+  height: 6%;
+  border-radius: 6px;
+}
+
+.privacy-mask--hero-card,
+.privacy-mask--hero-signed,
+.privacy-mask--hero-clinical,
+.privacy-mask--hero-notes {
+  border: 1px solid rgba(203, 217, 220, 0.72);
+  border-radius: 12px;
   background: #f7f9fb;
 }
 
-.privacy-mask--hero::before {
-  top: -15.9%;
-  left: 77%;
-  width: 9%;
-  height: 5.9%;
+.privacy-mask--hero-card {
+  top: 32%;
+  left: 2%;
+  width: 66%;
+  height: 13%;
 }
 
-.privacy-mask--hero::after {
-  top: -3.6%;
+.privacy-mask--hero-signed {
+  top: 47%;
   left: 2%;
-  width: 18.5%;
-  height: 3.3%;
+  width: 66%;
+  height: 10%;
+}
+
+.privacy-mask--hero-clinical {
+  top: 59%;
+  bottom: 0;
+  left: 2%;
+  width: 66%;
+  border-radius: 12px 12px 0 0;
+}
+
+.privacy-mask--hero-notes {
+  top: 29.5%;
+  right: 1%;
+  bottom: 0;
+  width: 29%;
+  border-radius: 12px 12px 0 0;
 }
 
 .section {
