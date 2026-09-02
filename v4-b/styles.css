@@ -358,6 +358,7 @@ h4 { font-size: 21px; }
 .patient-mask-medication { top: 34.5%; left: 11%; width: 77%; height: 10.7%; background: #f1f4f9; }
 .patient-mask-diagnosis { top: 50.5%; left: 11%; width: 76%; height: 3.1%; background: white; }
 .patient-mask-clinician { top: 55.5%; left: 8%; width: 84%; height: 9.5%; background: white; }
+.patient-mask-demo-watermark { top: 64%; left: 11%; width: 78%; height: 3.2%; background: white; }
 .clinical figcaption { margin-top: 10px; color: #a9c3cf; }
 
 .agenda { width: min(1140px, calc(100% - 48px)); margin: 0 auto; padding: 104px 0; display: grid; grid-template-columns: 1fr .9fr; gap: 40px 70px; align-items: end; }
