@@ -4,6 +4,7 @@ Variante creada el 2026-09-04 a pedido de Pablo. Nueva composición y textos bre
 
 ## Abrir
 
+- Publicación para revisión: https://alvia.ar/v4/ (fuente desplegada: `67c115f`, PR #13).
 - Preview privada por Tailscale: http://100.71.73.116:18727/v4-c/
 - Fuente: `v4-c/index.html`, `v4-c/styles.css` y `v4-c/script.js` (reproducción automática de las demostraciones).
 - A y B siguen disponibles en `/v4-a/` y `/v4-b/` en el mismo servidor.
