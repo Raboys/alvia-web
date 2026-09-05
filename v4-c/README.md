@@ -4,7 +4,7 @@ Variante creada el 2026-09-04 a pedido de Pablo. Nueva composición y textos bre
 
 ## Abrir
 
-- Publicación para revisión: https://alvia.ar/v4/ (fuente desplegada: `67c115f`, PR #13).
+- Publicación para revisión: https://alvia.ar/v4/ (fuente desplegada e historial en [el registro del release](../docs/releases/2026-09-05-v4.md)).
 - Preview privada por Tailscale: http://100.71.73.116:18727/v4-c/
 - Fuente: `v4-c/index.html`, `v4-c/styles.css` y `v4-c/script.js` (reproducción automática de las demostraciones).
 - A y B siguen disponibles en `/v4-a/` y `/v4-b/` en el mismo servidor.
@@ -110,3 +110,15 @@ Prompt exacto de la imagen generada:
 Pablo autorizó compartir esta variante en `https://alvia.ar/v4/` e integrarla a `main`, conservando V3 como portada. La agenda se copia a `assets/agenda.png` y se sirve como WebP; V4 queda autocontenida. Se agregan metadatos Open Graph y `assets/compartir.jpg` (1200 × 800, exportado de la imagen conceptual ya aprobada) para compartir el enlace. Se conserva `noindex, nofollow`.
 
 El empaquetado desde un commit usa `scripts/package_v4.py`; incluye sólo archivos usados y un manifiesto SHA-256. No publica los generadores ni esta documentación. Detalle, commits y rollback en [el registro del release](../docs/releases/2026-09-05-v4.md).
+
+## Mensajes recuperados de V3 — 2026-09-05 UTC
+
+Después de comparar V3 y V4, Pablo aprobó explicitar tres ideas en los bloques existentes:
+
+- Agenda: «Tu equipo ve los horarios disponibles y las reservas de tu red».
+- Capacidad médica: «Más consultas dentro de tu red y menos presión sobre la guardia presencial».
+- Atención médica: «Cada atención queda registrada, con el paciente, el profesional y la fecha».
+
+Se reemplazan las frases genéricas de capacidad y pie de agenda, y se suma una frase sobre el registro de la atención junto a las herramientas del médico. Se mantiene el lenguaje simple, sin nuevas secciones ni recursos multimedia.
+
+Verificación del ajuste: Chrome a 1440, 390 y 320 px; las tres frases presentes, sin desborde horizontal ni errores de recursos o JavaScript. Capturas de los dos bloques en `/tmp/alvia-v4-copy-review/`.
