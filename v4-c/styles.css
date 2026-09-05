@@ -111,10 +111,21 @@ h2 { font-size: clamp(30px, 3.05vw, 44px); line-height: 1.13; font-weight: 500; 
 .ai-notes-copy > p:not(.ai-notes-label) { margin-top: 24px; max-width: 460px; color: var(--muted); font-size: 17px; line-height: 1.7; }
 .ai-notes-copy .ai-notes-control { padding-top: 21px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink); }
 .ai-notes-picture { min-width: 0; padding: 22px; border: 1px solid #e4dded; border-radius: 22px; background: #f0ecf7; }
-.ai-notes-picture > a { display: block; border: 1px solid #dfd8e9; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 25px #53427412; }
-.ai-notes-picture img { width: 100%; height: auto; }
-.ai-notes-picture figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 16px; font-size: 12px; line-height: 1.5; color: #6b617b; }
-.ai-notes-picture figcaption a { font-weight: 700; }
+.notes-demo { overflow: hidden; border: 1px solid #e2daed; border-radius: 15px; background: #fff; box-shadow: 0 12px 25px #5342740d; }
+.notes-demo-header { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 72px; padding: 14px 24px; border-bottom: 1px solid #eee8f5; background: #fbf9ff; }
+.notes-demo-header > strong { display: flex; align-items: center; gap: 9px; font-size: 17px; color: #282139; }
+.notes-demo-header > strong svg { width: 21px; height: 21px; color: #7960b0; }
+.notes-copy { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 92px; min-height: 44px; padding: 9px 12px; border: 1px solid #e5ddef; border-radius: 9px; background: #fff; color: #65517f; font: inherit; font-size: 12px; cursor: pointer; }
+.notes-copy svg { width: 15px; height: 15px; }
+.notes-copy:hover { background: #f1ebf8; border-color: #c6b4de; }
+.notes-demo-body { padding: 28px; }
+.notes-patient { display: flex; align-items: center; gap: 12px; margin-bottom: 25px; }
+.notes-patient > span { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #f1ebf8; color: #78638f; font-size: 12px; }
+.notes-patient strong { font-size: 14px; font-weight: 600; color: #393043; }
+.notes-patient small { display: block; margin-top: 5px; font-size: 12px; color: #8b8195; }
+.notes-summary { color: #4e4657; font-size: 15px; line-height: 1.75; }
+.notes-summary p + p { margin-top: 18px; }
+.ai-notes-picture figcaption { margin-top: 14px; font-size: 11px; line-height: 1.5; color: #8b7e99; }
 .network-layout { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 64px; }
 .section-copy > p { margin-top: 22px; max-width: 370px; font-size: 17px; line-height: 1.65; color: var(--muted); }
 .text-link { display: inline-flex; align-items: center; gap: 22px; min-height: 44px; margin-top: 20px; font-size: 14px; font-weight: 700; }
@@ -219,6 +230,10 @@ details p { padding: 0 32px 25px 0; font-size: 16px; line-height: 1.65; color: v
   .ai-notes-label { margin-bottom: 21px; }
   .ai-notes-copy > p:not(.ai-notes-label) { font-size: 16px; margin-top: 20px; }
   .ai-notes-picture { padding: 12px; }
+  .notes-demo-header { padding-inline: 16px; }
+  .notes-demo-body { padding: 22px 18px; }
+  .notes-demo-header > strong { font-size: 15px; }
+  .notes-copy { min-width: 82px; padding-inline: 9px; }
   .ai-notes-picture figcaption { font-size: 11px; margin-top: 12px; }
   .medical-picture { margin-top: 30px; }
   .medical-picture figcaption { font-size: 12px; }

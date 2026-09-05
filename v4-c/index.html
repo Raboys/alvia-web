@@ -8,13 +8,13 @@
   <meta name="description" content="Ofrecé videoconsultas a tus afiliados con los médicos de tu red. Alvia pone la plataforma.">
   <title>Alvia · Tus médicos, atendiendo online</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d3037'/%3E%3Ctext x='17' y='46' fill='%23ffffff' font-family='Georgia' font-size='48'%3Ea%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260904-ai-notes">
+  <link rel="stylesheet" href="styles.css?v=20260904-notes-simple">
   <link rel="preload" as="image" type="image/webp" href="assets/app-inicio-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-identidad-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-autorizacion-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-copago-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-receta-real.webp" fetchpriority="low">
-  <script src="script.js?v=20260904-product-tour" defer></script>
+  <script src="script.js?v=20260904-notes-simple" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -201,10 +201,21 @@
         <p class="ai-notes-control">El médico activa la IA, decide qué queda escrito y firma la historia.</p>
       </div>
       <figure class="ai-notes-picture">
-        <a href="assets/ai-notes-real.png" target="_blank" rel="noopener" aria-label="Ampliar el resumen de AI Notes">
-          <img src="assets/ai-notes-real.webp" alt="AI Notes en la plataforma del médico: resumen de la videoconsulta listo para revisar y copiar. Ejemplo con datos ficticios." width="1040" height="964" loading="lazy" decoding="async">
-        </a>
-        <figcaption>Un resumen para acompañar al médico. <a href="assets/ai-notes-real.png" target="_blank" rel="noopener">Ampliar <span aria-hidden="true">↗</span></a></figcaption>
+        <article class="notes-demo" aria-label="Ejemplo de resumen de AI Notes">
+          <header class="notes-demo-header">
+            <strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></svg>AI Notes</strong>
+            <button class="notes-copy" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg><span>Copiar</span></button>
+          </header>
+          <div class="notes-demo-body">
+            <div class="notes-patient"><span aria-hidden="true">SG</span><div><strong>Sofía Giménez</strong><small>Resumen de la consulta</small></div></div>
+            <div class="notes-summary">
+              <p>Consulta por dolor de garganta y fiebre desde hace dos días. Refiere buena tolerancia a líquidos.</p>
+              <p>Durante la videollamada se repasan sus síntomas y antecedentes. Se encuentra en buen estado general, sin dificultad para respirar.</p>
+              <p>Se indican cuidados en casa y seguimiento si los síntomas persisten o empeoran.</p>
+            </div>
+          </div>
+        </article>
+        <figcaption>Ejemplo de resumen<span class="notes-copy-status sr-only" role="status"></span></figcaption>
       </figure>
     </section>
 

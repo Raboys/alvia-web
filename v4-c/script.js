@@ -78,3 +78,34 @@ if (dialog && typeof dialog.showModal === 'function') {
     syncVideos();
   });
 }
+
+// The illustrative note uses real, selectable text and a working copy action.
+const copyNote = document.querySelector('.notes-copy');
+const noteSummary = document.querySelector('.notes-summary');
+if (copyNote && noteSummary) {
+  copyNote.hidden = false;
+  let resetCopy;
+  copyNote.addEventListener('click', async () => {
+    const text = [...noteSummary.querySelectorAll('p')].map(p => p.textContent.trim()).join('\n\n');
+    const status = document.querySelector('.notes-copy-status');
+    clearTimeout(resetCopy);
+    let copied = false;
+    if (navigator.clipboard?.writeText) {
+      try { await navigator.clipboard.writeText(text); copied = true; } catch { /* Try the HTTP-compatible copy path. */ }
+    }
+    if (!copied) {
+      const field = document.createElement('textarea');
+      field.value = text;
+      field.setAttribute('readonly', '');
+      field.className = 'sr-only';
+      document.body.append(field);
+      field.select();
+      try { copied = document.execCommand('copy'); } catch { /* Show an honest failure message. */ }
+      field.remove();
+      copyNote.focus({ preventScroll: true });
+    }
+    copyNote.querySelector('span').textContent = copied ? 'Copiado' : 'Copiar';
+    status.textContent = copied ? 'Resumen copiado.' : 'No se pudo copiar. Podés seleccionar el texto del resumen.';
+    resetCopy = setTimeout(() => { copyNote.querySelector('span').textContent = 'Copiar'; status.textContent = ''; }, 2400);
+  });
+}

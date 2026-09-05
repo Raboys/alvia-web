@@ -75,6 +75,14 @@ Reproducción: `node v4-c/captures/render-ai-notes.mjs`; variables opcionales `A
 
 Verificado en Chrome a 1440, 768, 390 y 320 px, más 390 sin JavaScript: imágenes cargadas, una vista a la vez, teléfono del mismo tamaño en las cinco vistas, receta correcta y ampliable, videos automáticos, cero descargas nuevas al cambiar de pestaña, un h1 y anclas válidas. Sin errores ni desborde horizontal. Evidencia visual: `/tmp/alvia-v4c-content-review/`.
 
+## Simplificación del ejemplo de AI Notes — 2026-09-04
+
+A pedido de Pablo, la tarjeta de AI Notes pasa a ser un mock ilustrativo en HTML/CSS, con texto seleccionable y botón Copiar funcional. Se eliminan de la tarjeta «Ver SOAP», «Síntesis lista», la aclaración «Referencia — no escribe la historia» y el pie técnico. Se muestran únicamente AI Notes, el nombre ficticio y tres párrafos breves de ejemplo. La explicación comercial fuera de la tarjeta conserva el papel del médico.
+
+Esta tarjeta ya no se presenta como captura literal del producto. Los archivos `ai-notes-real.*` y su generador se conservan como material de la versión anterior, pero la página no los carga. El ejemplo nativo evita descargar esa imagen y mantiene el texto legible en móvil.
+
+Copiar utiliza Clipboard API cuando está disponible y un respaldo compatible con la preview HTTP. Confirma «Copiado» sólo si la operación tuvo éxito. Sin JavaScript se oculta el botón y el resumen sigue siendo seleccionable. Verificado a 1440, 390 y 320 px, más 390 sin JavaScript: texto exacto en el evento de copia, confirmación y reinicio del botón, sin desborde ni errores. Evidencia: `/tmp/alvia-notes-simple/`.
+
 ## Otras imágenes
 
 - `assets/videoconsulta.png`: escena conceptual generada con la herramienta integrada `image_gen`, con personas ficticias. No representa una captura del producto ni un testimonio. El texto alternativo la identifica como escena ilustrativa.
