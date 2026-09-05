@@ -51,6 +51,16 @@ Chrome real: 1440, 390 y 320 px, más 390 px sin JavaScript. Una vista visible a
 
 Comparación de píxeles decodificados: los cuatro WebP de interfaz sin fotografía son idénticos a los PNG; las barras superiores de autorización y copago también son idénticas. Capturas originales y fotogramas de autorización: `/tmp/alvia-real-screens-NWwsQV/`.
 
+## Rediseño del explorador — 2026-09-04
+
+«Así lo ve tu afiliado» se presenta como una sola demo de producto. En escritorio, el selector lateral usa iconos, títulos y descripciones breves; la opción elegida tiene fondo verde oscuro. El teléfono queda en el centro y una explicación corta al lado. Identidad, autorización y copago aclaran «Según su cobertura».
+
+En tablet y móvil, las cinco opciones permanecen visibles en una barra que acompaña el desplazamiento. «Código» abrevia autorización en espacios chicos. La altura de la explicación es estable entre vistas para conservar la posición del teléfono. El marco, las proporciones y los assets siguen siendo los mismos.
+
+«Ampliar» abre un diálogo nativo dentro de la página. Se mueve el elemento multimedia ya cargado, conservando el buffer y la reproducción; al cerrar, vuelve a su posición y devuelve el foco al enlace. Cierra con Escape, el botón o un clic fuera. Sin JavaScript, el enlace original sigue abriendo el PNG.
+
+Verificado en Chrome a 1440, 1024, 768, 390 y 320 px: cinco opciones, apertura/cierre, restauración del elemento y del foco, video automático en la ampliación y teléfono completo sin desbordar el diálogo. Se repitieron las pruebas de carga anticipada, teclado, bucles y 390 px sin JavaScript; no hubo nuevas descargas al cambiar de vista. Evidencia visual: `/tmp/alvia-v4c-tour-design/`.
+
 ## Otras imágenes
 
 - `assets/videoconsulta.png`: escena conceptual generada con la herramienta integrada `image_gen`, con personas ficticias. No representa una captura del producto ni un testimonio. El texto alternativo la identifica como escena ilustrativa.
