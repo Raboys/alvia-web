@@ -273,7 +273,7 @@ Desde la creación de este repositorio:
 
 ## 15. V4 publicada para revisión — 2026-09-05 UTC
 
-La ruta `https://alvia.ar/v4/` corresponde a la variante `v4-c/`. La portada actual es V3: `/` redirige a `https://alvia.ar/v3/`. Las referencias anteriores a V1 como portada describen el snapshot inicial, no el estado actual.
+La ruta `https://alvia.ar/v4/` corresponde a la variante `v4-c/`. Desde el 2026-09-05 UTC, la portada es V4: `/` en `alvia.ar` y `www.alvia.ar` redirige con 301 a `https://alvia.ar/v4/`. V3 sigue disponible directamente en `/v3/`. Las referencias anteriores a V1 o V3 como portada describen estados históricos.
 
 V4 conserva las variantes A/B como historia del experimento y usa la comunicación simple elegida con Pablo. Cuenta con galería de app, videos automáticos, receta abierta, reglas por cobertura, demos aisladas de recetas/estudios del médico y AI Notes. Todos los avances, pruebas y rollback están en [el registro de publicación](docs/releases/2026-09-05-v4.md) y [el README de la variante](v4-c/README.md).
 
