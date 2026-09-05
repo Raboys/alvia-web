@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html,body{margin:0;width:390px;height:844px;overflow:hidden;background:#f6f8fc;color:#0e2150}
+  .status{display:block;width:390px;height:44px}
+  iframe{display:block;width:390px;height:766px;border:0}
+  .home{display:grid;place-items:center;width:390px;height:34px;background:#fff}
+  .home::after{content:'';width:134px;height:5px;border-radius:4px;background:currentColor}
+  .dark,.dark .home{background:#0b1733;color:#fff}
+  .dim .status{background:#838b98}
+</style>
+<svg class="status" viewBox="0 0 390 44" aria-label="9:41, señal y batería">
+  <text x="24" y="29" fill="currentColor" font-family="Arial,sans-serif" font-weight="700" font-size="15">9:41</text>
+  <g fill="currentColor"><rect x="294" y="25" width="3" height="5" rx="1"/><rect x="299" y="22" width="3" height="8" rx="1"/><rect x="304" y="19" width="3" height="11" rx="1"/><rect x="309" y="16" width="3" height="14" rx="1"/></g>
+  <path d="M320 20q8-7 16 0m-13 3q5-4 10 0m-7 3q2-2 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <rect x="344" y="17" width="23" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.3"/><rect x="347" y="20" width="17" height="7" rx="1" fill="currentColor"/><rect x="369" y="21" width="2" height="5" rx="1" fill="currentColor"/>
+</svg>
+<iframe title="Pantalla de Alvia"></iframe>
+<div class="home" aria-hidden="true"></div>
+<script>
+  const screen = new URLSearchParams(location.search).get('screen') || 'home';
+  document.documentElement.className = screen === 'identity' ? 'dark' : ['authorization','copay'].includes(screen) ? 'dim' : '';
+  document.body.className = document.documentElement.className;
+  document.querySelector('iframe').src = '/app.html?screen=' + encodeURIComponent(screen);
+</script>
+</html>

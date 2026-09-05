@@ -270,3 +270,28 @@ Desde la creación de este repositorio:
 - la VPS es un destino de despliegue, no el lugar principal de edición;
 - el monorepo `telemed-starter` conserva los canvases y harnesses necesarios para regenerar capturas de producto;
 - cualquier cambio manual urgente en producción debe trasladarse inmediatamente a este repositorio para evitar divergencias.
+
+## 15. V4 publicada para revisión — 2026-09-05 UTC
+
+La ruta `https://alvia.ar/v4/` corresponde a la variante `v4-c/`. La portada actual es V3: `/` redirige a `https://alvia.ar/v3/`. Las referencias anteriores a V1 como portada describen el snapshot inicial, no el estado actual.
+
+V4 conserva las variantes A/B como historia del experimento y usa la comunicación simple elegida con Pablo. Cuenta con galería de app, videos automáticos, receta abierta, reglas por cobertura, demos aisladas de recetas/estudios del médico y AI Notes. Todos los avances, pruebas y rollback están en [el registro de publicación](docs/releases/2026-09-05-v4.md) y [el README de la variante](v4-c/README.md).
+
+### Preparar el release
+
+```bash
+python3 scripts/package_v4.py --ref main /tmp/alvia-v4-release
+```
+
+El directorio debe ser nuevo. El paquete incluye sólo los archivos usados por `v4-c/index.html` y CSS, más la imagen para compartir. Las rutas son locales a `/v4/`; no depende de assets servidos desde `/v3/`. Se genera `release.json` con el commit de fuente y hashes SHA-256. No se publican `README.md`, `captures/`, planes, archivos de trabajo ni imágenes históricas sin uso. A diferencia de la app médica, este repositorio institucional no tiene un workflow de despliegue automático.
+
+### Activar el release
+
+1. Integrar el PR a `main` y preparar el paquete desde ese commit exacto.
+2. Copiar el paquete a un directorio **nuevo** `/var/www/alvia.ar/releases/v4-<commit>`, propietario `github-runner:telemed`, directorios 2755 y archivos 0644.
+3. Comprobar hashes y guardar el destino anterior de `/var/www/alvia.ar/www/v4`, si existiera.
+4. Crear un enlace temporal dentro de `www` al nuevo release y renombrarlo sobre `v4` con `mv -T`. La primera publicación no reemplaza ningún directorio previo.
+5. Verificar `https://alvia.ar/v4` → `/v4/`, la página, todos sus assets y `release.json`, tanto por Nginx local como por Cloudflare. Probar móvil/escritorio y confirmar que `/` sigue apuntando a V3.
+6. Actualizar el registro de publicación con commits, PR, release y resultados.
+
+No se modifica Nginx, no se reinician servicios y no se despliega el monorepo médico. Para volver atrás, intercambiar el enlace por el release anterior; para retirar la primera publicación, quitar sólo el enlace `v4`.
