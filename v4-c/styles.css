@@ -99,6 +99,22 @@ body:has(.tour-dialog[open]) { overflow: hidden; }
 .medical-picture figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; max-width: 1000px; margin: 16px auto 0; font-size: 13px; line-height: 1.5; color: #d0dfdc; }
 .medical-picture figcaption a { font-weight: 700; }
 h2 { font-size: clamp(30px, 3.05vw, 44px); line-height: 1.13; font-weight: 500; letter-spacing: -1.4px; text-wrap: balance; }
+.network { padding-bottom: 0; }
+.coverage-summary { display: flex; align-items: center; gap: 22px; margin-top: 24px; padding: 26px 30px; border: 1px solid var(--line); border-radius: 16px; background: #f0f5ed; }
+.coverage-summary > svg { width: 34px; height: 34px; flex: 0 0 auto; color: var(--green); }
+.coverage-summary h3 { margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -.4px; line-height: 1.3; }
+.coverage-summary p { margin-top: 9px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.ai-notes { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 80px; }
+.ai-notes-label { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 26px; font-size: 16px; font-weight: 700; color: #64518c; }
+.ai-notes-label svg { width: 22px; height: 22px; }
+.ai-notes-label span { margin-left: 7px; padding-left: 14px; border-left: 1px solid #d9cfe9; font-size: 12px; font-weight: 400; }
+.ai-notes-copy > p:not(.ai-notes-label) { margin-top: 24px; max-width: 460px; color: var(--muted); font-size: 17px; line-height: 1.7; }
+.ai-notes-copy .ai-notes-control { padding-top: 21px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink); }
+.ai-notes-picture { min-width: 0; padding: 22px; border: 1px solid #e4dded; border-radius: 22px; background: #f0ecf7; }
+.ai-notes-picture > a { display: block; border: 1px solid #dfd8e9; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 25px #53427412; }
+.ai-notes-picture img { width: 100%; height: auto; }
+.ai-notes-picture figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 16px; font-size: 12px; line-height: 1.5; color: #6b617b; }
+.ai-notes-picture figcaption a { font-weight: 700; }
 .network-layout { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 64px; }
 .section-copy > p { margin-top: 22px; max-width: 370px; font-size: 17px; line-height: 1.65; color: var(--muted); }
 .text-link { display: inline-flex; align-items: center; gap: 22px; min-height: 44px; margin-top: 20px; font-size: 14px; font-weight: 700; }
@@ -141,7 +157,7 @@ details p { padding: 0 32px 25px 0; font-size: 16px; line-height: 1.65; color: v
   .hero { gap: 32px; padding-top: 44px; }
   h1 { font-size: 50px; }
   .hero-lead { font-size: 17px; }
-  .network-layout, .care-layout, .questions-layout { gap: 40px; }
+  .network-layout, .care-layout, .questions-layout, .ai-notes { gap: 40px; }
   .tour-selector { grid-template-columns: 246px minmax(0, 1fr); }
   .tour-options { padding-inline: 12px; }
   .tour-panels { padding-inline: 24px; }
@@ -194,7 +210,16 @@ details p { padding: 0 32px 25px 0; font-size: 16px; line-height: 1.65; color: v
   .hero-picture figcaption { bottom: 15px; left: 12px; padding: 9px 11px; font-size: 11px; }
   .audience { padding-block: 0 28px; font-size: 12px; }
   .section { padding-block: 58px; }
-  .app-tour { padding-bottom: 0; }
+  .app-tour, .network { padding-bottom: 0; }
+  .coverage-summary { align-items: flex-start; gap: 14px; padding: 22px 18px; }
+  .coverage-summary > svg { width: 25px; height: 25px; }
+  .coverage-summary h3 { font-size: 19px; }
+  .coverage-summary p { font-size: 14px; }
+  .ai-notes { grid-template-columns: 1fr; gap: 30px; }
+  .ai-notes-label { margin-bottom: 21px; }
+  .ai-notes-copy > p:not(.ai-notes-label) { font-size: 16px; margin-top: 20px; }
+  .ai-notes-picture { padding: 12px; }
+  .ai-notes-picture figcaption { font-size: 11px; margin-top: 12px; }
   .medical-picture { margin-top: 30px; }
   .medical-picture figcaption { font-size: 12px; }
   .network-layout, .care-layout, .questions-layout { grid-template-columns: 1fr; gap: 30px; }

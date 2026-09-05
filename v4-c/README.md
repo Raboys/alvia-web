@@ -23,7 +23,7 @@ Se conserva el hero y el lenguaje simple aprobado. El explorador muestra cinco v
 
 ### Capturas consistentes
 
-Las cinco vistas se renderizan desde los componentes de la app web, importados sin cambios de `telemed-starter/app/src` en el checkout `81da853`: `Home`, `Prescriptions`, `IdentityCapture`, `AuthCodePrompt`, `PaymentSheet` y `GuardiaConfirm`. Comparten fuentes, cuenta ficticia y un único marco de dispositivo definido en `captures/device.html`.
+Las cinco vistas se renderizan desde los componentes de la app web, importados sin cambios de `telemed-starter/app/src` en el checkout `81da853`: `Home`, `PrescriptionDetailScreen`, `IdentityCapture`, `AuthCodePrompt`, `PaymentSheet` y `GuardiaConfirm`. Comparten fuentes, cuenta ficticia y un único marco de dispositivo definido en `captures/device.html`.
 
 - Pantalla completa de 390 × 844 CSS px: barra superior de 44 px, contenido de 390 × 766 y barra inferior de 34 px. PNG a DPR 2 (780 × 1688); video de 390 × 844.
 - Misma hora (9:41), señal, Wi-Fi, batería e indicador inferior en todas. La pantalla oscura de identidad adapta el color de los indicadores, manteniendo la geometría.
@@ -36,7 +36,7 @@ Reproducción: `node v4-c/captures/render.mjs`. Usa dependencias locales, Chrome
 
 ### Carga y navegación
 
-- Las cinco vistas se sirven en WebP: 369 KB en total frente a 1,15 MB de los PNG. Las cuatro capturas sin fotografía usan compresión sin pérdida, conservando exactamente sus píxeles; identidad usa calidad 85. Los enlaces para ampliar conservan los PNG originales.
+- Las cinco vistas se sirven en WebP: 398 KB en total (incluida la receta abierta); la primera tanda pesaba 369 KB frente a 1,15 MB de los PNG. Las cuatro capturas sin fotografía usan compresión sin pérdida, conservando exactamente sus píxeles; identidad usa calidad 85. Los enlaces para ampliar conservan los PNG originales.
 - Las cinco imágenes, incluidos los posters de ambos videos, tienen `preload`. Los `img` son eager y el script solicita su decodificación al inicio, incluso si la pestaña está oculta.
 - El hero se sirve en WebP de 69 KB frente al PNG original de 2,03 MB, conservando composición y resolución. El original queda disponible en assets.
 - Para repetir sólo la compresión: `node v4-c/captures/optimize.mjs`. También corre al finalizar la captura.
@@ -60,6 +60,20 @@ En tablet y móvil, las cinco opciones permanecen visibles en una barra que acom
 «Ampliar» abre un diálogo nativo dentro de la página. Se mueve el elemento multimedia ya cargado, conservando el buffer y la reproducción; al cerrar, vuelve a su posición y devuelve el foco al enlace. Cierra con Escape, el botón o un clic fuera. Sin JavaScript, el enlace original sigue abriendo el PNG.
 
 Verificado en Chrome a 1440, 1024, 768, 390 y 320 px: cinco opciones, apertura/cierre, restauración del elemento y del foco, video automático en la ampliación y teléfono completo sin desbordar el diálogo. Se repitieron las pruebas de carga anticipada, teclado, bucles y 390 px sin JavaScript; no hubo nuevas descargas al cambiar de vista. Evidencia visual: `/tmp/alvia-v4c-tour-design/`.
+
+## Capacidad médica, cobertura, receta abierta y AI Notes — 2026-09-04
+
+Se recupera el mensaje «Pagás capacidad médica que no llega al afiliado» en la sección de agenda, ahora inmediatamente después del hero. Dos párrafos cortos conectan las horas disponibles con turnos online. Junto al explorador se explicita que identidad, autorización y copago dependen de las reglas de cada cobertura.
+
+La vista de recetas muestra `PrescriptionDetailScreen` de la app web: documento abierto, medicación, profesional y acciones para descargar/compartir. Datos sintéticos de la misma cuenta; conserva la leyenda de demostración del componente real. Assets `app-receta-real.png` y `.webp` (780 × 1688, WebP sin pérdida de 52 KB). La antigua lista ya no se muestra. Para regenerar sólo este documento: `ALVIA_CAPTURE_SCREEN=prescriptions node v4-c/captures/render.mjs`.
+
+AI Notes tiene una sección propia después de la consulta médica: «Menos tiempo escribiendo. Más atención al paciente». Se explica que resume la conversación como referencia y que el médico activa la IA, redacta y firma la historia. Esta descripción se verificó contra `frontend/doctor/src/ai-notes-panel.jsx`, `ai-lifecycle.js` y `docs/ai-notes-lifecycle-mvp.md` de telemed-starter. No se promete escritura ni firma automática de la historia.
+
+La imagen de AI Notes se captura directamente del componente `AiNotesPanel`, sin cambios de UI, con una consulta ficticia y servicios sustituidos por fixtures locales. Render de 520 px de ancho a DPR 2, PNG de 1040 × 964 y WebP sin pérdida de 48 KB. El panel se muestra completo, con enlace para ampliar. No son datos de un paciente real ni una síntesis generada en vivo para esta web.
+
+Reproducción: `node v4-c/captures/render-ai-notes.mjs`; variables opcionales `ALVIA_DOCTOR_SOURCE`, `ALVIA_DOCTOR_DEPS`, `ALVIA_ESBUILD` y `ALVIA_PLAYWRIGHT`. Descarga las fuentes públicas que usa el producto; la captura bloquea solicitudes fuera de su servidor temporal en loopback. Evidencia de captura: `/tmp/alvia-ai-notes-Kx3NTf/` y `/tmp/alvia-real-screens-Ck9LUf/`.
+
+Verificado en Chrome a 1440, 768, 390 y 320 px, más 390 sin JavaScript: imágenes cargadas, una vista a la vez, teléfono del mismo tamaño en las cinco vistas, receta correcta y ampliable, videos automáticos, cero descargas nuevas al cambiar de pestaña, un h1 y anclas válidas. Sin errores ni desborde horizontal. Evidencia visual: `/tmp/alvia-v4c-content-review/`.
 
 ## Otras imágenes
 

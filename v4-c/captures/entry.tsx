@@ -6,7 +6,7 @@ import { PaymentSheet } from '@/components/ui/PaymentSheet';
 import { GuardiaConfirm } from '@/components/guardia/GuardiaConfirm';
 import { AuthCodePrompt } from '@/components/ui/AuthCodePrompt';
 import Home from '@/app/home';
-import Prescriptions from '@/app/prescriptions';
+import PrescriptionDetail from '@/app/prescription-detail';
 
 const noop = () => {};
 const screen = new URLSearchParams(location.search).get('screen');
@@ -15,7 +15,7 @@ function CaptureApp() {
   const [codeVisible, setCodeVisible] = useState(screen === 'authorization');
   return (
   <SafeAreaProvider initialMetrics={{ frame: { x: 0, y: 0, width: 390, height: 766 }, insets: { top: 0, left: 0, right: 0, bottom: 0 } }}>
-    {screen === 'home' ? <Home /> : screen === 'prescriptions' ? <Prescriptions /> : <>
+    {screen === 'home' ? <Home /> : screen === 'prescriptions' ? <PrescriptionDetail /> : <>
     <GuardiaConfirm insurerName="Meridiano OS" eligibilityStatus="eligible" onRetryEligibility={noop}
       requireCode codeDone={codeDone} onOpenCode={noop} requirePay payDone={false} payKind="copago" payLabel="$1.500" onOpenPay={noop}
       requireIdentity={false} identityDone onOpenIdentity={noop} reason="" onReasonChange={noop}

@@ -16,7 +16,7 @@ const out = await mkdtemp(join(tmpdir(), 'alvia-real-screens-'));
 const assets = resolve(here, '../assets');
 await mkdir(assets, { recursive: true });
 await copyFile(resolve(here, '../../v3/assets/verificacion-identidad-kyc.mp4'), join(out, 'camera.mp4'));
-const ui = ['Button', 'Card', 'Icon', 'Input', 'Mascot', 'NavBar', 'Screen', 'SectionLabel', 'Text', 'Avatar', 'Badge', 'DocAvatar', 'IconButton', 'TabBar'];
+const ui = ['Button', 'Card', 'Icon', 'Input', 'Mascot', 'NavBar', 'Screen', 'SectionLabel', 'Text', 'Avatar', 'Badge', 'DocAvatar', 'IconButton', 'TabBar', 'Logo'];
 await build({
   entryPoints: [join(here, 'entry.tsx')], outfile: join(out, 'bundle.js'), bundle: true, format: 'iife', jsx: 'automatic',
   nodePaths: [deps], mainFields: ['browser', 'module', 'main'], tsconfigRaw: { compilerOptions: { jsx: 'react-jsx' } },
@@ -31,7 +31,7 @@ await build({
     b.onResolve({ filter: /^@\/components\/ui$/ }, () => ({ path: 'ui', namespace: 'fixture' }));
     b.onResolve({ filter: /^@\// }, args => b.resolve(join(app, 'src', args.path.slice(2)), { kind: args.kind, resolveDir: app }));
     b.onLoad({ filter: /^ui$/, namespace: 'fixture' }, () => ({ contents: ui.map(n => `export {${n}} from '@/components/ui/${n}';`).join('\n') + '\nexport {Breath} from "@/components/ui/motion";', loader: 'ts', resolveDir: here }));
-    b.onLoad({ filter: /^router$/, namespace: 'fixture' }, () => ({ contents: 'const disabled=()=>{throw Error("Navigation is disabled in capture")};export const router={back:disabled,push:disabled,replace:disabled};export const Redirect=disabled;export const usePathname=()=>"/";', loader: 'js' }));
+    b.onLoad({ filter: /^router$/, namespace: 'fixture' }, () => ({ contents: 'const disabled=()=>{throw Error("Navigation is disabled in capture")};export const router={back:disabled,push:disabled,replace:disabled};export const Redirect=disabled;export const usePathname=()=>"/";export const useLocalSearchParams=()=>({id:"1"});', loader: 'js' }));
     b.onLoad({ filter: /^session$/, namespace: 'fixture' }, () => ({ contents: 'export const useSession=()=>({token:"capture-only"});', loader: 'js' }));
   } }],
 });
@@ -72,8 +72,8 @@ try {
     ['home', 'Sofía Giménez', 'app-inicio-real.png'],
     ['authorization', 'Código de autorización', 'app-autorizacion-real.png'],
     ['copay', 'Copago de la consulta', 'app-copago-real.png'],
-    ['prescriptions', 'Faringitis aguda · Dra. Carla Méndez', 'app-recetas-real.png'],
-  ];
+    ['prescriptions', 'Paracetamol 500 mg', 'app-receta-real.png'],
+  ].filter(([screen]) => !process.env.ALVIA_CAPTURE_SCREEN || screen === process.env.ALVIA_CAPTURE_SCREEN);
   for (const [screen, ready, filename] of captureScreens) {
     await page.goto(`http://127.0.0.1:${server.address().port}/?screen=${screen}`);
     await appFrame.getByText(ready, { exact: true }).last().waitFor();
@@ -83,6 +83,7 @@ try {
     await page.screenshot({ path: join(assets, filename) });
     if (errors.length) throw Error(errors.join('\n'));
   }
+  if (!process.env.ALVIA_CAPTURE_SCREEN) {
   // Record the actual OTP component: four typed digits, confirmation and completed row.
   await page.goto(`http://127.0.0.1:${server.address().port}/?screen=authorization`);
   await appFrame.getByText('Código de autorización', { exact: true }).last().waitFor();
@@ -124,7 +125,8 @@ try {
   }
   if (errors.length) throw Error(errors.join('\n'));
   execFileSync('ffmpeg', ['-v', 'error', '-y', '-framerate', '15', '-i', join(frames, '%03d.png'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(assets, 'app-identidad-real.mp4')]);
+  }
   execFileSync(process.execPath, [join(here, 'optimize.mjs')], { stdio: 'inherit' });
-  console.log(JSON.stringify({ app, viewport: '390x844', contentViewport: '390x766', statusBar: 44, homeIndicator: 34, dpr: 2, assets: [...captureScreens.map(x => x[2]), 'app-identidad-real.png', 'app-identidad-real.mp4', 'app-autorizacion-real.mp4'], errors, evidence: out }));
+  console.log(JSON.stringify({ app, viewport: '390x844', contentViewport: '390x766', statusBar: 44, homeIndicator: 34, dpr: 2, assets: [...captureScreens.map(x => x[2]), ...(!process.env.ALVIA_CAPTURE_SCREEN ? ['app-identidad-real.png', 'app-identidad-real.mp4', 'app-autorizacion-real.mp4'] : [])], errors, evidence: out }));
   await context.close();
 } finally { if (browser) await browser.close(); server.close(); }
