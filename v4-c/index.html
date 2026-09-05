@@ -8,13 +8,13 @@
   <meta name="description" content="Ofrecé videoconsultas a tus afiliados con los médicos de tu red. Alvia pone la plataforma.">
   <title>Alvia · Tus médicos, atendiendo online</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d3037'/%3E%3Ctext x='17' y='46' fill='%23ffffff' font-family='Georgia' font-size='48'%3Ea%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260904-notes-simple">
+  <link rel="stylesheet" href="styles.css?v=20260904-doctor-features">
   <link rel="preload" as="image" type="image/webp" href="assets/app-inicio-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-identidad-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-autorizacion-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-copago-real.webp" fetchpriority="low">
   <link rel="preload" as="image" type="image/webp" href="assets/app-receta-real.webp" fetchpriority="low">
-  <script src="script.js?v=20260904-notes-simple" defer></script>
+  <script src="script.js?v=20260904-doctor-features" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -177,20 +177,70 @@
       <div class="tour-dialog-content"></div>
     </dialog>
 
-    <section class="care section" aria-labelledby="care-title">
+    <section class="care section" id="para-medicos" aria-labelledby="care-title">
       <div class="shell care-layout">
         <h2 id="care-title">El afiliado se atiende.<br>El médico tiene<br>todo a mano.</h2>
         <div class="care-story">
-          <p>Durante la consulta, el profesional puede ver la historia clínica, registrar la atención y emitir una receta.</p>
+          <p>El profesional crea recetas y revisa los estudios que envió el paciente, desde el mismo lugar.</p>
           <p class="care-payoff">Vos no tenés que desarrollar ni mantener el software.</p>
         </div>
       </div>
-      <figure class="shell medical-picture">
-        <a href="../v3/assets/mockup-consulta-medica.png" target="_blank" rel="noopener" aria-label="Ampliar la pantalla de consulta del médico">
-          <img src="../v3/assets/mockup-consulta-medica.png" alt="Consulta en Alvia con historia clínica firmada y acceso a recetas y documentos" width="2880" height="1800" loading="lazy">
-        </a>
-        <figcaption>La historia clínica y las recetas, junto a la consulta. <a href="../v3/assets/mockup-consulta-medica.png" target="_blank" rel="noopener">Ampliar <span aria-hidden="true">↗</span></a></figcaption>
-      </figure>
+      <div class="shell doctor-features">
+        <article class="doctor-feature" aria-labelledby="doctor-rx-title">
+          <div class="doctor-feature-copy"><h3 id="doctor-rx-title">De la consulta a la receta.</h3><p>Elige la medicación, agrega las indicaciones y genera la receta para el afiliado.</p></div>
+          <div class="doctor-demo rx-demo">
+            <header class="doctor-demo-header"><strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6m-6 4h6"/></svg>Receta</strong><span>Sofía Giménez</span></header>
+            <div class="rx-editor">
+              <p class="demo-field-label">Medicación</p>
+              <div class="rx-medication"><span class="rx-pill" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m9 15 6-6m-7 0 7 7M5 12l7-7a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7Z"/></svg></span><div><strong>Paracetamol 500 mg</strong><span>Comprimidos · caja x 20</span></div><span class="rx-quantity">1 caja</span></div>
+              <p class="demo-field-label">Indicaciones</p>
+              <div class="rx-instructions">1 comprimido cada 8 horas si hay fiebre o dolor, por hasta 3 días.</div>
+              <div class="rx-prescriber"><span class="demo-avatar" aria-hidden="true">CM</span><div><strong>Dra. Carla Méndez</strong><span>Clínica médica · MN 154892</span></div></div>
+            </div>
+            <details class="rx-preview">
+              <summary><span class="rx-generate-label">Generar receta <span aria-hidden="true">→</span></span><span class="rx-edit-label"><span aria-hidden="true">←</span> Volver a la receta</span></summary>
+              <div class="rx-document" aria-label="Ejemplo de receta generada">
+                <div class="document-top"><strong>alvia<span>.</span></strong><span>Receta electrónica</span></div>
+                <p class="document-label">Paciente</p><p class="document-name">Sofía Giménez</p><p class="document-muted">Meridiano OS</p>
+                <div class="document-medication"><strong>Paracetamol 500 mg</strong><p>Comprimidos · 1 caja x 20</p><p>1 comprimido cada 8 horas si hay fiebre o dolor, por hasta 3 días.</p></div>
+                <div class="document-signature"><strong>Dra. Carla Méndez</strong><span>MN 154892 · Clínica médica</span></div>
+              </div>
+            </details>
+          </div>
+          <p class="doctor-example">Ejemplo de receta</p>
+        </article>
+        <article class="doctor-feature" aria-labelledby="doctor-studies-title">
+          <div class="doctor-feature-copy"><h3 id="doctor-studies-title">Sus estudios, a la vista.</h3><p>El paciente envía sus archivos. El médico los abre y los consulta durante la atención.</p></div>
+          <div class="doctor-demo studies-demo">
+            <header class="doctor-demo-header"><strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 12 6-6a3 3 0 0 1 4 4l-8 8a5 5 0 0 1-7-7l8-8a6 6 0 0 1 9 9l-8 8"/></svg>Estudios</strong><span>Enviados por Sofía</span></header>
+            <fieldset class="study-files">
+              <legend class="sr-only">Elegí un estudio de ejemplo</legend>
+              <div class="study-tabs">
+                <label><input type="radio" name="study-file" value="lab" checked><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h9l5 5v13H5zm9 0v6h5M8 13h8m-8 4h6"/></svg>Laboratorio.pdf</span></label>
+                <label><input type="radio" name="study-file" value="report"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h9l5 5v13H5zm9 0v6h5M8 13h8m-8 4h6"/></svg>Informe.pdf</span></label>
+              </div>
+              <div class="study-canvas">
+                <article class="study-document" data-study="lab" aria-label="Estudio de laboratorio de ejemplo">
+                  <div class="study-paper-heading"><span>Laboratorio</span><small>04 / 09 / 2026</small></div>
+                  <h4>Resultados de análisis</h4><p class="study-patient-name">Sofía Giménez</p>
+                  <table><thead><tr><th scope="col">Determinación</th><th scope="col">Resultado</th></tr></thead><tbody><tr><th scope="row">Glóbulos rojos</th><td>4,60 mill./mm³</td></tr><tr><th scope="row">Hemoglobina</th><td>13,2 g/dL</td></tr><tr><th scope="row">Hematocrito</th><td>40 %</td></tr><tr><th scope="row">Glucemia</th><td>88 mg/dL</td></tr></tbody></table>
+                </article>
+                <article class="study-document" data-study="report" aria-label="Informe de estudio de ejemplo">
+                  <div class="study-paper-heading"><span>Diagnóstico por imágenes</span><small>02 / 09 / 2026</small></div>
+                  <h4>Ecografía abdominal</h4><p class="study-patient-name">Sofía Giménez</p>
+                  <div class="study-report-text"><h5>Informe</h5><p>Se evaluaron las estructuras abdominales mediante ecografía.</p><h5>Conclusión</h5><p>No se observan alteraciones en las estructuras evaluadas.</p></div>
+                </article>
+              </div>
+            </fieldset>
+            <div class="study-toolbar"><span>1 página</span><button class="study-enlarge" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/></svg>Ampliar estudio</button></div>
+          </div>
+          <p class="doctor-example">Ejemplos de estudios</p>
+        </article>
+      </div>
+      <dialog class="study-dialog" aria-labelledby="study-dialog-title">
+        <div class="study-dialog-header"><h3 id="study-dialog-title">Estudio del paciente</h3><button class="study-close" type="button" aria-label="Cerrar estudio"><span aria-hidden="true">×</span></button></div>
+        <div class="study-dialog-body"></div>
+      </dialog>
     </section>
 
     <section class="ai-notes section shell" id="ai-notes" aria-labelledby="ai-notes-title">

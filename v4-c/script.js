@@ -109,3 +109,25 @@ if (copyNote && noteSummary) {
     resetCopy = setTimeout(() => { copyNote.querySelector('span').textContent = 'Copiar'; status.textContent = ''; }, 2400);
   });
 }
+
+// Local document examples: switching files works through native radios; the
+// enlarged reader displays the selected example without uploading or fetching.
+const studyDialog = document.querySelector('.study-dialog');
+const enlargeStudy = document.querySelector('.study-enlarge');
+if (studyDialog && enlargeStudy && typeof studyDialog.showModal === 'function') {
+  enlargeStudy.hidden = false;
+  enlargeStudy.addEventListener('click', () => {
+    const selected = document.querySelector('[name="study-file"]:checked');
+    const documentExample = document.querySelector(`[data-study="${selected.value}"]`);
+    studyDialog.querySelector('h3').textContent = selected.value === 'lab' ? 'Laboratorio.pdf' : 'Informe.pdf';
+    studyDialog.querySelector('.study-dialog-body').replaceChildren(documentExample.cloneNode(true));
+    studyDialog.showModal();
+    studyDialog.querySelector('.study-close').focus();
+  });
+  studyDialog.querySelector('.study-close').addEventListener('click', () => studyDialog.close());
+  studyDialog.addEventListener('click', event => {
+    const r = studyDialog.getBoundingClientRect();
+    if (event.target === studyDialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom)) studyDialog.close();
+  });
+  studyDialog.addEventListener('close', () => enlargeStudy.focus({ preventScroll: true }));
+}

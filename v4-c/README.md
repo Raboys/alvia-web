@@ -83,6 +83,17 @@ Esta tarjeta ya no se presenta como captura literal del producto. Los archivos `
 
 Copiar utiliza Clipboard API cuando está disponible y un respaldo compatible con la preview HTTP. Confirma «Copiado» sólo si la operación tuvo éxito. Sin JavaScript se oculta el botón y el resumen sigue siendo seleccionable. Verificado a 1440, 390 y 320 px, más 390 sin JavaScript: texto exacto en el evento de copia, confirmación y reinicio del botón, sin desborde ni errores. Evidencia: `/tmp/alvia-notes-simple/`.
 
+## Recetas y estudios como demos aisladas — 2026-09-04
+
+La sección «El afiliado se atiende. El médico tiene todo a mano» reemplaza la captura completa de la consola por dos ejemplos en HTML/CSS: generación de una receta y lectura de estudios enviados por el paciente. Se disponen lado a lado en escritorio y apilados hasta 760 px, con el mismo estilo limpio de AI Notes.
+
+- Receta: medicación, indicaciones y profesional. «Generar receta» abre el documento de ejemplo y permite volver. Usa `details` nativo y funciona sin JavaScript. No emite una receta real ni llama al backend.
+- Estudios: radios nativos permiten alternar entre un análisis de laboratorio y un informe. «Ampliar estudio» abre un diálogo con el documento elegido, cierre con Escape/botón/exterior y retorno del foco. Sin JavaScript se pueden seguir consultando ambas vistas; sólo se oculta la ampliación.
+- Contenido ficticio, consistente con Sofía Giménez y la profesional de los otros ejemplos. Los mocks sintetizan las funciones verificadas en `frontend/doctor/src/panel-receta.jsx` y `panel-estudios.jsx`; no son capturas literales de esos componentes.
+- La página ya no descarga `v3/assets/mockup-consulta-medica.png`. Estos ejemplos no agregan imágenes ni dependencias.
+
+Verificado a 1440, 1024, 768, 390 y 320 px, más 390 sin JavaScript: disposición responsive, generación y retorno, alternancia de archivos, documento seleccionado en la ampliación, cierre y foco, sin errores ni desborde. Evidencia: `/tmp/alvia-doctor-features/`.
+
 ## Otras imágenes
 
 - `assets/videoconsulta.png`: escena conceptual generada con la herramienta integrada `image_gen`, con personas ficticias. No representa una captura del producto ni un testimonio. El texto alternativo la identifica como escena ilustrativa.
