@@ -2,14 +2,15 @@
 
 Sitio institucional estático de Alvia y sus variantes de diseño.
 
-- Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v3/>.
-- **V4 para compartir y revisar: <https://alvia.ar/v4/>**, publicada desde `v4-c/`.
+- Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v4/> (también desde `www.alvia.ar`).
+- **V4: <https://alvia.ar/v4/>**, publicada desde `v4-c/`.
+- V3 sigue accesible por su enlace directo: <https://alvia.ar/v3/>.
 - Versiones anteriores: `v1/`, `v2/` y `v3/`.
 - Experimentos conservados en Git: `v4-a/` y `v4-b/`.
 
 ## V4
 
-La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. Se publica para revisión; conserva `noindex, nofollow`.
+La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Es la portada desde el 2026-09-05 UTC; conserva `noindex, nofollow`.
 
 - [Historia de cambios y validaciones](v4-c/README.md).
 - [Registro de publicación](docs/releases/2026-09-05-v4.md).

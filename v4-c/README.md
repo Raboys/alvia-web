@@ -122,3 +122,13 @@ Después de comparar V3 y V4, Pablo aprobó explicitar tres ideas en los bloques
 Se reemplazan las frases genéricas de capacidad y pie de agenda, y se suma una frase sobre el registro de la atención junto a las herramientas del médico. Se mantiene el lenguaje simple, sin nuevas secciones ni recursos multimedia.
 
 Verificación del ajuste: Chrome a 1440, 390 y 320 px; las tres frases presentes, sin desborde horizontal ni errores de recursos o JavaScript. Capturas de los dos bloques en `/tmp/alvia-v4-copy-review/`.
+
+## Portada y recorrido automático — 2026-09-05 UTC
+
+Pablo pidió que la web principal redirija a V4 y que V3 quede disponible mediante `/v3/`. El cambio de Nginx se limita al destino de `location = /` en el bloque institucional de apex y www: `return 301 https://alvia.ar/v4/;`.
+
+El explorador recorre Inicio → Identidad → Autorización → Copago → Recetas → Inicio, con siete segundos por pantalla. La barra verde de la opción activa empieza completa y se achica con el mismo reloj que determina el avance. La pantalla y su texto aparecen con una entrada suave de opacidad y desplazamiento de 10 px; los medios precargados se conservan.
+
+Seleccionar cualquier pantalla, incluso la actual, detiene el automático. Sólo «Reproducir recorrido» lo vuelve a activar. «Pausar recorrido» permite detenerlo sin cambiar de pantalla. El reloj también se suspende fuera de vista, en una pestaña inactiva, durante la ampliación y mientras se interactúa con los controles de la pantalla. Con preferencia de movimiento reducido comienza pausado y omite las transiciones. Sin JavaScript se mantiene el selector manual nativo.
+
+Verificado en Chrome a 1440, 390 y 320 px: ciclo completo de cinco pantallas y vuelta a Inicio, barra decreciente, videos en reproducción, selección manual detenida durante más de siete segundos, reanudación explícita y pausa al ampliar. Sin nuevas descargas de imágenes/videos durante el ciclo, errores ni desborde. Selector manual comprobado con movimiento reducido y sin JavaScript. Evidencia: `/tmp/alvia-v4-autoplay-review/`.

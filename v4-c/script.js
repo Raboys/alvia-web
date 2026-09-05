@@ -14,6 +14,7 @@ previews.forEach(image => image.decode().catch(() => {}));
 const tour = document.querySelector('.app-tour');
 const dialog = document.querySelector('.tour-dialog');
 let inView = false;
+let syncTourPlayback = () => {};
 const syncVideos = () => {
   videos.forEach(video => {
     const active = dialog?.open
@@ -29,6 +30,7 @@ const syncVideos = () => {
       video.pause();
     }
   });
+  syncTourPlayback();
 };
 document.querySelectorAll('[name="app-screen"]').forEach(input => {
   input.addEventListener('change', () => {
@@ -77,6 +79,70 @@ if (dialog && typeof dialog.showModal === 'function') {
     trigger?.focus({ preventScroll: true });
     syncVideos();
   });
+}
+
+// Seven seconds per screen leaves time for the complete authorization video.
+// Use one visible-time clock for both the shrinking bar and the next screen.
+const tourPlayback = document.querySelector('.tour-playback');
+if (tour && tourPlayback) {
+  const screens = [...tour.querySelectorAll('[name="app-screen"]')];
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const duration = 7000;
+  let paused = reducedMotion.matches;
+  let visible = false;
+  let remaining = duration;
+  let previousTime = null;
+  let frame = null;
+
+  const drawProgress = () => tour.style.setProperty('--tour-progress', Math.max(0, remaining / duration));
+  const reading = () => !!document.activeElement?.closest('.tour-panel') || screens.some(input => input.matches(':focus-visible'));
+  const canPlay = () => visible && !paused && !document.hidden && !dialog?.open && !reading();
+  const tick = now => {
+    frame = null;
+    if (!canPlay()) { previousTime = null; return; }
+    if (previousTime !== null) remaining -= now - previousTime;
+    previousTime = now;
+    if (remaining <= 0) {
+      const next = screens[(screens.findIndex(input => input.checked) + 1) % screens.length];
+      next.checked = true;
+      next.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    drawProgress();
+    if (frame === null) frame = requestAnimationFrame(tick);
+  };
+  syncTourPlayback = () => {
+    if (canPlay()) {
+      if (frame === null) frame = requestAnimationFrame(tick);
+    } else {
+      cancelAnimationFrame(frame);
+      frame = null;
+      previousTime = null;
+    }
+  };
+  const reset = () => { remaining = duration; previousTime = null; drawProgress(); syncTourPlayback(); };
+  const selectManually = () => { paused = true; reset(); updateButton(); };
+  screens.forEach(input => {
+    input.addEventListener('change', event => { if (event.isTrusted) selectManually(); else reset(); });
+    // Selecting even the current screen stops autoplay until explicitly resumed.
+    input.addEventListener('click', selectManually);
+  });
+  const updateButton = () => {
+    tourPlayback.querySelector('.tour-playback-icon').textContent = paused ? '▶' : 'Ⅱ';
+    tourPlayback.querySelector('.tour-playback-label').textContent = paused ? 'Reproducir recorrido' : 'Pausar recorrido';
+    syncTourPlayback();
+  };
+  tourPlayback.addEventListener('click', () => { paused = !paused; updateButton(); });
+  reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) { paused = true; updateButton(); } });
+  tour.addEventListener('focusin', syncTourPlayback);
+  tour.addEventListener('focusout', () => queueMicrotask(syncTourPlayback));
+  new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting && entries[0].intersectionRatio >= .25;
+    syncTourPlayback();
+  }, { threshold: [0, .25] }).observe(tour.querySelector('.tour-panels'));
+  tour.classList.add('tour-autoplay');
+  tourPlayback.hidden = false;
+  drawProgress();
+  updateButton();
 }
 
 // The illustrative note uses real, selectable text and a working copy action.
