@@ -5,7 +5,7 @@ Variante creada el 2026-09-04 a pedido de Pablo. Nueva composición y textos bre
 ## Abrir
 
 - Preview privada por Tailscale: http://100.71.73.116:18727/v4-c/
-- Fuente: `v4-c/index.html`, `v4-c/styles.css` y `v4-c/script.js` (reproducción del video de identidad).
+- Fuente: `v4-c/index.html`, `v4-c/styles.css` y `v4-c/script.js` (reproducción automática de las demostraciones).
 - A y B siguen disponibles en `/v4-a/` y `/v4-b/` en el mismo servidor.
 - Servidor temporal de usuario: `alvia-v4-preview.service`, Python estático, ligado sólo a `100.71.73.116:18727`. No es un despliegue público.
 - Para detenerlo: `XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus systemctl --user stop alvia-v4-preview.service`.
@@ -17,21 +17,41 @@ Chrome real con Playwright: 1440, 1024, 768, 390 y 320 px de ancho, sin JavaScri
 
 En 390 × 844 la imagen de atención comienza en y=387 px. Esto comprueba su presencia inicial, no sustituye un test de comprensión con compradores.
 
-## Incorporación de muestras de V3 — 2026-09-04
+## Muestras de la app — 2026-09-04
 
-A pedido de Pablo, se conserva el hero aprobado y se agrega un explorador de cinco vistas: inicio, identidad, autorización, copago y recetas. Cada vista tiene una explicación breve. No representa una secuencia obligatoria; las condiciones se explican en su vista correspondiente. Se suma la captura de la consulta al bloque para médicos.
+Se conserva el hero y el lenguaje simple aprobado. El explorador muestra cinco vistas: inicio, identidad, autorización, copago y recetas. Las condiciones se explican en cada vista, sin presentar una secuencia obligatoria. También se muestran la agenda y la consulta médica de V3.
 
-- El explorador usa radios nativos y CSS; funciona con clic, flechas de teclado y sin JavaScript.
-- El video de identidad se inicia sólo a pedido, tiene pausa y se detiene al cambiar de vista o salir de la pestaña. Sin JavaScript conserva los controles nativos.
-- Las capturas tienen enlaces para ampliarlas. Se conservan completas y legibles, sin máscaras sobre el producto.
-- `../v3/assets/app-paciente.png`, `mockup-preconsulta-autorizacion.png`, `mockup-preconsulta-copago.png` y `mockup-consulta-medica.png` se reutilizan de V3 con sus fixtures originales. Tiempos, importes y nombres de las pantallas son datos del ejemplo; no se trasladan al copy como promesas comerciales.
-- `../v3/assets/verificacion-identidad-kyc.mp4` es la muestra visual de V3 que el usuario pidió recuperar. La composición del teléfono es HTML/CSS local; no activa una cámara ni ejecuta una validación real.
-- `assets/identidad-poster.jpg` es un fotograma exportado del video a los 0,4 s: `ffmpeg -ss 0.4 -i v3/assets/verificacion-identidad-kyc.mp4 -frames:v 1 -q:v 3 v4-c/assets/identidad-poster.jpg`.
-- `assets/app-recetas.png` se capturó desde `RecetasList` del canvas existente de telemed-starter (`design/canvas/paciente/screens-recetas.jsx`, checkout `81da853`). Render en Chrome a 390 × 844, DPR 2, paleta azul, fuentes cargadas y fixtures propios del componente. Sin cambios al repo de producto ni al contenido de la pantalla.
+### Capturas consistentes
 
-Verificación de esta incorporación: 1440, 768, 390 y 320 px con movimiento reducido; las cinco vistas muestran un único panel sin desborde ni errores. Repetición en 390 px sin JavaScript. Reproducción, pausa y detención al cambiar de vista verificadas en navegador real. FAQ, enlace para ampliar y anclas internas correctos. Hero conservado (imagen en y=387 px en 390 × 844). Evidencia en `/tmp/alvia-v4c-app-review/`.
+Las cinco vistas se renderizan desde los componentes de la app web, importados sin cambios de `telemed-starter/app/src` en el checkout `81da853`: `Home`, `Prescriptions`, `IdentityCapture`, `AuthCodePrompt`, `PaymentSheet` y `GuardiaConfirm`. Comparten fuentes, cuenta ficticia y un único marco de dispositivo definido en `captures/device.html`.
 
-## Imágenes
+- Pantalla completa de 390 × 844 CSS px: barra superior de 44 px, contenido de 390 × 766 y barra inferior de 34 px. PNG a DPR 2 (780 × 1688); video de 390 × 844.
+- Misma hora (9:41), señal, Wi-Fi, batería e indicador inferior en todas. La pantalla oscura de identidad adapta el color de los indicadores, manteniendo la geometría.
+- Autorización y copago usan la misma pantalla de fondo y el mismo oscurecimiento. El tamaño de cada hoja depende del contenido del componente real.
+- Identidad usa el componente real en modo selfie, sustituyendo la cámara por el video ilustrativo de V3 como fuente de MediaStream. No se activa una cámara física ni se envían verificaciones.
+- La cuenta y sus datos son sintéticos. No hay sesión real, navegación ni solicitudes de pago. Nombres, tiempos e importes son ejemplos, no promesas comerciales.
+- La landing escala cada cuadro completo a 390:844 con `object-fit: contain`, sin estirar ni recomponer sus elementos.
+
+Reproducción: `node v4-c/captures/render.mjs`. Usa dependencias locales, Chrome, FFmpeg y cwebp; permite configurar `ALVIA_APP_SOURCE`, `ALVIA_APP_DEPS`, `ALVIA_ESBUILD` y `ALVIA_PLAYWRIGHT`. Sirve temporalmente en loopback, bloquea solicitudes externas y cierra navegador y servidor al terminar. El sitio sólo sirve los archivos resultantes; no incorpora React Native ni Expo.
+
+### Carga y navegación
+
+- Las cinco vistas se sirven en WebP: 369 KB en total frente a 1,15 MB de los PNG. Las cuatro capturas sin fotografía usan compresión sin pérdida, conservando exactamente sus píxeles; identidad usa calidad 85. Los enlaces para ampliar conservan los PNG originales.
+- Las cinco imágenes, incluidos los posters de ambos videos, tienen `preload`. Los `img` son eager y el script solicita su decodificación al inicio, incluso si la pestaña está oculta.
+- El hero se sirve en WebP de 69 KB frente al PNG original de 2,03 MB, conservando composición y resolución. El original queda disponible en assets.
+- Para repetir sólo la compresión: `node v4-c/captures/optimize.mjs`. También corre al finalizar la captura.
+- El explorador usa radios nativos y CSS: funciona con clic, flechas y sin JavaScript.
+- Identidad y autorización son videos MP4 con `autoplay`, `loop`, `muted`, `playsinline` y `preload="auto"`. Se reproducen automáticamente al mostrar su pestaña. El script pausa las vistas ocultas, fuera de pantalla o en una pestaña de navegador inactiva. Sin JavaScript se conservan los atributos de reproducción automática.
+- Autorización muestra el componente real escribiendo `6284` dígito por dígito, confirma y cierra la hoja; la pantalla de fondo muestra la fila verde «Código ingresado». Tras 2,2 segundos vuelve a empezar por el código vacío. Es una demostración local del estado completado, sin verificar un código real contra un servidor.
+- Ambos videos pesan unos 212 KB en total. Los controles nativos sólo aparecen como respaldo si el navegador rechaza la reproducción automática.
+
+## Verificación final
+
+Chrome real: 1440, 390 y 320 px, más 390 px sin JavaScript. Una vista visible a la vez, relación 390:844, sin desborde ni errores. En 390 px se simuló caché deshabilitada, 80 ms de latencia y 200 KB/s: las pestañas no provocaron nuevas descargas de imágenes ni videos. Se comprobaron autoplay sin clic, avance y reinicio del bucle de autorización, pausa de videos ocultos y navegación con flechas. Evidencia: `/tmp/alvia-v4c-final-review/`.
+
+Comparación de píxeles decodificados: los cuatro WebP de interfaz sin fotografía son idénticos a los PNG; las barras superiores de autorización y copago también son idénticas. Capturas originales y fotogramas de autorización: `/tmp/alvia-real-screens-NWwsQV/`.
+
+## Otras imágenes
 
 - `assets/videoconsulta.png`: escena conceptual generada con la herramienta integrada `image_gen`, con personas ficticias. No representa una captura del producto ni un testimonio. El texto alternativo la identifica como escena ilustrativa.
 - Original conservado: `/home/pablo/.codex/generated_images/01a06f72-4b13-76d3-8c8f-021d3955e472/exec-39cf46f6-7e9c-488f-8180-1097ce68acd6.png`.
