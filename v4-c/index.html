@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Ofrecé videoconsultas a tus afiliados con los médicos de tu red. Alvia pone la plataforma.">
+  <title>Alvia · Tus médicos, atendiendo online</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d3037'/%3E%3Ctext x='17' y='46' fill='%23ffffff' font-family='Georgia' font-size='48'%3Ea%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20260904-app">
+  <script src="script.js?v=20260904-app" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="masthead" id="inicio">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#inicio" aria-label="Alvia, inicio">alvia<span aria-hidden="true">.</span></a>
+      <nav aria-label="Navegación principal">
+        <a class="nav-link" href="#tu-red">Cómo funciona</a>
+        <a class="nav-link" href="#app">La app</a>
+        <a class="button button-small" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20Alvia" target="_blank" rel="noopener">Agendá una demo <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="category">Telemedicina para organizaciones de salud</p>
+        <h1 id="hero-title">Tus médicos,<br><em>atendiendo online.</em></h1>
+        <p class="hero-lead">Ofrecé videoconsultas a tus afiliados con los profesionales de tu red. Alvia pone la plataforma.</p>
+        <a class="button hero-cta" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20Alvia" target="_blank" rel="noopener">Agendá una demo <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="hero-picture">
+        <img src="assets/videoconsulta.png" alt="Escena ilustrativa de una afiliada conversando desde su casa con una médica por videollamada" width="1536" height="1024" fetchpriority="high">
+        <figcaption><span class="live-dot" aria-hidden="true"></span>Una consulta, estés donde estés.</figcaption>
+      </figure>
+      <p class="audience">Para <strong>prepagas, obras sociales, clínicas y sanatorios.</strong></p>
+    </section>
+
+    <section class="app-tour section shell" id="app" aria-labelledby="app-title">
+      <header class="tour-heading">
+        <h2 id="app-title">Así lo ve tu afiliado.</h2>
+        <p>Explorá la app.</p>
+      </header>
+      <fieldset class="tour-selector">
+        <legend class="sr-only">Qué querés ver de la app</legend>
+        <div class="tour-options">
+          <label><input type="radio" name="app-screen" value="home" checked><span>Inicio</span></label>
+          <label><input type="radio" name="app-screen" value="identity"><span>Identidad</span></label>
+          <label><input type="radio" name="app-screen" value="authorization"><span>Autorización</span></label>
+          <label><input type="radio" name="app-screen" value="copay"><span>Copago</span></label>
+          <label><input type="radio" name="app-screen" value="prescriptions"><span>Recetas</span></label>
+        </div>
+        <div class="tour-panels">
+          <section class="tour-panel" data-screen="home" aria-labelledby="home-title">
+            <div class="tour-copy">
+              <h3 id="home-title">Una app<br>para atenderse.</h3>
+              <p>El afiliado elige un turno o pide atención en el momento. Sus consultas y recetas quedan a mano.</p>
+              <a class="text-link" href="../v3/assets/app-paciente.png" target="_blank" rel="noopener">Ampliar pantalla <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="tour-phone"><img src="../v3/assets/app-paciente.png" alt="Inicio de la app de Alvia con atención espontánea, turnos y recetas" width="780" height="1688" loading="lazy"></figure>
+          </section>
+          <section class="tour-panel" data-screen="identity" aria-labelledby="identity-title">
+            <div class="tour-copy">
+              <h3 id="identity-title">Verificá<br>quién se atiende.</h3>
+              <p>Cuando la cobertura lo pide, el afiliado confirma su identidad con la cámara antes de la consulta.</p>
+              <button class="text-link video-toggle" type="button" aria-controls="identity-video" hidden>Ver verificación <span aria-hidden="true">▷</span></button>
+              <p class="video-status" role="status"></p>
+            </div>
+            <div class="identity-phone" aria-label="Muestra de verificación de identidad en la app">
+              <div class="identity-top" aria-hidden="true"><span>9:41</span><span>● ▰</span></div>
+              <p class="identity-title">Verificá tu identidad</p>
+              <p class="identity-instruction">Ubicá tu rostro dentro del óvalo.</p>
+              <video id="identity-video" controls playsinline muted preload="none" poster="assets/identidad-poster.jpg" aria-label="Video sin audio de una verificación de identidad por cámara">
+                <source src="../v3/assets/verificacion-identidad-kyc.mp4" type="video/mp4">
+                Tu navegador no reproduce este video. <a href="../v3/assets/verificacion-identidad-kyc.mp4">Abrir video de verificación</a>.
+              </video>
+              <p class="identity-footnote">Seguí las indicaciones en pantalla.</p>
+              <span class="identity-home" aria-hidden="true"></span>
+            </div>
+          </section>
+          <section class="tour-panel" data-screen="authorization" aria-labelledby="authorization-title">
+            <div class="tour-copy">
+              <h3 id="authorization-title">El código<br>de su cobertura.</h3>
+              <p>Si necesita autorización, el afiliado ingresa el código en la app y continúa con su atención.</p>
+              <a class="text-link" href="../v3/assets/mockup-preconsulta-autorizacion.png" target="_blank" rel="noopener">Ampliar pantalla <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="tour-phone"><img src="../v3/assets/mockup-preconsulta-autorizacion.png" alt="La app pide ingresar el código de autorización de la cobertura" width="780" height="1688" loading="lazy"></figure>
+          </section>
+          <section class="tour-panel" data-screen="copay" aria-labelledby="copay-title">
+            <div class="tour-copy">
+              <h3 id="copay-title">El copago<br>se resuelve online.</h3>
+              <p>Cuando corresponde, la app muestra el importe y permite pagarlo con Mercado Pago.</p>
+              <a class="text-link" href="../v3/assets/mockup-preconsulta-copago.png" target="_blank" rel="noopener">Ampliar pantalla <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="tour-phone"><img src="../v3/assets/mockup-preconsulta-copago.png" alt="Resumen del copago y opción para pagar con Mercado Pago dentro de la app" width="780" height="1688" loading="lazy"></figure>
+          </section>
+          <section class="tour-panel" data-screen="prescriptions" aria-labelledby="prescriptions-title">
+            <div class="tour-copy">
+              <h3 id="prescriptions-title">La receta,<br>siempre a mano.</h3>
+              <p>Si el médico la indica, el afiliado encuentra su receta en la app y puede descargarla o compartirla.</p>
+              <a class="text-link" href="assets/app-recetas.png" target="_blank" rel="noopener">Ampliar pantalla <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="tour-phone"><img src="assets/app-recetas.png" alt="Mis recetas en la app de Alvia, con las recetas recientes y el profesional que las emitió" width="780" height="1688" loading="lazy"></figure>
+          </section>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="network section" id="tu-red" aria-labelledby="network-title">
+      <div class="shell network-layout">
+        <div class="section-copy">
+          <h2 id="network-title">Aprovechá las horas<br>que hoy quedan libres.</h2>
+          <p>Publicá los horarios disponibles de tus médicos para que tus afiliados puedan atenderse por video.</p>
+          <p>Más consultas dentro de tu red y menos presión sobre la guardia presencial.</p>
+          <a class="text-link" href="#agenda">Mirá la agenda <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="agenda-picture" id="agenda">
+          <a href="../v3/assets/mockup-operacion.png" target="_blank" rel="noopener" aria-label="Ampliar la captura de la agenda de Alvia">
+            <img src="../v3/assets/mockup-operacion.png" alt="Agenda de Alvia con horarios de profesionales, cupos disponibles y reservas" width="1440" height="900" loading="lazy">
+          </a>
+          <figcaption>Horarios y reservas en un mismo lugar. <a href="../v3/assets/mockup-operacion.png" target="_blank" rel="noopener">Ampliar <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="care section" aria-labelledby="care-title">
+      <div class="shell care-layout">
+        <h2 id="care-title">El afiliado se atiende.<br>El médico tiene<br>todo a mano.</h2>
+        <div class="care-story">
+          <p>Durante la consulta, el profesional puede ver la historia clínica, registrar la atención y emitir una receta.</p>
+          <p class="care-payoff">Vos no tenés que desarrollar ni mantener el software.</p>
+        </div>
+      </div>
+      <figure class="shell medical-picture">
+        <a href="../v3/assets/mockup-consulta-medica.png" target="_blank" rel="noopener" aria-label="Ampliar la pantalla de consulta del médico">
+          <img src="../v3/assets/mockup-consulta-medica.png" alt="Consulta en Alvia con historia clínica firmada y acceso a recetas y documentos" width="2880" height="1800" loading="lazy">
+        </a>
+        <figcaption>La historia clínica y las recetas, junto a la consulta. <a href="../v3/assets/mockup-consulta-medica.png" target="_blank" rel="noopener">Ampliar <span aria-hidden="true">↗</span></a></figcaption>
+      </figure>
+    </section>
+
+    <section class="extra-network shell" aria-labelledby="extra-title">
+      <span class="plus" aria-hidden="true">+</span>
+      <div>
+        <h2 id="extra-title">¿Te faltan médicos u horarios?</h2>
+        <p>Sumá profesionales de la Red Alvia para completar especialidades o ampliar la atención a las 24 horas.</p>
+      </div>
+    </section>
+
+    <section class="questions section" id="preguntas" aria-labelledby="questions-title">
+      <div class="shell questions-layout">
+        <h2 id="questions-title">Lo que quieras<br>saber, hablemos.</h2>
+        <div class="answers">
+          <details>
+            <summary>¿Podemos usar nuestros médicos?</summary>
+            <p>Sí. Tu red tiene prioridad. La Red Alvia puede complementar las especialidades y los horarios que necesites cubrir.</p>
+          </details>
+          <details>
+            <summary>¿Se respetan nuestras coberturas?</summary>
+            <p>Sí. Alvia aplica las validaciones de padrón, autorización e identidad que requiere cada cobertura. También permite cobrar copago cuando corresponde.</p>
+          </details>
+          <details>
+            <summary>¿Cómo empezamos?</summary>
+            <p>En una demo vemos tu red, tus coberturas y la atención que querés ofrecer. Con eso definimos juntos la puesta en marcha.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing shell" aria-labelledby="closing-title">
+      <div>
+        <h2 id="closing-title">Veamos cómo funcionaría<br>con tu organización.</h2>
+        <p>Contanos qué atención querés ofrecer.</p>
+      </div>
+      <a class="button" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20ver%20una%20demo%20de%20Alvia" target="_blank" rel="noopener">Agendá una demo <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <a class="wordmark" href="#inicio" aria-label="Alvia, volver al inicio">alvia<span aria-hidden="true">.</span></a>
+    <p>© 2026 Alvia</p>
+    <nav aria-label="Contacto y acceso">
+      <a href="mailto:hola@alvia.ar">hola@alvia.ar</a>
+      <a href="https://doctor.alvia.ar/">Acceso médicos <span aria-hidden="true">↗</span></a>
+    </nav>
+  </footer>
+</body>
+</html>
