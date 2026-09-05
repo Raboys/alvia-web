@@ -1,6 +1,10 @@
 # Plan Web V4 — experimento de evidencia para decisión
 
-## Estado y modo
+## Decisión posterior de publicación — 2026-09-05 UTC
+
+Pablo autorizó explícitamente publicar la variante V4-C en `alvia.ar/v4` para compartirla con un revisor, documentar los avances e integrar todo en `main`. Esta instrucción sustituye la restricción de no publicar del experimento inicial para ese alcance concreto. A y B se conservan como antecedentes; no se declara un ganador de un test A/B ni se da por realizado un estudio de comprensión. V3 sigue siendo la portada. Registro: [publicación de V4](docs/releases/2026-09-05-v4.md).
+
+## Estado y modo original
 
 Web V4 es un experimento comparativo y no reemplaza V3. El proyecto se declara en modo `strict-gated`: cada gate debe aportar evidencia explícita antes de avanzar, y ninguna variante se publica ni se declara ganadora por inferencia interna.
 
