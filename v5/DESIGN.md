@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente tras publicar Validaciones: `60dadfc3983dc631609ec2f778a21a942f65ef2a`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente tras corregir Validaciones: `2d3380dc31ea832366bdd9a1fd4c5e50722b9d74`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -232,8 +232,11 @@ Pablo pidió publicar la versión corregida y guardar estas decisiones. La petic
 
 ## 11. Validaciones · aprobada y publicada el 2026-09-12
 
-Se implementa [validaciones.html](validaciones.html) según PLAN_FEATURES: «Ofrecé atención online con las reglas de tu cobertura». Hero con comprobante ilustrativo de guardia, tres explicaciones visuales abiertas y CTA comercial. El selector nativo compara una cobertura con copago y otra que no lo exige; no representa una elección del paciente para evitar pagar. El texto distingue el código de credencial de los datos de afiliación y del acceso a Alvia. Identidad significa documento validado y comparación facial aprobada; no prueba de vida.
+Se implementa [validaciones.html](validaciones.html) según PLAN_FEATURES: «Ofrecé atención online con las reglas de tu cobertura». Hero con comprobante ilustrativo de guardia, tres explicaciones visuales abiertas y CTA comercial. El selector nativo compara una cobertura con copago y otra que no lo exige; no representa una elección del paciente para evitar pagar. El texto del código sólo indica que se obtiene en la app de la cobertura. Identidad significa documento validado y comparación facial aprobada; no prueba de vida.
 
 Se explican los momentos de pago juntos: al reservar el turno o antes de entrar a la espera de guardia. No se simula un cobro al ingresar a un turno ya reservado. Los requisitos pendientes se explican en un desplegable nativo. Las demostraciones siguen siendo texto HTML legible, sin imágenes nuevas ni JS propio.
 
-Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushear. Home enlaza Validaciones y AI Notes públicamente; ambas páginas tienen enlace recíproco en el footer. Recetas continúa informativa. Runtime `60dadfc`, con verificación pública y release anterior conservado para rollback. [Brief, autoría y evidencia](../docs/features/validaciones/README.md).
+Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushear. Home enlaza Validaciones y AI Notes públicamente; ambas páginas tienen enlace recíproco en el footer. Recetas continúa informativa. Runtime `2d3380d`, con verificación pública y release anterior conservado para rollback. [Brief, autoría y evidencia](../docs/features/validaciones/README.md).
+
+
+Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones gobiernan el copy vigente de Validaciones; no reintroducir las aclaraciones descartadas.

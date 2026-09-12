@@ -2,7 +2,7 @@
 
 Todas las escenas son ejemplos nativos de HTML/CSS con datos sintéticos, identificados en la página. No son capturas literales ni operaciones reales.
 
-Producto fuente: `Raboys/telemed-starter`, `f5e854a813a08e57111044601eb982ba1924fba3`. Institucional base: `Raboys/alvia-web`, `905a01c4700e3ff2ea020d37facf953fc25fcc92`. Runtime publicado: `60dadfc3983dc631609ec2f778a21a942f65ef2a`; [manifiesto de commit](public/release.json), con los mismos 18 archivos y hashes de la preview aprobada. El manifiesto de revisión usa `source_mode: working-tree-preview` y `source_commit: null`; no atribuye archivos nuevos a un commit anterior.
+Producto fuente: `Raboys/telemed-starter`, `f5e854a813a08e57111044601eb982ba1924fba3`. Institucional base: `Raboys/alvia-web`, `905a01c4700e3ff2ea020d37facf953fc25fcc92`. Runtime vigente: `2d3380dc31ea832366bdd9a1fd4c5e50722b9d74`; [manifiesto corregido](public-copy-update/release.json). Sólo cambia `validaciones.html` respecto del primer release `60dadfc`, conservado en `public/release.json`. Las capturas de `review/` y `public/` corresponden a esa primera versión; las de `public-copy-update/` muestran las correcciones de Pablo. El manifiesto de revisión usa `source_mode: working-tree-preview` y `source_commit: null`; no atribuye archivos nuevos a un commit anterior.
 
 | Escena | Afirmación | Componente / archivo fuente | Fixture | Tratamiento y simplificación | Dimensiones / asset final |
 |---|---|---|---|---|---|

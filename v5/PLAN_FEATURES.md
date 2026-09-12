@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home, Validaciones y AI Notes publicados y verificados**. Runtime vigente `60dadfc`; Validaciones y AI Notes tienen enlace público. Pablo aprobó Validaciones y pidió publicarla, documentarla, commitear y pushear. Recetas sigue pendiente. Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home, Validaciones y AI Notes publicados y verificados**. Runtime vigente `2d3380d`; Validaciones y AI Notes tienen enlace público. Pablo aprobó Validaciones y pidió publicarla, documentarla, commitear y pushear. Recetas sigue pendiente. Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -88,7 +88,7 @@ Tres columnas abiertas en escritorio, filas compactas con miniatura lateral en m
 
 En la publicación inicial, el bloque es **informativo y no interactivo** por instrucción de Pablo. No tiene flechas de navegación, cursor de enlace, estados de hover de tarjeta, `tabindex`, botones deshabilitados ni destinos vacíos. Un enlace en el footer permite encontrar el bloque; no lleva a una subpágina. Se preserva la navegación principal para no sumar otra decisión arriba.
 
-**Estado publicado actual:** Validaciones y AI Notes tienen páginas completas y nombres enlazados con flecha. AI Notes comunica documentación automática y menos trabajo administrativo. Recetas conserva su presentación informativa. Runtime `60dadfc`.
+**Estado publicado actual:** Validaciones y AI Notes tienen páginas completas y nombres enlazados con flecha. AI Notes comunica documentación automática y menos trabajo administrativo. Recetas conserva su presentación informativa. Runtime `2d3380d`.
 
 Implementación: [index.html](index.html), ancla `#funcionalidades`, y [features.css](features.css). Los `article[data-feature]` identifican cada entrada para su futura conversión en enlace. El empaquetador incluye la nueva hoja por su referencia desde HTML.
 
@@ -98,7 +98,7 @@ Rutas propuestas, compatibles con el estático actual:
 
 | Orden | Archivo | Ruta pública | Estado actual |
 |---|---|---|---|
-| 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Aprobada y publicada (`60dadfc`); enlazada desde home y AI Notes. |
+| 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Aprobada y publicada (`2d3380d`); enlazada desde home y AI Notes. |
 | 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Publicada (`a4ca4aa`); enlazada desde home. |
 | 3 | `v5/recetas.html` | `/v5/recetas.html` | Pendiente, sin enlace en home. |
 
@@ -142,7 +142,9 @@ La implementación consultada comprueba el documento y compara el rostro del DNI
 
 **Cierre editorial de la página:** el comprador distingue los tres mecanismos y entiende que dependen de su cobertura; el paciente reconoce lo que debe hacer; la demostración no mezcla registro de cuenta con autorización para atenderse.
 
-**Entrega aprobada y publicada · 2026-09-12:** [Validaciones](validaciones.html), [brief](../docs/features/validaciones/BRIEF.md), [procedencia](../docs/features/validaciones/PROVENANCE.md) y [verificación](../docs/features/validaciones/README.md). Hero «Ofrecé atención online con las reglas de tu cobertura», comprobante de guardia con identidad aprobada y código validado, selector nativo entre cobertura con/sin copago y tres explicaciones compactas. El caso ficticio de Sofía Giménez distingue la exención del pago aplicado. Turno: al reservar; guardia: antes de encolar. Sin JS propio ni imágenes nuevas. Home y AI Notes enlazan la página públicamente. Runtime `60dadfc`, publicado por pedido de Pablo; manifiesto y evidencias en la entrega.
+**Entrega aprobada y publicada · 2026-09-12:** [Validaciones](validaciones.html), [brief](../docs/features/validaciones/BRIEF.md), [procedencia](../docs/features/validaciones/PROVENANCE.md) y [verificación](../docs/features/validaciones/README.md). Hero «Ofrecé atención online con las reglas de tu cobertura», comprobante de guardia con identidad aprobada y código validado, selector nativo entre cobertura con/sin copago y tres explicaciones compactas. El caso ficticio de Sofía Giménez distingue la exención del pago aplicado. Turno: al reservar; guardia: antes de encolar. Sin JS propio ni imágenes nuevas. Home y AI Notes enlazan la página públicamente. Runtime `2d3380d`, publicado con las correcciones posteriores de Pablo; manifiesto y evidencias en la entrega.
+
+**Corrección editorial vigente:** código ilustrado de tres dígitos (`482`). Pablo pidió eliminar «En Alvia se llama…» y la distinción explícita de número de afiliado/acceso. El texto visible sólo indica que el afiliado lo obtiene en la app de su cobertura. En copagos, pidió «Con todos los medios de pago» en lugar de la aclaración de segundo cobro.
 
 ## 7. Corrida 2 · AI Notes
 
@@ -246,13 +248,13 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 |---|---|---|
 | Guía high level | Actualizada | Conserva la corrección editorial de AI Notes y registra la aprobación/publicación de Validaciones. |
 | Bloque home | Publicado con Validaciones y AI Notes | Ambas entradas tienen enlace público; Recetas sigue informativa. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
-| Validaciones | Aprobada, publicada y verificada (`60dadfc`) | Identidad, código y copagos, variante exenta, enlaces recíprocos con AI Notes. [Entrega y evidencia](../docs/features/validaciones/README.md). |
+| Validaciones | Aprobada, publicada y verificada (`2d3380d`) | Identidad, código y copagos, variante exenta, enlaces recíprocos con AI Notes. [Entrega y evidencia](../docs/features/validaciones/README.md). |
 | AI Notes | Publicada y verificada | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
 | Recetas | Pendiente | Próxima corrida: emisión y recepción, evidencia de condiciones. Sigue sin destino. |
 | Revisión conjunta | Pendiente | Tras las tres páginas: consistencia, navegación, duplicaciones y peso del conjunto. |
 | Publicación del bloque informativo | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). |
 | Publicación de AI Notes | Realizada por pedido de Pablo | Runtime `a4ca4aa`; 16 archivos, 451.577 bytes. [Registro y rollback](../docs/releases/2026-09-12-v5.md), [evidencia pública](../docs/features/ai-notes/README.md). |
-| Publicación de Validaciones | Realizada por pedido de Pablo | Runtime `60dadfc`; 18 archivos, 472.984 bytes. [Verificación pública](../docs/features/validaciones/README.md#publicación--2026-09-12-utc), 205 checks de página y 148 de AI Notes. |
+| Publicación de Validaciones | Realizada por pedido de Pablo | Runtime `2d3380d`; 18 archivos, 472.759 bytes. [Verificación pública](../docs/features/validaciones/README.md#publicación--2026-09-12-utc), 205 checks de página y 148 de AI Notes. |
 
 ### Inicio sugerido de la próxima corrida
 

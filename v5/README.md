@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. Recetas sigue informativa y pendiente. Runtime vigente `60dadfc`. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
+**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. Recetas sigue informativa y pendiente. Runtime vigente `2d3380d`. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
 
 ## Mensaje acordado
 
@@ -74,4 +74,4 @@ La subpágina AI Notes usa `styles.css`, `ai-notes.css`, `navigation.js` y `ai-n
 
 [validaciones.html](validaciones.html) reúne identidad, código de credencial y copagos según cobertura. Incluye un ejemplo nativo que alterna entre cobertura con/sin copago, explicaciones de los tres mecanismos y los momentos correctos de pago. Comparar coberturas y abrir el detalle funcionan sin JavaScript. Usa `styles.css`, `validaciones.css` y el menú común `navigation.js`; no agrega imágenes, dependencias ni scripts de feature.
 
-[Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. Pablo aprobó la página y pidió publicación, documentación, commits y push. Runtime público `60dadfc`, verificado en ambos dominios; release anterior `v5-a4ca4aa` conservado.
+[Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. Pablo aprobó la página y pidió publicación, documentación, commits y push. Runtime público `2d3380d`: ejemplo de código de tres dígitos, texto breve y «Con todos los medios de pago», según las correcciones de Pablo. Release anterior `v5-60dadfc` conservado.

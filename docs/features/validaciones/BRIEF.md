@@ -1,6 +1,6 @@
 # Validaciones · brief V5
 
-2026-09-12. Página: `v5/validaciones.html`. Implementada según `v5/PLAN_FEATURES.md`, aprobada y publicada por pedido de Pablo desde `60dadfc3983dc631609ec2f778a21a942f65ef2a`. La petición posterior incluye documentación, commits y push.
+2026-09-12. Página: `v5/validaciones.html`. Implementada según `v5/PLAN_FEATURES.md`, aprobada y publicada por pedido de Pablo desde `2d3380dc31ea832366bdd9a1fd4c5e50722b9d74` (versión corregida por Pablo). La petición posterior incluye documentación, commits y push.
 
 ## Decisión y mensaje
 
@@ -31,4 +31,4 @@ Continuidad: Lora y DM Sans locales, blanco, azul/naranja, contenedor de 1160 px
 
 ## Verificación completada
 
-205 checks locales y públicos en los cinco anchos del plan; selector y desplegable por teclado y sin JS, foco, navegación móvil, entrada directa y enlaces cruzados, texto ampliado, movimiento reducido y ausencia de llamadas a producto. Paquete de commit `60dadfc` y hashes verificados en origen y ambos dominios. 148 checks de regresión AI Notes y 18 de www. Evidencia y procedencia junto a este brief; baseline preservado y release real registrado en README.
+205 checks locales y públicos en los cinco anchos del plan; selector y desplegable por teclado y sin JS, foco, navegación móvil, entrada directa y enlaces cruzados, texto ampliado, movimiento reducido y ausencia de llamadas a producto. Paquete de commit `2d3380d` y hashes verificados en origen y ambos dominios. 148 checks de regresión AI Notes y 18 de www. Evidencia y procedencia junto a este brief; baseline preservado y release real registrado en README.

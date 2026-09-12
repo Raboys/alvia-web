@@ -1,6 +1,6 @@
 # AI Notes · publicada en V5
 
-Publicada por pedido de Pablo en [alvia.ar/v5/ai-notes.html](https://alvia.ar/v5/ai-notes.html), con enlace desde la entrada AI Notes en home. Runtime **`a4ca4aa824b49d767349cca3bc78b1004e7702e2`**, release `/var/www/alvia.ar/releases/v5-a4ca4aa`. Ese release corresponde a la publicación inicial de AI Notes. El runtime vigente es `60dadfc`, que incorpora [Validaciones](../validaciones/README.md) y navegación recíproca; Recetas sigue informativa. Base institucional `626cd3b`; producto contrastado `f5e854a`.
+Publicada por pedido de Pablo en [alvia.ar/v5/ai-notes.html](https://alvia.ar/v5/ai-notes.html), con enlace desde la entrada AI Notes en home. Runtime **`a4ca4aa824b49d767349cca3bc78b1004e7702e2`**, release `/var/www/alvia.ar/releases/v5-a4ca4aa`. Ese release corresponde a la publicación inicial de AI Notes. El runtime vigente es `2d3380d`, que incorpora [Validaciones](../validaciones/README.md) y navegación recíproca; Recetas sigue informativa. Base institucional `626cd3b`; producto contrastado `f5e854a`.
 
 La página sigue la corrección de Pablo: documentación automatizada, menos trabajo administrativo, consultas más ágiles y estudios recibidos por email/WhatsApp. Dos escenas, copy breve y CTA de demo. La responsabilidad médica queda en una línea; consentimiento y apagado en un desplegable.
 

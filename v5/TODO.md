@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: Validaciones aprobada y publicada desde `60dadfc`, con evidencia pública y documentación actualizadas. Recetas sigue pendiente. Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: Validaciones aprobada y publicada desde `2d3380d` con las correcciones de copy de Pablo, con evidencia pública y documentación actualizadas. Recetas sigue pendiente. Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -69,4 +69,4 @@ Pablo indicó que el código de autorización suele tener tres dígitos y pidió
 
 | ID | Estado | Resultado y verificación |
 |---|---|---|
-| VAL-10 | in_progress | Corregir HTML, fixture y documentación a tres dígitos; revisar presentación, empaquetar desde commit, publicar y verificar ambos dominios, registrar release y pushear. |
+| VAL-10 | done | Tres dígitos y copy corregidos según Pablo. Runtime `2d3380d` publicado; 205 checks locales y 205 públicos, hashes correctos en origen y ambos dominios. Documentación/evidencia actualizadas y commits pusheados. |
