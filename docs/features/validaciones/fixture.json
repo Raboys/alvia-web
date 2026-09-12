@@ -1,0 +1,42 @@
+{
+  "synthetic": true,
+  "patient": "Sofía Giménez",
+  "date": "2026-09-12",
+  "coverage": "Plan Integral",
+  "context": "guardia",
+  "eligibility": "eligible",
+  "identity": {
+    "document_checked": true,
+    "face_comparison": "passed",
+    "status": "passed",
+    "scope": "current attendance",
+    "liveness_claimed": false
+  },
+  "auth_code": {
+    "code": "482619",
+    "status": "verified",
+    "source": "coverage app",
+    "ui_label": "Código de autorización"
+  },
+  "variants": {
+    "copay": {
+      "requires_identity": true,
+      "requires_auth_code": true,
+      "copago_contexts": ["guardia", "turno"],
+      "copago_amount": 3000,
+      "currency": "ARS",
+      "payment_applied": true,
+      "clearance_status": "ready"
+    },
+    "no-copay": {
+      "requires_identity": true,
+      "requires_auth_code": true,
+      "copago_contexts": null,
+      "copago_amount": null,
+      "payment_applied": false,
+      "clearance_status": "ready"
+    }
+  },
+  "next_action": "may enter waiting queue; not yet enqueued or assigned a physician",
+  "payment_timing": {"turno": "at booking, no second charge at join", "guardia": "before entering the queue"}
+}

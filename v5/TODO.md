@@ -30,3 +30,28 @@ Runtime confirmado: `a4ca4aa824b49d767349cca3bc78b1004e7702e2`. Paquete de commi
 Publicación verificada en `alvia.ar` y `www.alvia.ar`: 148 checks de página, 146 de home, 16 archivos con hashes correctos usando las URLs versionadas; manifiesto de commit correcto. Nginx y rutas encontradas preservadas; release anterior conservado.
 
 Cierre final: implementación, publicación y documentación terminadas. Commit de runtime `a4ca4aa`; registro de publicación y evidencias en el commit final de documentación. Todas las tareas están `done`.
+
+## Validaciones · 2026-09-12
+
+Nueva corrida solicitada: implementar únicamente Validaciones según PLAN_FEATURES (§6, §9, §10). El cierre de AI Notes anterior conserva su alcance histórico. Checkout institucional limpio al inicio, base `905a01c`; producto contrastado `f5e854a`. Esta entrega es local; no se solicitó publicar ni crear commits.
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| VAL-01 | done | Reglas, KYC `passed`, código de cobertura y momentos de pago contrastados con `f5e854a`; brief en `docs/features/validaciones/BRIEF.md`. |
+| VAL-02 | done | Página V5, ejemplos nativos, alternativa sin copago sin JS, fixture y manifiesto de autoría completos (§5, §6, §9). |
+| VAL-03 | done | Validaciones enlazada desde home y con enlace recíproco en AI Notes; Recetas permanece informativa (§10). |
+| VAL-04 | done | 205 checks correctos: cinco anchos, teclado, sin JS, movimiento reducido, enlaces, recursos y texto ampliado. Desborde de texto ampliado corregido. Capturas finales conservadas; 148 checks de regresión AI Notes correctos. |
+| VAL-05 | done | 205 checks también sobre paquete aislado: 18 archivos, 472.984 bytes; HTTP y SHA-256 coinciden. Brief, procedencia, capturas, README y continuidad actualizados; diff revisado. Preview `--working-tree`, sin commit ni publicación. |
+
+Cierre de Validaciones: todas las tareas locales están `done`. [Entrega y evidencia](../docs/features/validaciones/README.md). El runtime público registrado sigue en `a4ca4aa`; publicar y empaquetar desde un commit corresponde a una petición posterior. Próxima página pendiente: Recetas.
+
+## Publicación de Validaciones autorizada
+
+Pablo aprobó la página y pidió publicarla, actualizar los Markdown, commitear y pushear a `Raboys/alvia-web`.
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| VAL-06 | in_progress | Guardar preflight del release/rutas actuales, preparar verificación pública, commitear la implementación y empaquetarla desde el commit; comparar con los hashes revisados. |
+| VAL-07 | pending | Publicar con reemplazo atómico del enlace V5 y comprobar contenido, rutas y hashes en origen, apex y www. |
+| VAL-08 | pending | Verificar navegador público y guardar evidencias; actualizar Markdown con commit servido, aprobación y rollback. |
+| VAL-09 | pending | Commit de documentación y evidencia, push a la rama existente y confirmar HEAD remoto. |

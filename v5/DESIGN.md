@@ -228,3 +228,12 @@ AI Notes se publicó por pedido de Pablo y tiene enlace desde home. Runtime `a4c
 - **La referencia es 1doc3 en su forma de vender.** Beneficio visible, explicación corta, evidencia y contacto; no su vocabulario literal, sus métricas ni una reproducción de todos sus bloques.
 
 Pablo pidió publicar la versión corregida y guardar estas decisiones. La petición posterior autoriza publicación y commits; los resultados técnicos se registran en el release correspondiente.
+
+
+## 11. Validaciones · entrega local de 2026-09-12
+
+Se implementa [validaciones.html](validaciones.html) según PLAN_FEATURES: «Ofrecé atención online con las reglas de tu cobertura». Hero con comprobante ilustrativo de guardia, tres explicaciones visuales abiertas y CTA comercial. El selector nativo compara una cobertura con copago y otra que no lo exige; no representa una elección del paciente para evitar pagar. El texto distingue el código de credencial de los datos de afiliación y del acceso a Alvia. Identidad significa documento validado y comparación facial aprobada; no prueba de vida.
+
+Se explican los momentos de pago juntos: al reservar el turno o antes de entrar a la espera de guardia. No se simula un cobro al ingresar a un turno ya reservado. Los requisitos pendientes se explican en un desplegable nativo. Las demostraciones siguen siendo texto HTML legible, sin imágenes nuevas ni JS propio.
+
+Home enlaza Validaciones y AI Notes en el árbol local; ambas páginas tienen enlace recíproco en el footer. Recetas continúa informativa. Esta entrega no cambia la publicación registrada de `a4ca4aa`. [Brief, autoría y evidencia](../docs/features/validaciones/README.md).

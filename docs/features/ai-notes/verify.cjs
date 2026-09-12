@@ -75,8 +75,8 @@ const screenshot = async (page, name) => {
       await page.locator('.footer a[href="index.html#funcionalidades"]').click();
       await page.waitForURL(new URL('index.html#funcionalidades', base).href);
       check(`${width}: return to home features`, await page.locator('#funcionalidades').isVisible());
-      check(`${width}: only AI Notes linked`, await page.locator('.feature-entry a').count() === 1 && await page.locator('[data-feature="ai-notes"] a').getAttribute('href') === 'ai-notes.html');
-      check(`${width}: pending features stay informative`, await page.locator('[data-feature="validaciones"], [data-feature="recetas"]').evaluateAll(es => es.every(el => !el.querySelector('a,button,[tabindex]'))));
+      check(`${width}: completed features linked`, await page.locator('.feature-entry a').count() === 2 && await page.locator('[data-feature="ai-notes"] a').getAttribute('href') === 'ai-notes.html' && await page.locator('[data-feature="validaciones"] a').getAttribute('href') === 'validaciones.html');
+      check(`${width}: Recetas stays informative`, await page.locator('[data-feature="recetas"]').evaluate(el => !el.querySelector('a,button,[tabindex]')));
       if(width === 1440 || width === 390) await page.locator('#funcionalidades').screenshot({path:path.join(evidence,`${width}-home-features.png`)});
       await page.locator('[data-feature="ai-notes"] a').click();
       await page.waitForURL(pageUrl);

@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-**[AI Notes ya está publicada](https://alvia.ar/v5/ai-notes.html)** y sólo su entrada tiene enlace. Reúne resumen automático de consulta y estudios recibidos previamente por email/WhatsApp, con el copy breve y directo pedido por Pablo. Validaciones y Recetas siguen informativas y pendientes de desarrollo. Runtime `a4ca4aa`; [brief, autoría y verificación pública](../docs/features/ai-notes/README.md).
+**[AI Notes ya está publicada](https://alvia.ar/v5/ai-notes.html)** y sólo su entrada tiene enlace público. Reúne resumen automático de consulta y estudios recibidos previamente por email/WhatsApp, con el copy breve y directo pedido por Pablo. En producción, Validaciones y Recetas siguen informativas. **Validaciones ya está terminada localmente**, con enlace desde home y navegación cruzada con AI Notes; Recetas sigue pendiente. Runtime `a4ca4aa`; [brief, autoría y verificación pública](../docs/features/ai-notes/README.md).
 
 ## Mensaje acordado
 
@@ -68,4 +68,10 @@ Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran t
 
 Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones locales y 146 sobre la URL pública, incluyendo recursos, ausencia de desborde, enlaces, cálculo normal y límites, entradas inválidas, turnos completos, selección de pantallas, pestañas por clic y teclado, menú móvil, preguntas, funcionamiento sin JavaScript y movimiento reducido. [Evidencia pública conservada en Git](../docs/design/v5-baseline/README.md). Los originales de autoría también están en `/tmp/alvia-v5-review/` y `/tmp/alvia-v5-public-review/`.
 
-La subpágina usa `styles.css`, `ai-notes.css`, `navigation.js` y `ai-notes.js`. Home comparte sólo el menú; conserva su script de calculadora/pestañas. Las escenas son HTML/CSS, no agregan imágenes ni dependencias. La verificación reproducible está en `docs/features/ai-notes/verify.cjs`.
+La subpágina AI Notes usa `styles.css`, `ai-notes.css`, `navigation.js` y `ai-notes.js`. Home comparte sólo el menú; conserva su script de calculadora/pestañas. Las escenas son HTML/CSS, no agregan imágenes ni dependencias. La verificación reproducible está en `docs/features/ai-notes/verify.cjs`.
+
+## Validaciones · entrega local
+
+[validaciones.html](validaciones.html) reúne identidad, código de credencial y copagos según cobertura. Incluye un ejemplo nativo que alterna entre cobertura con/sin copago, explicaciones de los tres mecanismos y los momentos correctos de pago. Comparar coberturas y abrir el detalle funcionan sin JavaScript. Usa `styles.css`, `validaciones.css` y el menú común `navigation.js`; no agrega imágenes, dependencias ni scripts de feature.
+
+[Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. La página y sus enlaces están en el árbol de trabajo; el runtime público sigue en `a4ca4aa`.

@@ -1,0 +1,30 @@
+{
+  "mode": "working-tree-preview",
+  "source_commit": null,
+  "base_commit": "905a01c4700e3ff2ea020d37facf953fc25fcc92",
+  "package": "/tmp/alvia-validaciones-verified/v5",
+  "files": 18,
+  "bytes": 472984,
+  "sha256_and_http_match": [
+    "ai-notes.css",
+    "ai-notes.html",
+    "ai-notes.js",
+    "assets/app-home.webp",
+    "assets/app-prescription.webp",
+    "assets/favicon.svg",
+    "assets/fonts/DM-Sans-LICENSE.txt",
+    "assets/fonts/Lora-LICENSE.txt",
+    "assets/fonts/dm-sans-latin.woff2",
+    "assets/fonts/lora-latin.woff2",
+    "assets/people.webp",
+    "features.css",
+    "index.html",
+    "navigation.js",
+    "script.js",
+    "styles.css",
+    "validaciones.css",
+    "validaciones.html"
+  ],
+  "authoring_files_excluded": true,
+  "fonts_and_licenses_included": true
+}

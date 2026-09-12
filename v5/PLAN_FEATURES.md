@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **bloque de home y AI Notes publicados y verificados**. Validaciones y Recetas siguen pendientes. AI Notes se publicó por pedido de Pablo desde `a4ca4aa`; sólo su entrada tiene enlace. Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **bloque de home y AI Notes publicados y verificados; Validaciones terminada localmente**. Recetas sigue pendiente. AI Notes se publicó por pedido de Pablo desde `a4ca4aa`; sólo su entrada tiene enlace público. Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -98,11 +98,11 @@ Rutas propuestas, compatibles con el estático actual:
 
 | Orden | Archivo futuro | Ruta pública futura | Estado actual |
 |---|---|---|---|
-| 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Pendiente, sin enlace en home. |
+| 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Terminada localmente; enlazada desde home y AI Notes. Sin publicar. |
 | 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Publicada (`a4ca4aa`); enlazada desde home. |
 | 3 | `v5/recetas.html` | `/v5/recetas.html` | Pendiente, sin enlace en home. |
 
-En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó en su corrida; los otros dos siguen pendientes. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
+En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó y publicó en su corrida; Validaciones ya está implementada y enlazada en el árbol local. Recetas sigue pendiente. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
 
 Cada página tiene que funcionar para quien llega por un enlace directo: marca y contexto de Alvia, beneficio reconocible, evidencia del producto, retorno a la home y CTA comercial contextual. Enlaces entre features sólo hacia páginas que ya existan. Usar WhatsApp y correo existentes; no incorporar un formulario nuevo por defecto.
 
@@ -122,7 +122,7 @@ No replicar la home en cada feature ni crear sistemáticamente tres tarjetas «p
 
 La página reúne identidad, código de credencial y copagos. La organización define qué corresponde, el paciente completa los requisitos aplicables y el recorrido de atención aplica esas condiciones. El valor para el médico se explica desde la atención que recibe, sin inventarle un panel de validaciones.
 
-### Decidir en esa corrida
+### Decisiones previstas al iniciar la corrida
 
 - El caso de cobertura de demostración y qué requisitos incluye. Los tres mecanismos son configurables; no presentarlos como tres pasos obligatorios para todos.
 - Cómo nombrar el **código de credencial** del pedido frente a **«Código de autorización»** en la app. El componente pide el código que el afiliado ve en la app de su cobertura. Explicar la relación una vez; no confundirlo con el número de afiliado o con el OTP de acceso a Alvia.
@@ -141,6 +141,8 @@ La página reúne identidad, código de credencial y copagos. La organización d
 La implementación consultada comprueba el documento y compara el rostro del DNI con una selfie. No respalda una afirmación de **prueba de vida**. El canvas paciente conserva esa expresión antigua: no copiarla. Mostrar un fixture aprobado sólo si representa el estado real de aprobación, no por haber terminado de sacar una foto.
 
 **Cierre editorial de la página:** el comprador distingue los tres mecanismos y entiende que dependen de su cobertura; el paciente reconoce lo que debe hacer; la demostración no mezcla registro de cuenta con autorización para atenderse.
+
+**Entrega local · 2026-09-12:** [Validaciones](validaciones.html), [brief](../docs/features/validaciones/BRIEF.md), [procedencia](../docs/features/validaciones/PROVENANCE.md) y [verificación](../docs/features/validaciones/README.md). Hero «Ofrecé atención online con las reglas de tu cobertura», comprobante de guardia con identidad aprobada y código validado, selector nativo entre cobertura con/sin copago y tres explicaciones compactas. El caso ficticio de Sofía Giménez distingue la exención del pago aplicado. Turno: al reservar; guardia: antes de encolar. Sin JS propio ni imágenes nuevas. Home y AI Notes enlazan la página en el árbol local; no se modificó el runtime publicado.
 
 ## 7. Corrida 2 · AI Notes
 
@@ -242,15 +244,15 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 | Entrega | Estado | Evidencia / próximo paso |
 |---|---|---|
-| Guía high level | Actualizada | Incluye la corrección editorial de AI Notes y su publicación. |
-| Bloque home | Publicado con conexión AI Notes | Sólo AI Notes tiene enlace público. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
-| Validaciones | Pendiente | Primera corrida de página: cobertura de ejemplo, identidad, código y copagos. |
+| Guía high level | Actualizada | Conserva la corrección editorial de AI Notes y registra la entrega local de Validaciones. |
+| Bloque home | Publicado con AI Notes; Validaciones conectada localmente | Sólo AI Notes tiene enlace público hasta una nueva publicación. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
+| Validaciones | Terminada y verificada localmente; sin publicar | Identidad, código y copagos, variante exenta, enlaces recíprocos con AI Notes. [Entrega y evidencia](../docs/features/validaciones/README.md). |
 | AI Notes | Publicada y verificada | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
-| Recetas | Pendiente | Después de AI Notes; recorrido de emisión y recepción, evidencia de condiciones. |
+| Recetas | Pendiente | Próxima corrida: emisión y recepción, evidencia de condiciones. Sigue sin destino. |
 | Revisión conjunta | Pendiente | Tras las tres páginas: consistencia, navegación, duplicaciones y peso del conjunto. |
 | Publicación del bloque informativo | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). |
 | Publicación de AI Notes | Realizada por pedido de Pablo | Runtime `a4ca4aa`; 16 archivos, 451.577 bytes. [Registro y rollback](../docs/releases/2026-09-12-v5.md), [evidencia pública](../docs/features/ai-notes/README.md). |
 
 ### Inicio sugerido de la próxima corrida
 
-> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente la página de **Validaciones**, con identidad, código de credencial y copagos. Primero contrastá el producto vigente y profundizá su brief; después decidí textos, composición y capturas o mocks y completá la implementación y verificación. Conservá la dirección de `v5/DESIGN.md` y aplicá COPYWRITING. Al quedar terminada, conectá Validaciones desde el bloque de home y cruzala con AI Notes, ya publicada. Recetas sigue sin destino. Dejá el estado y la evidencia para la siguiente corrida.
+> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente **Recetas**, contrastando emisión y recepción en producto y las condiciones vigentes de los documentos. AI Notes está publicada y Validaciones está terminada localmente; conservá su navegación y la dirección de DESIGN/COPYWRITING. Conectá Recetas sólo cuando esté completa. Después revisá las tres páginas juntas y dejá evidencia y estado. Publicación y paquete de commit son un paso separado de la entrega local.
