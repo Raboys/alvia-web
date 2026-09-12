@@ -2,10 +2,10 @@
 
 Sitio institucional estático de Alvia y sus variantes de diseño.
 
-- **V5: <https://alvia.ar/v5/>**, portada vigente con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. [Mensaje y diseño](v5/README.md) · [Publicación](docs/releases/2026-09-12-v5.md).
+- **Web vigente: <https://alvia.ar/>**, con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. La fuente continúa en `v5/`; V5 ya no forma parte de la URL pública. [Mensaje y diseño](v5/README.md) · [Rutas y publicación](docs/releases/2026-09-12-pretty-urls.md).
 
-- Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v5/> (también desde `www.alvia.ar`).
-- **Sólo V5 está publicada.** Las URLs antiguas llevan a V5; sus archivos están fuera del directorio público. [Registro del retiro](docs/releases/2026-09-12-retire-legacy.md).
+- Portada vigente: <https://alvia.ar/> y <https://www.alvia.ar/>.
+- Rutas públicas: `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`. `/v5` y los nombres `.html` redirigen a estas URLs limpias.
 - Versiones anteriores conservadas en Git para referencia local: `v1/`, `v2/`, `v3/` y `v4-c/`.
 - Experimentos conservados en Git: `v4-a/` y `v4-b/`.
 
@@ -42,8 +42,8 @@ Abrir `http://127.0.0.1:8080/v5/` para la portada vigente o `/v4-c/` para V4. La
 python3 scripts/package_v5.py --ref main /tmp/alvia-v5-release
 ```
 
-El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye sólo HTML/CSS/JS, assets referenciados y licencias de fuentes, verifica las rutas y escribe un manifiesto SHA-256. El resultado se sirve en `/v5/`. El repositorio institucional usa publicación estática atómica; no tiene workflow de despliegue automático.
+El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye sólo HTML/CSS/JS, assets referenciados y licencias de fuentes, verifica las rutas y escribe un manifiesto SHA-256. El resultado se sirve desde `/` mediante el symlink de release. El repositorio institucional usa publicación estática atómica; no tiene workflow de despliegue automático.
 
 ## Runtime vigente
 
-Runtime `ddc8df8`: cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C y chevrones discretos. [Gestión inteligente de turnos](https://alvia.ar/v5/turnos-inteligentes.html) · [registro de publicación](docs/releases/2026-09-12-smart-appointments.md).
+Runtime `4239034`: cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C, chevrones discretos y URLs limpias. [Gestión inteligente de turnos](https://alvia.ar/turnos-inteligentes) · [registro de publicación](docs/releases/2026-09-12-pretty-urls.md).

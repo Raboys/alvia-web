@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home y cuatro funcionalidades publicadas y verificadas**. Runtime vigente `ddc8df8`: Validaciones, AI Notes, Recetas y Turnos inteligentes tienen enlace público y navegación recíproca. La cuarta página y la home venden confirmación, adelantos y reducción del ausentismo con lenguaje directo. [Publicación](../docs/releases/2026-09-12-smart-appointments.md). Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home y cuatro funcionalidades publicadas y verificadas en rutas limpias**. Runtime vigente `4239034`: `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`. `/v5` y los nombres `.html` redirigen sin romper enlaces anteriores. [Publicación](../docs/releases/2026-09-12-pretty-urls.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -101,10 +101,10 @@ Rutas propuestas, compatibles con el estático actual:
 
 | Orden | Archivo | Ruta pública | Estado actual |
 |---|---|---|---|
-| 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Aprobada y publicada (`2d3380d`); enlazada desde home y AI Notes. |
-| 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Publicada (`a4ca4aa`); enlazada desde home. |
-| 3 | `v5/recetas.html` | `/v5/recetas.html` | Publicada y verificada; enlazada desde home. |
-| 4 | `v5/turnos-inteligentes.html` | `/v5/turnos-inteligentes.html` | Publicada y verificada (`ddc8df8`); enlazada desde home y navegación común. |
+| 1 | `v5/validaciones.html` | `/validaciones` | Publicada; enlazada desde home y navegación común. |
+| 2 | `v5/ai-notes.html` | `/ainotes` | Publicada; enlazada desde home y navegación común. |
+| 3 | `v5/recetas.html` | `/recetas` | Publicada; enlazada desde home y navegación común. |
+| 4 | `v5/turnos-inteligentes.html` | `/turnos-inteligentes` | Publicada; enlazada desde home y navegación común. |
 
 En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó y publicó en su corrida; Validaciones ya está implementada, publicada y enlazada. Recetas se completó localmente y luego se publicó por pedido de Pablo, con enlaces desde home y las otras features. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
 
@@ -271,4 +271,4 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 ### Inicio sugerido de la próxima corrida
 
-> Las cuatro features están publicadas y verificadas. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y los registros de `docs/releases/`. Runtime vigente `ddc8df8`; conservar la copia directa y la mención al ausentismo. Incorporá nuevos pedidos de Pablo sin reintroducir el copy descartado.
+> Las cuatro features están publicadas y verificadas en rutas limpias. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y los registros de `docs/releases/`. Runtime vigente `4239034`; conservar links absolutos internos y metadatos canónicos sin `/v5` ni `.html`.

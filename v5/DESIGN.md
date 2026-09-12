@@ -4,7 +4,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 
 ## 1. Empezar acá
 
-- Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
+- Portada: <https://alvia.ar/> y <https://www.alvia.ar/>. Las features usan `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`; `/v5` es sólo compatibilidad por redirección.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
 - Runtime vigente con calculadora C, menú móvil y chevrones B: `41a6d8386668c08ff3484007165c551678dddbae`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
