@@ -198,7 +198,7 @@ La aprobación existente evita volver a preguntar por la referencia, la paleta, 
 
 Las comprobaciones técnicas y capturas documentan que la página funciona y cómo se ve. La preferencia de Pablo está registrada en la aprobación; ninguna de esas evidencias demuestra por sí sola conversión o resultados clínicos.
 
-## 9. Ampliación de features · 2026-09-12, revisión local
+## 9. Ampliación de features · 2026-09-12, publicada para revisión
 
 Pablo pidió profundizar las features de paciente y médico en subpáginas, con una entrada vistosa pero secundaria en la home. El orden acordado es **Validaciones (identidad, código de credencial y copagos) → AI Notes → Recetas**. Cada página se desarrollará en una corrida posterior, que decidirá su copy, capturas y mocks a partir de la [guía high level](PLAN_FEATURES.md).
 
@@ -206,4 +206,4 @@ El bloque implementado para revisión se ubica después de `#tu-red`, antes de `
 
 **Decisión posterior explícita:** los tres elementos no llevan a nada hasta desarrollar sus páginas. Son `article`, sin flechas, botones o enlaces de mentira. No crear fichas provisorias, derivar a V4 ni mostrar «próximamente». Al terminar una página, convertir solamente su entrada en enlace real. El footer enlaza al bloque, no a las páginas pendientes.
 
-Esto desarrolla el criterio de mantener el detalle fuera de la home; no recupera el recorrido largo de V4. Se conserva de V4 el antecedente de mocks simplificados cuando explican mejor el producto. El bloque está implementado y verificado localmente; no se registra todavía como composición aprobada ni publicada. [Evidencia de revisión](../docs/design/v5-features/README.md).
+Esto desarrolla el criterio de mantener el detalle fuera de la home; no recupera el recorrido largo de V4. Se conserva de V4 el antecedente de mocks simplificados cuando explican mejor el producto. Pablo pidió publicarlo en V5 para verlo. El bloque está publicado y verificado; la publicación para revisión no se registra como aprobación final de la composición. [Evidencia de revisión](../docs/design/v5-features/README.md).

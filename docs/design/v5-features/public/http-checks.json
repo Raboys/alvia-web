@@ -1,0 +1,38 @@
+{
+  "source_commit": "0b5a3c10b397fc34626dd0d07b8222b4780d4655",
+  "origin_sha256_files": [
+    "assets/app-home.webp",
+    "assets/app-prescription.webp",
+    "assets/favicon.svg",
+    "assets/fonts/DM-Sans-LICENSE.txt",
+    "assets/fonts/Lora-LICENSE.txt",
+    "assets/fonts/dm-sans-latin.woff2",
+    "assets/fonts/lora-latin.woff2",
+    "assets/people.webp",
+    "features.css",
+    "index.html",
+    "script.js",
+    "styles.css"
+  ],
+  "public_sha256_files": [
+    "assets/app-home.webp",
+    "assets/app-prescription.webp",
+    "assets/favicon.svg",
+    "assets/fonts/DM-Sans-LICENSE.txt",
+    "assets/fonts/Lora-LICENSE.txt",
+    "assets/fonts/dm-sans-latin.woff2",
+    "assets/fonts/lora-latin.woff2",
+    "assets/people.webp",
+    "features.css",
+    "script.js",
+    "styles.css"
+  ],
+  "public_html": "Exact match after decoding Cloudflare email protection and removing its injected decoding script; no other changes.",
+  "public_manifest_matches": true,
+  "routes": {
+    "https://alvia.ar/": "301 https://alvia.ar/v5/",
+    "https://www.alvia.ar/": "301 https://alvia.ar/v5/",
+    "https://www.alvia.ar/v5/": "200 ",
+    "https://alvia.ar/v4/": "200 "
+  }
+}

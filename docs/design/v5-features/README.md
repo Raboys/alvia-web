@@ -1,6 +1,6 @@
 # V5 · bloque de features para revisión
 
-2026-09-12. **Implementación local, no publicada.** Runtime: `0b5a3c10b397fc34626dd0d07b8222b4780d4655`. Rama `feat/v5-feature-pages-plan`.
+2026-09-12. **Publicada en V5 para revisión por pedido de Pablo.** Runtime: `0b5a3c10b397fc34626dd0d07b8222b4780d4655`. Rama `feat/v5-feature-pages-plan`.
 
 El bloque «Mucho más que una videollamada» aparece después de las modalidades de red y antes de organizaciones. Presenta Validaciones, AI Notes y Recetas con ilustraciones HTML/CSS. Por instrucción de Pablo, sus tres entradas son informativas: sin enlaces, botones, flechas ni subpáginas provisorias.
 
@@ -24,3 +24,12 @@ Herramientas de autoría usadas en esta sesión: `/tmp/alvia-v5-check.cjs`, `/tm
 ## Continuar
 
 Leer [la guía de desarrollo por páginas](../../../v5/PLAN_FEATURES.md). El siguiente paso es profundizar e implementar **Validaciones**. AI Notes y Recetas permanecen sin destino hasta sus respectivas corridas.
+
+## Publicación para revisión
+
+Pablo pidió «Publicalo en v5, dale asi lo veo». Publicado el 2026-09-12 en [V5](https://alvia.ar/v5/#funcionalidades), release `/var/www/alvia.ar/releases/v5-0b5a3c1`. El anterior `v5-c2817c1` se conserva. No se crearon enlaces a subpáginas.
+
+- [40 comprobaciones públicas del bloque](public/feature-checks.json) y [146 de regresión](public/regression-checks.json).
+- Capturas públicas: [escritorio](public/desktop-features.png) y [móvil](public/mobile-features.png).
+- [Comprobación HTTP, hashes y rutas](public/http-checks.json): origen coincide con los 12 archivos del manifiesto; en Cloudflare, los 11 recursos coinciden byte a byte y el HTML sólo recibe la protección automática del correo. Tras decodificar esa transformación, coincide exactamente con el origen. Las raíces siguen llevando a V5 y V4 conserva su acceso.
+- Fuente conservada en [PR #22](https://github.com/Raboys/alvia-web/pull/22), borrador para revisión; no se integró a main en esta publicación.

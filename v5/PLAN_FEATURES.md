@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **plan high level y bloque de home implementado para revisión local**. Las tres subpáginas están pendientes. Este documento guía corridas independientes; no es una especificación de los textos ni de las capturas finales.
+Fecha: 2026-09-12. Estado: **plan high level y bloque de home publicado en V5 para revisión**. Las tres subpáginas están pendientes. Este documento guía corridas independientes; no es una especificación de los textos ni de las capturas finales.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -239,12 +239,12 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 | Entrega | Estado | Evidencia / próximo paso |
 |---|---|---|
 | Guía high level | Redactada | Este documento; profundizar sólo el brief de Validaciones al retomar. |
-| Bloque home | Implementado y verificado localmente | `#funcionalidades`, HTML/CSS, sin enlaces por decisión de Pablo. [Capturas y verificación](../docs/design/v5-features/README.md). |
+| Bloque home | Publicado y verificado para revisión | `#funcionalidades`, HTML/CSS, sin enlaces por decisión de Pablo. [Capturas y verificación](../docs/design/v5-features/README.md). |
 | Validaciones | Pendiente | Primera corrida de página: cobertura de ejemplo, identidad, código y copagos. |
 | AI Notes | Pendiente | Después de Validaciones; contrastar ciclo vigente y elegir resumen legible. |
 | Recetas | Pendiente | Después de AI Notes; recorrido de emisión y recepción, evidencia de condiciones. |
 | Revisión conjunta | Pendiente | Tras las tres páginas: consistencia, navegación, duplicaciones y peso del conjunto. |
-| Publicación de esta ampliación | No realizada | La web pública continúa con el release V5 registrado antes de esta tarea. |
+| Publicación de esta ampliación | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). Subpáginas pendientes. |
 
 ### Inicio sugerido de la próxima corrida
 
