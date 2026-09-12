@@ -1,0 +1,1734 @@
+{
+  "checked": "2026-09-12T19:49:13.358Z",
+  "failures": [],
+  "evidence": [
+    {
+      "variant": 1,
+      "width": 360,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 1,
+      "width": 360,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 1,
+      "width": 360,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 1,
+      "width": 360,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 1,
+      "width": 390,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 1,
+      "width": 390,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 1,
+      "width": 390,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 1,
+      "width": 390,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 1,
+      "width": 768,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 1,
+      "width": 768,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 1,
+      "width": 768,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 1,
+      "width": 768,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 50.390625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 1,
+      "width": 1440,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 68
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 1,
+      "width": 1440,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 68
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 1,
+      "width": 1440,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 68
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 1,
+      "width": 1440,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 68
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 68
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 2,
+      "width": 360,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 2,
+      "width": 360,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 2,
+      "width": 360,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 2,
+      "width": 360,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 2,
+      "width": 390,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 2,
+      "width": 390,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 2,
+      "width": 390,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 2,
+      "width": 390,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Identidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 102
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 102
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 2,
+      "width": 768,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 2,
+      "width": 768,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 2,
+      "width": 768,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 2,
+      "width": 768,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 240.578125
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 2,
+      "width": 1440,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 2,
+      "width": 1440,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 2,
+      "width": 1440,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 2,
+      "width": 1440,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Antes de la consulta\nIdentidad\n✓\nCódigo de credencial\n✓\nCopago\n✓\nValidaciones\n↗\n\nIdentidad, credencial y copagos antes de la atención.",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "AI Notes\nSe repasan los síntomas y antecedentes. Se acuerdan los próximos pasos.\nResumen de la consulta\nAI Notes\n↗\n\nMenos trabajo administrativo en cada consulta.",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        },
+        {
+          "text": "alvia.\nReceta\n✓\nEn el celular del paciente\nRecetas\n↗\n\nLa receta de la consulta, en el celular del paciente.",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 267.671875
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 3,
+      "width": 360,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 3,
+      "width": 360,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 3,
+      "width": 360,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 3,
+      "width": 360,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 3,
+      "width": 390,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 3,
+      "width": 390,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 3,
+      "width": 390,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 3,
+      "width": 390,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "AI Notes",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 62
+        },
+        {
+          "text": "Recetas",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 62
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 3,
+      "width": 768,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 3,
+      "width": 768,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 3,
+      "width": 768,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 3,
+      "width": 768,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 3,
+      "width": 1440,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 3,
+      "width": 1440,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 3,
+      "width": 1440,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 3,
+      "width": 1440,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\n↗",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "AI Notes\n↗",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 58
+        },
+        {
+          "text": "Recetas\n↗",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 58
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 4,
+      "width": 360,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 4,
+      "width": 360,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 4,
+      "width": 360,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 4,
+      "width": 360,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 74.6875
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 4,
+      "width": 390,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 4,
+      "width": 390,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 4,
+      "width": 390,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 4,
+      "width": 390,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 4,
+      "width": 768,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 4,
+      "width": 768,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 4,
+      "width": 768,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 4,
+      "width": 768,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 76.1875
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "variant": 4,
+      "width": 1440,
+      "file": "index.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 64.5
+        }
+      ],
+      "active": null
+    },
+    {
+      "variant": 4,
+      "width": 1440,
+      "file": "validaciones.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 64.5
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "variant": 4,
+      "width": 1440,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 64.5
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "variant": 4,
+      "width": 1440,
+      "file": "recetas.html",
+      "overflow": false,
+      "headerLinks": [
+        {
+          "text": "Validaciones\nIdentidad y cobertura",
+          "url": "validaciones.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "AI Notes\nDocumentación automática",
+          "url": "ai-notes.html",
+          "visible": true,
+          "touchHeight": 64.5
+        },
+        {
+          "text": "Recetas\nDel médico al paciente",
+          "url": "recetas.html",
+          "visible": true,
+          "touchHeight": 64.5
+        }
+      ],
+      "active": "recetas.html"
+    }
+  ]
+}

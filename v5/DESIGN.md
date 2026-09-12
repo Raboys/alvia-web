@@ -281,8 +281,13 @@ sin incorporar la firma gráfica del prototipo. Los estilos nuevos se limitan al
 
 Publicada en ambos dominios desde `0cd831d`; [capturas, alcance y verificación](../docs/design/v5-prescription-mocks/README.md). El release anterior `v5-f281d8b` se conserva.
 
-## 15. Botones y links — alternativa B
 
-Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
+## 15. Header · alternativa 4 elegida
+
+Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobile. Validaciones, AI Notes y Recetas reemplazan los enlaces del header a secciones de la home. En mobile permanecen visibles en tres tarjetas, sin abrir un menú, con Ingresar y Hablemos en la fila superior. Se aplica el mismo header a la home y a las tres subpáginas, con estado activo. [Implementación y evidencia](../docs/design/v5-header-option4/README.md). Preparado en preview privado; todavía no publicado en el dominio público.
+
+## 16. Botones y links — alternativa B
+
+Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. Se conserva además el header mobile de la alternativa 4, publicado durante el preflight (`6176676`). La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
 
 El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.
