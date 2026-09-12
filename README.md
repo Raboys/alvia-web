@@ -5,9 +5,8 @@ Sitio institucional estático de Alvia y sus variantes de diseño.
 - **V5: <https://alvia.ar/v5/>**, portada vigente con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. [Mensaje y diseño](v5/README.md) · [Publicación](docs/releases/2026-09-12-v5.md).
 
 - Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v5/> (también desde `www.alvia.ar`).
-- **V4: <https://alvia.ar/v4/>**, publicada desde `v4-c/`.
-- V3 sigue accesible por su enlace directo: <https://alvia.ar/v3/>.
-- Versiones anteriores: `v1/`, `v2/` y `v3/`.
+- **Sólo V5 está publicada.** Las URLs antiguas llevan a V5; sus archivos están fuera del directorio público. [Registro del retiro](docs/releases/2026-09-12-retire-legacy.md).
+- Versiones anteriores conservadas en Git para referencia local: `v1/`, `v2/`, `v3/` y `v4-c/`.
 - Experimentos conservados en Git: `v4-a/` y `v4-b/`.
 
 ## V5: continuar el diseño vigente
@@ -20,7 +19,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 
 ## V4
 
-La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Fue la portada del 2026-09-05 al 2026-09-12 UTC; conserva `noindex, nofollow` y su enlace directo.
+La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Fue la portada del 2026-09-05 al 2026-09-12 UTC. Está archivada y su antigua URL redirige a V5.
 
 - [Historia de cambios y validaciones](v4-c/README.md).
 - [Registro de publicación](docs/releases/2026-09-05-v4.md).

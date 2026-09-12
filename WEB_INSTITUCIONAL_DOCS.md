@@ -2,6 +2,8 @@
 
 **Estado vigente, 2026-09-12:** V5 es la portada de `alvia.ar` y `www.alvia.ar`, con destino `/v5/`. Para continuar el diseño, leer [v5/DESIGN.md](v5/DESIGN.md), las [capturas aprobadas](docs/design/v5-baseline/README.md) y el [registro de publicación](docs/releases/2026-09-12-v5.md). Las direcciones visuales y referencias a portadas de V1–V4 que aparecen abajo describen etapas anteriores; no reemplazan las decisiones de V5.
 
+**Versiones anteriores retiradas:** sólo V5 permanece en el directorio público. Las URLs de V1–V4 redirigen a V5. [Archivo, reglas y verificaciones](docs/releases/2026-09-12-retire-legacy.md). Las instrucciones históricas de publicar otras versiones o restaurar V4 como portada que figuran abajo no son el procedimiento vigente.
+
 ## 1. Objetivo de este repositorio
 
 Este repositorio conserva, compara y permite desplegar las versiones de la web institucional de Alvia sin depender del monorepo de producto.
