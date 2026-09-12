@@ -2,7 +2,7 @@
 
 Versión comercial inspirada en la composición y el recorrido de [1doc3](https://1doc3.com/), con identidad Alvia, fotografías propias y contenido para organizaciones de salud en Argentina.
 
-Publicada para revisión en <https://alvia.ar/v5/>. [Registro de publicación y verificaciones](../docs/releases/2026-09-12-v5.md).
+Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino canónico <https://alvia.ar/v5/>. [Registro de publicación y verificaciones](../docs/releases/2026-09-12-v5.md).
 
 ## Mensaje acordado
 
