@@ -291,3 +291,8 @@ Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobil
 Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. Se conserva además el header mobile de la alternativa 4, publicado durante el preflight (`6176676`). La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
 
 Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos dominios. El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.
+
+
+## 17. Corrección de header · megamenú en mobile
+
+Pablo se arrepintió de las tres tarjetas fijas en mobile y eligió el megamenú visual. Desktop conserva la opción 4, nombre + beneficio. En mobile, «Explorá la plataforma» muestra siempre los nombres Validaciones, AI Notes y Recetas; al tocar abre las tres entradas con miniatura y descripción. Los chevrones de la alternativa B permanecen. Esta decisión reemplaza únicamente el diseño mobile de §15. Publicación, documentación, commit, push y aviso por WhatsApp autorizados explícitamente. [Implementación y evidencia](../docs/design/v5-mobile-megamenu/README.md).
