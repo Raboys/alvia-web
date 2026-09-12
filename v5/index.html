@@ -22,8 +22,8 @@
   <link rel="preload" href="assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260912-chevron-b">
-  <link rel="stylesheet" href="features.css?v=20260912-cards">
-  <link rel="stylesheet" href="header.css?v=20260912-mobile-mega">
+  <link rel="stylesheet" href="features.css?v=20260912-turnos">
+  <link rel="stylesheet" href="header.css?v=20260912-four-features">
   <script src="header.js?v=20260912-mobile-mega" defer></script>
   <link rel="stylesheet" href="capacity.css?v=20260912-c">
   <script src="script.js?v=20260912-capacity-c" defer></script>
@@ -37,19 +37,21 @@
         <a href="validaciones.html"><span class="product-nav-label">Validaciones</span><span class="product-nav-description">Identidad y cobertura</span></a>
         <a href="ai-notes.html"><span class="product-nav-label">AI Notes</span><span class="product-nav-description">Documentación automática</span></a>
         <a href="recetas.html"><span class="product-nav-label">Recetas</span><span class="product-nav-description">Del médico al paciente</span></a>
+        <a href="turnos-inteligentes.html"><span class="product-nav-label">Turnos inteligentes</span><span class="product-nav-description">Confirmación y adelantos</span></a>
       </nav>
       <div class="product-header-actions">
         <a class="product-login" href="https://doctor.alvia.ar/">Ingresar <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a>
         <a class="button button-small" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20conocer%20Alvia%20para%20mi%20organizaci%C3%B3n" target="_blank" rel="noopener">Hablemos <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a>
       </div>
       <details class="product-menu">
-        <summary><span><strong>Explorá la plataforma</strong><small>Validaciones · AI Notes · Recetas</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary>
+        <summary><span><strong>Explorá la plataforma</strong><small>Validaciones · AI Notes · Recetas · Turnos</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary>
         <div class="product-menu-panel">
           <div class="product-menu-intro"><span>EN CADA ATENCIÓN</span><p>Mucho más que una videollamada.</p></div>
           <nav class="product-menu-links" aria-label="Funcionalidades">
             <a href="validaciones.html"><div class="menu-preview menu-validation" aria-hidden="true"><div class="menu-sheet"><span>Identidad<b>✓</b></span><span>Código de credencial<b>✓</b></span><span>Copago<b>✓</b></span></div></div><strong>Validaciones<svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></strong><p>Identidad, credencial y copagos antes de la atención.</p></a>
             <a href="ai-notes.html"><div class="menu-preview menu-notes" aria-hidden="true"><div class="menu-sheet"><div class="menu-signal"><i></i><i></i><i></i><i></i><i></i></div><div class="menu-lines"><i></i><i></i><i></i><i></i></div></div></div><strong>AI Notes<svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></strong><p>Menos trabajo administrativo en cada consulta.</p></a>
             <a href="recetas.html"><div class="menu-preview menu-receta" aria-hidden="true"><div class="menu-sheet"><div class="menu-mini-brand">alvia<span>.</span></div><div class="menu-lines"><i></i><i></i><i></i></div></div><b>✓</b></div><strong>Recetas<svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></strong><p>La receta de la consulta, en el celular del paciente.</p></a>
+            <a href="turnos-inteligentes.html"><div class="menu-preview menu-turnos" aria-hidden="true"><div class="menu-turno"><i>24 h</i><span></span><b>✓</b></div></div><strong>Turnos inteligentes<svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></strong><p>Confirmación y adelantos para reducir el ausentismo.</p></a>
           </nav>
         </div>
       </details>
@@ -108,7 +110,7 @@
           </article>
           <article class="benefit">
             <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="27" rx="4"/><path d="M17 42h14M24 35v7M12 16h9M12 23h7"/><path class="accent" d="m25 24 5 4 7-11"/></svg>
-            <div><h3>Tu gestión, en un mismo lugar.</h3><p>Organizá agendas, aplicá tus coberturas y acompañá cada atención. Tu equipo tiene la información desde el turno hasta la receta.</p></div>
+            <div><h3>Gestioná turnos y reducí el ausentismo.</h3><p>Alvia pide confirmación 24 horas antes y ofrece los horarios libres a pacientes que pueden adelantar. Sin seguimiento manual.</p></div>
           </article>
           <article class="benefit">
             <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="5" width="23" height="38" rx="5"/><path d="M21 10h7M22 37h5"/><path class="accent" d="M24 29s-11-6-8-12c2-4 6-3 8 0 2-3 6-4 8 0 3 6-8 12-8 12Z"/></svg>
@@ -212,6 +214,23 @@
             </div>
           </a>
         </article>
+        <article class="feature-entry" data-feature="turnos" aria-labelledby="feature-appointments-title">
+          <a class="feature-card-link" href="turnos-inteligentes.html" aria-labelledby="feature-appointments-action">
+            <div class="feature-preview preview-appointments" aria-hidden="true">
+              <div class="appointment-slip">
+                <div class="preview-heading"><span>24 h antes</span><b>Agente activo</b></div>
+                <div class="appointment-row is-open"><i>09:30</i><span>Turno sin confirmar</span></div>
+                <div class="appointment-match"><span>3 pacientes con turno futuro</span><b>→</b></div>
+                <div class="appointment-row is-filled"><i>09:30</i><span>Turno adelantado</span><b>✓</b></div>
+              </div>
+            </div>
+            <div class="feature-entry-copy">
+              <h3 id="feature-appointments-title">Turnos inteligentes</h3>
+              <p>Confirmación 24 horas antes y adelanto automático para reducir el ausentismo.</p>
+              <span class="feature-card-action" id="feature-appointments-action">Explorar Turnos inteligentes<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
+            </div>
+          </a>
+        </article>
       </div>
     </section>
 
@@ -261,7 +280,7 @@
   </main>
 
   <footer class="footer shell">
-    <div class="footer-main"><div><a class="wordmark" href="#inicio" aria-label="Alvia, volver al inicio">alvia<span>.</span></a><p>Telemedicina que sí te funciona.</p></div><nav aria-label="Conocé Alvia"><h2>Conocé Alvia</h2><a href="#beneficios">Por qué Alvia</a><a href="#tu-red">Tu red y la red Alvia</a><a href="#funcionalidades">Validaciones, AI Notes y recetas</a><a href="#organizaciones">Para tu organización</a></nav><nav aria-label="Contacto"><h2>Conversemos</h2><a href="mailto:hola@alvia.ar">hola@alvia.ar</a><a href="https://wa.me/541133578538" target="_blank" rel="noopener">WhatsApp <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a><a href="https://doctor.alvia.ar/">Acceso médicos <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a></nav></div>
+    <div class="footer-main"><div><a class="wordmark" href="#inicio" aria-label="Alvia, volver al inicio">alvia<span>.</span></a><p>Telemedicina que sí te funciona.</p></div><nav aria-label="Conocé Alvia"><h2>Conocé Alvia</h2><a href="#beneficios">Por qué Alvia</a><a href="#tu-red">Tu red y la red Alvia</a><a href="#funcionalidades">Validaciones, AI Notes, recetas y turnos</a><a href="#organizaciones">Para tu organización</a></nav><nav aria-label="Contacto"><h2>Conversemos</h2><a href="mailto:hola@alvia.ar">hola@alvia.ar</a><a href="https://wa.me/541133578538" target="_blank" rel="noopener">WhatsApp <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a><a href="https://doctor.alvia.ar/">Acceso médicos <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a></nav></div>
     <div class="footer-bottom"><span>© 2026 Alvia</span><span>Hecho para atender en Argentina.</span></div>
   </footer>
 </body>

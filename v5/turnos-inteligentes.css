@@ -1,0 +1,46 @@
+/* Gestión inteligente de turnos: una promesa, una demostración y una acción. */
+.appointments-hero{display:grid;grid-template-columns:.76fr 1.24fr;gap:58px;align-items:center;padding-block:74px 84px}
+.appointments-intro{position:relative;z-index:2}
+.feature-name{font-size:15px;font-weight:600;color:var(--blue-text);margin-bottom:20px}
+.appointments-intro h1{font-size:53px;line-height:1.12;letter-spacing:-2.2px;max-width:535px}
+.appointments-intro h1 span{color:var(--blue-text)}
+.appointments-lead{max-width:485px;margin-block:26px 29px;font-size:18px;line-height:1.65}
+.agenda-scene{position:relative;min-width:0;border:1px solid #d9e3f1;border-radius:16px;background:white;box-shadow:0 18px 50px rgb(36 65 110 / 8%);isolation:isolate}
+.agenda-scene:before{content:"";position:absolute;z-index:-1;inset:-24px 30px 40px -25px;border-radius:24px;background:var(--pale)}
+.agenda-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 21px;background:var(--ink);color:white;border-radius:15px 15px 0 0}
+.agenda-top>div{display:flex;flex-direction:column}
+.agenda-top small{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#a9c8ff}
+.agenda-top strong{font-size:15px;font-weight:600;margin-top:3px}
+.agenda-top>span{display:flex;align-items:center;gap:6px;font-size:9px;color:#dce4ef;white-space:nowrap}
+.agenda-top>span i{width:7px;height:7px;border-radius:50%;background:#4bd09b;box-shadow:0 0 0 3px rgb(75 208 155 / 16%)}
+.agenda-body{display:grid;grid-template-columns:1.35fr .65fr;min-height:340px}
+.day-schedule{padding:17px 19px 12px}
+.time-row{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:stretch;min-height:68px}
+.time-row time{font-size:9px;color:#758196;padding-top:10px}
+.appointment{position:relative;display:flex;flex-direction:column;justify-content:center;padding:8px 12px;margin-bottom:7px;border-left:3px solid var(--blue);border-radius:5px;background:#f1f6ff}
+.appointment b{font-size:11px;font-weight:600}
+.appointment small{font-size:8px;color:#637087;margin-top:2px}
+.appointment em{position:absolute;right:8px;top:8px;padding:3px 6px;border-radius:8px;background:#f7cf7e;color:#754700;font-size:7px;font-style:normal;font-weight:600}
+.appointment.moved{border-left-color:var(--orange);background:#fff7e7}
+.appointment.pending{border-left-color:#98a4b5;background:#f4f5f7}
+.activity-log{padding:20px 16px;border-left:1px solid var(--line);background:#fbfcfe}
+.activity-log>strong{font-size:11px;font-weight:600}
+.activity-log ul{list-style:none;margin:18px 0 0;padding:0}
+.activity-log li{display:grid;grid-template-columns:8px 1fr;gap:8px;align-items:start;padding:0 0 21px;position:relative}
+.activity-log li:not(:last-child):after{content:"";position:absolute;left:3px;top:9px;bottom:2px;width:1px;background:#cad7e8}
+.activity-log li>i{position:relative;z-index:1;width:8px;height:8px;border-radius:50%;background:var(--blue);margin-top:2px}
+.activity-log li>i.log-orange{background:var(--orange)}
+.activity-log li>i.log-green{background:#38a97f}
+.activity-log li div{display:flex;flex-direction:column}
+.activity-log li b{font-size:9px;font-weight:600}
+.activity-log li span{font-size:7px;color:#6e798b;margin-top:2px}
+.agenda-scene figcaption{font-size:11px;line-height:1.5;color:#6a7587;text-align:center;padding:11px;background:white;border-top:1px solid var(--line);border-radius:0 0 15px 15px}
+.appointments-closing{background:var(--pale);padding-block:50px}
+.appointments-closing-inner{display:flex;align-items:center;justify-content:space-between;gap:55px}
+.appointments-closing h2{font-size:37px;max-width:660px}
+.appointments-closing .button{flex:none}
+@media(max-width:1100px){.appointments-hero{gap:36px;padding-block:58px 70px}.appointments-intro h1{font-size:46px}.appointments-lead{font-size:17px}.appointment em{display:none}}
+@media(max-width:900px){.appointments-hero{grid-template-columns:.8fr 1.2fr;gap:29px}.appointments-intro h1{font-size:40px;letter-spacing:-1.7px}.appointments-lead{font-size:15px}.appointments-intro .button{font-size:14px;padding-inline:19px;gap:14px}.agenda-body{grid-template-columns:1.25fr .75fr;min-height:310px}.appointments-closing h2{font-size:32px}.appointments-closing-inner{gap:30px}.appointments-closing .button{font-size:14px;padding-inline:20px;gap:13px}}
+@media(max-width:700px){.appointments-hero{grid-template-columns:1fr;gap:39px;padding-block:38px 52px}.feature-name{font-size:14px;margin-bottom:17px}.appointments-intro h1{font-size:clamp(37px,8.9vw,50px);line-height:1.13}.appointments-lead{font-size:16px;max-width:520px;margin-block:22px 24px}.agenda-scene{width:100%;max-width:540px;justify-self:center}.agenda-scene:before{display:none}.agenda-body{min-height:300px}.appointments-closing{padding-block:38px}.appointments-closing-inner{flex-direction:column;align-items:flex-start;gap:24px}.appointments-closing h2{font-size:30px}}
+@media(max-width:480px){.agenda-body{grid-template-columns:1fr}.activity-log{border-left:0;border-top:1px solid var(--line)}.activity-log ul{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.activity-log li{grid-template-columns:7px 1fr;padding-bottom:0}.activity-log li:not(:last-child):after{display:none}.agenda-top{padding-inline:15px}.agenda-top>span{font-size:8px}}
+@media(max-width:359px){.appointments-intro h1{font-size:35px;letter-spacing:-1.5px}.appointments-lead{font-size:15px}.appointments-closing h2{font-size:29px}.agenda-top strong{font-size:12px}.day-schedule{padding-inline:11px}}
