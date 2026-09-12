@@ -1,6 +1,6 @@
 # Recetas · brief
 
-2026-09-12. Página institucional V5 para organizaciones de salud de Argentina. Alcance: PLAN_FEATURES §8, §9 y §10. Estado: implementada y verificada localmente; publicación separada.
+2026-09-12. Página institucional V5 para organizaciones de salud de Argentina. Alcance: PLAN_FEATURES §8, §9 y §10. Estado: publicada y verificada por pedido de Pablo; runtime `5f74ecf`. [Entrega y evidencia](README.md).
 
 ## Decisión y mensaje
 

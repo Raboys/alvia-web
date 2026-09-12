@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: Validaciones aprobada y publicada desde `2d3380d` con las correcciones de copy de Pablo, con evidencia pública y documentación actualizadas. Recetas terminada y verificada localmente, con documentación y paquete de preview completos. Publicación separada. Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: Recetas publicada y verificada por pedido de Pablo, runtime `5f74ecf`. Las tres features tienen enlaces públicos y navegación recíproca. Implementación y documentación commiteadas y pusheadas; publicación verificada y cierre completo. Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -85,7 +85,7 @@ Pedido actual: desarrollar Recetas según PLAN_FEATURES (§8–10) y revisar la 
 | RX-05 | done | 232 checks sobre paquete aislado; 20 archivos, 493.421 bytes, HTTP/SHA-256 idénticos al árbol revisado. 105 enlaces locales de Markdown válidos; diff, capturas y continuidad revisados (§10–11). |
 
 
-Cierre: todas las tareas locales de Recetas están `done`. [Entrega, capturas y comprobaciones](../docs/features/recetas/README.md). Preview `--working-tree`, `source_commit: null`, base `ab8aa78`. Publicación y paquete desde commit son una acción separada; el runtime público permanece documentado en `2d3380d`. No se modifican producto, producción ni el registro de release.
+Cierre: todas las tareas locales de Recetas están `done`. [Entrega, capturas y comprobaciones](../docs/features/recetas/README.md). Preview `--working-tree`, `source_commit: null`, base `ab8aa78`. Ese fue el cierre local, sin publicación; la continuación autorizada de abajo registra el release de commit publicado posteriormente.
 
 
 ## Publicación de Recetas autorizada · 2026-09-12
@@ -94,7 +94,10 @@ Pablo pidió publicar, commitear implementación y documentación, y pushear. Se
 
 | ID | Estado | Resultado y verificación |
 |---|---|---|
-| RX-06 | in_progress | Commit y push de implementación; paquete desde commit idéntico a la preview y verificado por HTTP. |
-| RX-07 | pending | Publicar con reemplazo atómico del enlace V5 y conservar el release anterior. |
-| RX-08 | pending | Verificar Recetas, páginas relacionadas, recursos y manifiesto en origen y ambos dominios. |
-| RX-09 | pending | Documentar release real, evidencias y rollback; commit de documentación, push y confirmación del HEAD remoto. |
+| RX-06 | done | Implementación `5f74ecf` commiteada y pusheada; paquete desde commit: 20 archivos, 493.421 bytes, idéntico a la preview. 232 checks y hashes HTTP correctos. |
+| RX-07 | done | Release `v5-5f74ecf` activado con reemplazo atómico; `v5-2d3380d` conservado para rollback. |
+| RX-08 | done | 232 checks públicos en apex y 232 en www; Validaciones 205 y AI Notes 148. 20 archivos y manifiesto correctos en origen/ambos dominios. Nginx/rutas conservados; capturas y rollback guardados. |
+| RX-09 | done | Release, evidencias, rollback y Markdown actualizados; commit de documentación posterior al runtime y push a la rama existente, con comprobación del HEAD remoto. |
+
+
+Cierre de publicación: Recetas disponible en ambos dominios desde `5f74ecf`. 232 checks en cada dominio, Validaciones 205 y AI Notes 148; 20 archivos y manifiestos verificados. Todas las tareas están `done`. Los commits de implementación y documentación están pusheados a `origin/feat/v5-feature-pages-plan`; `v5-2d3380d` se conserva para rollback.

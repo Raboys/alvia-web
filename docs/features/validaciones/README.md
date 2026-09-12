@@ -1,6 +1,6 @@
 # Validaciones · aprobada y publicada en V5
 
-2026-09-12. **Publicada en [alvia.ar/v5/validaciones.html](https://alvia.ar/v5/validaciones.html)** y en `www.alvia.ar`, con enlace desde home y navegación recíproca con AI Notes. Recetas sigue informativa. Pablo aprobó la página y pidió publicarla, documentarla, commitear y pushear. Runtime vigente **`2d3380dc31ea832366bdd9a1fd4c5e50722b9d74`**, rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`.
+2026-09-12. **Publicada en [alvia.ar/v5/validaciones.html](https://alvia.ar/v5/validaciones.html)** y en `www.alvia.ar`, con enlace desde home y navegación recíproca con AI Notes y Recetas. Pablo aprobó la página y pidió publicarla, documentarla, commitear y pushear. Runtime vigente **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, que suma [Recetas](../recetas/README.md) y su enlace recíproco; [205 checks públicos de regresión](../recetas/public/validaciones-regression-checks.json). Las evidencias de las publicaciones previas se conservan abajo. Rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`.
 
 La página reúne identidad, código de credencial y copagos bajo las reglas de cobertura. El ejemplo de guardia permite comparar una cobertura con copago y otra sin copago mediante radios nativos. Explica DNI/selfie, el código de la app de la cobertura y el momento del pago: al reservar un turno o antes de entrar a la espera en guardia. El ejemplo de código tiene tres dígitos y el cierre de copagos dice «Con todos los medios de pago», según las correcciones posteriores de Pablo.
 
@@ -87,7 +87,7 @@ ALVIA_V5_URL=https://alvia.ar/v5/ ALVIA_V5_EVIDENCE=/tmp/alvia-validaciones-publ
 
 Pablo pidió mostrar tres dígitos (`482`), quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso, y reemplazar la aclaración de segundo cobro por **«Con todos los medios de pago»**. El texto del código queda en una sola oración: «El afiliado ingresa el código que ve en la app de su cobertura».
 
-Runtime vigente **`2d3380dc31ea832366bdd9a1fd4c5e50722b9d74`**, release `/var/www/alvia.ar/releases/v5-2d3380d`, activado el **2026-09-12 18:12:57 UTC**. Paquete de commit: 18 archivos, 472.759 bytes, más manifiesto. Sólo cambia `validaciones.html` respecto de `60dadfc`. El fixture y las decisiones editoriales también se actualizaron en el repo.
+Runtime vigente **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, que suma [Recetas](../recetas/README.md) y su enlace recíproco; [205 checks públicos de regresión](../recetas/public/validaciones-regression-checks.json). Las evidencias de las publicaciones previas se conservan abajo. Rama, release `/var/www/alvia.ar/releases/v5-2d3380d`, activado el **2026-09-12 18:12:57 UTC**. Paquete de commit: 18 archivos, 472.759 bytes, más manifiesto. Sólo cambia `validaciones.html` respecto de `60dadfc`. El fixture y las decisiones editoriales también se actualizaron en el repo.
 
 - [205 comprobaciones locales](public-copy-update/local-browser-checks.json) y [205 públicas](public-copy-update/browser-checks.json) sobre la corrección. La prueba de copagos exige ahora el texto pedido por Pablo.
 - [HTTP y SHA-256](public-copy-update/http-checks.json) de los 18 archivos y manifiesto en origen y ambos dominios; rutas y Nginx conservados.

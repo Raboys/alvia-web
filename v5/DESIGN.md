@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente tras corregir Validaciones: `2d3380dc31ea832366bdd9a1fd4c5e50722b9d74`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con Recetas publicada: `5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -242,12 +242,12 @@ Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushea
 Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones gobiernan el copy vigente de Validaciones; no reintroducir las aclaraciones descartadas.
 
 
-## 12. Recetas · entrega local del 2026-09-12
+## 12. Recetas · publicada el 2026-09-12
 
 [recetas.html](recetas.html) conserva el lenguaje comercial directo: «La receta de la consulta llega al celular del paciente». El hero une titular, una bajada breve y CTA; debajo, dos superficies legibles muestran preparación médica y recepción del mismo ejemplo. En móvil se apilan y la flecha sigue el sentido de lectura. Se evita sumar un tutorial o volver a contar el funcionamiento de AI Notes.
 
 Los mocks nativos usan datos sintéticos explícitos, sin sustancia, dosis, matrícula o firma ficticias. El documento conserva «Documento de demostración · sin validez legal». Los estados «En preparación / Documento listo» se comparan con radios nativos; el documento listo desaparece durante la preparación. Las acciones reales de la app se explican fuera del mock, sin botones de descarga/compartir inactivos. Un desplegable explica demoras, indisponibilidad y consultas por invitación.
 
-La entrega local enlaza las tres páginas desde home y agrega navegación recíproca. No añade imágenes ni JS propio; home no carga los estilos de Recetas. Se verificaron cinco anchos, teclado, sin JS, texto ampliado, movimiento reducido, enlaces y el paquete aislado. [Brief, procedencia y evidencia](../docs/features/recetas/README.md).
+La entrega publicada enlaza las tres páginas desde home y agrega navegación recíproca. No añade imágenes ni JS propio; home no carga los estilos de Recetas. Se verificaron cinco anchos, teclado, sin JS, texto ampliado, movimiento reducido, enlaces y el paquete aislado. [Brief, procedencia y evidencia](../docs/features/recetas/README.md).
 
-La página está terminada localmente y no se registra como aprobada o publicada. El runtime público sigue en `2d3380d`. Esta sección actualiza el estado de trabajo sin cambiar la historia de publicación de las secciones anteriores.
+Pablo pidió publicar, documentar, commitear y pushear. La página está publicada y verificada en ambos dominios; runtime `5f74ecf`, release anterior `v5-2d3380d` disponible para rollback. Se conservan la historia de las publicaciones anteriores y las evidencias de preview. [Registro de release](../docs/releases/2026-09-12-v5.md#recetas--2026-09-12-utc).

@@ -2,7 +2,7 @@
 
 2026-09-12. Ejemplos HTML/CSS con datos sintéticos, identificados en ambas superficies. No son capturas literales ni operaciones reales. Se mantiene la leyenda de demostración en el documento.
 
-Producto: `Raboys/telemed-starter`, commit `f5e854a813a08e57111044601eb982ba1924fba3`, checkout `/home/pablo/.t3/worktrees/telemed-starter/t3code-fe9193a6`. Institucional: `Raboys/alvia-web`, base `ab8aa78`; checkout `/home/pablo/dev/alvia-web-v5-features`. Implementación sin commit, entrega local. [Fixture](fixture.json) y [brief](BRIEF.md).
+Producto: `Raboys/telemed-starter`, commit `f5e854a813a08e57111044601eb982ba1924fba3`, checkout `/home/pablo/.t3/worktrees/telemed-starter/t3code-fe9193a6`. Institucional: `Raboys/alvia-web`, base `ab8aa78`; checkout `/home/pablo/dev/alvia-web-v5-features`. Implementación y runtime `5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`, publicada por pedido de Pablo. La evidencia inicial de preview se conserva separada. [Fixture](fixture.json) y [brief](BRIEF.md).
 
 | Escena | Afirmación | Archivo/componente fuente en el commit de producto | Fixture | Tratamiento y simplificación | Dimensiones / asset final |
 |---|---|---|---|---|---|
@@ -26,4 +26,4 @@ El runner acepta `ALVIA_V5_URL`, `ALVIA_V5_EVIDENCE` y `ALVIA_PLAYWRIGHT`. Chrom
 
 Los originales de revisión están en `review/`; no se alteran ni reutilizan las capturas de la base aprobada. Las imágenes de revisión, herramientas, fixture y documentos de autoría no se publican. El runtime añade únicamente `recetas.html` y `recetas.css`; comparte `styles.css` y `navigation.js`. No hay imágenes nuevas, JS propio, dependencias ni solicitudes al producto.
 
-El manifiesto `review/runtime-manifest.json` registra `source_mode: working-tree-preview`, `source_commit: null` y el commit base. La página terminada localmente no acredita publicación, preferencia del comprador o conversión. Para publicar corresponde generar un paquete desde el futuro commit de implementación.
+El manifiesto `review/runtime-manifest.json` registra `source_mode: working-tree-preview`, `source_commit: null` y el commit base. El paquete publicado se generó desde `5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95` y conserva exactamente los hashes de esa preview; [manifiesto de commit](public/release.json), [verificación pública](public/http-checks.json) y [registro de publicación](README.md#publicación--2026-09-12-utc). La evidencia técnica no acredita preferencia del comprador o conversión.

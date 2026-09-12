@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. Recetas está terminada y enlazada en la preview local; aún no está publicada. Runtime público vigente `2d3380d`. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
+**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. [Recetas](https://alvia.ar/v5/recetas.html) también está publicada y enlazada; las tres features tienen navegación recíproca. Runtime público vigente `5f74ecf`. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
 
 ## Mensaje acordado
 
@@ -77,9 +77,9 @@ La subpágina AI Notes usa `styles.css`, `ai-notes.css`, `navigation.js` y `ai-n
 [Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. Pablo aprobó la página y pidió publicación, documentación, commits y push. Runtime público `2d3380d`: ejemplo de código de tres dígitos, texto breve y «Con todos los medios de pago», según las correcciones de Pablo. Release anterior `v5-60dadfc` conservado.
 
 
-## Recetas · terminada localmente
+## Recetas · publicada y verificada
 
-[recetas.html](recetas.html) muestra la preparación médica y el documento disponible en el celular con un mismo caso ficticio. El selector «En preparación / Documento listo» funciona sin JavaScript. Se mantienen la leyenda de demostración, las condiciones de disponibilidad y el CTA comercial. La preview conecta las tres páginas desde home y mediante enlaces recíprocos.
+[recetas.html](recetas.html) muestra la preparación médica y el documento disponible en el celular con un mismo caso ficticio. El selector «En preparación / Documento listo» funciona sin JavaScript. Se mantienen la leyenda de demostración, las condiciones de disponibilidad y el CTA comercial. La publicación conecta las tres páginas desde home y mediante enlaces recíprocos.
 
 Usa `styles.css`, `recetas.css` y `navigation.js`; no agrega imágenes, dependencias ni JS propio. [Brief, procedencia, capturas y verificación](../docs/features/recetas/README.md). 232 checks de Recetas, regresiones de Validaciones (205) y AI Notes (148), y 232 checks sobre paquete aislado. Preview: 20 archivos, 493.421 bytes, hashes HTTP correctos.
 
@@ -89,4 +89,4 @@ python3 -m http.server 8945 --bind 127.0.0.1
 node docs/features/recetas/verify.cjs
 ```
 
-Esta entrega no publica ni crea un commit. El runtime público sigue en `2d3380d`; el paquete de preview registra `source_commit: null`. El estado de la corrida está en [TODO.md](TODO.md).
+Publicada por pedido de Pablo desde `5f74ecf` el 2026-09-12 a las 18:44:43 UTC. 232 comprobaciones públicas en cada dominio, Validaciones 205 y AI Notes 148; archivos y manifiesto verificados por HTTP. Release anterior `v5-2d3380d` conservado. La preview histórica mantiene `source_commit: null`; [la evidencia de publicación](../docs/features/recetas/README.md#publicación--2026-09-12-utc) identifica el commit servido. Estado en [TODO.md](TODO.md).
