@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con header de funcionalidades y chevrones B: `8276775bf9c1313da04f103d1bbbae8e4743b2c4`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con megamenú mobile, header desktop y chevrones B: `09734e21f2c55b5d830e2abe4d455b8db9e21db7`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -296,3 +296,5 @@ Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos 
 ## 17. Corrección de header · megamenú en mobile
 
 Pablo se arrepintió de las tres tarjetas fijas en mobile y eligió el megamenú visual. Desktop conserva la opción 4, nombre + beneficio. En mobile, «Explorá la plataforma» muestra siempre los nombres Validaciones, AI Notes y Recetas; al tocar abre las tres entradas con miniatura y descripción. Los chevrones de la alternativa B permanecen. Esta decisión reemplaza únicamente el diseño mobile de §15. Publicación, documentación, commit, push y aviso por WhatsApp autorizados explícitamente. [Implementación y evidencia](../docs/design/v5-mobile-megamenu/README.md).
+
+Publicado y verificado en ambos dominios desde `09734e2` a las 20:07:51 UTC. 189 comprobaciones en cada dominio, 22 archivos y manifiestos verificados desde origen y CDN. Release previo `v5-8276775` conservado.

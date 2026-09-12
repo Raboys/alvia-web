@@ -1,5 +1,7 @@
 # Header V5 · opción 4 elegida
 
+**Corrección posterior:** Pablo eligió el [megamenú para mobile](../v5-mobile-megamenu/README.md). Desktop conserva la opción 4. El registro de esta carpeta describe la primera publicación; runtime vigente `09734e2`.
+
 Pablo eligió «4» después de comparar cuatro alternativas de header y pidió priorizar descubribilidad en mobile. Se adopta nombre + beneficio para las tres funcionalidades:
 
 - Validaciones · Identidad y cobertura.

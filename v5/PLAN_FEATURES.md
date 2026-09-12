@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `8276775`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). El header opción 4, elegido posteriormente, muestra nombre y beneficio de las tres features con accesos visibles en mobile; [decisión y publicación](../docs/design/v5-header-option4/README.md). Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `09734e2`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). El header vigente conserva nombre + beneficio en desktop y usa megamenú visual en mobile; [decisión y publicación](../docs/design/v5-mobile-megamenu/README.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -268,4 +268,4 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 ### Inicio sugerido de la próxima corrida
 
-> Las tres features están publicadas y verificadas. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y las entregas de `docs/features/`. Runtime vigente `5f74ecf`; evidencia y rollback en el release de Recetas. Incorporá nuevos pedidos de Pablo conservando las decisiones editoriales vigentes.
+> Las tres features están publicadas y verificadas. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y las entregas de `docs/features/`. Runtime vigente `09734e2`; evidencia y rollback en el release de megamenú mobile. Incorporá nuevos pedidos de Pablo conservando las decisiones editoriales vigentes.

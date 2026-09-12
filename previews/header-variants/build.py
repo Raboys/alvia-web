@@ -15,9 +15,9 @@ for source in SOURCE.iterdir():
 
 OPTIONS = [
     ('1', 'Accesos directos', 'Las tres funcionalidades a la vista, a un clic. En mobile se mantienen en una fila fija, sin abrir un menú.', 'Más compacto'),
-    ('2', 'Megamenú visual', 'Un menú con una explicación y una vista previa de cada funcionalidad. Deja espacio para crecer.', 'Más contexto'),
+    ('2', 'Megamenú visual', 'Un menú con una explicación y una vista previa de cada funcionalidad. Deja espacio para crecer.', 'Elegida para mobile'),
     ('3', 'Barra de producto', 'Una segunda fila dedicada a las funcionalidades. Siempre visibles, también en el celular.', 'Más presencia'),
-    ('4', 'Nombre + beneficio', 'Cada acceso cuenta para qué sirve. Ayuda a entender AI Notes antes de entrar.', 'Elegida por Pablo'),
+    ('4', 'Nombre + beneficio', 'Cada acceso cuenta para qué sirve. Ayuda a entender AI Notes antes de entrar.', 'Elegida para desktop'),
 ]
 FEATURES = [
     ('validaciones', 'Validaciones', 'Identidad y cobertura', 'Identidad, credencial y copagos antes de la atención.', '<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/>'),

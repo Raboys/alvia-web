@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. [Recetas](https://alvia.ar/v5/recetas.html) también está publicada y enlazada; las tres features tienen navegación recíproca. Runtime público vigente `8276775`, con el [header opción 4](../docs/design/v5-header-option4/README.md) elegido por Pablo. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
+**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. [Recetas](https://alvia.ar/v5/recetas.html) también está publicada y enlazada; las tres features tienen navegación recíproca. Runtime público vigente `09734e2`, con el [megamenú mobile y header desktop](../docs/design/v5-mobile-megamenu/README.md) elegidos por Pablo. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
 
 ## Mensaje acordado
 
@@ -28,7 +28,7 @@ Las correcciones de Pablo durante esta versión definen el mensaje:
 
 ## Diseño y recorrido
 
-Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. El header lleva directamente a Validaciones, AI Notes y Recetas, con nombre y beneficio. En mobile, los tres accesos permanecen visibles debajo de la marca y las acciones comerciales.
+Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. El header lleva directamente a Validaciones, AI Notes y Recetas, con nombre y beneficio. En mobile, el disparador muestra los nombres y abre un megamenú con miniaturas y beneficios.
 
 1. Oferta comercial y llamada a una conversación.
 2. Turnos, guardia, gestión y valor para el afiliado, junto a la app real.
@@ -91,10 +91,6 @@ node docs/features/recetas/verify.cjs
 
 Publicada por pedido de Pablo desde `5f74ecf` el 2026-09-12 a las 18:44:43 UTC. 232 comprobaciones públicas en cada dominio, Validaciones 205 y AI Notes 148; archivos y manifiesto verificados por HTTP. Release anterior `v5-2d3380d` conservado. La preview histórica mantiene `source_commit: null`; [la evidencia de publicación](../docs/features/recetas/README.md#publicación--2026-09-12-utc) identifica el commit servido. Estado en [TODO.md](TODO.md).
 
-## Header · opción 4 publicada
+## Header · megamenú mobile y opción 4 en desktop
 
-Validaciones, AI Notes y Recetas muestran nombre + beneficio en home y subpáginas. `header.css` reemplaza el menú hamburguesa anterior por accesos visibles en mobile; `navigation.js` se retiró. Verificación vigente de navegación: `node docs/design/v5-header-option4/verify.cjs`; acepta `PREVIEW_URL`, `EVIDENCE_DIR` y `PLAYWRIGHT_CORE_PATH`. Las verificaciones de menús de las publicaciones iniciales son históricas. [Decisión, capturas y publicación](../docs/design/v5-header-option4/README.md).
-
-## Botones y links · opción B
-
-Se reemplazan las diagonales por 30 chevrones discretos en las cuatro páginas. Publicado y verificado; [registro, capturas y rollback](../docs/releases/2026-09-12-chevron-b.md).
+Desktop conserva nombre + beneficio. Mobile usa un megamenú visual con los tres nombres visibles en el disparador. `header.css` contiene ambas composiciones y `header.js` agrega cierre con Escape y foco, clic exterior, navegación y cambio de viewport. La apertura y la navegación funcionan sin JavaScript mediante `details/summary`. Verificación vigente: `node docs/design/v5-mobile-megamenu/verify.cjs`; acepta `PREVIEW_URL`, `EVIDENCE_DIR`, `PLAYWRIGHT_CORE_PATH` y `CHROME_PATH`. [Decisión, capturas y publicación](../docs/design/v5-mobile-megamenu/README.md).

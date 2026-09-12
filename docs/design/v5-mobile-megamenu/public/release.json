@@ -1,0 +1,94 @@
+{
+  "source_commit": "09734e21f2c55b5d830e2abe4d455b8db9e21db7",
+  "public_path": "/v5/",
+  "files": {
+    "ai-notes.css": {
+      "bytes": 8099,
+      "sha256": "daaea55183d23c2fbc1f29c77a1d257e9b0c74ce121b198281295351e9d41907"
+    },
+    "ai-notes.html": {
+      "bytes": 11212,
+      "sha256": "ee8b7473e462554ef1e83a8119fa20795aa8879ec0e5f1eec049dcf8eab7841d"
+    },
+    "ai-notes.js": {
+      "bytes": 1259,
+      "sha256": "20ca0339c9e0f0d2c0f97d906553a801a813be5f68363deb31d5eb7c6ef195d5"
+    },
+    "assets/app-home.webp": {
+      "bytes": 166378,
+      "sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2"
+    },
+    "assets/app-prescription.webp": {
+      "bytes": 51856,
+      "sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7"
+    },
+    "assets/favicon.svg": {
+      "bytes": 269,
+      "sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d"
+    },
+    "assets/fonts/DM-Sans-LICENSE.txt": {
+      "bytes": 4388,
+      "sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2"
+    },
+    "assets/fonts/Lora-LICENSE.txt": {
+      "bytes": 4422,
+      "sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4"
+    },
+    "assets/fonts/dm-sans-latin.woff2": {
+      "bytes": 36932,
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+    },
+    "assets/fonts/lora-latin.woff2": {
+      "bytes": 37788,
+      "sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1"
+    },
+    "assets/people.webp": {
+      "bytes": 76786,
+      "sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b"
+    },
+    "features.css": {
+      "bytes": 7819,
+      "sha256": "de108431e115f4fd1bdc44f8e4767d0ed5dfc4ac97933fb4c609667db8bacd3b"
+    },
+    "header.css": {
+      "bytes": 6332,
+      "sha256": "de130d4e3aa20dea3fcc9ae8eeac84c1a8c80f44496ded4dea5e90c15245928e"
+    },
+    "header.js": {
+      "bytes": 874,
+      "sha256": "39dc0167fb212d7637a82ae35c17e603cbe153baf203fea8040f89355ceb143c"
+    },
+    "index.html": {
+      "bytes": 26565,
+      "sha256": "99b1d74bea8030a5f35354e3c3f422fd128a52875194de19c06806be65003837"
+    },
+    "recetas-mocks.css": {
+      "bytes": 8377,
+      "sha256": "9a0582286090606797a191616bbf8c6c5a6d8b409a2eb8ae8231f22360aa64d6"
+    },
+    "recetas.css": {
+      "bytes": 10005,
+      "sha256": "44b4b35d04df546587c9ce493662c9c9847b03f4c395e7907eeb91e5cc571f5e"
+    },
+    "recetas.html": {
+      "bytes": 13351,
+      "sha256": "61aa5595dcc89c8a9c2e8a2e15604ec8416d47132bee567047a2efda793a1233"
+    },
+    "script.js": {
+      "bytes": 2609,
+      "sha256": "fb0889bf57de43e3a454eda7a55bab2f5e21d2fdb89957c29615cf0a91a5cc0a"
+    },
+    "styles.css": {
+      "bytes": 22188,
+      "sha256": "884a4b9229618b3af4b009f5d80d681c64c88962cc0973f1fcf796a6d20ab1eb"
+    },
+    "validaciones.css": {
+      "bytes": 11179,
+      "sha256": "293422d8976f977e82ead4dd189045afd81da9fa432e9f56d6acedde8dc41453"
+    },
+    "validaciones.html": {
+      "bytes": 12487,
+      "sha256": "7effb18d010e7604da00a6068dfd18b3e35253ca98ebdc615f8d2ea7042c6108"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 Preview privado: <http://100.71.73.116:18729/>. Abre en vista celular; el selector permite comparar desktop.
 
-**Elegida por Pablo: opción 4, Nombre + beneficio.** Implementación integrada y empaquetada para revisión: <http://100.71.73.116:18729/elegida/>. Fuente en `/home/pablo/dev/alvia-web-v5-header`, rama `feat/v5-descriptive-header`; Pablo autorizó documentar, commitear, pushear y publicar la elección. El registro de release está en `../../docs/releases/2026-09-12-v5.md`.
+**Elección final de Pablo: opción 4 para desktop y megamenú (opción 2) para mobile.** Implementación integrada y empaquetada para revisión: <http://100.71.73.116:18729/elegida/>. Fuente en `/home/pablo/dev/alvia-web-v5-header`, rama `feat/v5-mobile-megamenu`; Pablo autorizó documentar, commitear, pushear y publicar la elección. El registro de release está en `../../docs/releases/2026-09-12-v5.md`.
 
 - [1 · Accesos directos](http://100.71.73.116:18729/1/index.html): tres enlaces persistentes de una fila en mobile.
 - [2 · Megamenú visual](http://100.71.73.116:18729/2/index.html): los nombres aparecen en el disparador mobile; un toque abre las tres explicaciones. Requiere dos toques para entrar a una feature.
@@ -31,3 +31,5 @@ El servidor de esta sesión corre como proceso separado, con log `/tmp/alvia-hea
 ```sh
 node previews/header-variants/check.cjs
 ```
+
+Corrección mobile publicada desde `09734e2`, con [capturas y verificación](../../docs/design/v5-mobile-megamenu/README.md). Los mocks 1–4 conservan la comparación original; `elegida/` muestra la implementación combinada.
