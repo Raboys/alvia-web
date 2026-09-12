@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `f281d8b`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `6176676`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). El header opción 4, elegido posteriormente, muestra nombre y beneficio de las tres features con accesos visibles en mobile; [decisión y publicación](../docs/design/v5-header-option4/README.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 

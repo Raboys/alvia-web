@@ -13,7 +13,7 @@ Cada opción contiene la home y las tres subpáginas completas, con el mismo hea
 
 ## Fuente
 
-Snapshot de `/home/pablo/dev/alvia-web-v5-features/v5`, commit `c03f138e47f2a486bd5972d2343090cf8bc0e5c4`, 2026-09-12. Se reutilizan la home, páginas, fuentes, foto, estilos e ilustraciones HTML/CSS existentes. `build.py` genera las páginas; `headers.css` y `headers.js` contienen los cambios del estudio. No se modificó el sitio público.
+Snapshot de `/home/pablo/dev/alvia-web-v5-features/v5`, commit `c03f138e47f2a486bd5972d2343090cf8bc0e5c4`, 2026-09-12. Se reutilizan la home, páginas, fuentes, foto, estilos e ilustraciones HTML/CSS existentes. `build.py` genera las páginas; `headers.css` y `headers.js` contienen los cambios del estudio. El comparador conserva los cuatro mocks. La opción 4 se publicó posteriormente en la V5 desde `6176676`; [registro y evidencia](../../docs/design/v5-header-option4/README.md).
 
 ## Ejecutar
 

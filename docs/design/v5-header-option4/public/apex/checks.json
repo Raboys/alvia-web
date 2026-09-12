@@ -1,0 +1,824 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 95.34375
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 95.34375
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 320,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 95.34375
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 320,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 95.328125
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 95.34375
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 360,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 108.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 108.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 108.65625
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 108.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 108.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 108.65625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 360,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 108.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 108.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 108.65625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 360,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 74.6875,
+          "width": 108.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 74.6875,
+          "width": 108.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 74.6875,
+          "width": 108.65625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 390,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 118.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 118.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 118.65625
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 118.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 118.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 118.65625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 390,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 118.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 118.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 118.65625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 390,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 118.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 118.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 118.65625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 430,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 132
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 132
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 430,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 132
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 430,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 132
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 132
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 768,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 244.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 244.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 244.671875
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 244.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 244.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 244.671875
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 768,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 244.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 244.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 244.671875
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 768,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 244.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 244.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 244.671875
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 900,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 288.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 288.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 288.65625
+        }
+      ]
+    },
+    {
+      "width": 900,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 288.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 288.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 288.65625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 900,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 288.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 288.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 288.65625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 900,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 76.1875,
+          "width": 288.65625
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 76.1875,
+          "width": 288.671875
+        },
+        {
+          "href": "recetas.html",
+          "height": 76.1875,
+          "width": 288.65625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 901,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ]
+    },
+    {
+      "width": 901,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 901,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 901,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 1100,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ]
+    },
+    {
+      "width": 1100,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 1100,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 1100,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 63,
+          "width": 130.296875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 63,
+          "width": 157.984375
+        },
+        {
+          "href": "recetas.html",
+          "height": 63,
+          "width": 135.0625
+        }
+      ],
+      "active": "recetas.html"
+    },
+    {
+      "width": 1440,
+      "file": "index.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 64.5,
+          "width": 156.421875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 64.5,
+          "width": 186.875
+        },
+        {
+          "href": "recetas.html",
+          "height": 64.5,
+          "width": 161.65625
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "file": "validaciones.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 64.5,
+          "width": 156.421875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 64.5,
+          "width": 186.875
+        },
+        {
+          "href": "recetas.html",
+          "height": 64.5,
+          "width": 161.65625
+        }
+      ],
+      "active": "validaciones.html"
+    },
+    {
+      "width": 1440,
+      "file": "ai-notes.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 64.5,
+          "width": 156.421875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 64.5,
+          "width": 186.875
+        },
+        {
+          "href": "recetas.html",
+          "height": 64.5,
+          "width": 161.65625
+        }
+      ],
+      "active": "ai-notes.html"
+    },
+    {
+      "width": 1440,
+      "file": "recetas.html",
+      "overflow": false,
+      "links": [
+        {
+          "href": "validaciones.html",
+          "height": 64.5,
+          "width": 156.421875
+        },
+        {
+          "href": "ai-notes.html",
+          "height": 64.5,
+          "width": 186.875
+        },
+        {
+          "href": "recetas.html",
+          "height": 64.5,
+          "width": 161.65625
+        }
+      ],
+      "active": "recetas.html"
+    }
+  ],
+  "failures": []
+}
