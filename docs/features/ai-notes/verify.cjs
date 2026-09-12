@@ -35,7 +35,17 @@ const screenshot = async (page, name) => {
       check(`${width}: incoming studies from both channels`, (await page.locator('.studies-inbox').innerText()).includes('Recibido por email') && (await page.locator('.studies-inbox').innerText()).includes('Recibido por WhatsApp'));
       check(`${width}: consistent synthetic patient`, (await page.locator('.summary-patient strong').innerText()) === (await page.locator('.inbox-heading > span').innerText()));
       check(`${width}: contextual commercial CTA`, await page.locator('.notes-closing a[href*="wa.me"]').evaluate(a => new URL(a.href).searchParams.get('text').includes('AI Notes')));
-      check(`${width}: no product calls`, (await page.evaluate(() => performance.getEntriesByType('resource').map(r => r.name))).every(url => new URL(url).origin === new URL(base).origin));
+      const deployment = new URL(base);
+      const publicSite = ['alvia.ar', 'www.alvia.ar'].includes(deployment.hostname);
+      check(`${width}: only runtime or known hosting resources, no product calls`,
+        (await page.evaluate(() => performance.getEntriesByType('resource').map(r => r.name))).every(name => {
+          const url = new URL(name);
+          if (url.origin === deployment.origin && url.pathname.startsWith('/v5/')) return true;
+          if (!publicSite) return false;
+          return (url.origin === deployment.origin &&
+            (url.pathname === '/cdn-cgi/rum' || /^\/cdn-cgi\/scripts\/[a-f0-9]+\/cloudflare-static\/email-decode\.min\.js$/.test(url.pathname))) ||
+            (url.origin === 'https://static.cloudflareinsights.com' && url.pathname.startsWith('/beacon.min.js/'));
+        }));
       await screenshot(page, `${width}-full.png`);
       if (width === 1440 || width === 390) await page.screenshot({path:path.join(evidence, `${width}-hero.png`)});
       const conditions = page.locator('.notes-conditions summary');

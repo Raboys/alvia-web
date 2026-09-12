@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-La versión pública del bloque conserva las tres entradas informativas sin enlaces. **En el árbol local ya está implementada [AI Notes](ai-notes.html)** y sólo su entrada tiene enlace. Validaciones y Recetas siguen pendientes. AI Notes reúne resumen automático de consulta y estudios recibidos previamente por email/WhatsApp, con el copy directo pedido por Pablo. [Brief, autoría y verificación](../docs/features/ai-notes/README.md). Estos cambios todavía no se publicaron; [evidencia de la publicación anterior](../docs/design/v5-features/README.md).
+**[AI Notes ya está publicada](https://alvia.ar/v5/ai-notes.html)** y sólo su entrada tiene enlace. Reúne resumen automático de consulta y estudios recibidos previamente por email/WhatsApp, con el copy breve y directo pedido por Pablo. Validaciones y Recetas siguen informativas y pendientes de desarrollo. Runtime `a4ca4aa`; [brief, autoría y verificación pública](../docs/features/ai-notes/README.md).
 
 ## Mensaje acordado
 

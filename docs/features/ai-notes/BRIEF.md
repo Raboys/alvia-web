@@ -1,6 +1,6 @@
 # AI Notes · brief V5
 
-2026-09-12. Página: `v5/ai-notes.html`. Estado: versión corregida; publicación y commits autorizados por Pablo. Resultado en README y registro de release.
+2026-09-12. Página: `v5/ai-notes.html`. Estado: versión corregida publicada por pedido de Pablo, runtime `a4ca4aa`. Resultado en README y registro de release.
 
 ## Dirección de Pablo
 
@@ -37,6 +37,6 @@ Producto: `f5e854a813a08e57111044601eb982ba1924fba3`, checkout `/home/pablo/.t3/
 - `frontend/doctor/src/panel-estudios.jsx`: bandeja por paciente, email/WhatsApp, adjuntos y links.
 - `docs/archivado/estudios-adjuntos.md`: documentación funcional construida, acceso antes/durante/después; contrastada con el panel vigente.
 
-Fuente institucional al inicio: `626cd3bb0715f60bd982c85cfe743d3c26c25263`, rama `feat/v5-feature-pages-plan`. Se adelanta AI Notes a Validaciones por pedido de Pablo; sólo su entrada tiene enlace. Validaciones y Recetas siguen pendientes.
+Fuente institucional al inicio: `626cd3bb0715f60bd982c85cfe743d3c26c25263`, rama `feat/v5-feature-pages-plan`. Se adelanta AI Notes a Validaciones por pedido de Pablo; sólo su entrada tiene enlace público. Validaciones y Recetas siguen pendientes.
 
 Verificación y límites de publicación en [README.md](README.md); autoría en [PROVENANCE.md](PROVENANCE.md).

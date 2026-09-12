@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **bloque de home publicado para revisión; AI Notes implementada y verificada localmente**. Validaciones y Recetas siguen pendientes. La subpágina de AI Notes todavía no se publicó. Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **bloque de home y AI Notes publicados y verificados**. Validaciones y Recetas siguen pendientes. AI Notes se publicó por pedido de Pablo desde `a4ca4aa`; sólo su entrada tiene enlace. Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -88,7 +88,7 @@ Tres columnas abiertas en escritorio, filas compactas con miniatura lateral en m
 
 En la publicación inicial, el bloque es **informativo y no interactivo** por instrucción de Pablo. No tiene flechas de navegación, cursor de enlace, estados de hover de tarjeta, `tabindex`, botones deshabilitados ni destinos vacíos. Un enlace en el footer permite encontrar el bloque; no lleva a una subpágina. Se preserva la navegación principal para no sumar otra decisión arriba.
 
-**Estado local actual:** AI Notes ya tiene página y su nombre es un enlace real con flecha; se actualizó su explicación hacia documentación automática y menos trabajo administrativo. Validaciones y Recetas conservan su presentación informativa.
+**Estado publicado actual:** AI Notes ya tiene página y su nombre es un enlace real con flecha; se actualizó su explicación hacia documentación automática y menos trabajo administrativo. Validaciones y Recetas conservan su presentación informativa.
 
 Implementación: [index.html](index.html), ancla `#funcionalidades`, y [features.css](features.css). Los `article[data-feature]` identifican cada entrada para su futura conversión en enlace. El empaquetador incluye la nueva hoja por su referencia desde HTML.
 
@@ -99,7 +99,7 @@ Rutas propuestas, compatibles con el estático actual:
 | Orden | Archivo futuro | Ruta pública futura | Estado actual |
 |---|---|---|---|
 | 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Pendiente, sin enlace en home. |
-| 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Implementada localmente; enlazada desde home. Sin publicar. |
+| 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Publicada (`a4ca4aa`); enlazada desde home. |
 | 3 | `v5/recetas.html` | `/v5/recetas.html` | Pendiente, sin enlace en home. |
 
 En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó en su corrida; los otros dos siguen pendientes. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
@@ -160,7 +160,7 @@ Fuentes contrastadas en producto `f5e854a813a08e57111044601eb982ba1924fba3`: `fr
 
 El médico activa por consulta tras informar y obtener consentimiento expreso del paciente o su representante. El paciente puede pedir apagarla; la llamada continúa y no hay reencendido en esa consulta. El panel de AI Notes es de sólo lectura y permite copiar; no tiene «Usar» para escribir la historia.
 
-**Entrega local:** [página](ai-notes.html), [brief](../docs/features/ai-notes/BRIEF.md), [autoría](../docs/features/ai-notes/PROVENANCE.md) y [verificación/capturas](../docs/features/ai-notes/README.md). Conectada sólo AI Notes desde home. No se publicaron estos cambios.
+**Entrega publicada:** [página](ai-notes.html), [brief](../docs/features/ai-notes/BRIEF.md), [autoría](../docs/features/ai-notes/PROVENANCE.md) y [verificación/capturas](../docs/features/ai-notes/README.md). Conectada sólo AI Notes desde home. Publicada por pedido de Pablo; runtime `a4ca4aa`.
 
 ## 8. Corrida 3 · Recetas
 
@@ -242,15 +242,15 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 | Entrega | Estado | Evidencia / próximo paso |
 |---|---|---|
-| Guía high level | Actualizada | Incluye la corrección editorial de AI Notes y su entrega local. |
-| Bloque home | Publicado como informativo; conexión AI Notes local | Sólo AI Notes tiene enlace en el árbol local. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
+| Guía high level | Actualizada | Incluye la corrección editorial de AI Notes y su publicación. |
+| Bloque home | Publicado con conexión AI Notes | Sólo AI Notes tiene enlace público. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
 | Validaciones | Pendiente | Primera corrida de página: cobertura de ejemplo, identidad, código y copagos. |
-| AI Notes | Implementada y verificada localmente | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
+| AI Notes | Publicada y verificada | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
 | Recetas | Pendiente | Después de AI Notes; recorrido de emisión y recepción, evidencia de condiciones. |
 | Revisión conjunta | Pendiente | Tras las tres páginas: consistencia, navegación, duplicaciones y peso del conjunto. |
 | Publicación del bloque informativo | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). |
-| Publicación de AI Notes | No realizada | Paquete de trabajo verificado con hashes. Al publicar, guardar la implementación en Git y generar el release desde ese commit. |
+| Publicación de AI Notes | Realizada por pedido de Pablo | Runtime `a4ca4aa`; 16 archivos, 451.577 bytes. [Registro y rollback](../docs/releases/2026-09-12-v5.md), [evidencia pública](../docs/features/ai-notes/README.md). |
 
 ### Inicio sugerido de la próxima corrida
 
-> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente la página de **Validaciones**, con identidad, código de credencial y copagos. Primero contrastá el producto vigente y profundizá su brief; después decidí textos, composición y capturas o mocks y completá la implementación y verificación. Conservá la dirección de `v5/DESIGN.md` y aplicá COPYWRITING. Al quedar terminada, conectá Validaciones desde el bloque de home y cruzala con AI Notes, ya implementada localmente. Recetas sigue sin destino. Dejá el estado y la evidencia para la siguiente corrida.
+> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente la página de **Validaciones**, con identidad, código de credencial y copagos. Primero contrastá el producto vigente y profundizá su brief; después decidí textos, composición y capturas o mocks y completá la implementación y verificación. Conservá la dirección de `v5/DESIGN.md` y aplicá COPYWRITING. Al quedar terminada, conectá Validaciones desde el bloque de home y cruzala con AI Notes, ya publicada. Recetas sigue sin destino. Dejá el estado y la evidencia para la siguiente corrida.

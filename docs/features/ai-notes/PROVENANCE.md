@@ -2,7 +2,7 @@
 
 Todas las escenas son mocks nativos; no son capturas literales ni operaciones reales.
 
-Producto fuente: `Raboys/telemed-starter` en `f5e854a813a08e57111044601eb982ba1924fba3`. Institucional base: `Raboys/alvia-web` en `626cd3bb0715f60bd982c85cfe743d3c26c25263`. Cambios de esta página: árbol de trabajo sin commit. Los hashes exactos del runtime revisado se guardan en `review/runtime-manifest.json`.
+Producto fuente: `Raboys/telemed-starter` en `f5e854a813a08e57111044601eb982ba1924fba3`. Institucional base: `Raboys/alvia-web` en `626cd3bb0715f60bd982c85cfe743d3c26c25263`. Runtime publicado: `a4ca4aa824b49d767349cca3bc78b1004e7702e2`. `public/release.json` conserva su manifiesto de commit. `review/runtime-manifest.json` registra la preview sin commit anterior; ambos contienen exactamente los mismos archivos y hashes de runtime.
 
 | Escena | Afirmación | Componente fuente (commit de producto arriba) | Fixture | Tratamiento y simplificación | Dimensiones | Asset final |
 |---|---|---|---|---|---|---|

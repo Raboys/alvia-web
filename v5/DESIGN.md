@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Implementación publicada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente tras publicar AI Notes: `a4ca4aa824b49d767349cca3bc78b1004e7702e2`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -191,7 +191,7 @@ La aprobación existente evita volver a preguntar por la referencia, la paleta, 
 ## 8. Estado y temas aún no definidos
 
 - **Diseño y mensaje:** aprobados. Las hipótesis comerciales no se midieron con experimentos de conversión durante esta sesión.
-- **Publicación:** ambos dominios llevan a V5. V4 conserva su URL directa. No se modificaron app, backend ni consolas.
+- **Publicación:** ambos dominios llevan a V5. Al publicar AI Notes, las rutas de versiones retiradas (incluida V4) ya redirigían a V5; se conservó esa configuración. No se modificaron app, backend ni consolas.
 - **Indexación:** el HTML conserva `noindex, nofollow`, heredado de la publicación para revisión. La promoción a portada sólo cambió la redirección; no se tomó una decisión nueva sobre SEO.
 - **Prueba comercial:** no hay testimonios, logos de clientes, satisfacción ni ahorros históricos publicados en V5. Los números de la calculadora son una estimación explícita y 24/7 describe la oferta de red Alvia.
 - **Siguientes ideas:** no quedó acordada otra variante, nuevo eslogan, nuevas métricas, integración de analytics ni reemplazo de las fotos. No tratarlas como tareas ya solicitadas.
@@ -214,9 +214,9 @@ En la implementación de la subpágina, Pablo rechazó el tono de «La conversac
 
 Se priorizan beneficios operativos concretos: **tecnología al servicio de la atención médica, documentación automatizada, consultas más ágiles, menos trabajo administrativo y más tiempo para atender**. Los estudios que el paciente manda por email o WhatsApp antes de la consulta se presentan junto con AI Notes para explicar cómo se completa la historia clínica.
 
-Aplicación local: hero «Automatizá la documentación de la consulta», resumen de dos párrafos, bloque de estudios previos y CTA. La responsabilidad médica se explica una sola vez; activación y consentimiento se consultan en un `details`. Se quitaron el recorrido didáctico, la historia clínica duplicada y la conversación desplegable. Fuentes del producto y [brief vigente](../docs/features/ai-notes/BRIEF.md) distinguen síntesis automática de firma/escritura autónoma.
+Aplicación publicada: hero «Automatizá la documentación de la consulta», resumen de dos párrafos, bloque de estudios previos y CTA. La responsabilidad médica se explica una sola vez; activación y consentimiento se consultan en un `details`. Se quitaron el recorrido didáctico, la historia clínica duplicada y la conversación desplegable. Fuentes del producto y [brief vigente](../docs/features/ai-notes/BRIEF.md) distinguen síntesis automática de firma/escritura autónoma.
 
-Sólo AI Notes tiene enlace local desde home. La página no está publicada ni aprobada por esta verificación; se preserva el registro del release público anterior.
+AI Notes se publicó por pedido de Pablo y tiene enlace desde home. Runtime `a4ca4aa`; Validaciones y Recetas siguen pendientes. El release anterior se conserva. La verificación técnica no se interpreta como medición de conversión.
 
 ### Reglas para continuar las páginas
 
