@@ -280,3 +280,8 @@ Se conservan los datos originales, la leyenda de demostración y el profesional 
 sin incorporar la firma gráfica del prototipo. Los estilos nuevos se limitan al recorrido.
 
 Publicada en ambos dominios desde `0cd831d`; [capturas, alcance y verificación](../docs/design/v5-prescription-mocks/README.md). El release anterior `v5-f281d8b` se conserva.
+
+
+## 15. Header · alternativa 4 elegida
+
+Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobile. Validaciones, AI Notes y Recetas reemplazan los enlaces del header a secciones de la home. En mobile permanecen visibles en tres tarjetas, sin abrir un menú, con Ingresar y Hablemos en la fila superior. Se aplica el mismo header a la home y a las tres subpáginas, con estado activo. [Implementación y evidencia](../docs/design/v5-header-option4/README.md). Preparado en preview privado; todavía no publicado en el dominio público.
