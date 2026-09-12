@@ -1,0 +1,682 @@
+{
+  "checks": [
+    {
+      "host": "alvia.ar",
+      "path": "/v1",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v1",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v1/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v1/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2/index.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v2/index.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v3",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v3",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v3/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v3/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-a/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-a/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-b/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-b/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-c/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v4-c/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/index.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/index.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/contacto.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/contacto.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/Alvia%20-%20Habla%20con%20Ventas.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/Alvia%20-%20Habla%20con%20Ventas.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v1",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v1",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v1/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v1/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2/index.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v2/index.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v3",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v3",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v3/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v3/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-a/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-a/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-b/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-b/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-c/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v4-c/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/index.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/index.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/contacto.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/contacto.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/Alvia%20-%20Habla%20con%20Ventas.html",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/Alvia%20-%20Habla%20con%20Ventas.html",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/",
+      "origin": false,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/",
+      "origin": true,
+      "expected": 301,
+      "status": 301,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets/",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets/",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets/doctor-videoconsulta.png",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/assets/doctor-videoconsulta.png",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/theme.css",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/theme.css",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets/",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets/",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets/doctor-videoconsulta.png",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/assets/doctor-videoconsulta.png",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/theme.css",
+      "origin": false,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/theme.css",
+      "origin": true,
+      "expected": 410,
+      "status": 410,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v5/",
+      "origin": false,
+      "expected": 200,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "host": "alvia.ar",
+      "path": "/v5/",
+      "origin": true,
+      "expected": 200,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v5/",
+      "origin": false,
+      "expected": 200,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "host": "www.alvia.ar",
+      "path": "/v5/",
+      "origin": true,
+      "expected": 200,
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "v5_unchanged": true,
+  "v5_release": "/var/www/alvia.ar/releases/v5-0b5a3c1",
+  "v5_files_verified": 13,
+  "public_entries": [
+    "v5"
+  ]
+}
