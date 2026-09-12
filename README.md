@@ -17,7 +17,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 - [Tarjetas de funcionalidades: alternativa C aprobada](docs/design/v5-feature-cards/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
-- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes y Recetas están publicadas, con navegación recíproca. Home usa la [alternativa C: tarjetas completas clickeables](docs/design/v5-feature-cards/README.md), aprobada por Pablo. Runtime público `f281d8b`.
+- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes y Recetas están publicadas, con navegación recíproca. Home usa la [alternativa C: tarjetas completas clickeables](docs/design/v5-feature-cards/README.md), aprobada por Pablo. Runtime público `8276775`. El [header opción 4](docs/design/v5-header-option4/README.md) muestra nombre y beneficio, con accesos siempre visibles en mobile.
 
 ## V4
 
@@ -43,3 +43,7 @@ python3 scripts/package_v5.py --ref main /tmp/alvia-v5-release
 ```
 
 El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye sólo HTML/CSS/JS, assets referenciados y licencias de fuentes, verifica las rutas y escribe un manifiesto SHA-256. El resultado se sirve en `/v5/`. El repositorio institucional usa publicación estática atómica; no tiene workflow de despliegue automático.
+
+## Botones y links · opción B publicada
+
+Runtime actual `8276775`: chevrón discreto en home, Validaciones, AI Notes y Recetas, conservando el header mobile opción 4. [Decisión, verificación y rollback](docs/releases/2026-09-12-chevron-b.md). [Comparador de alternativas](previews/cta-variants/README.md).

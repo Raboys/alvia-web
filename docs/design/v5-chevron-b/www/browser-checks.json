@@ -1,0 +1,296 @@
+{
+  "url": "https://www.alvia.ar/v5/",
+  "checks": [
+    {
+      "page": "index.html",
+      "check": "link texts and destinations preserved",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "decorative chevrons",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "no diagonal arrows",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "width": 1024,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "mobile login and feature navigation accessible",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "reduced motion",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "keyboard focus",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "organization tab accessible",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "organization tab accessible",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "organization tab accessible",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "organization tab accessible",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "link texts and destinations preserved",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "decorative chevrons",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "no diagonal arrows",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "width": 1440,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "width": 1024,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "width": 768,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "width": 390,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "mobile login and feature navigation accessible",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "width": 320,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "reduced motion",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "keyboard focus",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "copy result feedback",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "link texts and destinations preserved",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "decorative chevrons",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "no diagonal arrows",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "width": 1440,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "width": 1024,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "width": 768,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "width": 390,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "mobile login and feature navigation accessible",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "width": 320,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "reduced motion",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "keyboard focus",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "link texts and destinations preserved",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "decorative chevrons",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "no diagonal arrows",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "width": 1440,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "width": 1024,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "width": 768,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "width": 390,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "mobile login and feature navigation accessible",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "width": 320,
+      "check": "no page or action overflow",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "reduced motion",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "keyboard focus",
+      "pass": true
+    },
+    {
+      "page": "index.html",
+      "check": "chevron works without JS",
+      "pass": true
+    },
+    {
+      "page": "ai-notes.html",
+      "check": "chevron works without JS",
+      "pass": true
+    },
+    {
+      "page": "validaciones.html",
+      "check": "chevron works without JS",
+      "pass": true
+    },
+    {
+      "page": "recetas.html",
+      "check": "chevron works without JS",
+      "pass": true
+    },
+    {
+      "check": "no JS or asset errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "broken": []
+}

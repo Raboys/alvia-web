@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: tarjetas C publicadas, runtime `f281d8b`. Home, Validaciones, AI Notes y Recetas están publicadas; las tres tarjetas completas llevan a sus páginas. La decisión de Pablo y las verificaciones están en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: header opción 4 publicado, runtime `6176676`. Home, Validaciones, AI Notes y Recetas están publicadas; las tres tarjetas completas llevan a sus páginas. La decisión de Pablo y las verificaciones están en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -106,3 +106,12 @@ Cierre de publicación: Recetas disponible en ambos dominios desde `5f74ecf`. 23
 ## Accesos a funcionalidades · alternativa C
 
 C elegida explícitamente por Pablo, implementada y publicada. Runtime `f281d8b`: tarjetas completas con enlace nativo, acción «Explorar [función] →», foco visible y composición responsive. Documentación, 53 comprobaciones locales, 53 en cada dominio público, hashes y capturas en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). El paquete exacto del commit pusheado está publicado; la evidencia se registra en un commit posterior sin modificar el runtime.
+
+
+## Header · opción 4 · publicado
+
+Pablo eligió Nombre + beneficio y autorizó documentación, commit, push y publicación. Implementación `6176676` publicada en apex y www: accesos a Validaciones, AI Notes y Recetas siempre visibles en mobile, con estado activo, Ingresar y Hablemos. Verificadas 36 combinaciones de página/ancho en cada dominio, además de navegación sin JS, header fijo y los 21 archivos/manifiestos por HTTP y SHA-256. Release anterior `v5-0cd831d` conservado. [Decisión, evidencia y rollback](../docs/design/v5-header-option4/README.md).
+
+## Chevrones B · terminado y publicado
+
+Selección B implementada en las cuatro páginas. Commit de runtime `8276775` pusheado y publicado; 54 comprobaciones locales y 54 en cada dominio, 21 archivos/manifiesto verificados por HTTP. Header mobile y funcionalidades preservados. [Registro y rollback](../docs/releases/2026-09-12-chevron-b.md).

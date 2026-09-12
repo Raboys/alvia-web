@@ -1,0 +1,38 @@
+{
+  "previous_release": "/var/www/alvia.ar/releases/v5-6176676",
+  "previous_commit": "6176676571a1366c9962800bbbf89295b2d60b97",
+  "nginx_sha256": "6a997ad27dfbfca112c5e9750a369ce83debbd0500d403e8e74d36a78169467c",
+  "routing": {
+    "alvia.ar/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "alvia.ar/v5/": [
+      "HTTP/2 200"
+    ],
+    "alvia.ar/v4/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/v5/": [
+      "HTTP/2 200"
+    ],
+    "www.alvia.ar/v4/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ]
+  },
+  "preserved_runtime_files": 16,
+  "changed_runtime_files": [
+    "ai-notes.html",
+    "index.html",
+    "recetas.html",
+    "styles.css",
+    "validaciones.html"
+  ],
+  "source_commit": "8276775bf9c1313da04f103d1bbbae8e4743b2c4"
+}

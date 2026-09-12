@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con las dos vistas de Recetas y documento generado: `0cd831deaccff40e848423106d4b98cdc4b480bf`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con header de funcionalidades y chevrones B: `8276775bf9c1313da04f103d1bbbae8e4743b2c4`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -284,10 +284,10 @@ Publicada en ambos dominios desde `0cd831d`; [capturas, alcance y verificación]
 
 ## 15. Header · alternativa 4 elegida
 
-Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobile. Validaciones, AI Notes y Recetas reemplazan los enlaces del header a secciones de la home. En mobile permanecen visibles en tres tarjetas, sin abrir un menú, con Ingresar y Hablemos en la fila superior. Se aplica el mismo header a la home y a las tres subpáginas, con estado activo. [Implementación y evidencia](../docs/design/v5-header-option4/README.md). Preparado en preview privado; todavía no publicado en el dominio público.
+Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobile. Validaciones, AI Notes y Recetas reemplazan los enlaces del header a secciones de la home. En mobile permanecen visibles en tres tarjetas, sin abrir un menú, con Ingresar y Hablemos en la fila superior. Se aplica el mismo header a la home y a las tres subpáginas, con estado activo. [Implementación y evidencia](../docs/design/v5-header-option4/README.md). Pablo pidió documentar, commitear, pushear y publicar. Publicado y verificado en ambos dominios desde `6176676`, con el release anterior `v5-0cd831d` conservado.
 
 ## 16. Botones y links — alternativa B
 
 Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. Se conserva además el header mobile de la alternativa 4, publicado durante el preflight (`6176676`). La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
 
-El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.
+Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos dominios. El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.
