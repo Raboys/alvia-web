@@ -10,6 +10,14 @@ Sitio institucional estático de Alvia y sus variantes de diseño.
 - Versiones anteriores: `v1/`, `v2/` y `v3/`.
 - Experimentos conservados en Git: `v4-a/` y `v4-b/`.
 
+## V5: continuar el diseño vigente
+
+Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye el titular acordado, los tres ejes comerciales, lo descartado, la guía contra el texto de relleno y los valores de paleta, tipografía y responsive.
+
+- [Capturas de la versión aprobada](docs/design/v5-baseline/README.md).
+- [Archivos, assets y ejecución](v5/README.md).
+- [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
+
 ## V4
 
 La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Fue la portada del 2026-09-05 al 2026-09-12 UTC; conserva `noindex, nofollow` y su enlace directo.

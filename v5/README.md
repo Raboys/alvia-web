@@ -4,6 +4,8 @@ Versión comercial inspirada en la composición y el recorrido de [1doc3](https:
 
 Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino canónico <https://alvia.ar/v5/>. [Registro de publicación y verificaciones](../docs/releases/2026-09-12-v5.md).
 
+**Para seguir iterando, empezar por [DESIGN.md](DESIGN.md):** decisiones de Pablo, textos aprobados, alternativas descartadas, paleta, tipografía, composición, responsive y mapa de edición. [Capturas de la base aprobada](../docs/design/v5-baseline/README.md).
+
 ## Mensaje acordado
 
 > Un servicio de telemedicina que sí te funciona.
@@ -48,10 +50,10 @@ python3 -m http.server 8915 --bind 127.0.0.1
 python3 scripts/package_v5.py --ref HEAD /tmp/alvia-v5-release
 ```
 
-El paquete sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica este README ni el prompt. El destino público es `/v5/`; el cambio de portada es una decisión separada.
+El paquete sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
 
 Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran todos los segmentos, el selector de app usa controles nativos y el cálculo muestra un ejemplo estático. Con JavaScript se habilitan la calculadora, el menú móvil y las pestañas accesibles por teclado. Se respeta la preferencia de movimiento reducido.
 
 ## Verificación local
 
-Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones correctas, incluyendo recursos, ausencia de desborde, enlaces, cálculo normal y límites, entradas inválidas, turnos completos, selección de pantallas, pestañas por clic y teclado, menú móvil, preguntas, funcionamiento sin JavaScript y movimiento reducido. Evidencia de autoría: `/tmp/alvia-v5-review/checks.json` y capturas en ese directorio.
+Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones locales y 146 sobre la URL pública, incluyendo recursos, ausencia de desborde, enlaces, cálculo normal y límites, entradas inválidas, turnos completos, selección de pantallas, pestañas por clic y teclado, menú móvil, preguntas, funcionamiento sin JavaScript y movimiento reducido. [Evidencia pública conservada en Git](../docs/design/v5-baseline/README.md). Los originales de autoría también están en `/tmp/alvia-v5-review/` y `/tmp/alvia-v5-public-review/`.
