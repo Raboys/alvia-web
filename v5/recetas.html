@@ -23,9 +23,8 @@
   <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260912-v5">
   <link rel="stylesheet" href="recetas.css?v=20260912-recetas">
-  <link rel="stylesheet" href="recetas-mocks.css?v=20260912-two-views">
+  <link rel="stylesheet" href="recetas-mocks.css?v=20260912-generated-only">
   <script src="navigation.js?v=20260912-notes" defer></script>
-  <script src="recetas.js?v=20260912-two-views" defer></script>
 </head>
 <body class="prescriptions-page">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -73,7 +72,7 @@
               <div class="rx-instructions"><dt>Indicaciones de la medicación</dt><dd>Indicaciones de la consulta de ejemplo.<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14l-1 7ZM13 21h8"/></svg></dd></div>
             </dl>
             <div class="rx-professional"><span>Profesional</span><strong>Dra. Lucía Robles</strong></div>
-            <button class="rx-emit" type="button" disabled aria-label="Emitir receta de ejemplo">Emitir receta <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+            <div class="rx-emit" aria-hidden="true">Emitir receta <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></div>
           </div>
           <figcaption id="editor-caption">Preparación ilustrativa con datos ficticios.</figcaption>
         </figure>
@@ -87,23 +86,10 @@
           <p>La encuentra en <strong>Mis recetas.</strong> Cuando el PDF está listo, puede abrirla, descargarla o compartirla.</p>
         </div>
         <figure class="rx-reception" aria-labelledby="patient-caption">
-          <fieldset class="rx-states">
-            <legend>Compará los estados del ejemplo</legend>
-            <input class="rx-state-radio" type="radio" name="rx-state" id="rx-preparing" value="issued">
-            <label class="rx-state-option" for="rx-preparing">En preparación</label>
-            <input class="rx-state-radio" type="radio" name="rx-state" id="rx-ready" value="ready" checked>
-            <label class="rx-state-option" for="rx-ready">Documento listo</label>
+          <div class="rx-app-preview">
             <div class="rx-phone">
               <div class="rx-phone-status" aria-hidden="true"><span>9:41</span><i></i><span class="rx-signal">▮▮▮ <b></b></span></div>
               <div class="rx-phone-heading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg><strong>Mis recetas</strong><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 13h8m-8 4h5"/></svg></div>
-              <div class="rx-pending-content">
-                <div class="rx-list-item">
-                  <svg class="rx-document-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M19 4H8a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V11L19 4Zm0 0v7h7M11 17h10m-10 5h7"/></svg>
-                  <div><h3>Receta</h3><p>Dra. Lucía Robles</p><p>12 sep 2026</p></div>
-                  <span class="rx-preparing-badge">Preparando</span>
-                </div>
-                <div class="rx-waiting-message"><span class="rx-waiting-ring" aria-hidden="true"></span><strong>El documento se está preparando.</strong><p>El PDF todavía no está disponible para abrir, descargar o compartir.</p></div>
-              </div>
               <div class="rx-ready-content">
                 <div class="rx-available"><span aria-hidden="true">✓</span> Documento disponible</div>
                 <div class="rx-document">
@@ -117,7 +103,7 @@
               </div>
               <div class="rx-phone-base" aria-hidden="true"></div>
             </div>
-          </fieldset>
+          </div>
           <figcaption id="patient-caption">Vista simplificada de la app. Mismo caso ficticio.</figcaption>
         </figure>
       </div>

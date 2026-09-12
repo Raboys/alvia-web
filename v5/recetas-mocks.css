@@ -1,7 +1,8 @@
 /* Approved exploration 3, reduced to the doctor and patient surfaces.
    Scope stays inside the journey; V5's copy, header and other sections retain their styles. */
 .rx-journey{isolation:isolate}
-.rx-journey:before{content:"";position:absolute;inset:245px -24px 165px;background:#f3f7fd;border-radius:18px;z-index:-1;pointer-events:none}
+.rx-journey:before{content:"";position:absolute;inset:174px -24px 165px;background:#f3f7fd;border-radius:18px;z-index:-1;pointer-events:none}
+.rx-editor{margin-top:26px}
 .rx-editor:before{display:none}
 .rx-editor:after{content:"";position:absolute;top:47%;left:100%;width:calc(96px + (100% - 330px)/2);height:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 16' preserveAspectRatio='none'%3E%3Cpath d='M0 8h98m-5-6 5 6-5 6' fill='none' stroke='%239ebeea' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") center/100% 100% no-repeat;z-index:-1;pointer-events:none}
 .rx-editor-bar{background:white;border-radius:10px 10px 0 0;padding:17px 24px}
@@ -33,14 +34,10 @@
 .rx-editor-body>.rx-professional{flex-direction:row;justify-content:space-between;gap:12px;align-items:baseline;margin-top:18px;padding-top:0;border:0}
 .rx-editor-body>.rx-professional>span{font-size:10px;color:#8090a8}
 .rx-editor-body>.rx-professional strong{font-size:12px;font-weight:500;color:#677d9b}
-.rx-emit{display:flex;align-items:center;justify-content:center;gap:23px;width:100%;min-height:46px;padding:12px 18px;margin-top:21px;border:1px solid #ef9f09;border-radius:6px;background:var(--orange);color:#3f321b;font-size:13px;font-weight:600}
-.rx-emit:not(:disabled):hover{background:#ffbc3e}
-.rx-emit:disabled{cursor:default}
-.rx-emit[data-emitting]{opacity:.7}
-.rx-emit[data-issued]{background:#e7f0ec;border-color:#d0e3da;color:#45705e}
-.rx-states{max-width:330px}
-.rx-state-option{font-size:12px;padding-inline:8px}
-.rx-phone{background:#f7f9fd;border:5px solid #24344b;outline:1px solid #748096;border-radius:36px;padding:0 15px 12px;box-shadow:0 15px 30px rgb(30 53 86 / 10%);margin-top:17px}
+.rx-emit{display:flex;cursor:default;align-items:center;justify-content:center;gap:23px;width:100%;min-height:46px;padding:12px 18px;margin-top:21px;border:1px solid #ef9f09;border-radius:6px;background:var(--orange);color:#3f321b;font-size:13px;font-weight:600}
+.rx-app-preview{max-width:330px;margin-inline:auto}
+
+.rx-phone{background:#f7f9fd;border:5px solid #24344b;outline:1px solid #748096;border-radius:36px;padding:0 15px 12px;box-shadow:0 15px 30px rgb(30 53 86 / 10%);margin-top:0}
 .rx-phone:before{display:none}
 .rx-phone-status{position:relative;display:flex;align-items:center;justify-content:space-between;height:39px;margin-inline:3px;padding-top:2px;font-size:11px;font-weight:700;color:#24344b}
 .rx-phone-status>i{position:absolute;left:50%;top:-1px;transform:translateX(-50%);width:80px;height:21px;border-radius:0 0 13px 13px;background:#24344b}
@@ -71,13 +68,7 @@
 .rx-document .rx-professional strong{font-size:12px;font-weight:500;color:#526887}
 .rx-validity{font-size:10px;line-height:1.6;margin-top:17px;padding-top:12px;color:#8090a7}
 .rx-phone-base{background:#24344b;width:85px;height:3px;margin-top:22px;margin-bottom:0}
-.rx-pending-content{min-height:478px}
-.rx-list-item{padding:15px;gap:10px}
-.rx-list-item h3{font-size:16px}
-.rx-list-item p{font-size:12px}
-.rx-waiting-message{padding:42px 10px}
-.rx-waiting-message p{font-size:13px}
 @media(max-width:1100px){.rx-editor:after{width:calc(50px + (100% - 330px)/2)}.rx-journey:before{inset-inline:-16px}.rx-phone{padding-inline:12px}.rx-document{padding-inline:16px}.rx-document-title{flex-wrap:wrap}.rx-pill{display:none!important}}
-@media(max-width:900px) and (min-width:651px){.rx-editor:after{width:30px}.rx-journey:before{inset-inline:-12px}.rx-editor-bar,.rx-editor-body{padding-inline:18px}.rx-editor-bar>span:last-child{font-size:10px}.rx-state-option{font-size:11px}.rx-patient-row{gap:9px}.rx-avatar{width:30px;height:30px;font-size:10px}.rx-patient-check{display:none}.rx-medication dd{padding:12px}.rx-medication dd>.rx-medication-check{display:none}.rx-editor-body>.rx-professional{flex-direction:column;gap:2px}.rx-document{padding-inline:14px}}
-@media(max-width:650px){.rx-journey:before{display:none}.rx-editor{max-width:430px}.rx-editor:after{display:none}.rx-editor-bar,.rx-editor-body{padding-inline:22px}.rx-editor-heading h3{font-size:23px}.rx-editor-body{padding-top:22px}.rx-editor figcaption{margin-top:14px}.rx-pill{display:grid!important}.rx-emit{font-size:13px}.rx-states{max-width:330px}.rx-phone{padding-inline:15px}.rx-phone:before{display:none}.rx-document{padding:19px 18px 15px}.rx-state-option{font-size:12px}.rx-journey{gap:44px}.rx-phone-status>i{height:21px}.rx-document-title{flex-wrap:nowrap}}
-@media(max-width:359px){.rx-editor-bar,.rx-editor-body{padding-inline:18px}.rx-editor-bar>span:last-child{font-size:10px}.rx-patient-row{gap:9px}.rx-avatar{width:30px;height:30px;font-size:10px}.rx-patient-check,.rx-pill{display:none!important}.rx-medication dd{padding:11px}.rx-medication dd>.rx-medication-check{display:none}.rx-editor-body>.rx-professional{gap:8px}.rx-editor-body>.rx-professional strong{font-size:11px}.rx-phone{padding-inline:12px}.rx-document{padding-inline:14px}.rx-document-title{flex-wrap:wrap}.rx-state-option{font-size:11px}}
+@media(max-width:900px) and (min-width:651px){.rx-editor:after{width:30px}.rx-journey:before{inset-inline:-12px}.rx-editor-bar,.rx-editor-body{padding-inline:18px}.rx-editor-bar>span:last-child{font-size:10px}.rx-patient-row{gap:9px}.rx-avatar{width:30px;height:30px;font-size:10px}.rx-patient-check{display:none}.rx-medication dd{padding:12px}.rx-medication dd>.rx-medication-check{display:none}.rx-editor-body>.rx-professional{flex-direction:column;gap:2px}.rx-document{padding-inline:14px}}
+@media(max-width:650px){.rx-journey:before{display:none}.rx-editor{max-width:430px}.rx-editor:after{display:none}.rx-editor-bar,.rx-editor-body{padding-inline:22px}.rx-editor-heading h3{font-size:23px}.rx-editor-body{padding-top:22px}.rx-editor figcaption{margin-top:14px}.rx-pill{display:grid!important}.rx-emit{font-size:13px}.rx-app-preview{max-width:330px;margin-inline:auto}.rx-phone{padding-inline:15px}.rx-phone:before{display:none}.rx-document{padding:19px 18px 15px}.rx-journey{gap:44px}.rx-phone-status>i{height:21px}.rx-document-title{flex-wrap:nowrap}}
+@media(max-width:359px){.rx-editor-bar,.rx-editor-body{padding-inline:18px}.rx-editor-bar>span:last-child{font-size:10px}.rx-patient-row{gap:9px}.rx-avatar{width:30px;height:30px;font-size:10px}.rx-patient-check,.rx-pill{display:none!important}.rx-medication dd{padding:11px}.rx-medication dd>.rx-medication-check{display:none}.rx-editor-body>.rx-professional{gap:8px}.rx-editor-body>.rx-professional strong{font-size:11px}.rx-phone{padding-inline:12px}.rx-document{padding-inline:14px}.rx-document-title{flex-wrap:wrap}}
