@@ -29,10 +29,20 @@ def source(name):
 
 files = {}
 pending = {'index.html', 'assets/fonts/DM-Sans-LICENSE.txt', 'assets/fonts/Lora-LICENSE.txt'}
+public_pages = {
+    '/': 'index.html',
+    '/ainotes': 'ai-notes.html',
+    '/validaciones': 'validaciones.html',
+    '/recetas': 'recetas.html',
+    '/turnos-inteligentes': 'turnos-inteligentes.html',
+}
 
 def resource(url, parent=''):
     parsed = urlsplit(url)
     if parsed.scheme or parsed.netloc or not parsed.path:
+        return
+    if parsed.path in public_pages:
+        pending.add(public_pages[parsed.path])
         return
     name = PurePosixPath(parent) / unquote(parsed.path)
     if name.is_absolute() or '..' in name.parts:
@@ -49,9 +59,9 @@ class Resources(HTMLParser):
                 resource(attrs[key])
         if tag == 'meta' and attrs.get('property') == 'og:image':
             image_url = attrs['content']
-            prefix = 'https://alvia.ar/v5/'
+            prefix = 'https://alvia.ar/'
             if not image_url.startswith(prefix):
-                raise ValueError('Sharing image must belong to the V5 release')
+                raise ValueError('Sharing image must belong to the institutional release')
             resource(image_url[len(prefix):])
 
 while pending:
@@ -71,7 +81,7 @@ for name, data in files.items():
     target = args.destination / name
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(data)
-manifest = {'source_commit': None if args.working_tree else revision, 'public_path': '/v5/', 'files': {name: {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()} for name, data in sorted(files.items())}}
+manifest = {'source_commit': None if args.working_tree else revision, 'public_path': '/', 'files': {name: {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()} for name, data in sorted(files.items())}}
 if args.working_tree:
     manifest.update(source_mode='working-tree-preview', base_commit=revision)
 (args.destination / 'release.json').write_text(json.dumps(manifest, indent=2) + '\n')
