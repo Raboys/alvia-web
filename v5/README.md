@@ -6,6 +6,12 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 **Para seguir iterando, empezar por [DESIGN.md](DESIGN.md):** decisiones de Pablo, textos aprobados, alternativas descartadas, paleta, tipografía, composición, responsive y mapa de edición. [Capturas de la base aprobada](../docs/design/v5-baseline/README.md).
 
+## Ampliación de features · publicada para revisión
+
+[PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
+
+**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. [Recetas](https://alvia.ar/v5/recetas.html) también está publicada y enlazada; las tres features tienen navegación recíproca. Runtime público vigente `8276775`, con el [header opción 4](../docs/design/v5-header-option4/README.md) elegido por Pablo. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
+
 ## Mensaje acordado
 
 > Un servicio de telemedicina que sí te funciona.
@@ -22,7 +28,7 @@ Las correcciones de Pablo durante esta versión definen el mensaje:
 
 ## Diseño y recorrido
 
-Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. La navegación lleva a beneficios, modelos de atención y propuestas por organización.
+Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. El header lleva directamente a Validaciones, AI Notes y Recetas, con nombre y beneficio. En mobile, los tres accesos permanecen visibles debajo de la marca y las acciones comerciales.
 
 1. Oferta comercial y llamada a una conversación.
 2. Turnos, guardia, gestión y valor para el afiliado, junto a la app real.
@@ -47,13 +53,48 @@ La página no contiene testimonios inventados, logos de clientes ni métricas hi
 python3 -m http.server 8915 --bind 127.0.0.1
 # http://127.0.0.1:8915/v5/
 
+# Preview de cambios locales, sin atribuirlos a un commit:
+python3 scripts/package_v5.py --working-tree /tmp/alvia-v5-preview
+
+# Release: después de guardar la implementación en el commit correspondiente.
 python3 scripts/package_v5.py --ref HEAD /tmp/alvia-v5-release
 ```
 
-El paquete sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
+El paquete de release sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
 
-Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran todos los segmentos, el selector de app usa controles nativos y el cálculo muestra un ejemplo estático. Con JavaScript se habilitan la calculadora, el menú móvil y las pestañas accesibles por teclado. Se respeta la preferencia de movimiento reducido.
+Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran todos los segmentos, el selector de app usa controles nativos y el cálculo muestra un ejemplo estático. Con JavaScript se habilitan la calculadora y las pestañas accesibles por teclado. La navegación del header funciona íntegramente sin JavaScript. Se respeta la preferencia de movimiento reducido.
 
 ## Verificación local
 
 Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones locales y 146 sobre la URL pública, incluyendo recursos, ausencia de desborde, enlaces, cálculo normal y límites, entradas inválidas, turnos completos, selección de pantallas, pestañas por clic y teclado, menú móvil, preguntas, funcionamiento sin JavaScript y movimiento reducido. [Evidencia pública conservada en Git](../docs/design/v5-baseline/README.md). Los originales de autoría también están en `/tmp/alvia-v5-review/` y `/tmp/alvia-v5-public-review/`.
+
+La subpágina AI Notes usa `styles.css`, `ai-notes.css`, `header.css` y `ai-notes.js`. Home comparte el estilo del header; conserva su script de calculadora/pestañas. Las escenas son HTML/CSS, no agregan imágenes ni dependencias. La verificación reproducible está en `docs/features/ai-notes/verify.cjs`.
+
+## Validaciones · aprobada y publicada
+
+[validaciones.html](validaciones.html) reúne identidad, código de credencial y copagos según cobertura. Incluye un ejemplo nativo que alterna entre cobertura con/sin copago, explicaciones de los tres mecanismos y los momentos correctos de pago. Comparar coberturas y abrir el detalle funcionan sin JavaScript. Usa `styles.css`, `validaciones.css` y `header.css`; no agrega imágenes, dependencias ni scripts de feature.
+
+[Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. Pablo aprobó la página y pidió publicación, documentación, commits y push. Runtime público `2d3380d`: ejemplo de código de tres dígitos, texto breve y «Con todos los medios de pago», según las correcciones de Pablo. Release anterior `v5-60dadfc` conservado.
+
+
+## Recetas · publicada y verificada
+
+[recetas.html](recetas.html) muestra la preparación médica y el documento disponible en el celular con un mismo caso ficticio. La app muestra el documento generado, junto al editor médico, sin selector de estados. Se mantienen la leyenda de demostración, las condiciones de disponibilidad y el CTA comercial. La publicación conecta las tres páginas desde home y mediante enlaces recíprocos.
+
+Usa `styles.css`, `recetas.css`, `recetas-mocks.css` y `header.css`; no agrega imágenes, dependencias ni JS propio. [Brief, procedencia, capturas y verificación](../docs/features/recetas/README.md). 232 checks de Recetas, regresiones de Validaciones (205) y AI Notes (148), y 232 checks sobre paquete aislado. Preview: 20 archivos, 493.421 bytes, hashes HTTP correctos.
+
+```sh
+python3 -m http.server 8945 --bind 127.0.0.1
+# http://127.0.0.1:8945/v5/recetas.html
+node docs/features/recetas/verify.cjs
+```
+
+Publicada por pedido de Pablo desde `5f74ecf` el 2026-09-12 a las 18:44:43 UTC. 232 comprobaciones públicas en cada dominio, Validaciones 205 y AI Notes 148; archivos y manifiesto verificados por HTTP. Release anterior `v5-2d3380d` conservado. La preview histórica mantiene `source_commit: null`; [la evidencia de publicación](../docs/features/recetas/README.md#publicación--2026-09-12-utc) identifica el commit servido. Estado en [TODO.md](TODO.md).
+
+## Header · opción 4 publicada
+
+Validaciones, AI Notes y Recetas muestran nombre + beneficio en home y subpáginas. `header.css` reemplaza el menú hamburguesa anterior por accesos visibles en mobile; `navigation.js` se retiró. Verificación vigente de navegación: `node docs/design/v5-header-option4/verify.cjs`; acepta `PREVIEW_URL`, `EVIDENCE_DIR` y `PLAYWRIGHT_CORE_PATH`. Las verificaciones de menús de las publicaciones iniciales son históricas. [Decisión, capturas y publicación](../docs/design/v5-header-option4/README.md).
+
+## Botones y links · opción B
+
+Se reemplazan las diagonales por 30 chevrones discretos en las cuatro páginas. Publicado y verificado; [registro, capturas y rollback](../docs/releases/2026-09-12-chevron-b.md).

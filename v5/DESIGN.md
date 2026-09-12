@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Implementación publicada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con header de funcionalidades y chevrones B: `8276775bf9c1313da04f103d1bbbae8e4743b2c4`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -26,6 +26,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 | Comunicar **valor agregado**, en lugar de centrar la promesa en **calidad** | Pablo corrigió expresamente su formulación inicial «que los afiliados perciben como mejor calidad» por «como valor agregado». No reinterpretar esa corrección como una promesa de mejores resultados clínicos. |
 | Aplicar la guía contra el texto de relleno | Pablo recordó el Markdown de copywriting y pidió evitar textos por todos lados y «aclaraciones de aclaraciones». Se podaron etiquetas, bajadas duplicadas y leyendas que explicaban lo evidente. |
 | Vender la propuesta mientras se construye | Pablo pidió desarrollar las ideas y los textos que faltaran y permitió un relato comercial ambicioso, incluso diciendo que no había que tener miedo de mentir. El criterio de continuidad es no convertir la web en una lista de pendientes de ingeniería. La implementación publicada no necesitó inventar clientes, testimonios ni resultados históricos: usa beneficios, producto ilustrado y capacidad calculada. Esto describe lo implementado, no una restricción adicional acordada con Pablo. |
+| Elegir la alternativa C para explorar funcionalidades | Pablo pidió reemplazar la flecha diagonal por tarjetas completas clickeables, con «Explorar Validaciones / AI Notes / Recetas» al pie y flecha horizontal. |
 | Aprobar el diseño completo y llevarlo a ambos dominios | Tras ver V5, Pablo la aprobó y pidió publicarla inmediatamente en `alvia.ar` y `www.alvia.ar`. V5 pasa a ser la base de las siguientes iteraciones. |
 
 La aprobación alcanza la composición y el recorrido publicados. La calculadora, las pestañas y los detalles gráficos fueron decisiones de implementación incluidas en ese resultado; no son citas ni requisitos individuales pedidos inicialmente por Pablo.
@@ -121,7 +122,7 @@ Estos son valores de la implementación aprobada, no tamaños a aplicar ciegamen
 - Separadores gráficos de dos trazos azul/naranja. No llevan etiquetas textuales decorativas.
 - App de proporción real, sobre una superficie circular azul tenue. Sus dos vistas están juntas en un único bloque de demostración.
 - Iconos SVG de línea, finos, azules y con pequeños acentos cálidos. Evitar mezclar estilos, emojis y símbolos apilados.
-- Botones naranjas redondeados, acción legible y flecha diagonal. Los enlaces secundarios son azules, con subrayado discreto.
+- Botones naranjas redondeados y acción legible con **chevrón discreto** a la derecha (alternativa B elegida por Pablo el 2026-09-12). Reemplaza la flecha diagonal en todos los CTA, enlaces de texto, ingreso y accesos del footer. SVG de 15 px, trazo 1,7 y separación de 12 px en botones, 8 px en links y 7 px en accesos. Los enlaces secundarios siguen azules y tienen subrayado visible; al hover gana contraste. El chevrón avanza 2 px al hover y se mantiene quieto con movimiento reducido. El cambio conserva textos y destinos. Las tarjetas de funcionalidades conservan su flecha horizontal y el enlace en toda la tarjeta, ya aprobados.
 - Secciones anchas y abiertas, con pocas superficies contenidas. No convertir todos los beneficios en tarjetas idénticas.
 - Movimiento breve en controles y hover; sin recorrido automático, carruseles ni animación que obligue a esperar para entender la oferta. Se respeta `prefers-reduced-motion`.
 
@@ -191,9 +192,102 @@ La aprobación existente evita volver a preguntar por la referencia, la paleta, 
 ## 8. Estado y temas aún no definidos
 
 - **Diseño y mensaje:** aprobados. Las hipótesis comerciales no se midieron con experimentos de conversión durante esta sesión.
-- **Publicación:** ambos dominios llevan a V5. V4 conserva su URL directa. No se modificaron app, backend ni consolas.
+- **Publicación:** ambos dominios llevan a V5. Al publicar AI Notes, las rutas de versiones retiradas (incluida V4) ya redirigían a V5; se conservó esa configuración. No se modificaron app, backend ni consolas.
 - **Indexación:** el HTML conserva `noindex, nofollow`, heredado de la publicación para revisión. La promoción a portada sólo cambió la redirección; no se tomó una decisión nueva sobre SEO.
 - **Prueba comercial:** no hay testimonios, logos de clientes, satisfacción ni ahorros históricos publicados en V5. Los números de la calculadora son una estimación explícita y 24/7 describe la oferta de red Alvia.
 - **Siguientes ideas:** no quedó acordada otra variante, nuevo eslogan, nuevas métricas, integración de analytics ni reemplazo de las fotos. No tratarlas como tareas ya solicitadas.
 
 Las comprobaciones técnicas y capturas documentan que la página funciona y cómo se ve. La preferencia de Pablo está registrada en la aprobación; ninguna de esas evidencias demuestra por sí sola conversión o resultados clínicos.
+
+## 9. Ampliación de features · 2026-09-12, publicada para revisión
+
+Pablo pidió profundizar las features de paciente y médico en subpáginas, con una entrada vistosa pero secundaria en la home. El orden acordado es **Validaciones (identidad, código de credencial y copagos) → AI Notes → Recetas**. Cada página se desarrollará en una corrida posterior, que decidirá su copy, capturas y mocks a partir de la [guía high level](PLAN_FEATURES.md).
+
+El bloque implementado para revisión se ubica después de `#tu-red`, antes de `#organizaciones`, con título «Mucho más que una videollamada». Usa tres pequeñas ilustraciones HTML/CSS: requisitos de acceso, resumen de AI Notes y receta en el celular. En escritorio son columnas abiertas; en móvil, filas con miniatura lateral. No agrega assets raster ni JS, y mantiene el hero, calculadora y modalidades.
+
+**Decisión posterior explícita:** los tres elementos no llevan a nada hasta desarrollar sus páginas. Son `article`, sin flechas, botones o enlaces de mentira. No crear fichas provisorias, derivar a V4 ni mostrar «próximamente». Al terminar una página, convertir solamente su entrada en enlace real. El footer enlaza al bloque, no a las páginas pendientes.
+
+Esto desarrolla el criterio de mantener el detalle fuera de la home; no recupera el recorrido largo de V4. Se conserva de V4 el antecedente de mocks simplificados cuando explican mejor el producto. Pablo pidió publicarlo en V5 para verlo. El bloque está publicado y verificado; la publicación para revisión no se registra como aprobación final de la composición. [Evidencia de revisión](../docs/design/v5-features/README.md).
+
+## 10. AI Notes · corrección editorial de Pablo
+
+En la implementación de la subpágina, Pablo rechazó el tono de «La conversación, resumida. El criterio, del médico» y «El resumen acompaña. El médico decide qué queda»: demasiado texto, condescendencia y juego de palabras. Esta corrección es la dirección vigente para continuar las features.
+
+Se priorizan beneficios operativos concretos: **tecnología al servicio de la atención médica, documentación automatizada, consultas más ágiles, menos trabajo administrativo y más tiempo para atender**. Los estudios que el paciente manda por email o WhatsApp antes de la consulta se presentan junto con AI Notes para explicar cómo se completa la historia clínica.
+
+Aplicación publicada: hero «Automatizá la documentación de la consulta», resumen de dos párrafos, bloque de estudios previos y CTA. La responsabilidad médica se explica una sola vez; activación y consentimiento se consultan en un `details`. Se quitaron el recorrido didáctico, la historia clínica duplicada y la conversación desplegable. Fuentes del producto y [brief vigente](../docs/features/ai-notes/BRIEF.md) distinguen síntesis automática de firma/escritura autónoma.
+
+AI Notes se publicó por pedido de Pablo y tiene enlace desde home. Runtime `a4ca4aa`; Validaciones y Recetas siguen pendientes. El release anterior se conserva. La verificación técnica no se interpreta como medición de conversión.
+
+### Reglas para continuar las páginas
+
+- **Beneficio concreto en el titular.** Hablar de lo que la organización y el médico resuelven: trabajo administrativo, preparación de la consulta, disponibilidad de información y atención del paciente.
+- **Prosa directa.** Evitar juegos de palabras, frases partidas para que suenen como un lema, antítesis repetidas y lenguaje poético o condescendiente. «El criterio, del médico» y «El resumen acompaña» son ejemplos rechazados, no alternativas para reutilizar.
+- **Menos extensión.** No convertir una feature en un tutorial. En AI Notes bastan el mensaje principal, dos demostraciones y la acción comercial. La cantidad de secciones se decide por lo que falta explicar, sin una plantilla ni un límite de palabras universal.
+- **No repetir responsabilidades.** La revisión y firma del médico se explican una sola vez. Los detalles de activación que no necesitan protagonismo comercial pueden ir en un desplegable accesible.
+- **Unir capacidades cuando mejoran la misma tarea.** La recepción previa de estudios por email/WhatsApp y el resumen de la conversación ayudan a construir la historia; se muestran juntos, con el mismo paciente. No atribuir a AI Notes una interpretación automática de archivos que la demostración no realiza.
+- **La referencia es 1doc3 en su forma de vender.** Beneficio visible, explicación corta, evidencia y contacto; no su vocabulario literal, sus métricas ni una reproducción de todos sus bloques.
+
+Pablo pidió publicar la versión corregida y guardar estas decisiones. La petición posterior autoriza publicación y commits; los resultados técnicos se registran en el release correspondiente.
+
+
+## 11. Validaciones · aprobada y publicada el 2026-09-12
+
+Se implementa [validaciones.html](validaciones.html) según PLAN_FEATURES: «Ofrecé atención online con las reglas de tu cobertura». Hero con comprobante ilustrativo de guardia, tres explicaciones visuales abiertas y CTA comercial. El selector nativo compara una cobertura con copago y otra que no lo exige; no representa una elección del paciente para evitar pagar. El texto del código sólo indica que se obtiene en la app de la cobertura. Identidad significa documento validado y comparación facial aprobada; no prueba de vida.
+
+Se explican los momentos de pago juntos: al reservar el turno o antes de entrar a la espera de guardia. No se simula un cobro al ingresar a un turno ya reservado. Los requisitos pendientes se explican en un desplegable nativo. Las demostraciones siguen siendo texto HTML legible, sin imágenes nuevas ni JS propio.
+
+Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushear. Home enlaza Validaciones y AI Notes públicamente; ambas páginas tienen enlace recíproco en el footer. Recetas continúa informativa. Runtime `2d3380d`, con verificación pública y release anterior conservado para rollback. [Brief, autoría y evidencia](../docs/features/validaciones/README.md).
+
+
+Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones gobiernan el copy vigente de Validaciones; no reintroducir las aclaraciones descartadas.
+
+
+## 12. Recetas · publicada el 2026-09-12
+
+[recetas.html](recetas.html) conserva el lenguaje comercial directo: «La receta de la consulta llega al celular del paciente». El hero une titular, una bajada breve y CTA; debajo, dos superficies legibles muestran preparación médica y recepción del mismo ejemplo. En móvil se apilan y la flecha sigue el sentido de lectura. Se evita sumar un tutorial o volver a contar el funcionamiento de AI Notes.
+
+Los mocks nativos usan datos sintéticos explícitos, sin sustancia, dosis, matrícula o firma ficticias. El documento conserva «Documento de demostración · sin validez legal». Los estados «En preparación / Documento listo» se comparan con radios nativos; el documento listo desaparece durante la preparación. Las acciones reales de la app se explican fuera del mock, sin botones de descarga/compartir inactivos. Un desplegable explica demoras, indisponibilidad y consultas por invitación.
+
+La entrega publicada enlaza las tres páginas desde home y agrega navegación recíproca. No añade imágenes ni JS propio; home no carga los estilos de Recetas. Se verificaron cinco anchos, teclado, sin JS, texto ampliado, movimiento reducido, enlaces y el paquete aislado. [Brief, procedencia y evidencia](../docs/features/recetas/README.md).
+
+Pablo pidió publicar, documentar, commitear y pushear. La página está publicada y verificada en ambos dominios; runtime `5f74ecf`, release anterior `v5-2d3380d` disponible para rollback. Se conservan la historia de las publicaciones anteriores y las evidencias de preview. [Registro de release](../docs/releases/2026-09-12-v5.md#recetas--2026-09-12-utc).
+
+
+## 13. Acceso a funcionalidades · alternativa C aprobada
+
+Pablo comparó cuatro mocks rápidos sobre la v5 y eligió **C: tarjeta completa clickeable**. El enlace anterior era un título subrayado con una flecha diagonal distante, que no explicaba bien cómo conocer más sobre la función. La nueva composición agrupa ilustración, título, descripción y «Explorar [función] →» con borde suave y esquinas redondeadas.
+
+Cada tarjeta es un único enlace HTML nativo, con nombre accesible tomado de su acción visible. Toda la superficie navega en la misma pestaña; funciona con teclado, sin JavaScript y con apertura en otra pestaña mediante los controles del navegador. El foco rodea la tarjeta. La animación breve se desactiva con movimiento reducido. En móvil se conserva la miniatura lateral; en escritorio son tres columnas con los pies alineados.
+
+Se conservan las ilustraciones, textos descriptivos y destinos existentes. El cambio afecta `index.html` y `features.css`; no agrega JS ni cambia el recorrido de las subpáginas. Las flechas de los CTA comerciales externos no forman parte de esta decisión. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). Pablo autorizó documentación, commits, push y publicación.
+
+## 14. Recetas · alternativa 3 con dos vistas
+
+Pablo eligió la tercera de cuatro exploraciones y pidió quitar el documento intermedio.
+La composición aprobada muestra únicamente el editor médico y la app del paciente:
+formulario blanco con buscador, medicación seleccionada, indicaciones y acción naranja;
+celular con marco oscuro y documento de aspecto de papel, sobre un fondo azul suave.
+
+Corrección explícita de alcance: trasladar sólo los mocks y su presentación. Se conservan
+el header, hero, títulos, párrafos, CTA, condiciones y footer de la página publicada.
+La barra para comparar variantes y el hero abreviado del prototipo no se trasladan.
+
+Los campos y la acción naranja del editor son ilustrativos. Por corrección posterior de
+Pablo se quitaron «Compará los estados del ejemplo» y sus botones: la app muestra
+siempre el documento generado, sin selector, estado pendiente ni JavaScript propio.
+Se conservan los datos originales, la leyenda de demostración y el profesional textual,
+sin incorporar la firma gráfica del prototipo. Los estilos nuevos se limitan al recorrido.
+
+Publicada en ambos dominios desde `0cd831d`; [capturas, alcance y verificación](../docs/design/v5-prescription-mocks/README.md). El release anterior `v5-f281d8b` se conserva.
+
+
+## 15. Header · alternativa 4 elegida
+
+Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobile. Validaciones, AI Notes y Recetas reemplazan los enlaces del header a secciones de la home. En mobile permanecen visibles en tres tarjetas, sin abrir un menú, con Ingresar y Hablemos en la fila superior. Se aplica el mismo header a la home y a las tres subpáginas, con estado activo. [Implementación y evidencia](../docs/design/v5-header-option4/README.md). Pablo pidió documentar, commitear, pushear y publicar. Publicado y verificado en ambos dominios desde `6176676`, con el release anterior `v5-0cd831d` conservado.
+
+## 16. Botones y links — alternativa B
+
+Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. Se conserva además el header mobile de la alternativa 4, publicado durante el preflight (`6176676`). La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
+
+Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos dominios. El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.

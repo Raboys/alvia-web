@@ -1,0 +1,12 @@
+{
+  "changed_existing_files": [
+    "recetas.html"
+  ],
+  "added_files": [
+    "recetas-mocks.css"
+  ],
+  "unchanged_files": 19,
+  "outside_mock_html_identical": true,
+  "state_controls_removed": true,
+  "generated_document_only": true
+}

@@ -1,0 +1,151 @@
+{
+  "url": "http://127.0.0.1:8949/v5/",
+  "source_mode": "working-tree-preview",
+  "source_commit": null,
+  "base_commit": "ab8aa78b067424598d68b3f8c1df2e0954a4c3b1",
+  "files": 20,
+  "bytes": 493421,
+  "manifest_matches": true,
+  "checks": [
+    {
+      "file": "ai-notes.css",
+      "bytes": 8099,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "ai-notes.html",
+      "bytes": 8506,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "ai-notes.js",
+      "bytes": 1259,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/app-home.webp",
+      "bytes": 166378,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/app-prescription.webp",
+      "bytes": 51856,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/favicon.svg",
+      "bytes": 269,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/fonts/DM-Sans-LICENSE.txt",
+      "bytes": 4388,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/fonts/Lora-LICENSE.txt",
+      "bytes": 4422,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/fonts/dm-sans-latin.woff2",
+      "bytes": 36932,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/fonts/lora-latin.woff2",
+      "bytes": 37788,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "assets/people.webp",
+      "bytes": 76786,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "features.css",
+      "bytes": 6942,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "index.html",
+      "bytes": 22927,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "navigation.js",
+      "bytes": 1227,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "recetas.css",
+      "bytes": 10005,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "recetas.html",
+      "bytes": 10500,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "script.js",
+      "bytes": 2609,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "styles.css",
+      "bytes": 21450,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "validaciones.css",
+      "bytes": 11179,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    },
+    {
+      "file": "validaciones.html",
+      "bytes": 9899,
+      "http": 200,
+      "sha256_matches": true,
+      "authoring_matches": true
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "source_commit": "f281d8b7d86ca3282967422684884bce554774df",
+  "release": "/var/www/alvia.ar/releases/v5-f281d8b",
+  "previous_release": "/var/www/alvia.ar/releases/v5-5f74ecf",
+  "files": [
+    {
+      "file": "ai-notes.css",
+      "source_sha256": "daaea55183d23c2fbc1f29c77a1d257e9b0c74ce121b198281295351e9d41907",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/ai-notes.css?v=20260912-notes",
+            "raw_sha256": "daaea55183d23c2fbc1f29c77a1d257e9b0c74ce121b198281295351e9d41907",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/ai-notes.css?v=20260912-notes",
+            "raw_sha256": "daaea55183d23c2fbc1f29c77a1d257e9b0c74ce121b198281295351e9d41907",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "ai-notes.html",
+      "source_sha256": "b7faeb094f933aa3d4e4438db681b5747deade3f995311cb707d93d6c3462a47",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/ai-notes.html",
+            "raw_sha256": "3ec1b0d4f2e019b041f20da2d228281737feb7c2e5f5e9d06dab12bd331c2c5c",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/ai-notes.html",
+            "raw_sha256": "f3cf9dc55b79a74e00934f1f6a258097b4e3b8d7b427dbf1cd8b968dd8f90507",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "ai-notes.js",
+      "source_sha256": "20ca0339c9e0f0d2c0f97d906553a801a813be5f68363deb31d5eb7c6ef195d5",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/ai-notes.js?v=20260912-notes",
+            "raw_sha256": "20ca0339c9e0f0d2c0f97d906553a801a813be5f68363deb31d5eb7c6ef195d5",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/ai-notes.js?v=20260912-notes",
+            "raw_sha256": "20ca0339c9e0f0d2c0f97d906553a801a813be5f68363deb31d5eb7c6ef195d5",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/app-home.webp",
+      "source_sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/app-home.webp",
+            "raw_sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/app-home.webp",
+            "raw_sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/app-prescription.webp",
+      "source_sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/app-prescription.webp",
+            "raw_sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/app-prescription.webp",
+            "raw_sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/favicon.svg",
+      "source_sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/favicon.svg",
+            "raw_sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/favicon.svg",
+            "raw_sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/fonts/DM-Sans-LICENSE.txt",
+      "source_sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/DM-Sans-LICENSE.txt",
+            "raw_sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/DM-Sans-LICENSE.txt",
+            "raw_sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/fonts/Lora-LICENSE.txt",
+      "source_sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/Lora-LICENSE.txt",
+            "raw_sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/Lora-LICENSE.txt",
+            "raw_sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/fonts/dm-sans-latin.woff2",
+      "source_sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/dm-sans-latin.woff2",
+            "raw_sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/dm-sans-latin.woff2",
+            "raw_sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/fonts/lora-latin.woff2",
+      "source_sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/lora-latin.woff2",
+            "raw_sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/fonts/lora-latin.woff2",
+            "raw_sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "assets/people.webp",
+      "source_sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/assets/people.webp",
+            "raw_sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/assets/people.webp",
+            "raw_sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "features.css",
+      "source_sha256": "de108431e115f4fd1bdc44f8e4767d0ed5dfc4ac97933fb4c609667db8bacd3b",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/features.css?v=20260912-cards",
+            "raw_sha256": "de108431e115f4fd1bdc44f8e4767d0ed5dfc4ac97933fb4c609667db8bacd3b",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/features.css?v=20260912-cards",
+            "raw_sha256": "de108431e115f4fd1bdc44f8e4767d0ed5dfc4ac97933fb4c609667db8bacd3b",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "index.html",
+      "source_sha256": "b626385f4e679c37c6231d6141a6dc2459530e62f9ed46d10c4fc79051cd7fa3",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/index.html",
+            "raw_sha256": "1515544397fe60128c6fed13ec8a48fb0173a4ae0e944596fa3c7922cdf1baac",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/index.html",
+            "raw_sha256": "783bb0a06bc4f3b4fe2ae2851a681535848b43a34eb085a756308e4c7bc97a2e",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "navigation.js",
+      "source_sha256": "eae956a074fa1e5f5d7fc1243ef8498f4e543c795ee3cd62fc4478c26425d4b3",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/navigation.js?v=20260912-notes",
+            "raw_sha256": "eae956a074fa1e5f5d7fc1243ef8498f4e543c795ee3cd62fc4478c26425d4b3",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/navigation.js?v=20260912-notes",
+            "raw_sha256": "eae956a074fa1e5f5d7fc1243ef8498f4e543c795ee3cd62fc4478c26425d4b3",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "recetas.css",
+      "source_sha256": "44b4b35d04df546587c9ce493662c9c9847b03f4c395e7907eeb91e5cc571f5e",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/recetas.css?v=20260912-recetas",
+            "raw_sha256": "44b4b35d04df546587c9ce493662c9c9847b03f4c395e7907eeb91e5cc571f5e",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/recetas.css?v=20260912-recetas",
+            "raw_sha256": "44b4b35d04df546587c9ce493662c9c9847b03f4c395e7907eeb91e5cc571f5e",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "recetas.html",
+      "source_sha256": "97386f5120e37dc09b569808542eeb55d08943161657b6d0914f2681ba8ad4b1",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/recetas.html",
+            "raw_sha256": "92835aae0f35a703e92b36477c185f478ced93157e9d1d407270bf82b0cb1a0e",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/recetas.html",
+            "raw_sha256": "ad448a5fffd0031651b666c3db3526448ec7110bc7c3028bb22f96b1830c8d09",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "script.js",
+      "source_sha256": "fb0889bf57de43e3a454eda7a55bab2f5e21d2fdb89957c29615cf0a91a5cc0a",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/script.js?v=20260912-notes",
+            "raw_sha256": "fb0889bf57de43e3a454eda7a55bab2f5e21d2fdb89957c29615cf0a91a5cc0a",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/script.js?v=20260912-notes",
+            "raw_sha256": "fb0889bf57de43e3a454eda7a55bab2f5e21d2fdb89957c29615cf0a91a5cc0a",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "styles.css",
+      "source_sha256": "4909076f9c33fe6d213a1c08852f752d32279c209e3117cf7e471e323d078f89",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/styles.css?v=20260912-v5",
+            "raw_sha256": "4909076f9c33fe6d213a1c08852f752d32279c209e3117cf7e471e323d078f89",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/styles.css?v=20260912-v5",
+            "raw_sha256": "4909076f9c33fe6d213a1c08852f752d32279c209e3117cf7e471e323d078f89",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "validaciones.css",
+      "source_sha256": "293422d8976f977e82ead4dd189045afd81da9fa432e9f56d6acedde8dc41453",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/validaciones.css?v=20260912-validaciones",
+            "raw_sha256": "293422d8976f977e82ead4dd189045afd81da9fa432e9f56d6acedde8dc41453",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/validaciones.css?v=20260912-validaciones",
+            "raw_sha256": "293422d8976f977e82ead4dd189045afd81da9fa432e9f56d6acedde8dc41453",
+            "exact": true,
+            "normalized_matches": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "validaciones.html",
+      "source_sha256": "91f624eb9236bd532181bbd387544e7d79b37bee73ae35bf9125ad3475a8bc1d",
+      "origin_exact": true,
+      "public": {
+        "alvia.ar": [
+          {
+            "request": "/v5/validaciones.html",
+            "raw_sha256": "31323ae8faa83241ff214e67b45bf862d46440386cbfe2c9d78c6c46e7fe2171",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ],
+        "www.alvia.ar": [
+          {
+            "request": "/v5/validaciones.html",
+            "raw_sha256": "39471e8f81676d2d10e36beb7319752a0744a304f0f40bbb16fc164133276ad6",
+            "exact": false,
+            "normalized_matches": true
+          }
+        ]
+      }
+    }
+  ],
+  "routing": {
+    "alvia.ar/ (origin=False)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "alvia.ar/ (origin=True)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "alvia.ar/v5/ (origin=False)": [
+      "HTTP/2 200"
+    ],
+    "alvia.ar/v5/ (origin=True)": [
+      "HTTP/2 200"
+    ],
+    "alvia.ar/v4/ (origin=False)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "alvia.ar/v4/ (origin=True)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/ (origin=False)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/ (origin=True)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/v5/ (origin=False)": [
+      "HTTP/2 200"
+    ],
+    "www.alvia.ar/v5/ (origin=True)": [
+      "HTTP/2 200"
+    ],
+    "www.alvia.ar/v4/ (origin=False)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/v4/ (origin=True)": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ]
+  },
+  "nginx_unchanged": true,
+  "previous_release_preserved": true,
+  "files_count": 20,
+  "bytes": 494924
+}

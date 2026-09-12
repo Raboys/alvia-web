@@ -1,0 +1,8 @@
+{
+  "source_commit": "8276775bf9c1313da04f103d1bbbae8e4743b2c4",
+  "previous_release": "/var/www/alvia.ar/releases/v5-6176676",
+  "release": "/var/www/alvia.ar/releases/v5-8276775",
+  "activated_at_utc": "2026-09-12T20:01:05.716648+00:00",
+  "atomic": true,
+  "runtime_files": 21
+}

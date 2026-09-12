@@ -1,0 +1,24 @@
+{
+  "url": "https://www.alvia.ar/v5/validaciones.html",
+  "passed": 18,
+  "checks": [
+    "1440: home available on www",
+    "1440: calculator default",
+    "1440: calculator updates",
+    "1440: company tab works",
+    "1440: app selector works",
+    "1440: Validaciones navigation on www",
+    "1440: exemption works on www",
+    "1440: no overflow",
+    "1440: no browser errors",
+    "390: home available on www",
+    "390: calculator default",
+    "390: calculator updates",
+    "390: company tab works",
+    "390: app selector works",
+    "390: Validaciones navigation on www",
+    "390: exemption works on www",
+    "390: no overflow",
+    "390: no browser errors"
+  ]
+}
