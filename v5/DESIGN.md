@@ -304,3 +304,11 @@ Pablo eligió la alternativa C: tarjeta blanca, controles circulares +/− para 
 Tras revisar `COPYWRITING.md`, se eliminaron el preámbulo, el sobretítulo del resultado, las unidades duplicadas y «de a 30 minutos». Se conserva «Por semana», se muestra «turnos estimados por mes» y el método queda bajo «Cómo se calcula». Pablo pidió retirar también «Veamos el potencial de tu red». El bloque no lleva CTA.
 
 Implementación: `index.html`, `script.js` y `capacity.css`. La calculadora sin JavaScript muestra el ejemplo estático. [Registro de publicación](../docs/releases/2026-09-12-capacity-c.md).
+
+## Gestión inteligente de turnos — 2026-09-12
+
+La cuarta feature vende una tarea concreta: reducir el **ausentismo** y mantener la agenda ocupada. Alvia pide confirmación 24 horas antes; cuando un paciente no responde, ofrece el horario a pacientes de la misma especialidad que tienen un turno futuro y lo asigna al primero que acepta.
+
+Pablo eligió la variante D y pidió lenguaje directo. El hero muestra una agenda dinámica con un turno recuperado, pacientes contactados y confirmaciones en curso. Se descartaron la sección «Controlá las reglas y cada cambio» y la referencia a «modalidad y cobertura» porque agregaban explicación sin mejorar la propuesta comercial.
+
+La home suma una cuarta tarjeta enlazada y una mención independiente en beneficios: «Gestioná turnos y reducí el ausentismo». El header incorpora el acceso en desktop y dentro del megamenú mobile. La página mantiene pocas secciones, no presenta la automatización como una promesa clínica y no incorpora métricas inventadas.
