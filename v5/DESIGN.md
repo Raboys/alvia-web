@@ -121,7 +121,7 @@ Estos son valores de la implementación aprobada, no tamaños a aplicar ciegamen
 - Separadores gráficos de dos trazos azul/naranja. No llevan etiquetas textuales decorativas.
 - App de proporción real, sobre una superficie circular azul tenue. Sus dos vistas están juntas en un único bloque de demostración.
 - Iconos SVG de línea, finos, azules y con pequeños acentos cálidos. Evitar mezclar estilos, emojis y símbolos apilados.
-- Botones naranjas redondeados, acción legible y flecha diagonal. Los enlaces secundarios son azules, con subrayado discreto.
+- Botones naranjas redondeados y acción legible con **chevrón discreto** a la derecha (alternativa B elegida por Pablo el 2026-09-12). Reemplaza la flecha diagonal en todos los CTA, enlaces de texto, ingreso y accesos del footer. SVG de 15 px, trazo 1,7 y separación de 12 px en botones, 8 px en links y 7 px en accesos. Los enlaces secundarios siguen azules y tienen subrayado visible; al hover gana contraste. El chevrón avanza 2 px al hover y se mantiene quieto con movimiento reducido. El cambio conserva textos y destinos.
 - Secciones anchas y abiertas, con pocas superficies contenidas. No convertir todos los beneficios en tarjetas idénticas.
 - Movimiento breve en controles y hover; sin recorrido automático, carruseles ni animación que obligue a esperar para entender la oferta. Se respeta `prefers-reduced-motion`.
 
@@ -197,3 +197,9 @@ La aprobación existente evita volver a preguntar por la referencia, la paleta, 
 - **Siguientes ideas:** no quedó acordada otra variante, nuevo eslogan, nuevas métricas, integración de analytics ni reemplazo de las fotos. No tratarlas como tareas ya solicitadas.
 
 Las comprobaciones técnicas y capturas documentan que la página funciona y cómo se ve. La preferencia de Pablo está registrada en la aprobación; ninguna de esas evidencias demuestra por sí sola conversión o resultados clínicos.
+
+## 9. Botones y links — alternativa B seleccionada
+
+Pablo pidió retirar la flecha diagonal y eligió **B: chevrón discreto** entre cuatro mocks (A sin ícono, B chevrón, C ícono de acción, D flecha horizontal). La selección aplica a los 11 enlaces que usaban ese recurso; no agrega iconos a enlaces que no los tenían. El indicador es decorativo, queda fuera del nombre accesible y no depende de JavaScript.
+
+La implementación está en la rama `fix/v5-chevron-actions`; el registro de publicación de la sección 1 sigue describiendo la versión pública hasta publicar este cambio. Comparador: <http://100.71.73.116:8958/?variant=b>. Preview de implementación: <http://100.71.73.116:8958/aplicada/>.
