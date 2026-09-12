@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "patient": "Sofía Giménez",
+  "doctor": "Dra. Lucía Rivas",
+  "consultation_date": "2026-09-12",
+  "conversation": [
+    {"speaker": "médica", "text": "Sofía, ¿venís a revisar los estudios de control que nos enviaste ayer?"},
+    {"speaker": "paciente", "text": "Sí, mandé el laboratorio por email y la ecografía por WhatsApp."},
+    {"speaker": "médica", "text": "Los tengo acá. ¿Cómo te encontrás? ¿Notaste síntomas nuevos?"},
+    {"speaker": "paciente", "text": "Me encuentro bien, sin síntomas nuevos."},
+    {"speaker": "médica", "text": "Revisamos juntas los estudios y tus antecedentes. Vamos a continuar el seguimiento."},
+    {"speaker": "paciente", "text": "De acuerdo."}
+  ],
+  "narrative": [
+    "Sofía consulta para revisar sus estudios de control. Refiere encontrarse bien, sin síntomas nuevos.",
+    "Durante la videollamada, la médica revisa con la paciente los estudios enviados previamente y repasa sus antecedentes. Se acuerda continuar el seguimiento."
+  ],
+  "studies": [
+    {"name": "Laboratorio.pdf", "channel": "email", "received_at": "2026-09-11", "scan_status": "clean"},
+    {"name": "Ecografía.pdf", "channel": "whatsapp", "received_at": "2026-09-11", "scan_status": "clean"}
+  ],
+  "treatment": "Guion y resumen redactados para demostración editorial. No se ejecutó IA ni se crearon PDFs, mensajes, pacientes o consultas reales. AI Notes resume lo conversado; no se representa extracción automática del contenido de los adjuntos."
+}

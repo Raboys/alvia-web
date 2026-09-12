@@ -1,0 +1,9 @@
+{
+  "deployed_at": "2026-09-12T19:04:33.332298+00:00",
+  "source_commit": "f281d8b7d86ca3282967422684884bce554774df",
+  "release": "/var/www/alvia.ar/releases/v5-f281d8b",
+  "previous_release": "/var/www/alvia.ar/releases/v5-5f74ecf",
+  "atomic_switch": true,
+  "files": 20,
+  "bytes": 494924
+}

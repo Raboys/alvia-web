@@ -14,8 +14,10 @@ Sitio institucional estático de Alvia y sus variantes de diseño.
 Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye el titular acordado, los tres ejes comerciales, lo descartado, la guía contra el texto de relleno y los valores de paleta, tipografía y responsive.
 
 - [Capturas de la versión aprobada](docs/design/v5-baseline/README.md).
+- [Tarjetas de funcionalidades: alternativa C aprobada](docs/design/v5-feature-cards/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
+- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes y Recetas están publicadas, con navegación recíproca. Home usa la [alternativa C: tarjetas completas clickeables](docs/design/v5-feature-cards/README.md), aprobada por Pablo. Runtime público `f281d8b`.
 
 ## V4
 

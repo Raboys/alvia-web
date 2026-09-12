@@ -1,0 +1,82 @@
+{
+  "previous_release": "/var/www/alvia.ar/releases/v5-0b5a3c1",
+  "manifest": {
+    "source_commit": "0b5a3c10b397fc34626dd0d07b8222b4780d4655",
+    "public_path": "/v5/",
+    "files": {
+      "assets/app-home.webp": {
+        "bytes": 166378,
+        "sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2"
+      },
+      "assets/app-prescription.webp": {
+        "bytes": 51856,
+        "sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7"
+      },
+      "assets/favicon.svg": {
+        "bytes": 269,
+        "sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d"
+      },
+      "assets/fonts/DM-Sans-LICENSE.txt": {
+        "bytes": 4388,
+        "sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2"
+      },
+      "assets/fonts/Lora-LICENSE.txt": {
+        "bytes": 4422,
+        "sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4"
+      },
+      "assets/fonts/dm-sans-latin.woff2": {
+        "bytes": 36932,
+        "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+      },
+      "assets/fonts/lora-latin.woff2": {
+        "bytes": 37788,
+        "sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1"
+      },
+      "assets/people.webp": {
+        "bytes": 76786,
+        "sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b"
+      },
+      "features.css": {
+        "bytes": 6495,
+        "sha256": "964435689f510bfb5fec33c28148ef165bd6912b35290cab9137e69089d6ee9e"
+      },
+      "index.html": {
+        "bytes": 22577,
+        "sha256": "a0ede504424199975b6eac91db2664350d5bd5f0c6b8fb845ec05b1b1b3d695a"
+      },
+      "script.js": {
+        "bytes": 3756,
+        "sha256": "27c6ad3e793aca31e1ef3eed6808c291351508dde87a66e51d8ea4e140cbe6dc"
+      },
+      "styles.css": {
+        "bytes": 21450,
+        "sha256": "4909076f9c33fe6d213a1c08852f752d32279c209e3117cf7e471e323d078f89"
+      }
+    }
+  },
+  "nginx_sha256": "6a997ad27dfbfca112c5e9750a369ce83debbd0500d403e8e74d36a78169467c",
+  "routing": {
+    "alvia.ar/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "alvia.ar/v5/": [
+      "HTTP/2 200"
+    ],
+    "alvia.ar/v4/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ],
+    "www.alvia.ar/v5/": [
+      "HTTP/2 200"
+    ],
+    "www.alvia.ar/v4/": [
+      "HTTP/2 301",
+      "location: https://alvia.ar/v5/"
+    ]
+  }
+}
