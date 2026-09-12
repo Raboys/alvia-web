@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: header opción 4 publicado, runtime `6176676`. Home, Validaciones, AI Notes y Recetas están publicadas; las tres tarjetas completas llevan a sus páginas. La decisión de Pablo y las verificaciones están en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: runtime `ddc8df8`. Home, Validaciones, AI Notes, Recetas y Turnos inteligentes están publicados; las cuatro tarjetas completas llevan a sus páginas y el megamenú mobile ofrece los mismos accesos. [Registro de publicación](../docs/releases/2026-09-12-smart-appointments.md). Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -115,3 +115,14 @@ Pablo eligió Nombre + beneficio y autorizó documentación, commit, push y publ
 ## Chevrones B · terminado y publicado
 
 Selección B implementada en las cuatro páginas. Commit de runtime `8276775` pusheado y publicado; 54 comprobaciones locales y 54 en cada dominio, 21 archivos/manifiesto verificados por HTTP. Header mobile y funcionalidades preservados. [Registro y rollback](../docs/releases/2026-09-12-chevron-b.md).
+
+## Turnos inteligentes · terminado y publicado
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| TURNOS-01 | done | Variante D integrada con copy directo, «ausentismo», confirmación 24 horas antes y reasignación dinámica. Se quitaron la sección de reglas y «modalidad y cobertura». |
+| TURNOS-02 | done | Cuarta tarjeta y mención independiente agregadas a home; navegación común actualizada en las cinco páginas. |
+| TURNOS-03 | done | 25 combinaciones locales y 10 del paquete aislado sin errores ni desbordes. Paquete de commit: 25 archivos, 547.182 bytes. |
+| TURNOS-04 | done | PR #28 integrado; release `v5-ddc8df8` activado atómicamente y `v5-41a6d83` conservado. 35 combinaciones públicas correctas en apex y www. |
+
+Cierre: implementación, integración, publicación y verificación terminadas. Runtime `ddc8df8`; [release y rollback](../docs/releases/2026-09-12-smart-appointments.md).
