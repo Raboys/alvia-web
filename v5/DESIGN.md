@@ -261,3 +261,19 @@ Pablo comparó cuatro mocks rápidos sobre la v5 y eligió **C: tarjeta completa
 Cada tarjeta es un único enlace HTML nativo, con nombre accesible tomado de su acción visible. Toda la superficie navega en la misma pestaña; funciona con teclado, sin JavaScript y con apertura en otra pestaña mediante los controles del navegador. El foco rodea la tarjeta. La animación breve se desactiva con movimiento reducido. En móvil se conserva la miniatura lateral; en escritorio son tres columnas con los pies alineados.
 
 Se conservan las ilustraciones, textos descriptivos y destinos existentes. El cambio afecta `index.html` y `features.css`; no agrega JS ni cambia el recorrido de las subpáginas. Las flechas de los CTA comerciales externos no forman parte de esta decisión. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). Pablo autorizó documentación, commits, push y publicación.
+
+## 14. Recetas · alternativa 3 con dos vistas
+
+Pablo eligió la tercera de cuatro exploraciones y pidió quitar el documento intermedio.
+La composición aprobada muestra únicamente el editor médico y la app del paciente:
+formulario blanco con buscador, medicación seleccionada, indicaciones y acción naranja;
+celular con marco oscuro y documento de aspecto de papel, sobre un fondo azul suave.
+
+Corrección explícita de alcance: trasladar sólo los mocks y su presentación. Se conservan
+el header, hero, títulos, párrafos, CTA, condiciones y footer de la página publicada.
+La barra para comparar variantes y el hero abreviado del prototipo no se trasladan.
+
+Los campos siguen siendo ilustrativos. «Emitir receta» recorre los estados del ejemplo,
+sin llamadas al producto; el selector nativo sigue disponible y funciona sin JavaScript.
+Se conservan los datos originales, la leyenda de demostración y el profesional textual,
+sin incorporar la firma gráfica del prototipo. Los estilos nuevos se limitan al recorrido.

@@ -33,6 +33,7 @@ async function exerciseStates(page, prefix) {
   const pending = page.locator('#rx-preparing');
   check(`${prefix}: document initially ready`, await ready.isChecked() && await page.locator('.rx-document').isVisible() && !await page.locator('.rx-pending-content').isVisible());
   await ready.scrollIntoViewIfNeeded();
+  await page.keyboard.press('Tab');
   await ready.focus();
   check(`${prefix}: visible radio focus`, await page.locator('label[for="rx-ready"]').evaluate(el => getComputedStyle(el).outlineStyle !== 'none'));
   await page.keyboard.press('ArrowLeft');
@@ -83,7 +84,7 @@ async function checkLinks(page, label) {
       check(`${width}: same consultation date`, (await page.locator('.rx-editor-body').innerText()).includes(fixture.date) && (await page.locator('.rx-document').innerText()).includes(fixture.date));
       check(`${width}: draft distinguished from issued document`, await page.locator('.rx-draft').innerText() === 'Borrador' && await page.locator('.rx-validity').innerText() === fixture.validity);
       check(`${width}: readable patient and medication`, await page.locator('.rx-patient strong,.rx-document-medication strong,.rx-fields dd strong').evaluateAll(es => es.every(el => parseFloat(getComputedStyle(el).fontSize) >= 16)));
-      check(`${width}: no inert action buttons or patient data inputs`, await page.locator('main button,main input:not([type="radio"]),main a[href="#"]').count() === 0);
+      check(`${width}: only the illustrative emission action, no patient data inputs`, await page.locator('main button').count() === 1 && await page.locator('.rx-emit').isEnabled() && await page.locator('main input:not([type="radio"]),main a[href="#"]').count() === 0);
       check(`${width}: example identified on both surfaces`, (await page.locator('#editor-caption').innerText()).includes('ficticios') && (await page.locator('#patient-caption').innerText()).includes('ficticio'));
       check(`${width}: contextual CTA`, await page.locator('.rx-closing a[href*="wa.me"]').evaluate(a => new URL(a.href).searchParams.get('text').includes('recetas digitales')));
       check(`${width}: accessible references and unique IDs`, await page.evaluate(() => {
@@ -92,6 +93,19 @@ async function checkLinks(page, label) {
       }));
       await capture(page, `${width}-full.png`);
       if (width === 1440 || width === 390) await capture(page, `${width}-hero.png`, false);
+      if (width === 1440) {
+        const emit = page.locator('.rx-emit');
+        await emit.focus();
+        await page.keyboard.press('Enter');
+        check('emission: keyboard shows preparation before the document', await page.locator('#rx-preparing').isChecked() && !await page.locator('.rx-document').isVisible());
+        await page.waitForFunction(() => document.querySelector('#rx-ready').checked);
+        check('emission: document becomes available', await page.locator('.rx-document').isVisible() && await emit.isEnabled());
+        await emit.click();
+        await page.locator('label[for="rx-preparing"]').click();
+        await page.waitForTimeout(950);
+        check('emission: explicit preparation selection cancels automatic completion', await page.locator('#rx-preparing').isChecked() && await emit.isEnabled());
+        await page.locator('label[for="rx-ready"]').click();
+      }
       await exerciseStates(page, String(width));
       await page.locator('.rx-conditions summary').focus();
       await page.keyboard.press('Enter');
