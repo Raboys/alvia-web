@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con las tarjetas C publicadas: `f281d8b7d86ca3282967422684884bce554774df`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con las dos vistas de Recetas y documento generado: `0cd831deaccff40e848423106d4b98cdc4b480bf`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -273,7 +273,10 @@ Corrección explícita de alcance: trasladar sólo los mocks y su presentación.
 el header, hero, títulos, párrafos, CTA, condiciones y footer de la página publicada.
 La barra para comparar variantes y el hero abreviado del prototipo no se trasladan.
 
-Los campos siguen siendo ilustrativos. «Emitir receta» recorre los estados del ejemplo,
-sin llamadas al producto; el selector nativo sigue disponible y funciona sin JavaScript.
+Los campos y la acción naranja del editor son ilustrativos. Por corrección posterior de
+Pablo se quitaron «Compará los estados del ejemplo» y sus botones: la app muestra
+siempre el documento generado, sin selector, estado pendiente ni JavaScript propio.
 Se conservan los datos originales, la leyenda de demostración y el profesional textual,
 sin incorporar la firma gráfica del prototipo. Los estilos nuevos se limitan al recorrido.
+
+Publicada en ambos dominios desde `0cd831d`; [capturas, alcance y verificación](../docs/design/v5-prescription-mocks/README.md). El release anterior `v5-f281d8b` se conserva.

@@ -1,6 +1,8 @@
 # Recetas · publicada en V5
 
-2026-09-12. **Publicada y verificada en [alvia.ar/v5/recetas.html](https://alvia.ar/v5/recetas.html)** y en [www.alvia.ar](https://www.alvia.ar/v5/recetas.html), por pedido de Pablo. Runtime **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`. Home enlaza las tres features, con navegación recíproca. La evidencia de la entrega local se conserva debajo; la publicación se registra al final.
+**Iteración visual vigente:** alternativa 3 con sólo editor médico y app del paciente, mostrando siempre el documento generado sin selector de estados, runtime `0cd831d`. Se conservan todos los textos y la estructura exterior a los mocks. [Decisión, capturas y verificaciones](../../design/v5-prescription-mocks/README.md). Las secciones siguientes conservan la evidencia de la primera publicación.
+
+2026-09-12. **Publicada y verificada en [alvia.ar/v5/recetas.html](https://alvia.ar/v5/recetas.html)** y en [www.alvia.ar](https://www.alvia.ar/v5/recetas.html), por pedido de Pablo. Runtime inicial **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`. Home enlaza las tres features, con navegación recíproca. La evidencia de la entrega local se conserva debajo; la publicación se registra al final.
 
 El recorrido muestra la preparación médica y el documento en el celular del paciente con un mismo caso ficticio. Un selector nativo permite comparar PDF en preparación y documento listo. Se mantienen la leyenda de demostración y las condiciones de disponibilidad; no hay medicación real, dosis, firmas o matrículas inventadas. Las acciones de descarga y compartir se explican como capacidades de la app.
 
