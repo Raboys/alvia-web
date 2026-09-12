@@ -1,0 +1,762 @@
+{
+  "base": "http://100.71.73.116:18729/elegida/",
+  "checks": [
+    {
+      "label": "320/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "320/index.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "320/validaciones.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "320/ai-notes.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "320/recetas.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "390/index.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "390/validaciones.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "390/ai-notes.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "390/recetas.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "768/index.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "768/validaciones.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "768/ai-notes.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "768/recetas.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "900/index.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "900/validaciones.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "900/ai-notes.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: starts closed",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: closed links hidden",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: names discoverable",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: opens on tap",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "900/recetas.html: Escape closes and restores focus",
+      "ok": true
+    },
+    {
+      "label": "901/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "901/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "901/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "901/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "901/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "901/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "901/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "901/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "901/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "901/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "901/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "901/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "901/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "901/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "901/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "901/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "1440/index.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "1440/index.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "1440/index.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "1440/index.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "1440/validaciones.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "1440/validaciones.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "1440/validaciones.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "1440/validaciones.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "1440/ai-notes.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "1440/ai-notes.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "1440/ai-notes.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "1440/ai-notes.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "1440/recetas.html: correct navigation for viewport",
+      "ok": true
+    },
+    {
+      "label": "1440/recetas.html: three usable links",
+      "ok": true
+    },
+    {
+      "label": "1440/recetas.html: active feature",
+      "ok": true
+    },
+    {
+      "label": "1440/recetas.html: no overflow",
+      "ok": true
+    },
+    {
+      "label": "Keyboard opens menu",
+      "ok": true
+    },
+    {
+      "label": "Tab reaches first feature",
+      "ok": true
+    },
+    {
+      "label": "Keyboard navigates to Validaciones",
+      "ok": true
+    },
+    {
+      "label": "Mobile navigates to AI Notes",
+      "ok": true
+    },
+    {
+      "label": "Mobile navigates to Recetas",
+      "ok": true
+    },
+    {
+      "label": "Focus outside closes menu",
+      "ok": true
+    },
+    {
+      "label": "Outside click closes menu",
+      "ok": true
+    },
+    {
+      "label": "Resize closes menu",
+      "ok": true
+    },
+    {
+      "label": "Header stays sticky",
+      "ok": true
+    },
+    {
+      "label": "Open panel fits scrolled viewport",
+      "ok": true
+    },
+    {
+      "label": "Landscape panel fits viewport",
+      "ok": true
+    },
+    {
+      "label": "Landscape can reach last feature",
+      "ok": true
+    },
+    {
+      "label": "No-JS menu and navigation work",
+      "ok": true
+    }
+  ],
+  "failures": []
+}
