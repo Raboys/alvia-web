@@ -296,3 +296,11 @@ Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos 
 ## 17. Corrección de header · megamenú en mobile
 
 Pablo se arrepintió de las tres tarjetas fijas en mobile y eligió el megamenú visual. Desktop conserva la opción 4, nombre + beneficio. En mobile, «Explorá la plataforma» muestra siempre los nombres Validaciones, AI Notes y Recetas; al tocar abre las tres entradas con miniatura y descripción. Los chevrones de la alternativa B permanecen. Esta decisión reemplaza únicamente el diseño mobile de §15. Publicación, documentación, commit, push y aviso por WhatsApp autorizados explícitamente. [Implementación y evidencia](../docs/design/v5-mobile-megamenu/README.md).
+
+## Calculadora C — 2026-09-12
+
+Pablo eligió la alternativa C: tarjeta blanca, controles circulares +/− para médicos y horas, edición directa y tres opciones de 10, 20 y 30 minutos. Se conserva el cálculo por turnos completos por médico y semana; horas en pasos de 0,5 y médicos en pasos de 1.
+
+Tras revisar `COPYWRITING.md`, se eliminaron el preámbulo, el sobretítulo del resultado, las unidades duplicadas y «de a 30 minutos». Se conserva «Por semana», se muestra «turnos estimados por mes» y el método queda bajo «Cómo se calcula». Pablo pidió retirar también «Veamos el potencial de tu red». El bloque no lleva CTA.
+
+Implementación: `index.html`, `script.js` y `capacity.css`. La calculadora sin JavaScript muestra el ejemplo estático. [Registro de publicación](../docs/releases/2026-09-12-capacity-c.md).

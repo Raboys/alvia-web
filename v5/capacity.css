@@ -1,0 +1,33 @@
+/* Calculadora C aprobada: controles, resultado y método bajo demanda. */
+.capacity-calculator{background:white;border:1px solid #dce6f5;border-radius:22px;padding:30px;box-shadow:0 16px 48px #244b8610}
+.capacity-inputs{gap:0}
+.capacity-field{display:grid;grid-template-columns:1fr 208px;align-items:center;gap:12px;min-width:0;border-bottom:1px solid #e8eef7;padding:0 0 20px;margin:0 0 20px}
+.capacity-field label,.capacity-field legend{font-size:14px;font-weight:500;color:var(--ink)}
+.capacity-field .field-hint{font-size:12px;color:#61718a;margin-top:3px}
+.capacity-stepper{display:flex;align-items:center;justify-content:space-between;min-width:0;background:#f3f7fd;border-radius:30px;padding:5px}
+.capacity-stepper button{flex-shrink:0;width:44px;height:46px;background:white;border:0;border-radius:50%;box-shadow:0 2px 5px #1721330a;color:var(--blue-text);font-size:27px;line-height:1;transition:background .15s,transform .15s;touch-action:manipulation}
+.capacity-stepper button:hover:enabled{background:#deebff}
+.capacity-stepper button:active:enabled{transform:scale(.94)}
+.capacity-stepper button:disabled{opacity:.32;cursor:default}
+.capacity-value{display:flex;justify-content:center;flex:1;min-width:0}
+.capacity-value input{appearance:textfield;-moz-appearance:textfield;border:0;background:transparent;width:100%;min-width:0;padding:5px 0;text-align:center;font-size:22px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.capacity-value input::-webkit-inner-spin-button,.capacity-value input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.capacity-value input:invalid{color:#ad3e34}
+.capacity-field.duration-field{display:block;border:0;margin:0;padding:0;min-width:0}
+.duration-field legend{padding:0;margin-bottom:12px}
+.capacity-segments{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.capacity-segments label{position:relative;cursor:pointer}
+.capacity-segments input{position:absolute;opacity:0;width:1px;height:1px}
+.capacity-segments span{display:flex;align-items:center;justify-content:center;gap:4px;min-height:49px;border:1px solid #b8cef0;border-radius:10px;background:white;color:#45536a;font-size:18px;font-weight:600;transition:background .15s}
+.capacity-segments small{font-size:11px;font-weight:400}
+.capacity-segments input:checked+span{background:var(--blue-text);border-color:var(--blue-text);color:white}
+.capacity-segments input:focus-visible+span{outline:3px solid var(--blue-text);outline-offset:3px}
+.capacity-segments label:hover span{border-color:var(--blue-text)}
+.capacity-result{border:0;border-top:1px solid #ccdcf5;margin:26px 0 0;padding:22px 0 0}
+.capacity-result output{font-size:76px;max-width:100%;overflow-wrap:anywhere}
+.capacity-result>p{font-size:16px;margin-top:12px}
+.calculator-note{margin-top:17px;font-size:11px;line-height:1.7}
+.calculator-note summary{cursor:pointer;width:fit-content;min-height:44px;padding-block:12px;color:var(--blue-text);font-size:12px}
+.calculator-note p{padding-bottom:8px}
+@media(max-width:1100px){.capacity-field{grid-template-columns:1fr}}
+@media(max-width:650px){.capacity-calculator{padding:24px 20px;border-radius:18px}.capacity-stepper button{width:48px;height:48px}.capacity-value input{font-size:25px}.capacity-segments span{min-height:53px}.capacity-result output{font-size:70px}}

@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="features.css?v=20260912-cards">
   <link rel="stylesheet" href="header.css?v=20260912-mobile-mega">
   <script src="header.js?v=20260912-mobile-mega" defer></script>
-  <script src="script.js?v=20260912-notes" defer></script>
+  <link rel="stylesheet" href="capacity.css?v=20260912-c">
+  <script src="script.js?v=20260912-capacity-c" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -122,22 +123,21 @@
       <div class="shell capacity-layout">
         <div class="capacity-copy">
           <span class="brand-strokes" aria-hidden="true"></span>
-          <h2 id="capacity-title">Tu red puede<br>atender más.<br><span>Hacé la cuenta.</span></h2>
+          <h2 id="capacity-title">Tu red puede <br>atender más.<br><span>Hacé la cuenta.</span></h2>
           <p>Unas pocas horas disponibles por profesional pueden convertirse en una nueva oferta de turnos para tus afiliados.</p>
-          <a class="text-link" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20evaluar%20c%C3%B3mo%20ampliar%20la%20oferta%20de%20turnos%20con%20Alvia" target="_blank" rel="noopener">Veamos el potencial de tu red <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a>
         </div>
         <div class="capacity-calculator">
-          <div class="capacity-result" aria-live="polite" aria-atomic="true">
-            <output id="capacity-total" for="professionals hours duration">480</output>
-            <p id="capacity-description">turnos que podrías ofrecer por mes</p>
-          </div>
-          <form class="capacity-inputs" id="capacity-form" aria-label="Calculá la capacidad de atención de tu red" hidden>
-            <div class="input-row"><label for="professionals">Profesionales de tu red</label><div class="number-field"><input id="professionals" name="professionals" type="number" min="1" max="10000" step="1" value="20" inputmode="numeric" required aria-describedby="capacity-note"><span>médicos</span></div></div>
-            <div class="input-row"><label for="hours">Horas libres por médico, por semana</label><div class="number-field"><input id="hours" name="hours" type="number" min="0.5" max="80" step="0.5" value="2" inputmode="decimal" required aria-describedby="capacity-note"><span>horas</span></div></div>
-            <div class="input-row"><label for="duration">Duración de cada turno</label><select id="duration" name="duration"><option value="15">15 minutos</option><option value="20" selected>20 minutos</option><option value="30">30 minutos</option><option value="45">45 minutos</option><option value="60">60 minutos</option></select></div>
+          <form class="capacity-inputs" id="capacity-form" hidden aria-label="Calculá los turnos de tu red">
+            <div class="capacity-field professionals-field"><div class="field-copy"><label for="professionals">Médicos de tu red</label></div><div class="capacity-stepper"><button type="button" data-field="professionals" data-direction="-1" aria-label="Restar un médico">−</button><div class="capacity-value"><input id="professionals" name="professionals" type="number" min="1" max="10000" step="1" value="20" inputmode="numeric" required></div><button type="button" data-field="professionals" data-direction="1" aria-label="Sumar un médico">+</button></div></div>
+            <div class="capacity-field hours-field"><div class="field-copy"><label for="hours">Horas libres por médico</label><p class="field-hint" id="hours-hint">Por semana</p></div><div class="capacity-stepper"><button type="button" data-field="hours" data-direction="-1" aria-label="Restar media hora">−</button><div class="capacity-value"><input id="hours" name="hours" type="number" min="0.5" max="80" step="0.5" value="2" inputmode="decimal" aria-describedby="hours-hint" required></div><button type="button" data-field="hours" data-direction="1" aria-label="Sumar media hora">+</button></div></div>
+            <fieldset class="capacity-field duration-field"><legend>Duración del turno</legend><div class="capacity-segments"><label><input type="radio" id="duration-10" name="duration" value="10"><span>10 <small>min</small></span></label><label><input type="radio" id="duration-20" name="duration" value="20" checked><span>20 <small>min</small></span></label><label><input type="radio" id="duration-30" name="duration" value="30"><span>30 <small>min</small></span></label></div></fieldset>
           </form>
-          <p class="calculator-note" id="capacity-note">Estimación con 4 semanas por mes y turnos completos por médico y semana.</p>
-          <noscript><p class="calculator-note">Ejemplo: 20 médicos × 2 horas semanales × 3 turnos por hora × 4 semanas = 480 turnos al mes. Activá JavaScript para cambiar los valores.</p></noscript>
+          <div class="capacity-result" role="status" aria-live="polite" aria-atomic="true">
+            <output id="capacity-total" for="professionals hours duration-10 duration-20 duration-30">480</output>
+            <p id="capacity-description">turnos estimados por mes</p>
+          </div>
+          <details class="calculator-note"><summary>Cómo se calcula</summary><p>Multiplicamos los médicos por los turnos completos que entran en sus horas semanales y por 4 semanas al mes.</p></details>
+          <noscript><p class="calculator-note">Ejemplo: 20 médicos × 2 horas semanales × 3 turnos por hora × 4 semanas = 480 turnos al mes.</p></noscript>
         </div>
       </div>
     </section>
