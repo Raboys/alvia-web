@@ -1,6 +1,6 @@
-# Validaciones · entrega local V5
+# Validaciones · aprobada y publicada en V5
 
-2026-09-12. Implementada en [v5/validaciones.html](../../../v5/validaciones.html), con enlace desde home y navegación recíproca con AI Notes. Recetas sigue informativa. **Sin publicar ni crear commits:** el runtime público registrado continúa en `a4ca4aa`.
+2026-09-12. **Publicada en [alvia.ar/v5/validaciones.html](https://alvia.ar/v5/validaciones.html)** y en `www.alvia.ar`, con enlace desde home y navegación recíproca con AI Notes. Recetas sigue informativa. Pablo aprobó la página y pidió publicarla, documentarla, commitear y pushear. Runtime **`60dadfc3983dc631609ec2f778a21a942f65ef2a`**, rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`.
 
 La página reúne identidad, código de credencial y copagos bajo las reglas de cobertura. El ejemplo de guardia permite comparar una cobertura con copago y otra sin copago mediante radios nativos. Explica DNI/selfie, el código de la app de la cobertura y el momento del pago: al reservar un turno o antes de entrar a la espera en guardia. No hay un segundo cobro al ingresar al turno reservado.
 
@@ -54,4 +54,30 @@ python3 -m http.server 8937 --bind 127.0.0.1 --directory /tmp/alvia-validaciones
 ALVIA_V5_URL=http://127.0.0.1:8937/v5/ ALVIA_V5_EVIDENCE=/tmp/alvia-validaciones-package-review node docs/features/validaciones/verify.cjs
 ```
 
-Antes de una futura publicación corresponde guardar el runtime en un commit, empaquetar con `--ref <commit>` y comparar sus hashes con la evidencia revisada. Esta corrida completa el desarrollo local solicitado. El registro de release no se modifica como si hubiera habido un despliegue.
+La publicación de abajo se generó desde el commit de implementación con `--ref 60dadfc`. El manifiesto `review/runtime-manifest.json` conserva la preview inicial; `public/release.json` identifica el commit servido. Sus archivos y hashes coinciden exactamente.
+
+
+## Publicación · 2026-09-12 UTC
+
+Se activó el release `/var/www/alvia.ar/releases/v5-60dadfc` el **2026-09-12 17:43:31 UTC**, reemplazando atómicamente el enlace `/var/www/alvia.ar/www/v5`. Se conserva `/var/www/alvia.ar/releases/v5-a4ca4aa` para revertir. No se modificaron Nginx, las redirecciones ni los servicios del producto.
+
+- [205 comprobaciones del paquete generado desde Git](public/commit-package-checks.json), antes de publicar, con hashes idénticos a la versión aprobada.
+- [205 comprobaciones públicas de Validaciones](public/browser-checks.json), en 1440, 1024, 768, 390 y 320 px; selector, teclado, sin JS, movimiento reducido, texto ampliado y navegación.
+- [148 comprobaciones públicas de AI Notes](public/ai-notes-regression-checks.json), incluida copia, fallback, consentimiento y navegación.
+- [18 comprobaciones en www](public/www-smoke-checks.json), en escritorio y móvil: home, calculadora, pestañas, selector de app, entrada a Validaciones, alternativa sin copago y ausencia de errores/desborde.
+- [Verificación HTTP y hashes](public/http-checks.json): 18 archivos, 472.984 bytes, más manifiesto, en origen y ambos dominios. El HTML coincide tras normalizar únicamente la protección de correo conocida de Cloudflare. CSS/JS se comparan con sus URLs versionadas exactas.
+- [Manifiesto de commit](public/release.json), [estado previo](public/before-deploy.json) y [registro del cambio atómico](public/deployment.json). Ambas raíces mantienen 301 a `https://alvia.ar/v5/`; V5 responde 200 y V4 conserva su redirección previa. Nginx mantiene su hash y el release anterior existe.
+
+Capturas públicas: [escritorio](public/1440-full.png), [móvil](public/390-full.png), [home escritorio](public/1440-home-features.png), [home móvil](public/390-home-features.png), [www escritorio](public/www-1440-full.png) y [www móvil](public/www-390-full.png).
+
+La herramienta de navegador admite exclusivamente el runtime y los recursos conocidos de correo/observabilidad de Cloudflare al comprobar dominios públicos; sigue rechazando llamadas al producto. La verificación HTTP reutiliza `docs/features/ai-notes/verify-public.py`, que recorre todos los archivos del manifiesto, incluida Validaciones:
+
+```sh
+python3 docs/features/ai-notes/verify-public.py \
+  --release /var/www/alvia.ar/releases/v5-60dadfc \
+  --before docs/features/validaciones/public/before-deploy.json \
+  --output /tmp/alvia-validaciones-public-http-checks.json
+ALVIA_V5_URL=https://alvia.ar/v5/ ALVIA_V5_EVIDENCE=/tmp/alvia-validaciones-public-checks node docs/features/validaciones/verify.cjs
+```
+
+[Registro de release y rollback](../../releases/2026-09-12-v5.md#validaciones--2026-09-12-utc). Implementación y documentación quedan en commits separados; el manifiesto identifica el commit de runtime, aunque HEAD avance con la evidencia de publicación.

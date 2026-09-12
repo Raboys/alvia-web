@@ -17,7 +17,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 - [Capturas de la versión aprobada](docs/design/v5-baseline/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
-- [Plan de páginas de features](v5/PLAN_FEATURES.md): Validaciones → AI Notes → Recetas. Bloque de home publicado para revisión. AI Notes ya está publicada y enlazada desde home; combina documentación automatizada y estudios previos por email/WhatsApp. [Entrega y verificación](docs/features/ai-notes/README.md). Runtime `a4ca4aa`. [Validaciones está terminada y verificada localmente](docs/features/validaciones/README.md), con enlace desde home y AI Notes, aún sin publicar. Recetas sigue pendiente.
+- [Plan de páginas de features](v5/PLAN_FEATURES.md): Validaciones → AI Notes → Recetas. Bloque de home publicado para revisión. AI Notes ya está publicada y enlazada desde home; combina documentación automatizada y estudios previos por email/WhatsApp. [Entrega y verificación](docs/features/ai-notes/README.md). [Validaciones ya está publicada y verificada](docs/features/validaciones/README.md), con enlace desde home y AI Notes. Runtime vigente `60dadfc`; Recetas sigue pendiente.
 
 ## V4
 

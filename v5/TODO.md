@@ -1,4 +1,8 @@
-# Ejecución de PLAN_FEATURES · AI Notes
+# Ejecución de PLAN_FEATURES · V5
+
+Estado vigente: Validaciones aprobada y publicada desde `60dadfc`, con evidencia pública y documentación actualizadas. Recetas sigue pendiente. Los bloques anteriores conservan la historia de cada corrida.
+
+## AI Notes · corrida y publicación inicial
 
 2026-09-12. Alcance de esta corrida: **AI Notes**, por pedido explícito de Pablo, adelantada al orden original. Validaciones y Recetas siguen pendientes. Publicación y commits autorizados por Pablo en el mensaje posterior.
 
@@ -33,7 +37,7 @@ Cierre final: implementación, publicación y documentación terminadas. Commit 
 
 ## Validaciones · 2026-09-12
 
-Nueva corrida solicitada: implementar únicamente Validaciones según PLAN_FEATURES (§6, §9, §10). El cierre de AI Notes anterior conserva su alcance histórico. Checkout institucional limpio al inicio, base `905a01c`; producto contrastado `f5e854a`. Esta entrega es local; no se solicitó publicar ni crear commits.
+Nueva corrida solicitada: implementar únicamente Validaciones según PLAN_FEATURES (§6, §9, §10). El cierre de AI Notes anterior conserva su alcance histórico. Checkout institucional limpio al inicio, base `905a01c`; producto contrastado `f5e854a`. El primer cierre fue local; la petición posterior de Pablo autoriza publicación, documentación, commits y push, registrados al final.
 
 | ID | Estado | Resultado y verificación |
 |---|---|---|
@@ -43,7 +47,7 @@ Nueva corrida solicitada: implementar únicamente Validaciones según PLAN_FEATU
 | VAL-04 | done | 205 checks correctos: cinco anchos, teclado, sin JS, movimiento reducido, enlaces, recursos y texto ampliado. Desborde de texto ampliado corregido. Capturas finales conservadas; 148 checks de regresión AI Notes correctos. |
 | VAL-05 | done | 205 checks también sobre paquete aislado: 18 archivos, 472.984 bytes; HTTP y SHA-256 coinciden. Brief, procedencia, capturas, README y continuidad actualizados; diff revisado. Preview `--working-tree`, sin commit ni publicación. |
 
-Cierre de Validaciones: todas las tareas locales están `done`. [Entrega y evidencia](../docs/features/validaciones/README.md). El runtime público registrado sigue en `a4ca4aa`; publicar y empaquetar desde un commit corresponde a una petición posterior. Próxima página pendiente: Recetas.
+Cierre de Validaciones: todas las tareas locales están `done`. [Entrega y evidencia](../docs/features/validaciones/README.md). En ese cierre local el runtime era `a4ca4aa`; la publicación posterior desde `60dadfc` se registra abajo. Próxima página pendiente: Recetas.
 
 ## Publicación de Validaciones autorizada
 
@@ -51,7 +55,9 @@ Pablo aprobó la página y pidió publicarla, actualizar los Markdown, commitear
 
 | ID | Estado | Resultado y verificación |
 |---|---|---|
-| VAL-06 | in_progress | Guardar preflight del release/rutas actuales, preparar verificación pública, commitear la implementación y empaquetarla desde el commit; comparar con los hashes revisados. |
-| VAL-07 | pending | Publicar con reemplazo atómico del enlace V5 y comprobar contenido, rutas y hashes en origen, apex y www. |
-| VAL-08 | pending | Verificar navegador público y guardar evidencias; actualizar Markdown con commit servido, aprobación y rollback. |
-| VAL-09 | pending | Commit de documentación y evidencia, push a la rama existente y confirmar HEAD remoto. |
+| VAL-06 | done | Preflight guardado; implementación `60dadfc` commiteada y pusheada. Paquete de commit: 18 archivos, 472.984 bytes, hashes idénticos a la preview aprobada; 205 checks correctos por HTTP. |
+| VAL-07 | done | Release `v5-60dadfc` activo desde 17:43:31 UTC. 18 archivos y manifiesto verificados en origen y ambos dominios; rutas y hash de Nginx conservados, release `v5-a4ca4aa` disponible para rollback. |
+| VAL-08 | done | 205 checks públicos de Validaciones, 148 de AI Notes y 18 en www; evidencias guardadas. Markdown actualizado con aprobación, runtime `60dadfc` y rollback. |
+| VAL-09 | done | Implementación `60dadfc` y documentación/evidencia en commits separados, publicados en `origin/feat/v5-feature-pages-plan`; cierre con confirmación de HEAD remoto. |
+
+Cierre de publicación: Validaciones aprobada, publicada y verificada en ambos dominios. Runtime `60dadfc`; 205 checks públicos, 148 de AI Notes y 18 de www. Documentación, capturas y rollback conservados. Todas las tareas solicitadas están `done`; Recetas queda para la siguiente corrida.

@@ -1,6 +1,6 @@
 # Validaciones · brief V5
 
-2026-09-12. Página: `v5/validaciones.html`. Alcance: entrega local según `v5/PLAN_FEATURES.md`, sin publicación.
+2026-09-12. Página: `v5/validaciones.html`. Implementada según `v5/PLAN_FEATURES.md`, aprobada y publicada por pedido de Pablo desde `60dadfc3983dc631609ec2f778a21a942f65ef2a`. La petición posterior incluye documentación, commits y push.
 
 ## Decisión y mensaje
 
@@ -29,6 +29,6 @@ Producto `Raboys/telemed-starter`, commit `f5e854a813a08e57111044601eb982ba1924f
 
 Continuidad: Lora y DM Sans locales, blanco, azul/naranja, contenedor de 1160 px, encabezado y navegación existentes. Aplicar `v5/DESIGN.md` y `telemed-starter/docs/COPYWRITING.md`: beneficio directo, pocas secciones y texto que cambia comprensión o decisión. Se eligen mocks nativos para explicar estados con lectura móvil; no hacen falta imágenes nuevas ni dependencias.
 
-## Verificación prevista
+## Verificación completada
 
-Cinco anchos del plan, selector y desplegable por teclado y sin JS, foco, navegación móvil, entrada directa y enlaces cruzados, reflujo al ampliar texto, movimiento reducido, ausencia de llamadas a producto y recursos fallidos. Empaquetado `--working-tree`, comparación de hashes y prueba HTTP del paquete aislado. Evidencia y procedencia junto a este brief; no sobrescribir baseline ni declarar un release publicado.
+205 checks locales y públicos en los cinco anchos del plan; selector y desplegable por teclado y sin JS, foco, navegación móvil, entrada directa y enlaces cruzados, texto ampliado, movimiento reducido y ausencia de llamadas a producto. Paquete de commit `60dadfc` y hashes verificados en origen y ambos dominios. 148 checks de regresión AI Notes y 18 de www. Evidencia y procedencia junto a este brief; baseline preservado y release real registrado en README.
