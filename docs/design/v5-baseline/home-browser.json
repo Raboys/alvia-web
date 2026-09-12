@@ -1,0 +1,16 @@
+[
+  {
+    "host": "alvia.ar",
+    "width": 1440,
+    "url": "https://alvia.ar/v5/",
+    "status": 200,
+    "errors": []
+  },
+  {
+    "host": "www.alvia.ar",
+    "width": 390,
+    "url": "https://alvia.ar/v5/",
+    "status": 200,
+    "errors": []
+  }
+]

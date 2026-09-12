@@ -1,5 +1,7 @@
 # Web institucional de Alvia
 
+**Estado vigente, 2026-09-12:** V5 es la portada de `alvia.ar` y `www.alvia.ar`, con destino `/v5/`. Para continuar el diseño, leer [v5/DESIGN.md](v5/DESIGN.md), las [capturas aprobadas](docs/design/v5-baseline/README.md) y el [registro de publicación](docs/releases/2026-09-12-v5.md). Las direcciones visuales y referencias a portadas de V1–V4 que aparecen abajo describen etapas anteriores; no reemplazan las decisiones de V5.
+
 ## 1. Objetivo de este repositorio
 
 Este repositorio conserva, compara y permite desplegar las versiones de la web institucional de Alvia sin depender del monorepo de producto.
@@ -273,7 +275,7 @@ Desde la creación de este repositorio:
 
 ## 15. V4 publicada para revisión — 2026-09-05 UTC
 
-La ruta `https://alvia.ar/v4/` corresponde a la variante `v4-c/`. Desde el 2026-09-05 UTC, la portada es V4: `/` en `alvia.ar` y `www.alvia.ar` redirige con 301 a `https://alvia.ar/v4/`. V3 sigue disponible directamente en `/v3/`. Las referencias anteriores a V1 o V3 como portada describen estados históricos.
+La ruta `https://alvia.ar/v4/` corresponde a la variante `v4-c/`. V4 fue portada del 2026-09-05 al 2026-09-12 UTC, cuando fue reemplazada por V5. V3 y V4 siguen disponibles directamente en sus respectivas rutas. Las referencias anteriores a otras versiones como portada describen estados históricos.
 
 V4 conserva las variantes A/B como historia del experimento y usa la comunicación simple elegida con Pablo. Cuenta con galería de app, videos automáticos, receta abierta, reglas por cobertura, demos aisladas de recetas/estudios del médico y AI Notes. Todos los avances, pruebas y rollback están en [el registro de publicación](docs/releases/2026-09-05-v4.md) y [el README de la variante](v4-c/README.md).
 

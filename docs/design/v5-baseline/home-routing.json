@@ -1,0 +1,34 @@
+[
+  {
+    "host": "alvia.ar",
+    "origin": false,
+    "redirect": "https://alvia.ar/v5/"
+  },
+  {
+    "host": "www.alvia.ar",
+    "origin": false,
+    "redirect": "https://alvia.ar/v5/"
+  },
+  {
+    "host": "alvia.ar",
+    "origin": true,
+    "redirect": "https://alvia.ar/v5/"
+  },
+  {
+    "host": "www.alvia.ar",
+    "origin": true,
+    "redirect": "https://alvia.ar/v5/"
+  },
+  {
+    "url": "https://alvia.ar/v5/",
+    "status": "200"
+  },
+  {
+    "url": "https://www.alvia.ar/v5/",
+    "status": "200"
+  },
+  {
+    "url": "https://alvia.ar/v4/",
+    "status": "200"
+  }
+]
