@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **plan high level y bloque de home publicado en V5 para revisión**. Las tres subpáginas están pendientes. Este documento guía corridas independientes; no es una especificación de los textos ni de las capturas finales.
+Fecha: 2026-09-12. Estado: **bloque de home publicado para revisión; AI Notes implementada y verificada localmente**. Validaciones y Recetas siguen pendientes. La subpágina de AI Notes todavía no se publicó. Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -11,6 +11,8 @@ Orden pedido por Pablo:
 1. **Validaciones:** identidad, código de credencial y copagos, reunidos en una página.
 2. **AI Notes.**
 3. **Recetas.**
+
+**Pedido posterior de Pablo:** desarrollar AI Notes en esta corrida, sin esperar a Validaciones. Su corrección editorial posterior prioriza documentación automatizada, menos trabajo administrativo, consultas más ágiles y estudios enviados por email/WhatsApp, con mucho menos texto. Ver [brief vigente](../docs/features/ai-notes/BRIEF.md).
 
 Cada corrida desarrolla **una página completa**: investiga su estado actual, decide relato y composición, produce capturas o mocks, implementa, verifica y documenta. No intentar resolver las tres páginas en una corrida ni dar por definitivos hoy sus titulares o storyboards.
 
@@ -51,7 +53,7 @@ Las formas de operación siguen siendo **red propia, red Alvia y combinación de
 
 Español argentino y voseo al dirigirse al comprador: «definís», «ofrecé», «conocé». Usar «afiliado» al hablar de cobertura y «paciente» en la relación clínica; «médico» o «profesional» según el contexto. Mantener los nombres **Validaciones**, **AI Notes** y **Recetas** como orientación, con titulares que expliquen un beneficio concreto.
 
-Una idea dominante por sección. No ensamblar automáticamente etiqueta, título, bajada, tres tarjetas y una aclaración. Evitar lenguaje de arquitectura, slogans genéricos, beneficios clínicos no demostrados y porcentajes de ahorro o velocidad inventados. Las condiciones que cambian la comprensión deben quedar junto al mensaje correspondiente, en pocas palabras.
+Una idea dominante por sección. No ensamblar automáticamente etiqueta, título, bajada, tres tarjetas y una aclaración. **Corrección vigente tras AI Notes:** titulares de beneficios concretos y prosa directa, sin juegos de palabras, tono poético ni explicaciones condescendientes. Reducir secciones y texto que no cambian la decisión; demostrar funciones juntas cuando resuelven la misma tarea. Ver [las reglas editoriales de continuidad](DESIGN.md#reglas-para-continuar-las-páginas). Evitar lenguaje de arquitectura, slogans genéricos, beneficios clínicos no demostrados y porcentajes de ahorro o velocidad inventados. Las condiciones que cambian la comprensión deben quedar junto al mensaje correspondiente, en pocas palabras.
 
 ### Diseño, formato y movimiento
 
@@ -84,7 +86,9 @@ Título: **«Mucho más que una videollamada.»** Tres composiciones pequeñas, 
 
 Tres columnas abiertas en escritorio, filas compactas con miniatura lateral en móvil. Las ilustraciones son HTML/CSS, decorativas para accesibilidad; el texto exterior contiene el mensaje. No se cargan imágenes, videos ni bibliotecas nuevas. No son capturas literales, documentos clínicos ni una demostración funcional.
 
-El bloque es **informativo y no interactivo** por instrucción de Pablo. No tiene flechas de navegación, cursor de enlace, estados de hover de tarjeta, `tabindex`, botones deshabilitados ni destinos vacíos. Un enlace en el footer permite encontrar el bloque; no lleva a una subpágina. Se preserva la navegación principal para no sumar otra decisión arriba.
+En la publicación inicial, el bloque es **informativo y no interactivo** por instrucción de Pablo. No tiene flechas de navegación, cursor de enlace, estados de hover de tarjeta, `tabindex`, botones deshabilitados ni destinos vacíos. Un enlace en el footer permite encontrar el bloque; no lleva a una subpágina. Se preserva la navegación principal para no sumar otra decisión arriba.
+
+**Estado local actual:** AI Notes ya tiene página y su nombre es un enlace real con flecha; se actualizó su explicación hacia documentación automática y menos trabajo administrativo. Validaciones y Recetas conservan su presentación informativa.
 
 Implementación: [index.html](index.html), ancla `#funcionalidades`, y [features.css](features.css). Los `article[data-feature]` identifican cada entrada para su futura conversión en enlace. El empaquetador incluye la nueva hoja por su referencia desde HTML.
 
@@ -95,10 +99,10 @@ Rutas propuestas, compatibles con el estático actual:
 | Orden | Archivo futuro | Ruta pública futura | Estado actual |
 |---|---|---|---|
 | 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Pendiente, sin enlace en home. |
-| 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Pendiente, sin enlace en home. |
+| 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Implementada localmente; enlazada desde home. Sin publicar. |
 | 3 | `v5/recetas.html` | `/v5/recetas.html` | Pendiente, sin enlace en home. |
 
-Estos archivos **no se crean en esta etapa**. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
+En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó en su corrida; los otros dos siguen pendientes. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
 
 Cada página tiene que funcionar para quien llega por un enlace directo: marca y contexto de Alvia, beneficio reconocible, evidencia del producto, retorno a la home y CTA comercial contextual. Enlaces entre features sólo hacia páginas que ya existan. Usar WhatsApp y correo existentes; no incorporar un formulario nuevo por defecto.
 
@@ -140,23 +144,23 @@ La implementación consultada comprueba el documento y compara el rostro del DNI
 
 ## 7. Corrida 2 · AI Notes
 
-**Pregunta que debe resolver:** ¿cómo ayuda Alvia al médico a documentar lo conversado?
+**Pregunta que resuelve:** ¿cómo reduce Alvia el trabajo administrativo y ayuda a preparar y documentar la consulta?
 
-Relato central: conversación → resumen de referencia → revisión y redacción del médico → historia que el médico firma. AI Notes es el nombre de la capacidad, no una historia clínica autónoma.
+**Corrección editorial explícita de Pablo en esta corrida:** AI Notes es tecnología al servicio de la atención médica: documentación automatizada, más tiempo para atender, consultas más ágiles y estudios recibidos por email o WhatsApp antes de la consulta. Rechazó el exceso de texto, el tono condescendiente y los juegos de palabras de la primera implementación. Se revisó de nuevo [1doc3](https://www.1doc3.com/) y se reemplazó ese relato por beneficios directos y dos demostraciones.
 
-### Decidir en esa corrida
+### Decisiones implementadas
 
-- Un caso ficticio de consulta breve y un resumen legible, coherente con lo conversado. Resolver el texto completo en esa etapa.
-- Usar un mock HTML/CSS simplificado como el antecedente V4, un recorte real o ambos con propósitos distintos. La escena principal debe permitir leer el resumen sin exigir conocer SOAP.
-- Cuánto contexto de videoconsulta necesita la imagen para mostrar dónde trabaja el médico.
-- Dónde explicar activación, información al paciente y revisión humana. El médico activa por consulta tras informar y obtener consentimiento; el paciente puede pedir apagarla. No inventar una pantalla de AI Notes para el paciente.
-- Si una interacción ayuda a comprender. Copiar un ejemplo puede ser útil; simular una transcripción en vivo por espectáculo no es un objetivo.
+- Hero: **«Automatizá la documentación de la consulta.»** Bajada breve: resumen automático para completar la historia, menos trabajo administrativo y más tiempo para atender.
+- Mock nativo AI Notes: dos párrafos del control ficticio de Sofía Giménez, con copiar funcional. Una sola línea externa indica que el médico revisa, completa y firma la historia.
+- Estudios antes de la consulta: laboratorio por email y ecografía por WhatsApp, del mismo paciente, recibidos el día anterior. El médico los tiene disponibles para preparar la atención y completar la historia.
+- Se elimina el recorrido didáctico revisión → redacción → firma, la historia duplicada y el guion visible. Consentimiento y apagado quedan en un único `details` accesible y sin JS.
+- Se conserva el sentido funcional: AI Notes sintetiza la conversación como referencia. No se representa inserción/firma automática de historia ni interpretación automática de archivos recibidos. Los beneficios no llevan métricas inventadas.
 
-Fuentes iniciales: `frontend/doctor/src/ai-notes-panel.jsx`, `ai-lifecycle.js`, `screen-video.jsx`; `backend/src/AiNotes.php`; `app/src/app/legal/ai-terms.tsx`; `docs/ai-notes-lifecycle-mvp.md`. El componente vigente manda cuando un canvas o documento histórico discrepe.
+Fuentes contrastadas en producto `f5e854a813a08e57111044601eb982ba1924fba3`: `frontend/doctor/src/ai-notes-panel.jsx`, `ai-lifecycle.js`, `screen-video.jsx`, `panel-historia.jsx`, `panel-estudios.jsx`; `backend/src/AiNotes.php`; `app/src/app/legal/ai-terms.tsx`; `docs/ai-notes-lifecycle-mvp.md` y `docs/archivado/estudios-adjuntos.md`. El componente vigente manda sobre el canvas histórico.
 
-El panel consultado es **sólo lectura**, con resumen narrativo y vista SOAP. No tiene una acción «Usar» que escriba la historia. El canvas médico conserva esa descripción antigua. Apagar AI Notes es terminal para esa consulta, mientras continúa la llamada; no representar pausa y reanudación si el producto sigue sin ofrecerlas.
+El médico activa por consulta tras informar y obtener consentimiento expreso del paciente o su representante. El paciente puede pedir apagarla; la llamada continúa y no hay reencendido en esa consulta. El panel de AI Notes es de sólo lectura y permite copiar; no tiene «Usar» para escribir la historia.
 
-**Cierre editorial de la página:** el médico reconoce el apoyo y su responsabilidad; el comprador entiende el beneficio operativo; el paciente aparece como participante informado, sin prometer mejor calidad clínica o un ahorro medido que no se tenga.
+**Entrega local:** [página](ai-notes.html), [brief](../docs/features/ai-notes/BRIEF.md), [autoría](../docs/features/ai-notes/PROVENANCE.md) y [verificación/capturas](../docs/features/ai-notes/README.md). Conectada sólo AI Notes desde home. No se publicaron estos cambios.
 
 ## 8. Corrida 3 · Recetas
 
@@ -228,9 +232,9 @@ Se puede repartir en subagentes la investigación de producto, el análisis visu
 
 ### Notas técnicas que evita redescubrir cada corrida
 
-El sitio es estático, sin framework ni build. `scripts/package_v5.py` parte de `index.html`, sigue recursos y páginas enlazados y empaqueta desde un commit de Git. Rechaza rutas absolutas, `..` y destinos sin extensiones permitidas; sus referencias HTML se resuelven desde raíz V5. Mantener los primeros HTML al mismo nivel permite avanzar sin reescribir esa herramienta.
+El sitio es estático, sin framework ni build. El modo opcional `--working-tree` del empaquetador verifica una preview sin commit: manifiesto con `source_commit: null`, modo `working-tree-preview` y commit base. No sustituye al paquete `--ref <commit>` que corresponde generar antes de publicar. `scripts/package_v5.py` parte de `index.html`, sigue recursos y páginas enlazados y empaqueta desde un commit de Git. Rechaza rutas absolutas, `..` y destinos sin extensiones permitidas; sus referencias HTML se resuelven desde raíz V5. Mantener los primeros HTML al mismo nivel permite avanzar sin reescribir esa herramienta.
 
-`v5/script.js` asume que existen menú, calculadora y pestañas de home. No cargarlo tal cual en una subpágina: extraer sólo lo común o agregar guardas verificadas cuando la primera página lo necesite. No crear un framework preventivo para tres HTML.
+`v5/navigation.js` contiene el menú común extraído y verificado en ambas páginas. `v5/script.js` conserva calculadora y pestañas de home y sólo se carga allí. `v5/ai-notes.js` se limita a copiar el ejemplo con fallback de selección manual. No se agregó un framework.
 
 V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de indexación. Las rutas públicas, dominios y publicación existentes se documentan en el registro de release, que no debe actualizarse como si se hubiera desplegado al terminar una preview.
 
@@ -238,14 +242,15 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 | Entrega | Estado | Evidencia / próximo paso |
 |---|---|---|
-| Guía high level | Redactada | Este documento; profundizar sólo el brief de Validaciones al retomar. |
-| Bloque home | Publicado y verificado para revisión | `#funcionalidades`, HTML/CSS, sin enlaces por decisión de Pablo. [Capturas y verificación](../docs/design/v5-features/README.md). |
+| Guía high level | Actualizada | Incluye la corrección editorial de AI Notes y su entrega local. |
+| Bloque home | Publicado como informativo; conexión AI Notes local | Sólo AI Notes tiene enlace en el árbol local. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
 | Validaciones | Pendiente | Primera corrida de página: cobertura de ejemplo, identidad, código y copagos. |
-| AI Notes | Pendiente | Después de Validaciones; contrastar ciclo vigente y elegir resumen legible. |
+| AI Notes | Implementada y verificada localmente | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
 | Recetas | Pendiente | Después de AI Notes; recorrido de emisión y recepción, evidencia de condiciones. |
 | Revisión conjunta | Pendiente | Tras las tres páginas: consistencia, navegación, duplicaciones y peso del conjunto. |
-| Publicación de esta ampliación | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). Subpáginas pendientes. |
+| Publicación del bloque informativo | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). |
+| Publicación de AI Notes | No realizada | Paquete de trabajo verificado con hashes. Al publicar, guardar la implementación en Git y generar el release desde ese commit. |
 
 ### Inicio sugerido de la próxima corrida
 
-> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente la página de **Validaciones**, con identidad, código de credencial y copagos. Primero contrastá el producto vigente y profundizá su brief; después decidí textos, composición y capturas o mocks y completá la implementación y verificación. Conservá la dirección de `v5/DESIGN.md` y aplicá COPYWRITING. Al quedar terminada, conectá únicamente Validaciones desde el bloque de home. AI Notes y Recetas siguen sin destino. Dejá el estado y la evidencia para la siguiente corrida.
+> Continuá la institucional V5 desde `v5/PLAN_FEATURES.md`. Desarrollá únicamente la página de **Validaciones**, con identidad, código de credencial y copagos. Primero contrastá el producto vigente y profundizá su brief; después decidí textos, composición y capturas o mocks y completá la implementación y verificación. Conservá la dirección de `v5/DESIGN.md` y aplicá COPYWRITING. Al quedar terminada, conectá Validaciones desde el bloque de home y cruzala con AI Notes, ya implementada localmente. Recetas sigue sin destino. Dejá el estado y la evidencia para la siguiente corrida.

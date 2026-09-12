@@ -17,7 +17,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 - [Capturas de la versión aprobada](docs/design/v5-baseline/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
-- [Plan de páginas de features](v5/PLAN_FEATURES.md): Validaciones → AI Notes → Recetas. Incluye un nuevo bloque de home publicado para revisión; sus tres entradas permanecen sin enlaces hasta desarrollar cada página.
+- [Plan de páginas de features](v5/PLAN_FEATURES.md): Validaciones → AI Notes → Recetas. Bloque de home publicado para revisión. AI Notes ya está implementada y enlazada en el árbol local; combina documentación automatizada y estudios previos por email/WhatsApp. [Entrega y verificación](docs/features/ai-notes/README.md). Sin publicar; Validaciones y Recetas siguen pendientes.
 
 ## V4
 

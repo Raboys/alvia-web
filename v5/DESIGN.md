@@ -207,3 +207,24 @@ El bloque implementado para revisión se ubica después de `#tu-red`, antes de `
 **Decisión posterior explícita:** los tres elementos no llevan a nada hasta desarrollar sus páginas. Son `article`, sin flechas, botones o enlaces de mentira. No crear fichas provisorias, derivar a V4 ni mostrar «próximamente». Al terminar una página, convertir solamente su entrada en enlace real. El footer enlaza al bloque, no a las páginas pendientes.
 
 Esto desarrolla el criterio de mantener el detalle fuera de la home; no recupera el recorrido largo de V4. Se conserva de V4 el antecedente de mocks simplificados cuando explican mejor el producto. Pablo pidió publicarlo en V5 para verlo. El bloque está publicado y verificado; la publicación para revisión no se registra como aprobación final de la composición. [Evidencia de revisión](../docs/design/v5-features/README.md).
+
+## 10. AI Notes · corrección editorial de Pablo
+
+En la implementación de la subpágina, Pablo rechazó el tono de «La conversación, resumida. El criterio, del médico» y «El resumen acompaña. El médico decide qué queda»: demasiado texto, condescendencia y juego de palabras. Esta corrección es la dirección vigente para continuar las features.
+
+Se priorizan beneficios operativos concretos: **tecnología al servicio de la atención médica, documentación automatizada, consultas más ágiles, menos trabajo administrativo y más tiempo para atender**. Los estudios que el paciente manda por email o WhatsApp antes de la consulta se presentan junto con AI Notes para explicar cómo se completa la historia clínica.
+
+Aplicación local: hero «Automatizá la documentación de la consulta», resumen de dos párrafos, bloque de estudios previos y CTA. La responsabilidad médica se explica una sola vez; activación y consentimiento se consultan en un `details`. Se quitaron el recorrido didáctico, la historia clínica duplicada y la conversación desplegable. Fuentes del producto y [brief vigente](../docs/features/ai-notes/BRIEF.md) distinguen síntesis automática de firma/escritura autónoma.
+
+Sólo AI Notes tiene enlace local desde home. La página no está publicada ni aprobada por esta verificación; se preserva el registro del release público anterior.
+
+### Reglas para continuar las páginas
+
+- **Beneficio concreto en el titular.** Hablar de lo que la organización y el médico resuelven: trabajo administrativo, preparación de la consulta, disponibilidad de información y atención del paciente.
+- **Prosa directa.** Evitar juegos de palabras, frases partidas para que suenen como un lema, antítesis repetidas y lenguaje poético o condescendiente. «El criterio, del médico» y «El resumen acompaña» son ejemplos rechazados, no alternativas para reutilizar.
+- **Menos extensión.** No convertir una feature en un tutorial. En AI Notes bastan el mensaje principal, dos demostraciones y la acción comercial. La cantidad de secciones se decide por lo que falta explicar, sin una plantilla ni un límite de palabras universal.
+- **No repetir responsabilidades.** La revisión y firma del médico se explican una sola vez. Los detalles de activación que no necesitan protagonismo comercial pueden ir en un desplegable accesible.
+- **Unir capacidades cuando mejoran la misma tarea.** La recepción previa de estudios por email/WhatsApp y el resumen de la conversación ayudan a construir la historia; se muestran juntos, con el mismo paciente. No atribuir a AI Notes una interpretación automática de archivos que la demostración no realiza.
+- **La referencia es 1doc3 en su forma de vender.** Beneficio visible, explicación corta, evidencia y contacto; no su vocabulario literal, sus métricas ni una reproducción de todos sus bloques.
+
+Pablo pidió publicar la versión corregida y guardar estas decisiones. La petición posterior autoriza publicación y commits; los resultados técnicos se registran en el release correspondiente.

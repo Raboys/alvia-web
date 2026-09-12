@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
 
-Por indicación de Pablo, son elementos informativos **sin enlaces**. Las subpáginas todavía no existen. La guía define cómo producir y conectar cada una al terminarla. [Capturas y verificación](../docs/design/v5-features/README.md). Publicada en [V5](https://alvia.ar/v5/#funcionalidades) por pedido de Pablo. Las páginas siguen pendientes.
+La versión pública del bloque conserva las tres entradas informativas sin enlaces. **En el árbol local ya está implementada [AI Notes](ai-notes.html)** y sólo su entrada tiene enlace. Validaciones y Recetas siguen pendientes. AI Notes reúne resumen automático de consulta y estudios recibidos previamente por email/WhatsApp, con el copy directo pedido por Pablo. [Brief, autoría y verificación](../docs/features/ai-notes/README.md). Estos cambios todavía no se publicaron; [evidencia de la publicación anterior](../docs/design/v5-features/README.md).
 
 ## Mensaje acordado
 
@@ -53,13 +53,19 @@ La página no contiene testimonios inventados, logos de clientes ni métricas hi
 python3 -m http.server 8915 --bind 127.0.0.1
 # http://127.0.0.1:8915/v5/
 
+# Preview de cambios locales, sin atribuirlos a un commit:
+python3 scripts/package_v5.py --working-tree /tmp/alvia-v5-preview
+
+# Release: después de guardar la implementación en el commit correspondiente.
 python3 scripts/package_v5.py --ref HEAD /tmp/alvia-v5-release
 ```
 
-El paquete sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
+El paquete de release sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
 
 Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran todos los segmentos, el selector de app usa controles nativos y el cálculo muestra un ejemplo estático. Con JavaScript se habilitan la calculadora, el menú móvil y las pestañas accesibles por teclado. Se respeta la preferencia de movimiento reducido.
 
 ## Verificación local
 
 Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones locales y 146 sobre la URL pública, incluyendo recursos, ausencia de desborde, enlaces, cálculo normal y límites, entradas inválidas, turnos completos, selección de pantallas, pestañas por clic y teclado, menú móvil, preguntas, funcionamiento sin JavaScript y movimiento reducido. [Evidencia pública conservada en Git](../docs/design/v5-baseline/README.md). Los originales de autoría también están en `/tmp/alvia-v5-review/` y `/tmp/alvia-v5-public-review/`.
+
+La subpágina usa `styles.css`, `ai-notes.css`, `navigation.js` y `ai-notes.js`. Home comparte sólo el menú; conserva su script de calculadora/pestañas. Las escenas son HTML/CSS, no agregan imágenes ni dependencias. La verificación reproducible está en `docs/features/ai-notes/verify.cjs`.
