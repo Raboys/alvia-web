@@ -1,0 +1,7 @@
+# Fotografía V5
+
+Generada con `image_gen` integrado. Archivo utilizado: `assets/people.webp`.
+
+## Prompt final
+
+Use case: ads-marketing. Asset type: photographic hero asset for Alvia, an Argentine telemedicine brand website. Create an original premium lifestyle advertising photograph, a warm candid Argentine/Latin American couple in their early 30s, waist-up three-quarter composition, standing close together with relaxed affectionate body language. Man on left with short dark wavy hair, light stubble, pale sky-blue casual cotton shirt with rolled-up sleeves; woman on right with shoulder-length dark brown hair, natural skin texture, an ivory relaxed blouse and blue jeans, smiling spontaneously toward him. He holds a small smartphone naturally at waist level and they share a happy moment after a reassuring call. Believable human faces, anatomically correct hands, soft bright daylight studio lighting, subtle real fabric textures, optimistic approachable feeling, professional authentic health campaign photography. Seamless pure white #FFFFFF background, figures fully isolated on white so they integrate into a white webpage. No backdrop horizon, no floor, no props except phone, no drop shadow, no box, no text, no logos, no watermark, no drawn decorations, no medical coats. Both heads completely visible with ample white space around hair and arms; show subjects down to upper thighs, subjects fill about 85% of the square canvas height. Square high resolution composition. This is one usable web photograph, not a page design.
