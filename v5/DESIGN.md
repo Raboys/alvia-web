@@ -26,6 +26,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 | Comunicar **valor agregado**, en lugar de centrar la promesa en **calidad** | Pablo corrigió expresamente su formulación inicial «que los afiliados perciben como mejor calidad» por «como valor agregado». No reinterpretar esa corrección como una promesa de mejores resultados clínicos. |
 | Aplicar la guía contra el texto de relleno | Pablo recordó el Markdown de copywriting y pidió evitar textos por todos lados y «aclaraciones de aclaraciones». Se podaron etiquetas, bajadas duplicadas y leyendas que explicaban lo evidente. |
 | Vender la propuesta mientras se construye | Pablo pidió desarrollar las ideas y los textos que faltaran y permitió un relato comercial ambicioso, incluso diciendo que no había que tener miedo de mentir. El criterio de continuidad es no convertir la web en una lista de pendientes de ingeniería. La implementación publicada no necesitó inventar clientes, testimonios ni resultados históricos: usa beneficios, producto ilustrado y capacidad calculada. Esto describe lo implementado, no una restricción adicional acordada con Pablo. |
+| Elegir la alternativa C para explorar funcionalidades | Pablo pidió reemplazar la flecha diagonal por tarjetas completas clickeables, con «Explorar Validaciones / AI Notes / Recetas» al pie y flecha horizontal. |
 | Aprobar el diseño completo y llevarlo a ambos dominios | Tras ver V5, Pablo la aprobó y pidió publicarla inmediatamente en `alvia.ar` y `www.alvia.ar`. V5 pasa a ser la base de las siguientes iteraciones. |
 
 La aprobación alcanza la composición y el recorrido publicados. La calculadora, las pestañas y los detalles gráficos fueron decisiones de implementación incluidas en ese resultado; no son citas ni requisitos individuales pedidos inicialmente por Pablo.
@@ -251,3 +252,12 @@ Los mocks nativos usan datos sintéticos explícitos, sin sustancia, dosis, matr
 La entrega publicada enlaza las tres páginas desde home y agrega navegación recíproca. No añade imágenes ni JS propio; home no carga los estilos de Recetas. Se verificaron cinco anchos, teclado, sin JS, texto ampliado, movimiento reducido, enlaces y el paquete aislado. [Brief, procedencia y evidencia](../docs/features/recetas/README.md).
 
 Pablo pidió publicar, documentar, commitear y pushear. La página está publicada y verificada en ambos dominios; runtime `5f74ecf`, release anterior `v5-2d3380d` disponible para rollback. Se conservan la historia de las publicaciones anteriores y las evidencias de preview. [Registro de release](../docs/releases/2026-09-12-v5.md#recetas--2026-09-12-utc).
+
+
+## 13. Acceso a funcionalidades · alternativa C aprobada
+
+Pablo comparó cuatro mocks rápidos sobre la v5 y eligió **C: tarjeta completa clickeable**. El enlace anterior era un título subrayado con una flecha diagonal distante, que no explicaba bien cómo conocer más sobre la función. La nueva composición agrupa ilustración, título, descripción y «Explorar [función] →» con borde suave y esquinas redondeadas.
+
+Cada tarjeta es un único enlace HTML nativo, con nombre accesible tomado de su acción visible. Toda la superficie navega en la misma pestaña; funciona con teclado, sin JavaScript y con apertura en otra pestaña mediante los controles del navegador. El foco rodea la tarjeta. La animación breve se desactiva con movimiento reducido. En móvil se conserva la miniatura lateral; en escritorio son tres columnas con los pies alineados.
+
+Se conservan las ilustraciones, textos descriptivos y destinos existentes. El cambio afecta `index.html` y `features.css`; no agrega JS ni cambia el recorrido de las subpáginas. Las flechas de los CTA comerciales externos no forman parte de esta decisión. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). Pablo autorizó documentación, commits, push y publicación.

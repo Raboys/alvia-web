@@ -22,7 +22,7 @@
   <link rel="preload" href="assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260912-v5">
-  <link rel="stylesheet" href="features.css?v=20260912-notes">
+  <link rel="stylesheet" href="features.css?v=20260912-cards">
   <script src="navigation.js?v=20260912-notes" defer></script>
   <script src="script.js?v=20260912-notes" defer></script>
 </head>
@@ -147,49 +147,57 @@
         <span class="brand-strokes" aria-hidden="true"></span>
         <h2 id="features-title">Mucho más que <span>una videollamada.</span></h2>
       </div>
-      <!-- Entries stay informational until each page is developed. See PLAN_FEATURES.md. -->
       <div class="feature-grid">
         <article class="feature-entry" data-feature="validaciones" aria-labelledby="feature-validation-title">
-          <div class="feature-preview preview-validation" aria-hidden="true">
-            <div class="validation-slip">
-              <div class="preview-heading"><span class="preview-dot"></span> Antes de la consulta</div>
-              <div class="validation-row"><span>Identidad</span><span class="preview-check">✓</span></div>
-              <div class="validation-row"><span>Código de credencial</span><span class="preview-check">✓</span></div>
-              <div class="validation-row"><span>Copago</span><span class="preview-check">✓</span></div>
+          <a class="feature-card-link" href="validaciones.html" aria-labelledby="feature-validation-action">
+            <div class="feature-preview preview-validation" aria-hidden="true">
+              <div class="validation-slip">
+                <div class="preview-heading"><span class="preview-dot"></span> Antes de la consulta</div>
+                <div class="validation-row"><span>Identidad</span><span class="preview-check">✓</span></div>
+                <div class="validation-row"><span>Código de credencial</span><span class="preview-check">✓</span></div>
+                <div class="validation-row"><span>Copago</span><span class="preview-check">✓</span></div>
+              </div>
+              <span class="preview-orbit"></span>
             </div>
-            <span class="preview-orbit"></span>
-          </div>
-          <div class="feature-entry-copy">
-            <h3 id="feature-validation-title"><a class="feature-page-link" href="validaciones.html">Validaciones <span aria-hidden="true">↗</span></a></h3>
-            <p id="feature-validation-copy">Identidad, código de credencial y copagos. Las reglas de tu cobertura, desde el ingreso.</p>
-          </div>
+            <div class="feature-entry-copy">
+              <h3 id="feature-validation-title">Validaciones</h3>
+              <p id="feature-validation-copy">Identidad, código de credencial y copagos. Las reglas de tu cobertura, desde el ingreso.</p>
+              <span class="feature-card-action" id="feature-validation-action">Explorar Validaciones<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
+            </div>
+          </a>
         </article>
         <article class="feature-entry" data-feature="ai-notes" aria-labelledby="feature-notes-title">
-          <div class="feature-preview preview-notes" aria-hidden="true">
-            <div class="notes-slip">
-              <div class="preview-heading"><span class="notes-signal"><i></i><i></i><i></i><i></i><i></i></span> AI Notes</div>
-              <div class="notes-excerpt">Se repasan los síntomas y antecedentes. <span>Se acuerdan los próximos pasos.</span></div>
-              <div class="notes-caption">Resumen de la consulta</div>
+          <a class="feature-card-link" href="ai-notes.html" aria-labelledby="feature-notes-action">
+            <div class="feature-preview preview-notes" aria-hidden="true">
+              <div class="notes-slip">
+                <div class="preview-heading"><span class="notes-signal"><i></i><i></i><i></i><i></i><i></i></span> AI Notes</div>
+                <div class="notes-excerpt">Se repasan los síntomas y antecedentes. <span>Se acuerdan los próximos pasos.</span></div>
+                <div class="notes-caption">Resumen de la consulta</div>
+              </div>
             </div>
-          </div>
-          <div class="feature-entry-copy">
-            <h3 id="feature-notes-title"><a class="feature-page-link" href="ai-notes.html">AI Notes <span aria-hidden="true">↗</span></a></h3>
-            <p id="feature-notes-copy">Resumen automático de la consulta para agilizar la historia clínica y reducir el trabajo administrativo.</p>
-          </div>
+            <div class="feature-entry-copy">
+              <h3 id="feature-notes-title">AI Notes</h3>
+              <p id="feature-notes-copy">Resumen automático de la consulta para agilizar la historia clínica y reducir el trabajo administrativo.</p>
+              <span class="feature-card-action" id="feature-notes-action">Explorar AI Notes<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
+            </div>
+          </a>
         </article>
         <article class="feature-entry" data-feature="recetas" aria-labelledby="feature-prescription-title">
-          <div class="feature-preview preview-prescription" aria-hidden="true">
-            <div class="prescription-sheet">
-              <div class="preview-heading"><span class="mini-brand">alvia<span>.</span></span><span>Receta</span></div>
-              <div class="prescription-lines"><i></i><i></i><i></i></div>
-              <div class="prescription-signature"></div>
+          <a class="feature-card-link" href="recetas.html" aria-labelledby="feature-prescription-action">
+            <div class="feature-preview preview-prescription" aria-hidden="true">
+              <div class="prescription-sheet">
+                <div class="preview-heading"><span class="mini-brand">alvia<span>.</span></span><span>Receta</span></div>
+                <div class="prescription-lines"><i></i><i></i><i></i></div>
+                <div class="prescription-signature"></div>
+              </div>
+              <div class="prescription-received"><span class="preview-check">✓</span> En el celular del paciente</div>
             </div>
-            <div class="prescription-received"><span class="preview-check">✓</span> En el celular del paciente</div>
-          </div>
-          <div class="feature-entry-copy">
-            <h3 id="feature-prescription-title"><a class="feature-page-link" href="recetas.html">Recetas <span aria-hidden="true">↗</span></a></h3>
-            <p id="feature-prescription-copy">El médico la emite en la consulta. El paciente la tiene a mano en su celular.</p>
-          </div>
+            <div class="feature-entry-copy">
+              <h3 id="feature-prescription-title">Recetas</h3>
+              <p id="feature-prescription-copy">El médico la emite en la consulta. El paciente la tiene a mano en su celular.</p>
+              <span class="feature-card-action" id="feature-prescription-action">Explorar Recetas<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
+            </div>
+          </a>
         </article>
       </div>
     </section>

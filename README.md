@@ -15,6 +15,7 @@ Sitio institucional estático de Alvia y sus variantes de diseño.
 Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye el titular acordado, los tres ejes comerciales, lo descartado, la guía contra el texto de relleno y los valores de paleta, tipografía y responsive.
 
 - [Capturas de la versión aprobada](docs/design/v5-baseline/README.md).
+- [Tarjetas de funcionalidades: alternativa C aprobada](docs/design/v5-feature-cards/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
 - [Plan de páginas de features](v5/PLAN_FEATURES.md): Validaciones → AI Notes → Recetas. Bloque de home publicado para revisión. AI Notes ya está publicada y enlazada desde home; combina documentación automatizada y estudios previos por email/WhatsApp. [Entrega y verificación](docs/features/ai-notes/README.md). [Validaciones ya está publicada y verificada](docs/features/validaciones/README.md), con enlace desde home y AI Notes. Runtime público vigente `5f74ecf`. [Recetas está publicada y verificada](docs/features/recetas/README.md), con enlace desde home y navegación recíproca entre las tres features.
