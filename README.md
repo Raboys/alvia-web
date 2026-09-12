@@ -2,7 +2,7 @@
 
 Sitio institucional estático de Alvia y sus variantes de diseño.
 
-- **V5: nueva propuesta comercial en `v5/`**, con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. [Mensaje, diseño y ejecución](v5/README.md).
+- **V5: <https://alvia.ar/v5/>**, propuesta para revisión con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. [Mensaje y diseño](v5/README.md) · [Publicación](docs/releases/2026-09-12-v5.md).
 
 - Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v4/> (también desde `www.alvia.ar`).
 - **V4: <https://alvia.ar/v4/>**, publicada desde `v4-c/`.
