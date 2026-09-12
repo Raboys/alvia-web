@@ -1,0 +1,18 @@
+{
+  "recetas_authoring": 232,
+  "recetas_isolated_package": 232,
+  "validaciones_regression": 205,
+  "ai_notes_regression": 148,
+  "markdown_links": 105,
+  "package_files": 20,
+  "package_bytes": 493421,
+  "diff_reviewed": true,
+  "visual_widths": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "publication": false
+}

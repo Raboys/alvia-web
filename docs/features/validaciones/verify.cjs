@@ -111,8 +111,8 @@ async function checkLinks(page, label) {
       check(`${width}: cross link back to Validaciones`, await page.locator('#validations-title').isVisible());
       await page.locator('.footer a[href="index.html#funcionalidades"]').click();
       await page.waitForURL(new URL('index.html#funcionalidades', base).href);
-      check(`${width}: two complete features linked from home`, await page.locator('.feature-entry a').count() === 2);
-      check(`${width}: Recetas remains informative`, await page.locator('[data-feature="recetas"]').evaluate(el => !el.querySelector('a,button,[tabindex]')));
+      check(`${width}: three complete features linked from home`, await page.locator('.feature-entry a').count() === 3);
+      check(`${width}: completed Recetas page linked`, await page.locator('[data-feature="recetas"] a').getAttribute('href') === 'recetas.html');
       check(`${width}: home has no overflow`, await fits(page));
       check(`${width}: feature assets excluded from home`, await page.locator('link[href*="validaciones.css"],script[src*="validaciones"]').count() === 0);
       if (width === 1440 || width === 390) await page.locator('#funcionalidades').screenshot({ path: path.join(evidence, `${width}-home-features.png`) });

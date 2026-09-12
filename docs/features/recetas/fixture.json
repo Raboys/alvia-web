@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "patient": "Sofía Giménez",
+  "doctor": "Dra. Lucía Robles",
+  "coverage": "Plan Integral",
+  "date": "12 sep 2026",
+  "medication": "Medicación de ejemplo",
+  "presentation": "Presentación de ejemplo",
+  "quantity": "1 envase",
+  "instructions": "Indicaciones de la consulta de ejemplo.",
+  "validity": "Documento de demostración · sin validez legal",
+  "states": {
+    "preparing": "issued",
+    "ready": "ready"
+  },
+  "origin": "scheduled",
+  "note": "Fixture editorial. Sin sustancia, dosis, firma ni matrícula; no apto para emisión."
+}

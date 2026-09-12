@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: Validaciones aprobada y publicada desde `2d3380d` con las correcciones de copy de Pablo, con evidencia pública y documentación actualizadas. Recetas sigue pendiente. Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: Validaciones aprobada y publicada desde `2d3380d` con las correcciones de copy de Pablo, con evidencia pública y documentación actualizadas. Recetas terminada y verificada localmente, con documentación y paquete de preview completos. Publicación separada. Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -70,3 +70,31 @@ Pablo indicó que el código de autorización suele tener tres dígitos y pidió
 | ID | Estado | Resultado y verificación |
 |---|---|---|
 | VAL-10 | done | Tres dígitos y copy corregidos según Pablo. Runtime `2d3380d` publicado; 205 checks locales y 205 públicos, hashes correctos en origen y ambos dominios. Documentación/evidencia actualizadas y commits pusheados. |
+
+
+## Recetas · 2026-09-12 · entrega local
+
+Pedido actual: desarrollar Recetas según PLAN_FEATURES (§8–10) y revisar la navegación conjunta. Base institucional limpia `ab8aa78`; producto `f5e854a813a08e57111044601eb982ba1924fba3`. Publicación y paquete desde commit son un paso posterior; esta corrida verifica una preview de trabajo.
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| RX-01 | done | Preparación, emisión, estados, recepción y condiciones contrastados con `f5e854a`; brief y fixture documentados (§8–9). |
+| RX-02 | done | Página V5, escenas nativas del mismo caso y procedencia por escena completas; texto legible y estados coherentes (§5, §8–9). |
+| RX-03 | done | Recetas enlazada desde home, AI Notes y Validaciones; navegación recíproca de las tres features verificada (§10). |
+| RX-04 | done | 232 comprobaciones de Recetas; cinco anchos, ambos estados, teclado, sin JS, movimiento reducido, texto ampliado y nombres largos. Corrección de foco/clic del selector en 320 sin JS. Regresiones: Validaciones 205 y AI Notes 148 correctas; capturas guardadas (§10). |
+| RX-05 | done | 232 checks sobre paquete aislado; 20 archivos, 493.421 bytes, HTTP/SHA-256 idénticos al árbol revisado. 105 enlaces locales de Markdown válidos; diff, capturas y continuidad revisados (§10–11). |
+
+
+Cierre: todas las tareas locales de Recetas están `done`. [Entrega, capturas y comprobaciones](../docs/features/recetas/README.md). Preview `--working-tree`, `source_commit: null`, base `ab8aa78`. Publicación y paquete desde commit son una acción separada; el runtime público permanece documentado en `2d3380d`. No se modifican producto, producción ni el registro de release.
+
+
+## Publicación de Recetas autorizada · 2026-09-12
+
+Pablo pidió publicar, commitear implementación y documentación, y pushear. Se continúa la entrega local anterior. Preflight: runtime `2d3380d`, rama local sincronizada con `origin/feat/v5-feature-pages-plan`; Nginx y rutas registrados en `docs/features/recetas/public/before-deploy.json`.
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| RX-06 | in_progress | Commit y push de implementación; paquete desde commit idéntico a la preview y verificado por HTTP. |
+| RX-07 | pending | Publicar con reemplazo atómico del enlace V5 y conservar el release anterior. |
+| RX-08 | pending | Verificar Recetas, páginas relacionadas, recursos y manifiesto en origen y ambos dominios. |
+| RX-09 | pending | Documentar release real, evidencias y rollback; commit de documentación, push y confirmación del HEAD remoto. |

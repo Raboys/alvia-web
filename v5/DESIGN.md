@@ -240,3 +240,14 @@ Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushea
 
 
 Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones gobiernan el copy vigente de Validaciones; no reintroducir las aclaraciones descartadas.
+
+
+## 12. Recetas · entrega local del 2026-09-12
+
+[recetas.html](recetas.html) conserva el lenguaje comercial directo: «La receta de la consulta llega al celular del paciente». El hero une titular, una bajada breve y CTA; debajo, dos superficies legibles muestran preparación médica y recepción del mismo ejemplo. En móvil se apilan y la flecha sigue el sentido de lectura. Se evita sumar un tutorial o volver a contar el funcionamiento de AI Notes.
+
+Los mocks nativos usan datos sintéticos explícitos, sin sustancia, dosis, matrícula o firma ficticias. El documento conserva «Documento de demostración · sin validez legal». Los estados «En preparación / Documento listo» se comparan con radios nativos; el documento listo desaparece durante la preparación. Las acciones reales de la app se explican fuera del mock, sin botones de descarga/compartir inactivos. Un desplegable explica demoras, indisponibilidad y consultas por invitación.
+
+La entrega local enlaza las tres páginas desde home y agrega navegación recíproca. No añade imágenes ni JS propio; home no carga los estilos de Recetas. Se verificaron cinco anchos, teclado, sin JS, texto ampliado, movimiento reducido, enlaces y el paquete aislado. [Brief, procedencia y evidencia](../docs/features/recetas/README.md).
+
+La página está terminada localmente y no se registra como aprobada o publicada. El runtime público sigue en `2d3380d`. Esta sección actualiza el estado de trabajo sin cambiar la historia de publicación de las secciones anteriores.
