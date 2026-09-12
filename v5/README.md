@@ -2,7 +2,7 @@
 
 Versión comercial inspirada en la composición y el recorrido de [1doc3](https://1doc3.com/), con identidad Alvia, fotografías propias y contenido para organizaciones de salud en Argentina.
 
-Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino canónico <https://alvia.ar/v5/>. [Registro de publicación y verificaciones](../docs/releases/2026-09-12-v5.md).
+Portada vigente y canónica en <https://alvia.ar/>. `www` sirve el mismo contenido; `/v5` redirige a la raíz. [Rutas, publicación y verificaciones](../docs/releases/2026-09-12-pretty-urls.md).
 
 **Para seguir iterando, empezar por [DESIGN.md](DESIGN.md):** decisiones de Pablo, textos aprobados, alternativas descartadas, paleta, tipografía, composición, responsive y mapa de edición. [Capturas de la base aprobada](../docs/design/v5-baseline/README.md).
 
@@ -10,7 +10,7 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) conserva las decisiones de Validaciones, AI Notes, Recetas y Turnos inteligentes. El bloque `#funcionalidades` presenta las cuatro en la home con ilustraciones HTML/CSS en `features.css`.
 
-[Validaciones](https://alvia.ar/v5/validaciones.html), [AI Notes](https://alvia.ar/v5/ai-notes.html), [Recetas](https://alvia.ar/v5/recetas.html) y [Turnos inteligentes](https://alvia.ar/v5/turnos-inteligentes.html) están publicadas y enlazadas desde home. La cuarta página explica la confirmación 24 horas antes y el adelanto automático para reducir el ausentismo. Runtime vigente `ddc8df8`; [publicación y rollback](../docs/releases/2026-09-12-smart-appointments.md).
+[Validaciones](https://alvia.ar/validaciones), [AI Notes](https://alvia.ar/ainotes), [Recetas](https://alvia.ar/recetas) y [Turnos inteligentes](https://alvia.ar/turnos-inteligentes) están publicadas y enlazadas desde home. La cuarta página explica la confirmación 24 horas antes y el adelanto automático para reducir el ausentismo. Runtime vigente `4239034`; [publicación y rollback](../docs/releases/2026-09-12-pretty-urls.md).
 
 ## Mensaje acordado
 
@@ -60,7 +60,7 @@ python3 scripts/package_v5.py --working-tree /tmp/alvia-v5-preview
 python3 scripts/package_v5.py --ref HEAD /tmp/alvia-v5-release
 ```
 
-El paquete de release sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/v5/`; las dos raíces ya redirigen a esa ruta. Actualizar el contenido de V5 no requiere volver a cambiar la portada.
+El paquete de release sale de un commit concreto, valida las referencias e incluye las licencias de las fuentes y un manifiesto SHA-256. No publica los documentos ni las capturas de referencia. El destino público es `/`; Nginx resuelve las rutas limpias contra los HTML del release y conserva `/v5` como redirección compatible.
 
 Sin JavaScript, la navegación y las preguntas siguen funcionando, se muestran todos los segmentos, el selector de app usa controles nativos y el cálculo muestra un ejemplo estático. Con JavaScript se habilitan la calculadora y las pestañas accesibles por teclado. La navegación del header funciona íntegramente sin JavaScript. Se respeta la preferencia de movimiento reducido.
 
@@ -99,7 +99,7 @@ Validaciones, AI Notes, Recetas y Turnos inteligentes muestran nombre + benefici
 
 [turnos-inteligentes.html](turnos-inteligentes.html) comunica confirmación 24 horas antes, recuperación de horarios liberados y adelanto automático entre pacientes de la misma especialidad. La home suma la cuarta tarjeta y una mención independiente para reducir el ausentismo. Usa `styles.css`, `header.css` y `turnos-inteligentes.css`; no agrega JavaScript propio ni dependencias.
 
-Pablo eligió la variante D y pidió quitar la sección «Controlá las reglas y cada cambio» y la referencia a «modalidad y cobertura». Publicada desde `ddc8df8` el 2026-09-12 a las 22:21:46 UTC. Paquete de 25 archivos y 547.182 bytes; 35 combinaciones públicas de página y ancho sin errores. [Registro y rollback](../docs/releases/2026-09-12-smart-appointments.md).
+Pablo eligió la variante D y pidió quitar la sección «Controlá las reglas y cada cambio» y la referencia a «modalidad y cobertura». Publicada inicialmente desde `ddc8df8`. El runtime `4239034` conserva la página y la sirve en `/turnos-inteligentes`, con enlaces y metadatos canónicos sin `/v5`. [Registro y rollback](../docs/releases/2026-09-12-pretty-urls.md).
 
 ## Botones y links · opción B
 

@@ -14,7 +14,7 @@ La home incorpora la tarjeta enlazada y una segunda mención sin link. El header
 - Paquete: 25 archivos, 547.182 bytes, más `release.json`.
 - Nginx sin cambios: SHA-256 `6a997ad27dfbfca112c5e9750a369ce83debbd0500d403e8e74d36a78169467c` antes y después.
 
-[Home](https://alvia.ar/v5/#funcionalidades) · [Turnos inteligentes](https://alvia.ar/v5/turnos-inteligentes.html) · [manifiesto](https://alvia.ar/v5/release.json).
+[Home](https://alvia.ar/#funcionalidades) · [Turnos inteligentes](https://alvia.ar/turnos-inteligentes) · [manifiesto](https://alvia.ar/release.json). Las URLs originales de este release ahora redirigen a las rutas limpias registradas en [la publicación posterior](2026-09-12-pretty-urls.md).
 
 ## Verificación
 

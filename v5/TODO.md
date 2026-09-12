@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: runtime `ddc8df8`. Home, Validaciones, AI Notes, Recetas y Turnos inteligentes están publicados; las cuatro tarjetas completas llevan a sus páginas y el megamenú mobile ofrece los mismos accesos. [Registro de publicación](../docs/releases/2026-09-12-smart-appointments.md). Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: runtime `4239034`. Home en `/`; features en `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`. Las rutas anteriores redirigen. [Registro de publicación](../docs/releases/2026-09-12-pretty-urls.md). Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -126,3 +126,14 @@ Selección B implementada en las cuatro páginas. Commit de runtime `8276775` pu
 | TURNOS-04 | done | PR #28 integrado; release `v5-ddc8df8` activado atómicamente y `v5-41a6d83` conservado. 35 combinaciones públicas correctas en apex y www. |
 
 Cierre: implementación, integración, publicación y verificación terminadas. Runtime `ddc8df8`; [release y rollback](../docs/releases/2026-09-12-smart-appointments.md).
+
+## URLs limpias · terminado y publicado
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| URL-01 | done | Links internos, canonical y Open Graph actualizados a la raíz y cuatro rutas limpias. |
+| URL-02 | done | Empaquetador actualizado a `public_path: "/"`; paquete de commit con 25 archivos y 546.963 bytes. |
+| URL-03 | done | Nginx sirve el release desde `/`, resuelve las cuatro rutas y redirige `/v5`, `.html` y slash final. Rutas telemed preservadas. |
+| URL-04 | done | PR #30 integrado; runtime `4239034` activado atómicamente. 35 combinaciones públicas correctas en apex y www. |
+
+Cierre: web pública sin `/v5`, compatibilidad anterior activa y rollback documentado.
