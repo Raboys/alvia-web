@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con header de funcionalidades y chevrones B: `8276775bf9c1313da04f103d1bbbae8e4743b2c4`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con calculadora C, menú móvil y chevrones B: `41a6d8386668c08ff3484007165c551678dddbae`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
@@ -291,3 +291,16 @@ Pablo eligió **Nombre + beneficio** entre cuatro mocks y pidió priorizar mobil
 Pablo eligió B (chevrón discreto) y autorizó commit, push, documentación y publicación. La primera implementación reemplazó los 11 enlaces de la portada base; al preparar el release se integró la versión ya publicada `0cd831d`, con Validaciones, AI Notes, Recetas y las dos vistas de la receta. Se conserva además el header mobile de la alternativa 4, publicado durante el preflight (`6176676`). La decisión se extiende a las cuatro páginas: **30 chevrones decorativos** en enlaces y el botón Copiar. También se retira una diagonal puramente decorativa junto al origen del código de autorización. Se preservan destinos, textos, navegación y flechas horizontales existentes.
 
 Publicado el 2026-09-12 a las 20:01:05 UTC desde `8276775`, verificado en ambos dominios. El SVG mide 15 px y queda fuera del nombre accesible. Se mantienen subrayado, foco por teclado y movimiento reducido; no se incorpora JavaScript. [Publicación y rollback](../docs/releases/2026-09-12-chevron-b.md). Comparador histórico: <http://100.71.73.116:8958/?variant=b>.
+
+
+## 17. Corrección de header · megamenú en mobile
+
+Pablo se arrepintió de las tres tarjetas fijas en mobile y eligió el megamenú visual. Desktop conserva la opción 4, nombre + beneficio. En mobile, «Explorá la plataforma» muestra siempre los nombres Validaciones, AI Notes y Recetas; al tocar abre las tres entradas con miniatura y descripción. Los chevrones de la alternativa B permanecen. Esta decisión reemplaza únicamente el diseño mobile de §15. Publicación, documentación, commit, push y aviso por WhatsApp autorizados explícitamente. [Implementación y evidencia](../docs/design/v5-mobile-megamenu/README.md).
+
+## Calculadora C — 2026-09-12
+
+Pablo eligió la alternativa C: tarjeta blanca, controles circulares +/− para médicos y horas, edición directa y tres opciones de 10, 20 y 30 minutos. Se conserva el cálculo por turnos completos por médico y semana; horas en pasos de 0,5 y médicos en pasos de 1.
+
+Tras revisar `COPYWRITING.md`, se eliminaron el preámbulo, el sobretítulo del resultado, las unidades duplicadas y «de a 30 minutos». Se conserva «Por semana», se muestra «turnos estimados por mes» y el método queda bajo «Cómo se calcula». Pablo pidió retirar también «Veamos el potencial de tu red». El bloque no lleva CTA.
+
+Implementación: `index.html`, `script.js` y `capacity.css`. La calculadora sin JavaScript muestra el ejemplo estático. [Registro de publicación](../docs/releases/2026-09-12-capacity-c.md).

@@ -1,0 +1,170 @@
+{
+  "base": "https://alvia.ar/v5/",
+  "checks": [
+    {
+      "name": "initial 480",
+      "pass": true
+    },
+    {
+      "name": "no calculator CTA",
+      "pass": true
+    },
+    {
+      "name": "no explanatory filler",
+      "pass": true
+    },
+    {
+      "name": "21 doctors = 504",
+      "pass": true
+    },
+    {
+      "name": "complete slots per doctor = 560",
+      "pass": true
+    },
+    {
+      "name": "10 minutes",
+      "pass": true
+    },
+    {
+      "name": "20 minutes",
+      "pass": true
+    },
+    {
+      "name": "30 minutes",
+      "pass": true
+    },
+    {
+      "name": "radio keyboard selection",
+      "pass": true
+    },
+    {
+      "name": "minimum doctors disabled",
+      "pass": true
+    },
+    {
+      "name": "maximum doctors disabled",
+      "pass": true
+    },
+    {
+      "name": "minimum hours disabled",
+      "pass": true
+    },
+    {
+      "name": "maximum hours disabled",
+      "pass": true
+    },
+    {
+      "name": "empty value",
+      "pass": true
+    },
+    {
+      "name": "fractional doctor invalid",
+      "pass": true
+    },
+    {
+      "name": "method opens",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "no calculator overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "touch targets 1440",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 1024",
+      "pass": true
+    },
+    {
+      "name": "no calculator overflow 1024",
+      "pass": true
+    },
+    {
+      "name": "touch targets 1024",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 768",
+      "pass": true
+    },
+    {
+      "name": "no calculator overflow 768",
+      "pass": true
+    },
+    {
+      "name": "touch targets 768",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 390",
+      "pass": true
+    },
+    {
+      "name": "no calculator overflow 390",
+      "pass": true
+    },
+    {
+      "name": "touch targets 390",
+      "pass": true
+    },
+    {
+      "name": "no page overflow 320",
+      "pass": true
+    },
+    {
+      "name": "no calculator overflow 320",
+      "pass": true
+    },
+    {
+      "name": "touch targets 320",
+      "pass": true
+    },
+    {
+      "name": "mobile menu retained",
+      "pass": true
+    },
+    {
+      "name": "validaciones.html HTTP 200",
+      "pass": true
+    },
+    {
+      "name": "validaciones.html no overflow",
+      "pass": true
+    },
+    {
+      "name": "ai-notes.html HTTP 200",
+      "pass": true
+    },
+    {
+      "name": "ai-notes.html no overflow",
+      "pass": true
+    },
+    {
+      "name": "recetas.html HTTP 200",
+      "pass": true
+    },
+    {
+      "name": "recetas.html no overflow",
+      "pass": true
+    },
+    {
+      "name": "no JS example",
+      "pass": true
+    },
+    {
+      "name": "no JS controls hidden",
+      "pass": true
+    },
+    {
+      "name": "no runtime/resource errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

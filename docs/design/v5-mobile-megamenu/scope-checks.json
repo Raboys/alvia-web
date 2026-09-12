@@ -1,0 +1,18 @@
+{
+  "index.html": {
+    "content_after_header_unchanged": true,
+    "desktop_nav_unchanged": true
+  },
+  "ai-notes.html": {
+    "content_after_header_unchanged": true,
+    "desktop_nav_unchanged": true
+  },
+  "recetas.html": {
+    "content_after_header_unchanged": true,
+    "desktop_nav_unchanged": true
+  },
+  "validaciones.html": {
+    "content_after_header_unchanged": true,
+    "desktop_nav_unchanged": true
+  }
+}

@@ -8,7 +8,13 @@
   const description = document.querySelector('#capacity-description');
   const numberFormat = new Intl.NumberFormat('es-AR');
   const calculateCapacity = () => {
-    const fields = Array.from(calculator.elements);
+    calculator.querySelectorAll('[data-field]').forEach((button) => {
+      const input = calculator.elements[button.dataset.field];
+      button.disabled = input.value !== '' && (Number(button.dataset.direction) < 0
+        ? input.valueAsNumber <= Number(input.min)
+        : input.valueAsNumber >= Number(input.max));
+    });
+    const fields = [calculator.elements.professionals, calculator.elements.hours];
     if (!fields.every((field) => field.validity.valid)) {
       total.value = '—';
       description.textContent = 'Completá los valores para calcular';
@@ -21,8 +27,17 @@
     const capacity = professionals * Math.floor(hours * 60 / duration) * 4;
     total.value = numberFormat.format(capacity);
     total.classList.toggle('long-value', total.value.length > 6);
-    description.textContent = 'turnos que podrías ofrecer por mes';
+    description.textContent = 'turnos estimados por mes';
   };
+  calculator.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-field]');
+    if (!button) return;
+    const input = calculator.elements[button.dataset.field];
+    if (!input.validity.valid) input.value = input.min;
+    else if (Number(button.dataset.direction) > 0) input.stepUp();
+    else input.stepDown();
+    calculateCapacity();
+  });
   calculator.addEventListener('input', calculateCapacity);
   calculator.addEventListener('change', calculateCapacity);
   calculator.addEventListener('submit', (event) => event.preventDefault());
