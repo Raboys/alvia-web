@@ -1,0 +1,106 @@
+[
+  {
+    "file": "ai-notes.css",
+    "origin_match": true
+  },
+  {
+    "file": "ai-notes.html",
+    "origin_match": true
+  },
+  {
+    "file": "ai-notes.js",
+    "origin_match": true
+  },
+  {
+    "file": "assets/app-home.webp",
+    "origin_match": true
+  },
+  {
+    "file": "assets/app-prescription.webp",
+    "origin_match": true
+  },
+  {
+    "file": "assets/favicon.svg",
+    "origin_match": true
+  },
+  {
+    "file": "assets/fonts/DM-Sans-LICENSE.txt",
+    "origin_match": true
+  },
+  {
+    "file": "assets/fonts/Lora-LICENSE.txt",
+    "origin_match": true
+  },
+  {
+    "file": "assets/fonts/dm-sans-latin.woff2",
+    "origin_match": true
+  },
+  {
+    "file": "assets/fonts/lora-latin.woff2",
+    "origin_match": true
+  },
+  {
+    "file": "assets/people.webp",
+    "origin_match": true
+  },
+  {
+    "file": "capacity.css",
+    "origin_match": true
+  },
+  {
+    "file": "features.css",
+    "origin_match": true
+  },
+  {
+    "file": "header.css",
+    "origin_match": true
+  },
+  {
+    "file": "header.js",
+    "origin_match": true
+  },
+  {
+    "file": "index.html",
+    "origin_match": true
+  },
+  {
+    "file": "recetas-mocks.css",
+    "origin_match": true
+  },
+  {
+    "file": "recetas.css",
+    "origin_match": true
+  },
+  {
+    "file": "recetas.html",
+    "origin_match": true
+  },
+  {
+    "file": "script.js",
+    "origin_match": true
+  },
+  {
+    "file": "styles.css",
+    "origin_match": true
+  },
+  {
+    "file": "validaciones.css",
+    "origin_match": true
+  },
+  {
+    "file": "validaciones.html",
+    "origin_match": true
+  },
+  {
+    "file": "release.json",
+    "origin_match": true
+  },
+  {
+    "host": "alvia.ar",
+    "manifest_and_changed_assets_match": true
+  },
+  {
+    "host": "www.alvia.ar",
+    "manifest_and_changed_assets_match": true
+  }
+]

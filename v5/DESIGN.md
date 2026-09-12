@@ -7,7 +7,7 @@ Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 apro
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/> → <https://alvia.ar/v5/>.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con header de funcionalidades y chevrones B: `8276775bf9c1313da04f103d1bbbae8e4743b2c4`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente con calculadora C, menú móvil y chevrones B: `41a6d8386668c08ff3484007165c551678dddbae`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
