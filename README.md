@@ -2,7 +2,9 @@
 
 Sitio institucional estático de Alvia y sus variantes de diseño.
 
-- Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v4/> (también desde `www.alvia.ar`).
+- **V5: <https://alvia.ar/v5/>**, portada vigente con dirección visual de 1doc3, beneficios para la organización y calculadora de capacidad. [Mensaje y diseño](v5/README.md) · [Publicación](docs/releases/2026-09-12-v5.md).
+
+- Portada vigente: <https://alvia.ar/> → <https://alvia.ar/v5/> (también desde `www.alvia.ar`).
 - **V4: <https://alvia.ar/v4/>**, publicada desde `v4-c/`.
 - V3 sigue accesible por su enlace directo: <https://alvia.ar/v3/>.
 - Versiones anteriores: `v1/`, `v2/` y `v3/`.
@@ -10,7 +12,7 @@ Sitio institucional estático de Alvia y sus variantes de diseño.
 
 ## V4
 
-La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Es la portada desde el 2026-09-05 UTC; conserva `noindex, nofollow`.
+La variante elegida usa textos breves, muestra la app del afiliado con pantallas consistentes y videos automáticos, y presenta demos interactivas de recetas, estudios y AI Notes. El recorrido avanza cada siete segundos con una barra decreciente; seleccionar una pantalla detiene el avance hasta pulsar «Reproducir recorrido». Fue la portada del 2026-09-05 al 2026-09-12 UTC; conserva `noindex, nofollow` y su enlace directo.
 
 - [Historia de cambios y validaciones](v4-c/README.md).
 - [Registro de publicación](docs/releases/2026-09-05-v4.md).
@@ -23,12 +25,12 @@ La variante elegida usa textos breves, muestra la app del afiliado con pantallas
 python3 -m http.server 8080
 ```
 
-Abrir `http://127.0.0.1:8080/v4-c/`. Las páginas no necesitan build ni dependencias de Node. Los generadores de capturas en `v4-c/captures/` son herramientas de autoría opcionales y no se publican.
+Abrir `http://127.0.0.1:8080/v5/` para la portada vigente o `/v4-c/` para V4. Las páginas no necesitan build ni dependencias de Node. Los generadores de capturas en `v4-c/captures/` son herramientas de autoría opcionales y no se publican.
 
 ## Paquete para publicación
 
 ```bash
-python3 scripts/package_v4.py --ref main /tmp/alvia-v4-release
+python3 scripts/package_v5.py --ref main /tmp/alvia-v5-release
 ```
 
-El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye sólo HTML/CSS/JS y assets referenciados, verifica las rutas y escribe un manifiesto SHA-256. El resultado se sirve en `/v4/`, sin modificar V3 ni la app médica. El repositorio institucional usa publicación estática atómica; no tiene workflow de despliegue automático.
+El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye sólo HTML/CSS/JS, assets referenciados y licencias de fuentes, verifica las rutas y escribe un manifiesto SHA-256. El resultado se sirve en `/v5/`. El repositorio institucional usa publicación estática atómica; no tiene workflow de despliegue automático.

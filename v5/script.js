@@ -1,0 +1,92 @@
+(() => {
+  'use strict';
+  document.documentElement.classList.add('js');
+
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#main-nav');
+  const mobileNavigation = window.matchMedia('(max-width: 900px)');
+  const closeMenu = () => {
+    menuButton.setAttribute('aria-expanded', 'false');
+    navigation.classList.remove('is-open');
+  };
+  const updateMenu = () => {
+    menuButton.hidden = !mobileNavigation.matches;
+    closeMenu();
+  };
+  updateMenu();
+  mobileNavigation.addEventListener('change', updateMenu);
+  menuButton.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+    menuButton.setAttribute('aria-expanded', String(open));
+    navigation.classList.toggle('is-open', open);
+  });
+  navigation.addEventListener('click', (event) => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.masthead')) closeMenu();
+  });
+
+  const calculator = document.querySelector('#capacity-form');
+  calculator.hidden = false;
+  const total = document.querySelector('#capacity-total');
+  const description = document.querySelector('#capacity-description');
+  const numberFormat = new Intl.NumberFormat('es-AR');
+  const calculateCapacity = () => {
+    const fields = Array.from(calculator.elements);
+    if (!fields.every((field) => field.validity.valid)) {
+      total.value = '—';
+      description.textContent = 'Completá los valores para calcular';
+      return;
+    }
+    const professionals = calculator.elements.professionals.valueAsNumber;
+    const hours = calculator.elements.hours.valueAsNumber;
+    const duration = Number(calculator.elements.duration.value);
+    // Count complete slots per professional per week, then multiply by four weeks.
+    const capacity = professionals * Math.floor(hours * 60 / duration) * 4;
+    total.value = numberFormat.format(capacity);
+    total.classList.toggle('long-value', total.value.length > 6);
+    description.textContent = 'turnos que podrías ofrecer por mes';
+  };
+  calculator.addEventListener('input', calculateCapacity);
+  calculator.addEventListener('change', calculateCapacity);
+  calculator.addEventListener('submit', (event) => event.preventDefault());
+  calculateCapacity();
+
+  const tabList = document.querySelector('.organization-tabs');
+  const tabs = Array.from(tabList.querySelectorAll('[role="tab"]'));
+  const activateTab = (selected) => {
+    tabs.forEach((tab) => {
+      const active = tab === selected;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      panel.hidden = !active;
+      panel.setAttribute('role', 'tabpanel');
+      panel.setAttribute('aria-labelledby', tab.id);
+      panel.tabIndex = 0;
+    });
+  };
+  tabList.hidden = false;
+  activateTab(tabs[0]);
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateTab(tab));
+    tab.addEventListener('keydown', (event) => {
+      let nextIndex;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = tabs.length - 1;
+      if (nextIndex === undefined) return;
+      event.preventDefault();
+      activateTab(tabs[nextIndex]);
+      tabs[nextIndex].focus();
+    });
+  });
+})();
