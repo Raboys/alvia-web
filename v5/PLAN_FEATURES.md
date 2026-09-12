@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `5f74ecf`; las tres features tienen enlace público y navegación recíproca. Pablo pidió publicar Recetas, documentar, commitear y pushear. Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `f281d8b`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 

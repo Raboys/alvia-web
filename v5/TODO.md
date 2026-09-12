@@ -1,6 +1,6 @@
 # Ejecución de PLAN_FEATURES · V5
 
-Estado vigente: Recetas publicada y verificada por pedido de Pablo, runtime `5f74ecf`. Las tres features tienen enlaces públicos y navegación recíproca. Implementación y documentación commiteadas y pusheadas; publicación verificada y cierre completo. Los bloques anteriores conservan la historia de cada corrida.
+Estado vigente: tarjetas C publicadas, runtime `f281d8b`. Home, Validaciones, AI Notes y Recetas están publicadas; las tres tarjetas completas llevan a sus páginas. La decisión de Pablo y las verificaciones están en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
 
@@ -101,3 +101,8 @@ Pablo pidió publicar, commitear implementación y documentación, y pushear. Se
 
 
 Cierre de publicación: Recetas disponible en ambos dominios desde `5f74ecf`. 232 checks en cada dominio, Validaciones 205 y AI Notes 148; 20 archivos y manifiestos verificados. Todas las tareas están `done`. Los commits de implementación y documentación están pusheados a `origin/feat/v5-feature-pages-plan`; `v5-2d3380d` se conserva para rollback.
+
+
+## Accesos a funcionalidades · alternativa C
+
+C elegida explícitamente por Pablo, implementada y publicada. Runtime `f281d8b`: tarjetas completas con enlace nativo, acción «Explorar [función] →», foco visible y composición responsive. Documentación, 53 comprobaciones locales, 53 en cada dominio público, hashes y capturas en [el registro de tarjetas C](../docs/design/v5-feature-cards/README.md). El paquete exacto del commit pusheado está publicado; la evidencia se registra en un commit posterior sin modificar el runtime.
