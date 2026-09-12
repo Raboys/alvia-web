@@ -6,6 +6,12 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 **Para seguir iterando, empezar por [DESIGN.md](DESIGN.md):** decisiones de Pablo, textos aprobados, alternativas descartadas, paleta, tipografía, composición, responsive y mapa de edición. [Capturas de la base aprobada](../docs/design/v5-baseline/README.md).
 
+## Ampliación de features · en revisión local
+
+[PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
+
+Por indicación de Pablo, son elementos informativos **sin enlaces**. Las subpáginas todavía no existen. La guía define cómo producir y conectar cada una al terminarla. [Capturas y verificación](../docs/design/v5-features/README.md). Esta ampliación no fue publicada.
+
 ## Mensaje acordado
 
 > Un servicio de telemedicina que sí te funciona.
