@@ -61,3 +61,12 @@ Pablo aprobó la página y pidió publicarla, actualizar los Markdown, commitear
 | VAL-09 | done | Implementación `60dadfc` y documentación/evidencia en commits separados, publicados en `origin/feat/v5-feature-pages-plan`; cierre con confirmación de HEAD remoto. |
 
 Cierre de publicación: Validaciones aprobada, publicada y verificada en ambos dominios. Runtime `60dadfc`; 205 checks públicos, 148 de AI Notes y 18 de www. Documentación, capturas y rollback conservados. Todas las tareas solicitadas están `done`; Recetas queda para la siguiente corrida.
+
+
+## Corrección del código de autorización
+
+Pablo indicó que el código de autorización suele tener tres dígitos. Se corrige el ejemplo institucional a `482`, manteniendo la longitud configurable del producto. Continúa la autorización de publicación, documentación, commit y push.
+
+| ID | Estado | Resultado y verificación |
+|---|---|---|
+| VAL-10 | in_progress | Corregir HTML, fixture y documentación a tres dígitos; revisar presentación, empaquetar desde commit, publicar y verificar ambos dominios, registrar release y pushear. |

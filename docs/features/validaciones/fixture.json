@@ -13,7 +13,7 @@
     "liveness_claimed": false
   },
   "auth_code": {
-    "code": "482619",
+    "code": "482",
     "status": "verified",
     "source": "coverage app",
     "ui_label": "Código de autorización"
