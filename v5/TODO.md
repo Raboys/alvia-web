@@ -65,7 +65,7 @@ Cierre de publicación: Validaciones aprobada, publicada y verificada en ambos d
 
 ## Corrección del código de autorización
 
-Pablo indicó que el código de autorización suele tener tres dígitos y pidió eliminar las aclaraciones «En Alvia se llama…» y «Es distinto del número de afiliado…». Se corrige el ejemplo a `482` y se conserva sólo la indicación de obtenerlo en la app de la cobertura. Continúa la autorización de publicación, documentación, commit y push.
+Pablo indicó que el código de autorización suele tener tres dígitos y pidió eliminar las aclaraciones «En Alvia se llama…» y «Es distinto del número de afiliado…». Se corrige el ejemplo a `482` y se conserva sólo la indicación de obtenerlo en la app de la cobertura. También pidió sustituir la aclaración de segundo cobro por «Con todos los medios de pago». Continúa la autorización de publicación, documentación, commit y push.
 
 | ID | Estado | Resultado y verificación |
 |---|---|---|

@@ -80,7 +80,7 @@ async function checkLinks(page, label) {
       check(`${width}: code length is only a fixture`, await page.locator('.example-digits').innerText().then(text => text.replace(/\s/g, '')) === fixture.auth_code.code);
       check(`${width}: readable example text`, await page.locator('.clearance-list strong').evaluateAll(es => es.every(el => parseFloat(getComputedStyle(el).fontSize) >= 15)));
       check(`${width}: explanations have no clipping`, await page.locator('.validation-mechanism').evaluateAll(es => es.every(el => el.scrollWidth <= el.clientWidth && el.scrollHeight <= el.clientHeight)));
-      check(`${width}: distinct payment moments and no second charge`, (await page.locator('.copay-timing').innerText()).includes('Al reservar.') && (await page.locator('.copay-timing').innerText()).includes('Antes de entrar a la espera.') && (await page.locator('#copay-title + .copay-timing + p').innerText()).includes('no se cobra de nuevo'));
+      check(`${width}: distinct payment moments and payment methods`, (await page.locator('.copay-timing').innerText()).includes('Al reservar.') && (await page.locator('.copay-timing').innerText()).includes('Antes de entrar a la espera.') && (await page.locator('#copay-title + .copay-timing + p').innerText()).includes('Con todos los medios de pago'));
       check(`${width}: no fake patient action or personal-data input`, await page.locator('main button, main input:not([type="radio"]), main a[href="#"]').count() === 0);
       check(`${width}: contextual commercial CTA`, await page.locator('.validations-closing a[href*="wa.me"]').evaluate(a => new URL(a.href).searchParams.get('text').includes('cobertura')));
       await capture(page, `${width}-full.png`);
