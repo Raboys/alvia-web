@@ -6,11 +6,11 @@ Portada vigente en <https://alvia.ar/> y <https://www.alvia.ar/>, con destino ca
 
 **Para seguir iterando, empezar por [DESIGN.md](DESIGN.md):** decisiones de Pablo, textos aprobados, alternativas descartadas, paleta, tipografía, composición, responsive y mapa de edición. [Capturas de la base aprobada](../docs/design/v5-baseline/README.md).
 
-## Ampliación de features · publicada para revisión
+## Funcionalidades publicadas
 
-[PLAN_FEATURES.md](PLAN_FEATURES.md) guía el desarrollo por corridas: primero Validaciones (identidad, código de credencial y copagos), después AI Notes y finalmente Recetas. El bloque `#funcionalidades` presenta las tres en la home, después de las modalidades de red, con ilustraciones HTML/CSS en `features.css`.
+[PLAN_FEATURES.md](PLAN_FEATURES.md) conserva las decisiones de Validaciones, AI Notes, Recetas y Turnos inteligentes. El bloque `#funcionalidades` presenta las cuatro en la home con ilustraciones HTML/CSS en `features.css`.
 
-**[Validaciones](https://alvia.ar/v5/validaciones.html) y [AI Notes](https://alvia.ar/v5/ai-notes.html) están publicadas**, enlazadas desde home y con navegación recíproca. [Recetas](https://alvia.ar/v5/recetas.html) también está publicada y enlazada; las tres features tienen navegación recíproca. Runtime público vigente `8276775`, con el [header opción 4](../docs/design/v5-header-option4/README.md) elegido por Pablo. Validaciones reúne identidad, código de credencial y copagos configurables; AI Notes combina resumen de consulta y estudios previos por email/WhatsApp. [Entrega de Validaciones](../docs/features/validaciones/README.md) · [Entrega de AI Notes](../docs/features/ai-notes/README.md).
+[Validaciones](https://alvia.ar/v5/validaciones.html), [AI Notes](https://alvia.ar/v5/ai-notes.html), [Recetas](https://alvia.ar/v5/recetas.html) y [Turnos inteligentes](https://alvia.ar/v5/turnos-inteligentes.html) están publicadas y enlazadas desde home. La cuarta página explica la confirmación 24 horas antes y el adelanto automático para reducir el ausentismo. Runtime vigente `ddc8df8`; [publicación y rollback](../docs/releases/2026-09-12-smart-appointments.md).
 
 ## Mensaje acordado
 
@@ -28,7 +28,7 @@ Las correcciones de Pablo durante esta versión definen el mensaje:
 
 ## Diseño y recorrido
 
-Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. El header lleva directamente a Validaciones, AI Notes y Recetas, con nombre y beneficio. En mobile, los tres accesos permanecen visibles debajo de la marca y las acciones comerciales.
+Blanco, azul vivo, naranja, titulares Lora y texto DM Sans. Fotografía integrada con trazos simples, bloques amplios y una sola demostración de app. El header lleva directamente a las cuatro funcionalidades, con nombre y beneficio. En mobile, el megamenú mantiene los cuatro accesos dentro de «Explorá la plataforma».
 
 1. Oferta comercial y llamada a una conversación.
 2. Turnos, guardia, gestión y valor para el afiliado, junto a la app real.
@@ -93,7 +93,13 @@ Publicada por pedido de Pablo desde `5f74ecf` el 2026-09-12 a las 18:44:43 UTC. 
 
 ## Header · opción 4 publicada
 
-Validaciones, AI Notes y Recetas muestran nombre + beneficio en home y subpáginas. `header.css` reemplaza el menú hamburguesa anterior por accesos visibles en mobile; `navigation.js` se retiró. Verificación vigente de navegación: `node docs/design/v5-header-option4/verify.cjs`; acepta `PREVIEW_URL`, `EVIDENCE_DIR` y `PLAYWRIGHT_CORE_PATH`. Las verificaciones de menús de las publicaciones iniciales son históricas. [Decisión, capturas y publicación](../docs/design/v5-header-option4/README.md).
+Validaciones, AI Notes, Recetas y Turnos inteligentes muestran nombre + beneficio en home y subpáginas. Desktop conserva los accesos directos; mobile usa el megamenú visual. `navigation.js` se retiró. Las verificaciones de menús de las publicaciones iniciales son históricas.
+
+## Turnos inteligentes · publicada
+
+[turnos-inteligentes.html](turnos-inteligentes.html) comunica confirmación 24 horas antes, recuperación de horarios liberados y adelanto automático entre pacientes de la misma especialidad. La home suma la cuarta tarjeta y una mención independiente para reducir el ausentismo. Usa `styles.css`, `header.css` y `turnos-inteligentes.css`; no agrega JavaScript propio ni dependencias.
+
+Pablo eligió la variante D y pidió quitar la sección «Controlá las reglas y cada cambio» y la referencia a «modalidad y cobertura». Publicada desde `ddc8df8` el 2026-09-12 a las 22:21:46 UTC. Paquete de 25 archivos y 547.182 bytes; 35 combinaciones públicas de página y ancho sin errores. [Registro y rollback](../docs/releases/2026-09-12-smart-appointments.md).
 
 ## Botones y links · opción B
 

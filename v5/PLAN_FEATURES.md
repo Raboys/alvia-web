@@ -1,6 +1,6 @@
 # V5 · Guía para desarrollar las páginas de features
 
-Fecha: 2026-09-12. Estado: **home, Validaciones, AI Notes y Recetas publicados y verificados**. Runtime vigente `8276775`; las tres features tienen enlace público y navegación recíproca. Pablo eligió la alternativa C: tarjetas completas clickeables con «Explorar [función] →», y autorizó documentación, commits, push y publicación. [Decisión y evidencia](../docs/design/v5-feature-cards/README.md). El header opción 4, elegido posteriormente, muestra nombre y beneficio de las tres features con accesos visibles en mobile; [decisión y publicación](../docs/design/v5-header-option4/README.md). Este documento guía las corridas y registra sus decisiones.
+Fecha: 2026-09-12. Estado: **home y cuatro funcionalidades publicadas y verificadas**. Runtime vigente `ddc8df8`: Validaciones, AI Notes, Recetas y Turnos inteligentes tienen enlace público y navegación recíproca. La cuarta página y la home venden confirmación, adelantos y reducción del ausentismo con lenguaje directo. [Publicación](../docs/releases/2026-09-12-smart-appointments.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
 
@@ -11,6 +11,7 @@ Orden pedido por Pablo:
 1. **Validaciones:** identidad, código de credencial y copagos, reunidos en una página.
 2. **AI Notes.**
 3. **Recetas.**
+4. **Turnos inteligentes:** confirmación 24 horas antes y adelanto automático para reducir el ausentismo.
 
 **Pedido posterior de Pablo:** desarrollar AI Notes en esta corrida, sin esperar a Validaciones. Su corrección editorial posterior prioriza documentación automatizada, menos trabajo administrativo, consultas más ágiles y estudios enviados por email/WhatsApp, con mucho menos texto. Ver [brief vigente](../docs/features/ai-notes/BRIEF.md).
 
@@ -88,9 +89,9 @@ Tres columnas abiertas en escritorio, filas compactas con miniatura lateral en m
 
 En la publicación inicial, el bloque es **informativo y no interactivo** por instrucción de Pablo. No tiene flechas de navegación, cursor de enlace, estados de hover de tarjeta, `tabindex`, botones deshabilitados ni destinos vacíos. Un enlace en el footer permite encontrar el bloque; no lleva a una subpágina. Se preserva la navegación principal para no sumar otra decisión arriba.
 
-**Estado publicado actual:** Validaciones, AI Notes y Recetas tienen páginas completas y nombres enlazados con flecha. AI Notes comunica documentación automática y menos trabajo administrativo; Recetas muestra preparación y recepción del documento. Runtime `5f74ecf`.
+**Estado publicado actual:** las cuatro funcionalidades tienen páginas completas y tarjetas enlazadas. Turnos inteligentes comunica confirmación 24 horas antes, horarios recuperados y menos ausentismo. Runtime `ddc8df8`.
 
-Las tres entradas enlazan públicamente a sus páginas completas. Recetas agrega su enlace y los enlaces recíprocos en las otras dos páginas.
+Las cuatro entradas enlazan públicamente a sus páginas completas y comparten navegación recíproca.
 
 Implementación: [index.html](index.html), ancla `#funcionalidades`, y [features.css](features.css). Los `article[data-feature]` identifican cada entrada; los tres nombres ya son enlaces reales. El empaquetador incluye la nueva hoja por su referencia desde HTML.
 
@@ -102,7 +103,8 @@ Rutas propuestas, compatibles con el estático actual:
 |---|---|---|---|
 | 1 | `v5/validaciones.html` | `/v5/validaciones.html` | Aprobada y publicada (`2d3380d`); enlazada desde home y AI Notes. |
 | 2 | `v5/ai-notes.html` | `/v5/ai-notes.html` | Publicada (`a4ca4aa`); enlazada desde home. |
-| 3 | `v5/recetas.html` | `/v5/recetas.html` | Publicada y verificada (`5f74ecf`); enlazada desde home y ambas features. |
+| 3 | `v5/recetas.html` | `/v5/recetas.html` | Publicada y verificada; enlazada desde home. |
+| 4 | `v5/turnos-inteligentes.html` | `/v5/turnos-inteligentes.html` | Publicada y verificada (`ddc8df8`); enlazada desde home y navegación común. |
 
 En la etapa inicial de la guía estos archivos no se crearon. AI Notes se agregó y publicó en su corrida; Validaciones ya está implementada, publicada y enlazada. Recetas se completó localmente y luego se publicó por pedido de Pablo, con enlaces desde home y las otras features. Se mantienen al mismo nivel que `index.html` para aprovechar el empaquetado actual. Si otra ruta aporta un beneficio concreto, la corrida que la introduzca debe adaptar y verificar el empaquetador.
 
@@ -255,11 +257,12 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 | Entrega | Estado | Evidencia / próximo paso |
 |---|---|---|
-| Guía high level | Actualizada | Conserva las decisiones editoriales y registra las tres features completas y publicadas. |
-| Bloque home | Publicado con tres enlaces | Validaciones, AI Notes y Recetas tienen enlace público. [Publicación previa](../docs/design/v5-features/README.md) y [verificación actual](../docs/features/ai-notes/README.md). |
+| Guía high level | Actualizada | Conserva las decisiones editoriales y registra las cuatro features completas y publicadas. |
+| Bloque home | Publicado con cuatro enlaces | Validaciones, AI Notes, Recetas y Turnos inteligentes tienen enlace público. |
 | Validaciones | Aprobada, publicada y verificada (`2d3380d`) | Identidad, código y copagos, variante exenta, enlaces recíprocos con AI Notes. [Entrega y evidencia](../docs/features/validaciones/README.md). |
 | AI Notes | Publicada y verificada | Documentación automatizada + estudios previos por email/WhatsApp. [Brief, procedencia y evidencia](../docs/features/ai-notes/README.md). |
 | Recetas | Publicada y verificada (`5f74ecf`) | Preparación médica, PDF en preparación/listo, recepción y condiciones. Enlaces públicos recíprocos. [Entrega](../docs/features/recetas/README.md). |
+| Turnos inteligentes | Publicada y verificada (`ddc8df8`) | Confirmación 24 horas antes, adelantos y reducción del ausentismo. [Release](../docs/releases/2026-09-12-smart-appointments.md). |
 | Revisión conjunta | Completada local y públicamente | Enlaces recíprocos y home, cinco anchos, regresiones 205/148, copy y paquete de 20 archivos revisados. [Evidencia](../docs/features/recetas/README.md). |
 | Publicación del bloque informativo | Realizada por pedido de Pablo | [V5](https://alvia.ar/v5/#funcionalidades), runtime `0b5a3c1`; [registro de release](../docs/releases/2026-09-12-v5.md). |
 | Publicación de AI Notes | Realizada por pedido de Pablo | Runtime `a4ca4aa`; 16 archivos, 451.577 bytes. [Registro y rollback](../docs/releases/2026-09-12-v5.md), [evidencia pública](../docs/features/ai-notes/README.md). |
@@ -268,4 +271,4 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 
 ### Inicio sugerido de la próxima corrida
 
-> Las tres features están publicadas y verificadas. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y las entregas de `docs/features/`. Runtime vigente `5f74ecf`; evidencia y rollback en el release de Recetas. Incorporá nuevos pedidos de Pablo conservando las decisiones editoriales vigentes.
+> Las cuatro features están publicadas y verificadas. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y los registros de `docs/releases/`. Runtime vigente `ddc8df8`; conservar la copia directa y la mención al ausentismo. Incorporá nuevos pedidos de Pablo sin reintroducir el copy descartado.
