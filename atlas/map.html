@@ -1,0 +1,729 @@
+<title>Alvia Web — Mapa del sistema</title>
+<style>
+  /* ============ tokens ============ */
+  :root {
+    --bg: #F6FAF8;
+    --surface: #FFFFFF;
+    --surface-2: #EEF5F1;
+    --ink: #16302A;
+    --ink-2: #527067;
+    --ink-3: #7E958D;
+    --line: #DCE8E2;
+    --line-2: #C7DAD2;
+    --accent: #0E8C6D;
+    --accent-soft: #DFF2EB;
+    --st-ok: #1E9E6A;
+    --st-off: #D99A06;
+    --st-chk: #4D9DE0;
+    --st-no: #D64550;
+    --st-ice: #8A9BA4;
+    --st-ok-bg: #E2F4EA;
+    --st-off-bg: #FAF0D8;
+    --st-chk-bg: #E4F0FA;
+    --st-no-bg: #FAE3E5;
+    --st-ice-bg: #EAEEF0;
+    --shadow: 0 10px 30px rgba(22, 48, 42, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D1815;
+      --surface: #14231F;
+      --surface-2: #1A2E28;
+      --ink: #E6F1EC;
+      --ink-2: #9DB4AB;
+      --ink-3: #718880;
+      --line: #24382F;
+      --line-2: #31493F;
+      --accent: #35C79C;
+      --accent-soft: #16382E;
+      --st-ok: #2AA26F;
+      --st-off: #BC8B0F;
+      --st-chk: #4E96D2;
+      --st-no: #E25863;
+      --st-ice: #6E828C;
+      --st-ok-bg: #13312423;
+      --st-off-bg: #38290523;
+      --st-chk-bg: #10283d23;
+      --st-no-bg: #3a161b23;
+      --st-ice-bg: #22303823;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1815;
+    --surface: #14231F;
+    --surface-2: #1A2E28;
+    --ink: #E6F1EC;
+    --ink-2: #9DB4AB;
+    --ink-3: #718880;
+    --line: #24382F;
+    --line-2: #31493F;
+    --accent: #35C79C;
+    --accent-soft: #16382E;
+    --st-ok: #2AA26F;
+    --st-off: #BC8B0F;
+    --st-chk: #4E96D2;
+    --st-no: #E25863;
+    --st-ice: #6E828C;
+    --st-ok-bg: #13312423;
+    --st-off-bg: #38290523;
+    --st-chk-bg: #10283d23;
+    --st-no-bg: #3a161b23;
+    --st-ice-bg: #22303823;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+  :root[data-theme="light"] {
+    --bg: #F6FAF8;
+    --surface: #FFFFFF;
+    --surface-2: #EEF5F1;
+    --ink: #16302A;
+    --ink-2: #527067;
+    --ink-3: #7E958D;
+    --line: #DCE8E2;
+    --line-2: #C7DAD2;
+    --accent: #0E8C6D;
+    --accent-soft: #DFF2EB;
+    --st-ok: #1E9E6A;
+    --st-off: #D99A06;
+    --st-chk: #4D9DE0;
+    --st-no: #D64550;
+    --st-ice: #8A9BA4;
+    --st-ok-bg: #E2F4EA;
+    --st-off-bg: #FAF0D8;
+    --st-chk-bg: #E4F0FA;
+    --st-no-bg: #FAE3E5;
+    --st-ice-bg: #EAEEF0;
+    --shadow: 0 10px 30px rgba(22, 48, 42, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.85em; }
+
+  /* ============ header ============ */
+  header {
+    position: sticky; top: 0; z-index: 30;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 24px 0;
+  }
+  .hd-top { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .hd-brand { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+  .hd-brand em { font-style: normal; color: var(--accent); }
+  .hd-sub { color: var(--ink-2); font-size: 13px; }
+  .hd-counts { margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); }
+  .hd-counts b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .tabs { display: flex; gap: 2px; margin-top: 10px; }
+  .tab {
+    appearance: none; border: none; background: none; cursor: pointer;
+    font: inherit; font-weight: 600; font-size: 14px; color: var(--ink-2);
+    padding: 8px 14px 10px; border-bottom: 2px solid transparent;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab:focus-visible, .mm-node:focus-visible, .mm-area:focus-visible, .arch-node:focus-visible, .drawer-close:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+
+  /* ============ legend ============ */
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; padding: 12px 24px; font-size: 12.5px; color: var(--ink-2); }
+  .lg { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .dot.ok { background: var(--st-ok); }
+  .dot.off { background: var(--st-off); }
+  .dot.chk { background: var(--st-chk); }
+  .dot.no { background: var(--st-no); }
+  .dot.ice { background: var(--st-ice); }
+
+  main { padding: 0 24px 80px; max-width: 1500px; margin: 0 auto; }
+  section[hidden] { display: none; }
+
+  /* ============ mindmap ============ */
+  .mm-scroll { overflow-x: auto; padding-bottom: 8px; }
+  .mm-canvas { position: relative; display: flex; align-items: center; justify-content: center; gap: 56px; min-width: 1180px; padding: 24px 8px; }
+  svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  svg.links path { fill: none; stroke: var(--line-2); stroke-width: 1.5; }
+  svg.links path.trunk { stroke-width: 2; }
+
+  .mm-side { display: flex; flex-direction: column; gap: 26px; flex: 1; z-index: 1; }
+  .mm-root {
+    z-index: 1; flex: none; text-align: center;
+    background: var(--ink); color: var(--bg);
+    border-radius: 16px; padding: 18px 22px; box-shadow: var(--shadow);
+  }
+  .mm-root .t { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; }
+  .mm-root .s { font-size: 11.5px; opacity: 0.75; margin-top: 2px; }
+
+  .mm-branch { display: flex; align-items: center; gap: 22px; }
+  .mm-side.left .mm-branch { flex-direction: row; justify-content: flex-end; }
+  .mm-side.right .mm-branch { flex-direction: row-reverse; justify-content: flex-end; }
+
+  .mm-area {
+    flex: none; cursor: pointer; user-select: none;
+    font-weight: 700; font-size: 13.5px; letter-spacing: 0.01em;
+    background: var(--accent-soft); color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-radius: 999px; padding: 7px 14px;
+  }
+  .mm-area .n { color: var(--ink-3); font-weight: 600; font-size: 11px; margin-left: 5px; }
+  .mm-items { display: flex; flex-direction: column; gap: 7px; }
+  .mm-side.left .mm-items { align-items: flex-end; }
+  .mm-side.right .mm-items { align-items: flex-start; }
+
+  .mm-node {
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 10px; padding: 6px 12px; font-size: 13.5px; font-weight: 500;
+    transition: border-color 0.12s, transform 0.12s;
+  }
+  .mm-node:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .mm-node .ice-mark { font-size: 11px; }
+  .mm-node.sel { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent); }
+
+  /* ============ architecture ============ */
+  .arch-scroll { overflow-x: auto; padding-bottom: 8px; }
+  .arch-canvas { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; min-width: 1150px; padding: 20px 4px; align-items: start; }
+  .arch-col { display: flex; flex-direction: column; gap: 12px; z-index: 1; }
+  .arch-col h3 {
+    margin: 0 0 2px; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--ink-3);
+  }
+  .arch-col h3 span { text-transform: none; letter-spacing: 0; font-weight: 500; }
+  .arch-node {
+    background: var(--surface); border: 1px solid var(--line); border-left-width: 3px;
+    border-radius: 10px; padding: 9px 12px; cursor: default;
+    transition: opacity 0.15s, border-color 0.15s;
+  }
+  .arch-node .t { font-weight: 650; font-size: 13.5px; display: flex; align-items: center; gap: 7px; }
+  .arch-node .c { font-size: 12px; color: var(--ink-2); margin-top: 2px; line-height: 1.4; }
+  .arch-node.ok  { border-left-color: var(--st-ok); }
+  .arch-node.off { border-left-color: var(--st-off); }
+  .arch-node.chk { border-left-color: var(--st-chk); }
+  .arch-node.no  { border-left-color: var(--st-no); border-style: dashed; }
+  .arch-canvas.focus .arch-node { opacity: 0.25; }
+  .arch-canvas.focus .arch-node.hot { opacity: 1; border-color: var(--accent); }
+  .arch-canvas.focus svg.links path { opacity: 0.12; }
+  .arch-canvas.focus svg.links path.hot { opacity: 1; stroke: var(--accent); stroke-width: 2; }
+  .arch-note { font-size: 12.5px; color: var(--ink-2); margin: 6px 0 0; max-width: 70ch; }
+
+  /* ============ ahora (NEXT) ============ */
+  .now-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; align-items: start; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 4px; font-size: 15px; font-weight: 750; letter-spacing: -0.01em; }
+  .card .k { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); }
+  .card p { margin: 6px 0; color: var(--ink-2); font-size: 13.5px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-2); }
+  .card li { margin: 5px 0; }
+  .card li b { color: var(--ink); font-weight: 650; }
+  .card li.warn::marker { content: "⚠ "; color: var(--st-off); }
+  .goal {
+    background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    border-radius: 14px; padding: 14px 18px; margin-bottom: 16px; font-size: 14px;
+  }
+  .goal b { color: var(--accent); }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+  .chip {
+    font-size: 12.5px; padding: 4px 11px; border-radius: 999px;
+    background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-2);
+  }
+  .now-foot { margin-top: 16px; font-size: 13px; color: var(--ink-2); max-width: 80ch; }
+
+  /* ============ drawer ============ */
+  .drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(430px, 100vw);
+    background: var(--surface); border-left: 1px solid var(--line); box-shadow: var(--shadow);
+    z-index: 40; padding: 22px 24px; overflow-y: auto;
+    transform: translateX(102%); transition: transform 0.2s ease;
+  }
+  @media (prefers-reduced-motion: reduce) { .drawer, .mm-node { transition: none; } }
+  .drawer.open { transform: translateX(0); }
+  .drawer-close {
+    position: absolute; top: 14px; right: 16px; appearance: none; border: none; cursor: pointer;
+    background: var(--surface-2); color: var(--ink-2); border-radius: 8px;
+    font-size: 14px; line-height: 1; padding: 7px 9px;
+  }
+  .drawer .area-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent); }
+  .drawer h2 { margin: 4px 0 10px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; text-wrap: balance; padding-right: 30px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12.5px; font-weight: 650; border-radius: 999px; padding: 4px 12px;
+  }
+  .pill.ok  { color: var(--st-ok);  background: var(--st-ok-bg); }
+  .pill.off { color: var(--st-off); background: var(--st-off-bg); }
+  .pill.chk { color: var(--st-chk); background: var(--st-chk-bg); }
+  .pill.no  { color: var(--st-no);  background: var(--st-no-bg); }
+  .pill.ice { color: var(--st-ice); background: var(--st-ice-bg); }
+  .drawer .sum { margin: 14px 0 0; font-size: 14px; color: var(--ink-2); }
+  .drawer h4 { margin: 18px 0 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+  .drawer ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-2); }
+  .drawer li { margin: 4px 0; }
+  .drawer .prs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .drawer .pr { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; color: var(--ink-2); }
+  .scrim { position: fixed; inset: 0; z-index: 35; background: transparent; display: none; }
+  .scrim.on { display: block; }
+
+  /* ============ narrow ============ */
+  @media (max-width: 940px) {
+    header, main { padding-left: 16px; padding-right: 16px; }
+    .mm-canvas { flex-direction: column; min-width: 0; gap: 20px; align-items: stretch; }
+    .mm-side { gap: 16px; }
+    .mm-branch, .mm-side.left .mm-branch, .mm-side.right .mm-branch { flex-direction: column-reverse; align-items: flex-start; gap: 8px; }
+    .mm-items, .mm-side.left .mm-items { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+    svg.links { display: none; }
+    .mm-root { order: -1; }
+    .arch-canvas { grid-template-columns: 1fr; min-width: 0; gap: 20px; }
+  }
+</style>
+
+<header>
+  <div class="hd-top">
+    <div class="hd-brand"><em>Alvia Web</em> · Mapa del sistema</div>
+    <div class="hd-sub">23 sesiones raíz de Codex · cold start 2026-09-12 UTC · main@d1dc60a</div>
+    <div class="hd-counts" id="counts"></div>
+  </div>
+  <nav class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-view="estado" aria-selected="true">Estado del producto</button>
+    <button class="tab" role="tab" data-view="arch" aria-selected="false">Arquitectura</button>
+    <button class="tab" role="tab" data-view="now" aria-selected="false">Ahora (camino crítico)</button>
+  </nav>
+</header>
+
+<div class="legend" id="legend">
+  <span class="lg"><span class="dot ok"></span>✅ En prod y real</span>
+  <span class="lg"><span class="dot off"></span>🟡 Construido, apagado o parcial</span>
+  <span class="lg"><span class="dot chk"></span>⚠️ Verificar</span>
+  <span class="lg"><span class="dot no"></span>🔴 No existe</span>
+  <span class="lg"><span class="dot ice"></span>🧊 Congelador deliberado</span>
+  <span class="lg" style="margin-left:auto">click en un nodo → detalle</span>
+</div>
+
+<main>
+  <section id="view-estado">
+    <div class="mm-scroll">
+      <div class="mm-canvas" id="mm"></div>
+    </div>
+  </section>
+
+  <section id="view-arch" hidden>
+    <div class="arch-scroll">
+      <div class="arch-canvas" id="arch"></div>
+    </div>
+    <p class="arch-note">Pasá el mouse por un componente para iluminar sus conexiones. Borde punteado = no existe.
+    Sitio estático detrás de Cloudflare/Nginx; el release se empaqueta desde Git y se promueve mediante un symlink atómico.</p>
+  </section>
+
+  <section id="view-now" hidden>
+    <div class="goal"><b>Sin prioridad activa:</b> Pablo no declaró un objetivo nuevo en este refresh; el Atlas no infiere uno desde la última iteración visual.</div>
+    <div class="now-grid" id="now"></div>
+    <p class="now-foot"><b>Para reactivar:</b> confirmar en una frase el resultado inmediato buscado para Alvia Web y promover sólo 1–3 pasos verificables desde <code>LOOSE_ENDS.md</code>.</p>
+  </section>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Detalle"></aside>
+
+<script>
+"use strict";
+
+/* ================= data — derived from atlas/INVENTORY.md + LOOSE_ENDS.md (2026-09-12 UTC) ================= */
+
+const STATUS = {
+  ok:  { icon: "✅", label: "En prod y real" },
+  off: { icon: "🟡", label: "Construido, apagado o parcial" },
+  chk: { icon: "⚠️", label: "Verificar" },
+  no:  { icon: "🔴", label: "No existe" },
+};
+
+/* Vista ESTADO (mindmap). Un objeto por área de INVENTORY.md; side reparte "left"/"right".
+   item: { id único, name, st (clave de STATUS), sum (resumen del ítem),
+           pts (bullets: detalles/cabos), prs (["#12", ...]) } */
+const AREAS = [
+  {
+    id: "public", name: "Superficie pública", side: "left",
+    items: [
+      { id: "v5", name: "V5 en producción", st: "ok",
+        sum: "alvia.ar y www.alvia.ar sirven la V5 desde la raíz. Runtime público registrado: 4239034; documentación vigente: d1dc60a.",
+        pts: ["V1–V4 permanecen versionadas como historia, no como superficies públicas."], prs: ["#20", "#23"] },
+      { id: "routes", name: "URLs canónicas limpias", st: "ok",
+        sum: "Home / y features /ainotes, /validaciones, /recetas y /turnos-inteligentes. /v5, variantes con slash y .html redirigen de forma compatible.",
+        pts: ["El paquete V5 conoce las cinco rutas públicas y conserva redirects para enlaces anteriores."], prs: ["#30", "#31"] },
+      { id: "history", name: "V1–V4 históricas", st: "off", frozen: true,
+        sum: "Versiones y evidencia preservadas en Git, retiradas de la navegación pública después de aprobar V5.",
+        pts: ["No usar como base pública nueva sin una razón comercial explícita."], prs: [] },
+    ],
+  },
+  {
+    id: "features", name: "Páginas de producto", side: "left",
+    items: [
+      { id: "ainotes", name: "AI Notes", st: "ok",
+        sum: "Página comercial publicada en /ainotes con narrativa, mock y comportamiento propio.", pts: [], prs: ["#22"] },
+      { id: "validaciones", name: "Validaciones", st: "ok",
+        sum: "Identidad, cobertura y copagos explicados en una página publicada y corregida después de la primera revisión.", pts: [], prs: ["#22"] },
+      { id: "recetas", name: "Recetas", st: "ok",
+        sum: "Página publicada con un mock de prescripción refinado y navegación recíproca con las demás features.", pts: [], prs: ["#22"] },
+      { id: "appointments", name: "Turnos inteligentes", st: "ok",
+        sum: "Cuarta página publicada: presenta agenda/capacidad y completa la familia de features de V5.", pts: [], prs: ["#28", "#29"] },
+      { id: "static-demos", name: "Demos estáticas", st: "off",
+        sum: "Las cuatro páginas son marketing y evidencia visual; este repo no ejecuta las capacidades clínicas o administrativas del backend Telemed.",
+        pts: ["Mantener siempre la verdad de producto al actualizar mocks."], prs: [] },
+    ],
+  },
+  {
+    id: "design", name: "Narrativa, diseño y evidencia", side: "right",
+    items: [
+      { id: "direction", name: "Dirección V5", st: "ok",
+        sum: "Composición inspirada en 1DOC3 y adaptada a Alvia: Lora + DM Sans, petróleo/menta, hero comercial y narrativa argentina.",
+        pts: ["Las reglas editoriales viven en v5/DESIGN.md y v5/README.md."], prs: ["#20", "#21"] },
+      { id: "home", name: "Home orientada a producto", st: "ok",
+        sum: "Cards C, calculadora de capacidad C y CTA conectan la promesa comercial con evidencia concreta.", pts: [], prs: ["#27"] },
+      { id: "navigation", name: "Navegación responsive", st: "ok",
+        sum: "Desktop muestra beneficio junto al header; mobile usa megamenú visual; los indicadores adoptaron chevrons B.",
+        pts: ["El PR draft #26 original quedó abierto y conflictivo tras integraciones posteriores."], prs: ["#24", "#25", "#26"] },
+      { id: "evidence", name: "Checks y capturas", st: "ok",
+        sum: "Las iteraciones relevantes conservan checks, screenshots desktop/mobile, manifests y notas de release reproducibles.", pts: [], prs: [] },
+    ],
+  },
+  {
+    id: "delivery", name: "Entrega y repositorio", side: "right",
+    items: [
+      { id: "package", name: "Paquete reproducible", st: "ok",
+        sum: "scripts/package_v5.py arma desde un commit el runtime exacto y genera un manifiesto con tamaño y SHA-256 por archivo.", pts: [], prs: [] },
+      { id: "deploy", name: "Deploy atómico manual", st: "off",
+        sum: "Los runbooks publican un release separado y cambian el symlink de Nginx atómicamente, con rollback conservador. No existe workflow CI/CD del repo.",
+        pts: ["Automatizar sólo si la frecuencia o el costo de error lo justifican."], prs: [] },
+      { id: "docs", name: "Documentación V5", st: "ok",
+        sum: "README, DESIGN, PLAN_FEATURES, TODO y releases describen el estado vigente; TODO no conserva implementación abierta.", pts: [], prs: ["#31"] },
+      { id: "local-artifacts", name: "Artefactos locales", st: "chk",
+        sum: "El checkout contiene un prompt V4 y previews no rastreados. Deben preservarse hasta decidir commit, archivo o descarte.",
+        pts: ["No borrar previews/ en bloque: parte del árbol sí está versionada."], prs: [] },
+    ],
+  },
+];
+
+/* Vista ARQUITECTURA. Columnas de componentes (superficies → edge → core → vendors, o lo que aplique).
+   node: { id único (prefijo a-), name, st, cap (caption corto) }. ARCH_EDGES conecta ids. */
+const ARCH_COLS = [
+  { id: "source", title: "Fuente", nodes: [
+    { id: "a-git", name: "GitHub · Raboys/alvia-web", st: "ok", cap: "main@d1dc60a · V1–V5 + docs/evidencia" },
+    { id: "a-pack", name: "package_v5.py", st: "ok", cap: "commit → runtime + release.json + SHA-256" },
+  ]},
+  { id: "delivery", title: "Entrega", nodes: [
+    { id: "a-manual", name: "Runbook manual", st: "off", cap: "SSH · checks · sin workflow CI/CD" },
+    { id: "a-release", name: "Release inmutable", st: "ok", cap: "/var/www/alvia.ar/releases/v5-<sha>" },
+    { id: "a-link", name: "Symlink público", st: "ok", cap: "rename atómico · rollback al release anterior" },
+  ]},
+  { id: "edge", title: "Edge", nodes: [
+    { id: "a-nginx", name: "Nginx", st: "ok", cap: "rutas limpias + redirects compatibles" },
+    { id: "a-cf", name: "Cloudflare", st: "ok", cap: "apex + www · caché/protección de correo" },
+  ]},
+  { id: "surfaces", title: "Superficies", nodes: [
+    { id: "a-home", name: "Home V5", st: "ok", cap: "/ · cards + capacidad + CTA" },
+    { id: "a-features", name: "4 páginas de producto", st: "ok", cap: "ainotes · validaciones · recetas · turnos" },
+    { id: "a-old", name: "V1–V4", st: "off", cap: "referencia Git · rutas públicas redirigidas" },
+  ]},
+];
+
+const ARCH_EDGES = [
+  ["a-git", "a-pack"], ["a-pack", "a-manual"], ["a-manual", "a-release"],
+  ["a-release", "a-link"], ["a-link", "a-nginx"], ["a-nginx", "a-cf"],
+  ["a-cf", "a-home"], ["a-cf", "a-features"], ["a-cf", "a-old"],
+];
+
+/* Vista AHORA (NEXT.md). Cards por carril; item con sufijo "|warn" se pinta como advertencia. */
+const NOW_CARDS = [
+  { k: "Pendiente", title: "Confirmar objetivo actual", items: [
+    "No hay tareas promovidas desde LOOSE_ENDS.md.",
+    "Definir el resultado inmediato antes de abrir variantes, publicaciones o housekeeping.",
+    "Convertirlo luego en sólo 1–3 pasos con criterio de terminación.",
+  ]},
+];
+
+/* Congelador deliberado (LOOSE_ENDS 🧊): "qué → trigger que lo despierta". */
+const FROZEN = [
+  "V4 A/B y V4-C como candidata pública → reemplazadas por V5",
+  "Nuevas variantes visuales → sólo con hipótesis comercial o defecto reproducible",
+  "Backend o interactividad clínica en este repo → pertenecen a telemed-starter",
+  "Automatización completa del deploy → cuando frecuencia/equipo/riesgo superen el runbook manual",
+];
+
+/* Housekeeping del repo (LOOSE_ENDS 🧹). */
+const HOUSEKEEPING = [
+  "PR draft #26 quedó conflictivo y parcialmente superado por main; rescatar diferencias útiles y cerrar",
+  "PROMPT_WEB_V4_ORCHESTRATION.md sigue no rastreado; decidir archivo, commit o descarte",
+  "Previews CTA/prescripción no rastreados: preservar hasta decidir, sin borrar previews/ en bloque",
+  "Videos ElevenLabs históricos: verificar licencia sólo antes de reutilizarlos o republicar V1–V4",
+];
+
+/* ================= render: header counts ================= */
+
+const allItems = AREAS.flatMap(a => a.items.map(it => ({ ...it, area: a.name })));
+(function renderCounts() {
+  const c = { ok: 0, off: 0, chk: 0, no: 0 };
+  allItems.forEach(it => c[it.st]++);
+  document.getElementById("counts").innerHTML =
+    `<span>✅ <b>${c.ok}</b></span><span>🟡 <b>${c.off}</b></span>` +
+    `<span>⚠️ <b>${c.chk}</b></span><span>🔴 <b>${c.no}</b></span>` +
+    `<span>· ${allItems.length} piezas</span>`;
+})();
+
+/* ================= render: mindmap ================= */
+
+const mm = document.getElementById("mm");
+const collapsed = new Set();
+
+function renderMindmap() {
+  mm.innerHTML = "";
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "links");
+  mm.appendChild(svg);
+
+  const left = div("mm-side left");
+  const right = div("mm-side right");
+  const root = div("mm-root");
+  root.id = "mm-root";
+  root.innerHTML = `<div class="t">Alvia Web</div><div class="s">V5 pública · marketing estático · evidencia reproducible</div>`;
+
+  for (const area of AREAS) {
+    const branch = div("mm-branch");
+    const chip = div("mm-area");
+    chip.id = "area-" + area.id;
+    chip.tabIndex = 0;
+    chip.setAttribute("role", "button");
+    chip.innerHTML = esc(area.name) + `<span class="n">${area.items.length}</span>`;
+    chip.addEventListener("click", () => { toggleArea(area.id); });
+    chip.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleArea(area.id); } });
+
+    const items = div("mm-items");
+    items.id = "items-" + area.id;
+    if (!collapsed.has(area.id)) {
+      for (const it of area.items) {
+        const n = div("mm-node");
+        n.id = "node-" + it.id;
+        n.tabIndex = 0;
+        n.setAttribute("role", "button");
+        n.innerHTML = `<span class="dot ${it.st}"></span>${esc(it.name)}` + (it.frozen ? `<span class="ice-mark">🧊</span>` : "");
+        n.addEventListener("click", () => openDrawer(it, area.name, n));
+        n.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openDrawer(it, area.name, n); } });
+        items.appendChild(n);
+      }
+    }
+    branch.appendChild(items);
+    branch.appendChild(chip);
+    (area.side === "left" ? left : right).appendChild(branch);
+  }
+
+  mm.appendChild(left);
+  mm.appendChild(root);
+  mm.appendChild(right);
+  requestAnimationFrame(drawMindmapLinks);
+}
+
+function toggleArea(id) {
+  collapsed.has(id) ? collapsed.delete(id) : collapsed.add(id);
+  renderMindmap();
+}
+
+function drawMindmapLinks() {
+  const svg = mm.querySelector("svg.links");
+  if (!svg || window.innerWidth <= 940) return;
+  svg.setAttribute("viewBox", `0 0 ${mm.scrollWidth} ${mm.scrollHeight}`);
+  svg.style.width = mm.scrollWidth + "px";
+  svg.style.height = mm.scrollHeight + "px";
+  const base = mm.getBoundingClientRect();
+  const paths = [];
+  const anchor = (el, edge) => {
+    const r = el.getBoundingClientRect();
+    return { x: (edge === "left" ? r.left : r.right) - base.left + mm.scrollLeft, y: r.top + r.height / 2 - base.top + mm.scrollTop };
+  };
+  const root = document.getElementById("mm-root");
+  for (const area of AREAS) {
+    const chip = document.getElementById("area-" + area.id);
+    if (!chip) continue;
+    const toLeft = area.side === "left";
+    const a = anchor(root, toLeft ? "left" : "right");
+    const b = anchor(chip, toLeft ? "right" : "left");
+    paths.push(bezier(a, b, "trunk"));
+    if (!collapsed.has(area.id)) {
+      for (const it of area.items) {
+        const node = document.getElementById("node-" + it.id);
+        if (!node) continue;
+        const c = anchor(chip, toLeft ? "left" : "right");
+        const d = anchor(node, toLeft ? "right" : "left");
+        paths.push(bezier(c, d, ""));
+      }
+    }
+  }
+  svg.innerHTML = paths.join("");
+}
+
+function bezier(a, b, cls) {
+  const mx = (a.x + b.x) / 2;
+  return `<path class="${cls}" d="M ${a.x} ${a.y} C ${mx} ${a.y}, ${mx} ${b.y}, ${b.x} ${b.y}"/>`;
+}
+
+/* ================= render: architecture ================= */
+
+const arch = document.getElementById("arch");
+const archNodeById = {};
+
+function renderArch() {
+  arch.innerHTML = "";
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "links");
+  arch.appendChild(svg);
+
+  for (const col of ARCH_COLS) {
+    const c = div("arch-col");
+    const h = document.createElement("h3");
+    h.textContent = col.title;
+    c.appendChild(h);
+    for (const n of col.nodes) {
+      const el = div("arch-node " + n.st);
+      el.id = n.id;
+      el.tabIndex = 0;
+      el.innerHTML = `<div class="t"><span class="dot ${n.st}"></span>${esc(n.name)}</div><div class="c">${esc(n.cap)}</div>`;
+      el.addEventListener("mouseenter", () => focusArch(n.id));
+      el.addEventListener("mouseleave", () => focusArch(null));
+      el.addEventListener("focus", () => focusArch(n.id));
+      el.addEventListener("blur", () => focusArch(null));
+      archNodeById[n.id] = el;
+      c.appendChild(el);
+    }
+    arch.appendChild(c);
+  }
+  requestAnimationFrame(drawArchLinks);
+}
+
+function drawArchLinks() {
+  const svg = arch.querySelector("svg.links");
+  if (!svg || window.innerWidth <= 940) { if (svg) svg.innerHTML = ""; return; }
+  svg.setAttribute("viewBox", `0 0 ${arch.scrollWidth} ${arch.scrollHeight}`);
+  svg.style.width = arch.scrollWidth + "px";
+  svg.style.height = arch.scrollHeight + "px";
+  const base = arch.getBoundingClientRect();
+  const mid = el => { const r = el.getBoundingClientRect(); return { l: r.left - base.left, r: r.right - base.left, y: r.top + r.height / 2 - base.top }; };
+  let html = "";
+  for (const [from, to] of ARCH_EDGES) {
+    const f = archNodeById[from], t = archNodeById[to];
+    if (!f || !t) continue;
+    const a = mid(f), b = mid(t);
+    const p = a.r <= b.l
+      ? bezier({ x: a.r, y: a.y }, { x: b.l, y: b.y }, "")
+      : bezier({ x: a.l, y: a.y }, { x: b.r, y: b.y }, "");
+    html += p.replace("<path ", `<path data-edge="${from}|${to}" `);
+  }
+  svg.innerHTML = html;
+}
+
+function focusArch(id) {
+  arch.classList.toggle("focus", !!id);
+  arch.querySelectorAll(".arch-node").forEach(n => n.classList.remove("hot"));
+  arch.querySelectorAll("svg.links path").forEach(p => p.classList.remove("hot"));
+  if (!id) return;
+  archNodeById[id].classList.add("hot");
+  for (const [from, to] of ARCH_EDGES) {
+    if (from === id || to === id) {
+      archNodeById[from].classList.add("hot");
+      archNodeById[to].classList.add("hot");
+      const p = arch.querySelector(`svg.links path[data-edge="${from}|${to}"]`);
+      if (p) p.classList.add("hot");
+    }
+  }
+}
+
+/* ================= render: ahora ================= */
+
+function renderNow() {
+  const wrap = document.getElementById("now");
+  wrap.innerHTML = "";
+  for (const card of NOW_CARDS) {
+    const c = div("card");
+    const lis = card.items.map(raw => {
+      const [txt, flag] = raw.split("|");
+      return `<li${flag === "warn" ? ' class="warn"' : ""}>${txt}</li>`;
+    }).join("");
+    c.innerHTML = `<div class="k">${esc(card.k)}</div><h3>${esc(card.title)}</h3><ul>${lis}</ul>`;
+    wrap.appendChild(c);
+  }
+  const frozen = div("card");
+  frozen.innerHTML = `<div class="k">🧊 Congelador</div><h3>No tocar sin trigger de negocio</h3>
+    <p>La versión operativa de FOCO.md: "no construir el fantasma". Si un cliente lo pide en una demo: "está en el roadmap del piloto".</p>
+    <div class="chips">${FROZEN.map(f => `<span class="chip">${esc(f)}</span>`).join("")}</div>`;
+  wrap.appendChild(frozen);
+  const hk = div("card");
+  hk.innerHTML = `<div class="k">🧹 Housekeeping</div><h3>Repo (hoy)</h3>
+    <ul>${HOUSEKEEPING.map(h => `<li>${esc(h)}</li>`).join("")}</ul>`;
+  wrap.appendChild(hk);
+}
+
+/* ================= drawer ================= */
+
+const drawer = document.getElementById("drawer");
+const scrim = document.getElementById("scrim");
+let selNode = null;
+
+function openDrawer(item, areaName, nodeEl) {
+  if (selNode) selNode.classList.remove("sel");
+  selNode = nodeEl || null;
+  if (selNode) selNode.classList.add("sel");
+  const s = STATUS[item.st];
+  let html = `<button class="drawer-close" aria-label="Cerrar">✕</button>
+    <div class="area-tag">${esc(areaName)}</div>
+    <h2>${esc(item.name)}</h2>
+    <span class="pill ${item.st}">${s.icon} ${esc(s.label)}</span>`;
+  if (item.frozen) html += ` <span class="pill ice">🧊 Congelador</span>`;
+  html += `<p class="sum">${esc(item.sum)}</p>`;
+  if (item.pts && item.pts.length) {
+    html += `<h4>Detalle y cabos sueltos</h4><ul>${item.pts.map(p => `<li>${esc(p)}</li>`).join("")}</ul>`;
+  }
+  if (item.prs && item.prs.length) {
+    html += `<h4>PRs</h4><div class="prs">${item.prs.map(p => `<span class="pr">${esc(p)}</span>`).join("")}</div>`;
+  }
+  drawer.innerHTML = html;
+  drawer.querySelector(".drawer-close").addEventListener("click", closeDrawer);
+  drawer.classList.add("open");
+  scrim.classList.add("on");
+}
+
+function closeDrawer() {
+  drawer.classList.remove("open");
+  scrim.classList.remove("on");
+  if (selNode) { selNode.classList.remove("sel"); selNode = null; }
+}
+scrim.addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeDrawer(); });
+
+/* ================= tabs ================= */
+
+const views = { estado: document.getElementById("view-estado"), arch: document.getElementById("view-arch"), now: document.getElementById("view-now") };
+document.getElementById("tabs").addEventListener("click", e => {
+  const tab = e.target.closest(".tab");
+  if (!tab) return;
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", String(t === tab)));
+  for (const [k, el] of Object.entries(views)) el.hidden = k !== tab.dataset.view;
+  closeDrawer();
+  if (tab.dataset.view === "estado") requestAnimationFrame(drawMindmapLinks);
+  if (tab.dataset.view === "arch") requestAnimationFrame(drawArchLinks);
+});
+
+/* ================= utils + boot ================= */
+
+function div(cls) { const d = document.createElement("div"); d.className = cls; return d; }
+function esc(s) { return String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
+
+let rsz;
+window.addEventListener("resize", () => { clearTimeout(rsz); rsz = setTimeout(() => { drawMindmapLinks(); drawArchLinks(); }, 120); });
+
+renderMindmap();
+renderArch();
+renderNow();
+</script>
