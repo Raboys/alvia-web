@@ -10,7 +10,7 @@ Portada vigente y canónica en <https://alvia.ar/>. `www` sirve el mismo conteni
 
 [PLAN_FEATURES.md](PLAN_FEATURES.md) conserva las decisiones de Validaciones, AI Notes, Recetas y Turnos inteligentes. El bloque `#funcionalidades` presenta las cuatro en la home con ilustraciones HTML/CSS en `features.css`.
 
-[Validaciones](https://alvia.ar/validaciones), [AI Notes](https://alvia.ar/ainotes), [Recetas](https://alvia.ar/recetas) y [Turnos inteligentes](https://alvia.ar/turnos-inteligentes) están publicadas y enlazadas desde home. La cuarta página explica la confirmación 24 horas antes y el adelanto automático para reducir el ausentismo. Runtime vigente `4239034`; [publicación y rollback](../docs/releases/2026-09-12-pretty-urls.md).
+[Validaciones](https://alvia.ar/validaciones), [AI Notes](https://alvia.ar/ainotes), [Recetas](https://alvia.ar/recetas) y [Turnos inteligentes](https://alvia.ar/turnos-inteligentes) están publicadas y enlazadas desde home. La cuarta página explica la confirmación 24 horas antes y el adelanto automático para reducir el ausentismo. Runtime vigente `a47eb69`, que integra Validaciones A refinada; [publicación y rollback](../docs/releases/2026-09-20-validaciones-astra-a.md).
 
 ## Mensaje acordado
 

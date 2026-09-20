@@ -1,0 +1,110 @@
+{
+  "source_commit": "a47eb691a646de5d42946cc830af107795577416",
+  "public_path": "/",
+  "files": {
+    "ai-notes.css": {
+      "bytes": 8099,
+      "sha256": "daaea55183d23c2fbc1f29c77a1d257e9b0c74ce121b198281295351e9d41907"
+    },
+    "ai-notes.html": {
+      "bytes": 11793,
+      "sha256": "c60528cfcac3ad635dfaeb91e37e6a3d40bd902cca0a06d2c8f95153048d355d"
+    },
+    "ai-notes.js": {
+      "bytes": 1259,
+      "sha256": "20ca0339c9e0f0d2c0f97d906553a801a813be5f68363deb31d5eb7c6ef195d5"
+    },
+    "assets/app-home.webp": {
+      "bytes": 166378,
+      "sha256": "5f38faedab0679b58035c3a9fc4ee072ec6c345a46c359f1dd1b17b478e7a5b2"
+    },
+    "assets/app-prescription.webp": {
+      "bytes": 51856,
+      "sha256": "4fde31243dbf8b03258603896ad36683fcf5f081e30388cd83985630a66067a7"
+    },
+    "assets/favicon.svg": {
+      "bytes": 269,
+      "sha256": "7e96b23dbe638c234fde6450b5c15501acf0858b4978d5b3b74dd40986f03c6d"
+    },
+    "assets/fonts/DM-Sans-LICENSE.txt": {
+      "bytes": 4388,
+      "sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2"
+    },
+    "assets/fonts/Lora-LICENSE.txt": {
+      "bytes": 4422,
+      "sha256": "6d6bc7bbb828514925dabcaf89e4771398d12c60dd1cb2bbb90eea129535d0f4"
+    },
+    "assets/fonts/dm-sans-latin.woff2": {
+      "bytes": 36932,
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+    },
+    "assets/fonts/lora-latin.woff2": {
+      "bytes": 37788,
+      "sha256": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1"
+    },
+    "assets/people.webp": {
+      "bytes": 76786,
+      "sha256": "4881c753a289516ff250346d42877fd5cc1ccaba27e9ab7bbf803924c044873b"
+    },
+    "assets/validaciones-identidad.svg": {
+      "bytes": 4272,
+      "sha256": "e6a330f9c0bf2439d23f1a759547aa5f6bc41a5ffb57f283f0b6766e2532dbac"
+    },
+    "capacity.css": {
+      "bytes": 3324,
+      "sha256": "457ee51cdde7dcd81f83707911392dea7217eb11ab423c5a52336cdc20e6b716"
+    },
+    "features.css": {
+      "bytes": 9590,
+      "sha256": "8cb119cafdf93ce676a678a2ae89272450a67cdbda82d95ac7bfc891be2efcf8"
+    },
+    "header.css": {
+      "bytes": 6919,
+      "sha256": "e24d951d183d678e4a59e76626cff5171a4c4ac5a809c8ba94f5135f458b7722"
+    },
+    "header.js": {
+      "bytes": 874,
+      "sha256": "39dc0167fb212d7637a82ae35c17e603cbe153baf203fea8040f89355ceb143c"
+    },
+    "index.html": {
+      "bytes": 28897,
+      "sha256": "300e622bd7b7dcb62799fdf5a6521cab825b483bfccc275aed0a1bead7106f9c"
+    },
+    "recetas-mocks.css": {
+      "bytes": 8377,
+      "sha256": "9a0582286090606797a191616bbf8c6c5a6d8b409a2eb8ae8231f22360aa64d6"
+    },
+    "recetas.css": {
+      "bytes": 10005,
+      "sha256": "44b4b35d04df546587c9ce493662c9c9847b03f4c395e7907eeb91e5cc571f5e"
+    },
+    "recetas.html": {
+      "bytes": 13932,
+      "sha256": "cfa425b8cf72b90a99ed602a27801b13284a5791154e92cb33dc5d306d991ba1"
+    },
+    "script.js": {
+      "bytes": 3334,
+      "sha256": "e2929135947b688e02573a027faa082aab882fe423d269a289be6eda9251d99a"
+    },
+    "styles.css": {
+      "bytes": 22188,
+      "sha256": "884a4b9229618b3af4b009f5d80d681c64c88962cc0973f1fcf796a6d20ab1eb"
+    },
+    "turnos-inteligentes.css": {
+      "bytes": 5505,
+      "sha256": "62b58fdc9914faef3a0fdf0e9405589eb9d471eb2ed7a7321110a0a8f9a17c0a"
+    },
+    "turnos-inteligentes.html": {
+      "bytes": 9796,
+      "sha256": "1f7171b4d0d0ca5053e4b709688ddf9e8d2ffab57a60e8ffd2a33d893908bf98"
+    },
+    "validaciones.css": {
+      "bytes": 8849,
+      "sha256": "9a61355210942a61b995c8982942d465bbe90d87da5333336450d4fb949735aa"
+    },
+    "validaciones.html": {
+      "bytes": 13288,
+      "sha256": "d1426df0545e32e5a2714419786e8de5ae1cec427dc92dc8231f88ed70d462f9"
+    }
+  }
+}

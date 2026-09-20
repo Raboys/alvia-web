@@ -2,7 +2,8 @@
 
 ## A refinada · decisión vigente
 
-Pablo eligió **A refinada** y pidió publicarla. [Diseño elegido y guía para próximas páginas](../../design/validaciones-astra-a/README.md)
+Pablo eligió **A refinada**, publicada desde `a47eb69` el 2026-09-20 UTC en
+<https://alvia.ar/validaciones> y `www.alvia.ar`. 127 checks de paquete y 127 en cada dominio. [Diseño elegido y guía para próximas páginas](../../design/validaciones-astra-a/README.md)
 · [Brief](BRIEF.md) · [Procedencia](PROVENANCE.md)
 · [Release y rollback](../../releases/2026-09-20-validaciones-astra-a.md).
 

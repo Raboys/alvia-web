@@ -4,7 +4,7 @@ Actualizado: 2026-09-20 UTC. Esta es la referencia para seguir iterando la **V5 
 
 ## Decisión vigente para iterar funcionalidades
 
-Pablo eligió **A refinada de Astra** para Validaciones. Usar
+Pablo eligió **A refinada de Astra** para Validaciones, publicada desde `a47eb69` el 2026-09-20 UTC. Usar
 [la decisión y sus criterios transferibles](../docs/design/validaciones-astra-a/README.md)
 como referencia de composición y acabado. Reemplaza el antiguo relato de «reglas de cobertura»,
 el panel de comprobantes y el mock GLM rechazado. No es una plantilla rígida para otras páginas.
@@ -15,7 +15,7 @@ el panel de comprobantes y el mock GLM rechazado. No es una plantilla rígida pa
 - Portada: <https://alvia.ar/> y <https://www.alvia.ar/>. Las features usan `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`; `/v5` es sólo compatibilidad por redirección.
 - Repositorio: `Raboys/alvia-web`. La fuente de esta página es **`v5/`**.
 - Clone de autoría: `/home/pablo/dev/alvia-web`. Worktree utilizado en esta iteración: `/home/pablo/dev/alvia-web-v5`.
-- Runtime vigente con calculadora C, menú móvil y chevrones B: `41a6d8386668c08ff3484007165c551678dddbae`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
+- Runtime vigente: `a47eb691a646de5d42946cc830af107795577416` (Validaciones A refinada). El hito anterior de calculadora C, menú móvil y chevrones B fue `41a6d8386668c08ff3484007165c551678dddbae`. Base visual aprobada: `c2817c16b87c28a2235a03433018047e4e725fbe`. Integrada con la documentación mediante [PR #20](https://github.com/Raboys/alvia-web/pull/20), merge `0673bc409a0b5b75e7890c20213217a2850d24c9`.
 - [Capturas de la versión aprobada](../docs/design/v5-baseline/README.md), [ejecución y assets](README.md), [publicación y rollback](../docs/releases/2026-09-12-v5.md).
 - Guía editorial transversal: [telemed-starter/docs/COPYWRITING.md](https://github.com/Raboys/telemed-starter/blob/main/docs/COPYWRITING.md). Copia local de autoría: `/home/pablo/dev/telemed-starter/docs/COPYWRITING.md`.
 
