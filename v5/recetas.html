@@ -23,8 +23,7 @@
   <link rel="preload" href="assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260912-chevron-b">
-  <link rel="stylesheet" href="recetas.css?v=20260912-recetas">
-  <link rel="stylesheet" href="recetas-mocks.css?v=20260912-generated-only">
+  <link rel="stylesheet" href="recetas.css?v=20260920-original-copy-illustrations">
   <link rel="stylesheet" href="header.css?v=20260912-four-features">
   <script src="header.js?v=20260912-mobile-mega" defer></script>
 </head>
@@ -59,86 +58,18 @@
   </header>
 
   <main id="contenido">
-    <section class="rx-hero shell" aria-labelledby="rx-title">
-      <div class="rx-intro">
-        <p class="feature-name">Recetas</p>
-        <h1 id="rx-title">La receta de la consulta llega <span>al celular del paciente.</span></h1>
-      </div>
-      <div class="rx-hero-action">
-        <p class="rx-lead">El médico la prepara y emite en Alvia. Tus afiliados la encuentran en la app para descargarla o compartirla.</p>
-        <a class="button" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20ver%20el%20recorrido%20de%20recetas%20en%20una%20demo%20de%20Alvia%20para%20mi%20organizaci%C3%B3n" target="_blank" rel="noopener">Quiero ver una demo <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a>
-      </div>
-    </section>
-
-    <section class="rx-journey shell" aria-label="De la preparación médica al documento del paciente">
-      <div class="rx-doctor-scene">
-        <div class="rx-scene-heading">
-          <span class="brand-strokes" aria-hidden="true"></span>
-          <h2>El médico prepara y emite.</h2>
-          <p>Busca la medicación en el vademécum y completa las indicaciones desde la consulta.</p>
-        </div>
-        <figure class="rx-editor" aria-labelledby="editor-caption">
-          <div class="rx-editor-bar"><span class="rx-brand" aria-hidden="true">alvia<span>.</span></span><span>Consulta médica</span></div>
-          <div class="rx-editor-body">
-            <div class="rx-editor-heading"><h3>Nueva receta</h3><span class="rx-draft">Borrador</span></div>
-            <div class="rx-patient-row"><span class="rx-avatar" aria-hidden="true">SG</span><div class="rx-patient"><strong>Sofía Giménez</strong><span>Plan Integral · 12 sep 2026</span></div><span class="rx-patient-check" aria-hidden="true">✓</span></div>
-            <div class="rx-search" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>Buscar en el vademécum</span></div>
-            <dl class="rx-fields">
-              <div class="rx-medication"><dt>Medicación seleccionada</dt><dd><span class="rx-pill" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 15 6-6M5 19a6 6 0 0 1 0-8l6-6a6 6 0 0 1 8 8l-6 6a6 6 0 0 1-8 0Z"/></svg></span><div><strong>Medicación de ejemplo</strong><span>Presentación de ejemplo · 1 envase</span></div><span class="rx-medication-check" aria-hidden="true">✓</span></dd></div>
-              <div class="rx-instructions"><dt>Indicaciones de la medicación</dt><dd>Indicaciones de la consulta de ejemplo.<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14l-1 7ZM13 21h8"/></svg></dd></div>
-            </dl>
-            <div class="rx-professional"><span>Profesional</span><strong>Dra. Lucía Robles</strong></div>
-            <div class="rx-emit" aria-hidden="true">Emitir receta <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></div>
-          </div>
-          <figcaption id="editor-caption">Preparación ilustrativa con datos ficticios.</figcaption>
-        </figure>
-        <p class="rx-emission-note"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16h21m-7-7 7 7-7 7"/></svg><span>Al emitir, se prepara el documento que recibirá el paciente.</span></p>
-      </div>
-
-      <div class="rx-patient-scene">
-        <div class="rx-scene-heading">
-          <span class="brand-strokes" aria-hidden="true"></span>
-          <h2>El paciente la lleva en su celular.</h2>
-          <p>La encuentra en <strong>Mis recetas.</strong> Cuando el PDF está listo, puede abrirla, descargarla o compartirla.</p>
-        </div>
-        <figure class="rx-reception" aria-labelledby="patient-caption">
-          <div class="rx-app-preview">
-            <div class="rx-phone">
-              <div class="rx-phone-status" aria-hidden="true"><span>9:41</span><i></i><span class="rx-signal">▮▮▮ <b></b></span></div>
-              <div class="rx-phone-heading"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg><strong>Mis recetas</strong><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 13h8m-8 4h5"/></svg></div>
-              <div class="rx-ready-content">
-                <div class="rx-available"><span aria-hidden="true">✓</span> Documento disponible</div>
-                <div class="rx-document">
-                  <div class="rx-document-brand" aria-hidden="true"><span class="rx-brand">alvia<span>.</span></span></div>
-                  <div class="rx-document-title"><h3>Receta</h3><span>12 sep 2026</span></div>
-                  <div class="rx-patient"><span>Paciente</span><strong>Sofía Giménez</strong><span>Plan Integral</span></div>
-                  <div class="rx-document-medication"><span class="rx-symbol" aria-hidden="true">℞</span><span>Medicación</span><strong>Medicación de ejemplo</strong><span>Presentación de ejemplo · 1 envase</span><p>Indicaciones de la consulta de ejemplo.</p></div>
-                  <div class="rx-professional"><span>Profesional</span><strong>Dra. Lucía Robles</strong></div>
-                  <p class="rx-validity">Documento de demostración · sin validez legal</p>
-                </div>
-              </div>
-              <div class="rx-phone-base" aria-hidden="true"></div>
-            </div>
-          </div>
-          <figcaption id="patient-caption">Vista simplificada de la app. Mismo caso ficticio.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <div class="rx-conditions shell">
-      <details>
-        <summary>Disponibilidad de las recetas <span aria-hidden="true">+</span></summary>
-        <div><p>La emisión y la preparación del PDF pueden demorar. Mientras la app muestra «Generando» o «Preparando», el documento aún no se puede abrir. Si aparece «No disponible», no hay un PDF listo para descargar.</p><p>Las consultas originadas por invitación permiten revisar los datos del paciente, pero no emitir recetas.</p></div>
-      </details>
-    </div>
-
-    <section class="rx-closing" aria-labelledby="closing-title">
-      <div class="shell rx-closing-inner">
-        <h2 id="closing-title">Sumá recetas digitales <span>a tu servicio de telemedicina.</span></h2>
-        <div class="rx-closing-actions"><a class="button" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20conocer%20las%20recetas%20digitales%20de%20Alvia%20para%20mi%20organizaci%C3%B3n" target="_blank" rel="noopener">Coordinemos una demo <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a><a class="text-link" href="mailto:hola@alvia.ar?subject=Recetas%20digitales%20en%20Alvia">hola@alvia.ar</a></div>
-      </div>
-    </section>
-  </main>
+<section aria-labelledby="rx-title" class="rx-hero shell">
+<div class="rx-hero-copy"><p class="rx-feature">Recetas</p><h1 id="rx-title">La receta de la consulta llega <span>al celular del paciente.</span></h1><p class="rx-lead">El médico la prepara y emite en Alvia. Tus afiliados la encuentran en la app para descargarla o compartirla.</p><a class="button" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20ver%20el%20recorrido%20de%20recetas%20en%20una%20demo%20de%20Alvia%20para%20mi%20organizaci%C3%B3n" rel="noopener" target="_blank">Quiero ver una demo <svg aria-hidden="true" class="action-chevron" focusable="false" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></a></div>
+<figure class="rx-hero-visual"><img alt="Una receta preparada por el médico se conecta con el mismo documento en el celular del paciente." height="420" src="assets/recetas-entrega.svg" width="560"/></figure>
+</section>
+<section aria-label="Del médico al paciente" class="rx-steps shell">
+<article><svg aria-hidden="true" class="rx-step-art" fill="none" viewbox="0 0 64 64"><rect fill="#edf4ff" height="47" rx="6" stroke="#3778ef" stroke-width="1.6" width="35" x="12" y="8"></rect><path d="M21 21h16M21 28h11M28 44l4-10 16-16 6 6-16 16-10 4Z" fill="white" stroke="#2865ce" stroke-linejoin="round" stroke-width="1.8"></path><path d="m44 22 6 6" stroke="#2865ce" stroke-width="1.8"></path></svg><div><h2>El médico prepara y emite.</h2><p>Busca la medicación en el vademécum y completa las indicaciones desde la consulta.</p></div></article>
+<article><svg aria-hidden="true" class="rx-step-art" fill="none" viewbox="0 0 64 64"><rect fill="#edf4ff" height="51" rx="7" stroke="#3778ef" stroke-width="1.6" width="31" x="17" y="6"></rect><path d="M27 12h11M29 51h7" stroke="#92b7f5" stroke-linecap="round" stroke-width="2"></path><rect fill="white" height="21" rx="3" stroke="#a7c4f4" width="19" x="24" y="22"></rect><path d="m29 32 3 3 6-7" stroke="#2865ce" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><div><h2>El paciente la lleva en su celular.</h2><p>La encuentra en <strong>Mis recetas.</strong> Cuando el PDF está listo, puede abrirla, descargarla o compartirla.</p></div></article>
+</section>
+<section aria-labelledby="rx-use-title" class="rx-use"><div class="shell rx-use-inner"><div class="rx-use-copy"><h2 id="rx-use-title">Mis recetas.</h2><p>Cuando el PDF está listo, puede abrirla, descargarla o compartirla.</p></div><div aria-hidden="true" class="rx-use-art"><div><svg fill="none" viewbox="0 0 160 160"><g transform="rotate(-6 80 80)"><path d="M34 22h65l25 26v98H34Z" fill="#dce6f7"></path><path d="M29 16h65l25 26v98H29Z" fill="white" stroke="#c4d5ee" stroke-linejoin="round" stroke-width="1.5"></path><path d="M94 16v26h25" fill="#edf4ff" stroke="#c4d5ee" stroke-width="1.5"></path><path d="M49 42h22M49 52h13" stroke="#c4d5ee" stroke-linecap="round" stroke-width="3"></path><path d="M74 64v45m-17-17 17 17 17-17M53 124h42" stroke="#3778ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></g><circle cx="126" cy="26" fill="#ffad16" r="4"></circle></svg><span>Descargar el PDF</span></div><div><svg fill="none" viewbox="0 0 160 160"><circle cx="80" cy="82" fill="#e7eefb" r="61"></circle><path d="m51 83 57-35M51 83l57 34" stroke="#3778ef" stroke-linecap="round" stroke-width="4"></path><circle cx="45" cy="83" fill="white" r="17" stroke="#3778ef" stroke-width="2"></circle><circle cx="113" cy="44" fill="#3778ef" r="17"></circle><circle cx="113" cy="122" fill="white" r="17" stroke="#3778ef" stroke-width="2"></circle><circle cx="46" cy="26" fill="#ffad16" r="4"></circle></svg><span>Compartir el documento</span></div></div></div></section>
+<div class="rx-questions shell"><details><summary>Disponibilidad de las recetas <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14M12 5v14"></path></svg></summary><p>La emisión y la preparación del PDF pueden demorar. Mientras la app muestra «Generando» o «Preparando», el documento aún no se puede abrir. Si aparece «No disponible», no hay un PDF listo para descargar.</p><p>Las consultas originadas por invitación permiten revisar los datos del paciente, pero no emitir recetas.</p></details></div>
+<section aria-labelledby="rx-closing-title" class="rx-closing shell"><h2 id="rx-closing-title">Sumá recetas digitales <span>a tu servicio de telemedicina.</span></h2><div class="rx-closing-actions"><a class="button" href="https://wa.me/541133578538?text=Hola%2C%20quiero%20conocer%20las%20recetas%20digitales%20de%20Alvia%20para%20mi%20organizaci%C3%B3n" rel="noopener" target="_blank">Coordinemos una demo <svg aria-hidden="true" class="action-chevron" focusable="false" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></a><a class="rx-email" href="mailto:hola@alvia.ar">hola@alvia.ar</a></div></section>
+</main>
 
   <footer class="footer shell">
     <div class="footer-main"><div><a class="wordmark" href="/" aria-label="Alvia, volver al inicio">alvia<span>.</span></a><p>Telemedicina que sí te funciona.</p></div><nav aria-label="Conocé Alvia"><h2>Conocé Alvia</h2><a href="/#beneficios">Por qué Alvia</a><a href="/#tu-red">Tu red y la red Alvia</a><a href="/#funcionalidades">Todas las funcionalidades</a><a href="/validaciones">Validaciones</a><a href="/ainotes">AI Notes</a><a href="/turnos-inteligentes">Turnos inteligentes</a><a href="/#organizaciones">Para tu organización</a></nav><nav aria-label="Contacto"><h2>Conversemos</h2><a href="mailto:hola@alvia.ar">hola@alvia.ar</a><a href="https://wa.me/541133578538" target="_blank" rel="noopener">WhatsApp <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a><a href="https://doctor.alvia.ar/">Acceso médicos <svg class="action-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></a></nav></div>
