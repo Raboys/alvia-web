@@ -272,3 +272,12 @@ V5 conserva `noindex, nofollow`; esta tarea no toma una decisión nueva de index
 ### Inicio sugerido de la próxima corrida
 
 > Las cuatro features están publicadas y verificadas en rutas limpias. Continuá desde `v5/DESIGN.md`, `v5/TODO.md` y los registros de `docs/releases/`. Runtime vigente `4239034`; conservar links absolutos internos y metadatos canónicos sin `/v5` ni `.html`.
+
+
+## Decisión vigente · Validaciones A refinada
+
+Pablo eligió A refinada de Astra para publicar: identidad protagonista, credencial y copagos
+explicados en composición abierta. Esta decisión sustituye el comprobante con persona nombrada,
+el selector con/sin copago y el titular de «reglas». [Diseño y criterios para otras páginas](../docs/design/validaciones-astra-a/README.md)
+· [release](../docs/releases/2026-09-20-validaciones-astra-a.md).
+La bajada de home sigue pendiente de una iteración propia.

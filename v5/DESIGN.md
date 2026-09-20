@@ -1,6 +1,14 @@
 # V5: decisiones de diseño, mensaje y continuidad
 
-Actualizado: 2026-09-12. Esta es la referencia para seguir iterando la **V5 aprobada y publicada**. Resume las decisiones de Pablo, su aplicación y los detalles necesarios para mantener la dirección. Una nueva instrucción de Pablo puede cambiar estas decisiones; este documento no agrega aprobaciones ni congela el diseño.
+Actualizado: 2026-09-20 UTC. Esta es la referencia para seguir iterando la **V5 aprobada y publicada**. Resume las decisiones de Pablo, su aplicación y los detalles necesarios para mantener la dirección. Una nueva instrucción de Pablo puede cambiar estas decisiones; este documento no agrega aprobaciones ni congela el diseño.
+
+## Decisión vigente para iterar funcionalidades
+
+Pablo eligió **A refinada de Astra** para Validaciones. Usar
+[la decisión y sus criterios transferibles](../docs/design/validaciones-astra-a/README.md)
+como referencia de composición y acabado. Reemplaza el antiguo relato de «reglas de cobertura»,
+el panel de comprobantes y el mock GLM rechazado. No es una plantilla rígida para otras páginas.
+[Publicación y rollback](../docs/releases/2026-09-20-validaciones-astra-a.md).
 
 ## 1. Empezar acá
 
@@ -240,7 +248,7 @@ Se explican los momentos de pago juntos: al reservar el turno o antes de entrar 
 Pablo aprobó esta página y pidió publicarla, documentarla, commitear y pushear. Home enlaza Validaciones y AI Notes públicamente; ambas páginas tienen enlace recíproco en el footer. Recetas continúa informativa. Runtime `2d3380d`, con verificación pública y release anterior conservado para rollback. [Brief, autoría y evidencia](../docs/features/validaciones/README.md).
 
 
-Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones gobiernan el copy vigente de Validaciones; no reintroducir las aclaraciones descartadas.
+Correcciones posteriores de Pablo: el código de autorización se ilustra con **tres dígitos** (`482`); quitar «En Alvia se llama…» y la aclaración sobre número de afiliado/código de acceso. En copagos, reemplazar la aclaración sobre un segundo cobro por **«Con todos los medios de pago»**. Estas decisiones describen la primera versión. A refinada actualiza el relato y explicita QR, transferencias y tarjetas; no reintroducir las aclaraciones descartadas.
 
 
 ## 12. Recetas · publicada el 2026-09-12

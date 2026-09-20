@@ -47,3 +47,10 @@ El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye 
 ## Runtime vigente
 
 Runtime `4239034`: cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C, chevrones discretos y URLs limpias. [Gestión inteligente de turnos](https://alvia.ar/turnos-inteligentes) · [registro de publicación](docs/releases/2026-09-12-pretty-urls.md).
+
+
+## Iterar las páginas de funcionalidades
+
+Referencia visual elegida: [Validaciones · A refinada de Astra](docs/design/validaciones-astra-a/README.md).
+Incluye composición, copy, SVG, ritmo, mobile e interacciones, para continuar otras páginas con
+el mismo criterio de acabado. [Publicación y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).

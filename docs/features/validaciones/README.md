@@ -1,4 +1,38 @@
-# Validaciones · aprobada y publicada en V5
+# Validaciones · A refinada
+
+## A refinada · decisión vigente
+
+Pablo eligió **A refinada** y pidió publicarla. [Diseño elegido y guía para próximas páginas](../../design/validaciones-astra-a/README.md)
+· [Brief](BRIEF.md) · [Procedencia](PROVENANCE.md)
+· [Release y rollback](../../releases/2026-09-20-validaciones-astra-a.md).
+
+Hero «Sabé quién está del otro lado», identificación genérica y selfie grandes, explicaciones
+abiertas de identidad/credencial y copagos con QR, transferencias y tarjetas. La página real
+conserva navegación, rutas limpias y metadatos del sitio. Las pruebas de abajo de 2026-09-12
+son históricas y corresponden a otra composición.
+
+### Verificación actual
+
+El runner sirve temporalmente `v5/` o un paquete aislado, con rutas limpias, en loopback.
+Prueba cinco anchos, contenido aprobado, recursos, menú/FAQ por teclado y sin JS, accesibilidad
+axe en desktop/móvil, metadatos, navegación entre las cuatro features, movimiento reducido
+y texto ampliado. La evidencia usa un directorio temporal nuevo por defecto.
+
+```sh
+# Dependencias de autoría; no son dependencias del sitio:
+npm install --prefix /tmp/alvia-web-checks playwright @axe-core/playwright
+/tmp/alvia-web-checks/node_modules/.bin/playwright install chromium
+ALVIA_PLAYWRIGHT=/tmp/alvia-web-checks/node_modules/playwright \
+ALVIA_AXE=/tmp/alvia-web-checks/node_modules/@axe-core/playwright \
+node docs/features/validaciones/verify.cjs
+```
+
+`ALVIA_CHROMIUM` selecciona un ejecutable local; `ALVIA_V5_ROOT`, un paquete de runtime;
+`ALVIA_V5_URL`, el sitio ya servido; `ALVIA_V5_EVIDENCE`, la carpeta de evidencia.
+Para empaquetar: `python3 scripts/package_v5.py --ref HEAD /tmp/alvia-a-release-new`.
+En dominios públicos se admiten los recursos conocidos de hosting de Cloudflare.
+
+## Historia de la primera versión · 2026-09-12
 
 2026-09-12. **Publicada en [alvia.ar/v5/validaciones.html](https://alvia.ar/v5/validaciones.html)** y en `www.alvia.ar`, con enlace desde home y navegación recíproca con AI Notes y Recetas. Pablo aprobó la página y pidió publicarla, documentarla, commitear y pushear. Runtime vigente **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, que suma [Recetas](../recetas/README.md) y su enlace recíproco; [205 checks públicos de regresión](../recetas/public/validaciones-regression-checks.json). Las evidencias de las publicaciones previas se conservan abajo. Rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`.
 
