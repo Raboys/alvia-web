@@ -1,0 +1,10 @@
+{
+  "activated_at": "2026-09-20T04:05:50.092705+00:00",
+  "source_commit": "a47eb691a646de5d42946cc830af107795577416",
+  "release": "/var/www/alvia.ar/releases/v5-a47eb69",
+  "previous_release": "/var/www/alvia.ar/releases/v5-4239034",
+  "atomic_symlink": "/var/www/alvia.ar/www/v5",
+  "runtime_files": 26,
+  "bytes": 549120,
+  "nginx_changed": false
+}

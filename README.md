@@ -17,7 +17,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 - [Tarjetas de funcionalidades: alternativa C aprobada](docs/design/v5-feature-cards/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
-- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes, Recetas y Turnos inteligentes están publicadas, con navegación recíproca. Home usa tarjetas completas clickeables y también menciona la gestión de turnos en beneficios. Runtime público `ddc8df8`; [publicación y rollback](docs/releases/2026-09-12-smart-appointments.md).
+- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes, Recetas y Turnos inteligentes están publicadas, con navegación recíproca. Home usa tarjetas completas clickeables y también menciona la gestión de turnos en beneficios. Runtime público `a47eb69`, con Validaciones A refinada; [publicación y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).
 
 ## V4
 
@@ -46,7 +46,7 @@ El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye 
 
 ## Runtime vigente
 
-Runtime `4239034`: cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C, chevrones discretos y URLs limpias. [Gestión inteligente de turnos](https://alvia.ar/turnos-inteligentes) · [registro de publicación](docs/releases/2026-09-12-pretty-urls.md).
+Runtime `a47eb69`: Validaciones A refinada, cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C y URLs limpias. [Publicación vigente y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).
 
 
 ## Iterar las páginas de funcionalidades

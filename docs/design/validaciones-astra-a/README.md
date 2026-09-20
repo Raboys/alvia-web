@@ -1,5 +1,7 @@
 # Validaciones · A refinada
 
+Publicada en <https://alvia.ar/validaciones> y en `www.alvia.ar` desde `a47eb69`, el 2026-09-20 UTC.
+
 Pablo eligió **A refinada** entre tres variantes realizadas por tres subagentes Astra y pidió
 integrarla, documentarla y publicarla. Es la referencia aprobada para continuar Validaciones y
 el criterio de acabado para próximas páginas. B sobria y C personalidad no fueron elegidas.
@@ -82,3 +84,9 @@ SVG respecto del release anterior; los otros 23 archivos conservan sus hashes.
 [comprobaciones del paquete](package-browser-checks.json). Los archivos de imagen son evidencia
 de autoría; no se incluyen en el release. El registro de publicación identifica el commit servido
 por separado de los commits posteriores de documentación.
+
+
+Verificación pública: [127 checks en alvia.ar](public/browser-checks.json) y
+[127 en www](public/www-browser-checks.json), con los 26 archivos y el manifiesto comprobados
+en origen y ambos dominios. [Captura pública desktop](public/1440-full.png) y
+[móvil](public/390-full.png).

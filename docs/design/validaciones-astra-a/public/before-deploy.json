@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-09-20T04:03:04.125752+00:00",
+  "previous_release": "/var/www/alvia.ar/releases/v5-4239034",
+  "previous_commit": "4239034475672b94d5ac787e8aea59ec4daaecac",
+  "nginx_sha256": "fb9f8a44a36571554214f789598bc00a393183bcecc0dfee4da5e39fe1fc6a76",
+  "changed_runtime_files": [
+    "assets/validaciones-identidad.svg",
+    "validaciones.css",
+    "validaciones.html"
+  ]
+}

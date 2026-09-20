@@ -1,5 +1,16 @@
 # Ejecución de PLAN_FEATURES · V5
 
+## Actualización vigente · 2026-09-20 UTC
+
+- [x] Publicar Validaciones **A refinada de Astra**, elegida expresamente por Pablo.
+- [x] PR #32 integrado; runtime `a47eb69`, release atómico y hashes verificados en ambos dominios.
+- [x] Documentar [el diseño y los criterios para próximas páginas](../docs/design/validaciones-astra-a/README.md).
+- [ ] Repensar la bajada de home como una tarea propia, sin trasladar automáticamente el hero de Validaciones.
+
+[Release, evidencia y rollback](../docs/releases/2026-09-20-validaciones-astra-a.md).
+Las entradas anteriores de abajo son históricas cuando mencionan otros runtimes.
+
+
 Estado vigente: runtime `4239034`. Home en `/`; features en `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`. Las rutas anteriores redirigen. [Registro de publicación](../docs/releases/2026-09-12-pretty-urls.md). Los bloques anteriores conservan la historia de cada corrida.
 
 ## AI Notes · corrida y publicación inicial
