@@ -57,4 +57,3 @@ PYCODE
 ```
 
 Verificar después las tres páginas, Validaciones, home y `/release.json` en ambos dominios.
-
