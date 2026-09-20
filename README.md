@@ -17,7 +17,7 @@ Leer [las decisiones de mensaje y estilo](v5/DESIGN.md) antes de iterar. Incluye
 - [Tarjetas de funcionalidades: alternativa C aprobada](docs/design/v5-feature-cards/README.md).
 - [Archivos, assets y ejecución](v5/README.md).
 - [Publicación, promoción a portada y rollback](docs/releases/2026-09-12-v5.md).
-- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes, Recetas y Turnos inteligentes están publicadas, con navegación recíproca. Home usa tarjetas completas clickeables y también menciona la gestión de turnos en beneficios. Runtime público `a47eb69`, con Validaciones A refinada; [publicación y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).
+- [Funcionalidades](v5/PLAN_FEATURES.md): Validaciones, AI Notes, Recetas y Turnos inteligentes están publicadas, con navegación recíproca. Home usa tarjetas completas clickeables y también menciona la gestión de turnos en beneficios. Runtime público `c1cfb07`, con las tres funcionalidades ilustradas y Validaciones A refinada; [publicación y rollback](docs/releases/2026-09-20-three-feature-illustrations.md).
 
 ## V4
 
@@ -46,7 +46,7 @@ El destino debe ser nuevo. El script toma archivos de un commit de Git, incluye 
 
 ## Runtime vigente
 
-Runtime `a47eb69`: Validaciones A refinada, cuatro funcionalidades, navegación desktop y megamenú mobile, calculadora C y URLs limpias. [Publicación vigente y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).
+Runtime `c1cfb07`: AI Notes, Recetas y Turnos con textos anteriores e ilustraciones nuevas, Validaciones A refinada, navegación desktop y megamenú mobile, calculadora C y URLs limpias. [Publicación vigente y rollback](docs/releases/2026-09-20-three-feature-illustrations.md).
 
 
 ## Iterar las páginas de funcionalidades

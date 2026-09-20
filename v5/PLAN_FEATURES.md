@@ -1,5 +1,7 @@
 # V5 · Guía para desarrollar las páginas de features
 
+> Actualización 2026-09-20: runtime `c1cfb07`, AI Notes/Recetas/Turnos con ilustraciones nuevas y textos anteriores. [Publicación](../docs/releases/2026-09-20-three-feature-illustrations.md). Los estados siguientes conservan el historial.
+
 Fecha: 2026-09-12. Estado: **home y cuatro funcionalidades publicadas y verificadas en rutas limpias**. Runtime vigente `4239034`: `/ainotes`, `/validaciones`, `/recetas` y `/turnos-inteligentes`. `/v5` y los nombres `.html` redirigen sin romper enlaces anteriores. [Publicación](../docs/releases/2026-09-12-pretty-urls.md). Este documento guía las corridas y registra sus decisiones.
 
 ## 1. Encargo y decisiones de esta etapa
