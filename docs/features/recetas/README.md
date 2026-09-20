@@ -1,5 +1,7 @@
 # Recetas · publicada en V5
 
+> Actualización 2026-09-20: composición con ilustraciones nuevas y textos anteriores. Ver [entrega y runner vigente](../../design/three-feature-illustrations/README.md). Los registros siguientes conservan la historia de publicación.
+
 **Iteración visual vigente:** alternativa 3 con sólo editor médico y app del paciente, mostrando siempre el documento generado sin selector de estados, runtime `0cd831d`. Se conservan todos los textos y la estructura exterior a los mocks. [Decisión, capturas y verificaciones](../../design/v5-prescription-mocks/README.md). Las secciones siguientes conservan la evidencia de la primera publicación.
 
 2026-09-12. **Publicada y verificada en [alvia.ar/v5/recetas.html](https://alvia.ar/v5/recetas.html)** y en [www.alvia.ar](https://www.alvia.ar/v5/recetas.html), por pedido de Pablo. Runtime inicial **`5f74ecf7390da9f3e8d6f77b8b117ec87bdf8d95`**, rama `feat/v5-feature-pages-plan` de `Raboys/alvia-web`. Home enlaza las tres features, con navegación recíproca. La evidencia de la entrega local se conserva debajo; la publicación se registra al final.

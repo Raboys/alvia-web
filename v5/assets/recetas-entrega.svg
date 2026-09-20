@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" fill="none">
+<defs><filter id="shadow" x="-25%" y="-20%" width="160%" height="155%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#213f72" flood-opacity=".08"/></filter><g id="rx"><path d="M0 0v27M0 0h10c14 0 14 15 0 15H0m10 0 15 22m-14 0 14-17" stroke="#3778ef" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g></defs>
+<path d="M38 206C28 106 115 42 237 46c127 4 245 53 273 157 29 107-67 163-204 169C167 378 48 315 38 206Z" fill="#f0f5ff"/>
+<g transform="rotate(-5 175 208)" filter="url(#shadow)">
+<rect x="60" y="70" width="222" height="278" rx="15" fill="white" stroke="#cddffa" stroke-width="1.5"/>
+<text x="86" y="106" font-family="Arial,sans-serif" font-size="18" fill="#52647e">Receta médica</text><path d="M241 96h15" stroke="#ffad16" stroke-width="3" stroke-linecap="round"/>
+<use href="#rx" x="88" y="135"/>
+<path d="M137 143h105M137 157h74M88 202h143M88 218h111M88 244h133M88 260h99" stroke="#dae5f5" stroke-width="6" stroke-linecap="round"/>
+<path d="M88 299h70" stroke="#aac5ee" stroke-width="4" stroke-linecap="round"/>
+<circle cx="249" cy="310" r="11" fill="#eaf2ff"/><path d="m244 310 4 4 6-8" stroke="#3778ef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M246 62c62-29 111-10 136 33m-3-23 4 24-25-2" stroke="#3778ef" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="rotate(5 398 241)" filter="url(#shadow)">
+<rect x="311" y="108" width="182" height="277" rx="25" fill="white" stroke="#cddffa" stroke-width="1.8"/>
+<path d="M382 121h39" stroke="#d3e0f4" stroke-width="4" stroke-linecap="round"/>
+<rect x="322" y="140" width="160" height="219" rx="13" fill="#edf4ff"/>
+<text x="339" y="164" font-family="Arial,sans-serif" font-size="15" fill="#2865ce">Mis recetas</text>
+<rect x="336" y="180" width="132" height="160" rx="8" fill="white" stroke="#d5e2f6"/>
+<use href="#rx" transform="translate(352 197) scale(.66)"/>
+<path d="M382 203h66M382 214h46M353 244h87M353 256h64M353 279h79M353 291h56" stroke="#d5e2f4" stroke-width="4" stroke-linecap="round"/>
+<path d="M353 318h44" stroke="#aac5ee" stroke-width="3" stroke-linecap="round"/>
+<path d="M390 372h25" stroke="#d3e0f4" stroke-width="3" stroke-linecap="round"/>
+</g>
+<circle cx="311" cy="286" r="23" fill="white"/><circle cx="311" cy="286" r="18" fill="#3778ef"/><path d="m303 286 6 6 11-13" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

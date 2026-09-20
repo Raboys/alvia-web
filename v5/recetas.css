@@ -1,91 +1,19 @@
-/* One consultation, two readable surfaces. Native radios compare PDF availability. */
-.rx-hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:90px;padding-block:68px 64px;align-items:end}
-.feature-name{font-size:16px;font-weight:600;color:var(--blue-text);margin-bottom:20px}
-.rx-intro h1{font-size:54px;line-height:1.13;letter-spacing:-2.2px;max-width:670px}
-.rx-intro h1 span{color:var(--blue-text)}
-.rx-hero-action{padding-bottom:5px}
-.rx-lead{font-size:18px;line-height:1.65;margin-bottom:25px}
-.rx-journey{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px;padding-block:8px 52px;position:relative}
-.rx-journey>div{min-width:0}
-.rx-scene-heading{margin-bottom:26px}
-.rx-scene-heading .brand-strokes{width:68px;height:3px;margin-bottom:20px}
-.rx-scene-heading h2{font-family:var(--sans);font-size:23px;line-height:1.3;font-weight:600;letter-spacing:-.6px;text-wrap:initial;margin-bottom:12px}
-.rx-scene-heading>p{font-size:16px;line-height:1.6;max-width:440px}
-.rx-editor{margin-top:88px;position:relative}
-.rx-editor:before{content:"";position:absolute;inset:-22px -20px 40px;background:var(--pale);border-radius:40% 48% 35% 42%;z-index:-1}
-.rx-editor-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 24px;border:1px solid var(--line);border-radius:15px 15px 0 0;background:#fbfcff;font-size:13px;color:var(--body)}
-.rx-brand{font-size:27px;line-height:1;font-weight:700;letter-spacing:-1.9px;color:var(--blue)}
-.rx-brand>span{color:var(--orange)}
-.rx-editor-body{background:white;border:1px solid var(--line);border-top:0;border-radius:0 0 15px 15px;padding:24px;box-shadow:0 14px 35px rgb(25 57 102 / 6%)}
-.rx-editor-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
-.rx-editor-heading h3{font-size:22px}
-.rx-draft{font-size:12px;color:var(--body);padding:3px 10px;border:1px solid var(--line);border-radius:5px}
-.rx-patient{display:flex;flex-direction:column;gap:3px}
-.rx-patient strong{font-size:17px;font-weight:600}
-.rx-patient>span{font-size:13px;color:var(--body)}
-.rx-fields{margin:23px 0 0;display:grid;gap:22px}
-.rx-fields dt{font-size:13px;color:var(--body);margin-bottom:7px}
-.rx-fields dd{margin:0;font-size:15px;line-height:1.6}
-.rx-fields dd strong{display:block;font-size:17px;font-weight:600}
-.rx-fields dd span{display:block;font-size:13px;color:var(--body);margin-top:3px}
-.rx-medication{padding:14px 16px;background:#f5f8fd;border-radius:9px}
-.rx-professional{display:flex;flex-direction:column;gap:3px;margin-top:24px;padding-top:17px;border-top:1px solid var(--line)}
-.rx-professional>span{font-size:12px;color:var(--body)}
-.rx-professional strong{font-size:15px;font-weight:600}
-.rx-editor figcaption,.rx-reception figcaption{font-size:12px;line-height:1.55;color:var(--body);margin-top:14px;text-align:center}
-.rx-emission-note{display:flex;align-items:center;gap:15px;margin:25px 14px 0;font-size:15px;line-height:1.6;max-width:425px}
-.rx-emission-note svg{width:32px;flex:none;fill:none;stroke:var(--blue-text);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.rx-states{border:0;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;max-width:365px;margin-inline:auto;min-width:0}
-.rx-states legend{width:100%;text-align:center;color:var(--body);font-size:12px;padding:0 0 10px}
-.rx-state-radio{opacity:0;width:1px;height:1px;margin:0;align-self:center;justify-self:center;pointer-events:none}
-#rx-preparing,label[for="rx-preparing"]{grid-column:1;grid-row:1}
-#rx-ready,label[for="rx-ready"]{grid-column:2;grid-row:1}
-.rx-state-option{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--line);border-radius:24px;padding:8px 11px;text-align:center;font-size:13px;line-height:1.4;cursor:pointer;color:var(--body);background:white}
-.rx-state-radio:checked+label{border-color:var(--blue-text);color:white;background:var(--blue-text)}
-.rx-state-radio:focus-visible+label{outline:3px solid var(--blue-text);outline-offset:4px}
-.rx-phone{grid-column:1/-1;margin-top:12px;min-width:0;background:#f4f7fc;border:1px solid #dce5f3;box-shadow:0 16px 40px rgb(25 57 102 / 9%),inset 0 0 0 4px white;border-radius:30px;padding:21px 15px 12px;position:relative}
-.rx-phone-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:1px 10px 16px}
-.rx-phone-heading strong{font-size:15px;font-weight:600}
-.rx-available{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--blue-text);margin:0 10px 12px}
-.rx-available>span{display:grid;place-items:center;width:19px;height:19px;border:1px solid #a9c4f5;border-radius:50%;font-size:12px;flex:none}
-.rx-document{background:white;border:1px solid var(--line);border-radius:12px;padding:20px}
-.rx-document-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
-.rx-document-title h3{font-size:19px}
-.rx-document-title>span{font-size:12px;color:var(--body)}
-.rx-document-medication{display:flex;flex-direction:column;gap:4px;margin-top:20px;padding:14px;background:#f5f8fd;border-radius:8px}
-.rx-document-medication>span{font-size:12px;color:var(--body)}
-.rx-document-medication strong{font-size:17px;font-weight:600;line-height:1.4}
-.rx-document-medication p{font-size:14px;line-height:1.6;margin-top:6px}
-.rx-document .rx-professional{margin-top:18px;padding-top:0;border:0}
-.rx-validity{font-size:12px;line-height:1.5;color:var(--body);margin-top:18px;padding-top:13px;border-top:1px solid var(--line)}
-.rx-phone-base{width:82px;height:4px;border-radius:4px;background:#ccd6e6;margin:18px auto 0}
-.rx-pending-content{display:none;min-height:444px}
-#rx-preparing:checked~.rx-phone .rx-ready-content{display:none}
-#rx-preparing:checked~.rx-phone .rx-pending-content{display:block}
-.rx-list-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px 12px;background:white;border:1px solid var(--line);border-radius:12px;padding:17px}
-.rx-document-icon{width:28px;fill:none;stroke:var(--blue-text);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.rx-list-item h3{font-size:16px;letter-spacing:0;margin-bottom:4px}
-.rx-list-item p{font-size:13px;line-height:1.5}
-.rx-preparing-badge{grid-column:2;justify-self:start;border-radius:15px;padding:3px 9px;font-size:12px;background:#fff0d6;color:#78520a}
-.rx-waiting-message{display:flex;align-items:center;flex-direction:column;gap:14px;text-align:center;padding:42px 14px}
-.rx-waiting-message strong{font-size:16px;font-weight:600}
-.rx-waiting-message p{font-size:14px;line-height:1.6;max-width:240px}
-.rx-waiting-ring{width:32px;height:32px;border:2px solid #cadcf7;border-top-color:var(--blue);border-right-color:var(--orange);border-radius:50%}
-.rx-conditions{padding-bottom:64px}
-.rx-conditions details{border-block:1px solid var(--line)}
-.rx-conditions summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px;cursor:pointer;font-size:16px;font-weight:500}
-.rx-conditions summary::-webkit-details-marker{display:none}
-.rx-conditions summary>span{color:var(--blue-text);font-size:24px;flex:none}
-.rx-conditions details[open] summary>span{transform:rotate(45deg)}
-.rx-conditions details>div{max-width:790px;padding-bottom:24px;display:grid;gap:12px}
-.rx-conditions p{font-size:15px;line-height:1.65}
-.rx-closing{background:var(--pale);padding-block:58px}
-.rx-closing-inner{display:flex;align-items:center;justify-content:space-between;gap:60px}
-.rx-closing h2{font-size:39px;max-width:655px}
-.rx-closing-actions{display:flex;flex-direction:column;align-items:flex-start;gap:17px;flex-shrink:0}
-.rx-closing-actions .text-link{font-size:14px}
-.prescriptions-page main :is(p,strong,h1,h2,h3,dd,dt,span,figcaption,label){overflow-wrap:anywhere}
-@media(max-width:1100px){.rx-hero{gap:45px}.rx-intro h1{font-size:46px;letter-spacing:-1.8px}.rx-journey{gap:50px}.rx-scene-heading h2{font-size:21px}.rx-closing h2{font-size:35px}}
-@media(max-width:900px){.rx-hero{gap:32px;padding-block:48px}.rx-intro h1{font-size:40px;letter-spacing:-1.5px}.rx-lead{font-size:16px}.rx-journey{gap:30px}.rx-editor:before{inset:-15px -8px 40px}.rx-editor-body{padding:19px}.rx-editor-bar{padding-inline:19px}.rx-scene-heading>p{font-size:15px}.rx-document{padding:16px}.rx-phone{padding-inline:12px}.rx-state-option{font-size:12px;padding-inline:7px}.rx-document-title{flex-wrap:wrap;gap:4px 10px}.rx-closing-inner{gap:30px}.rx-closing h2{font-size:30px}}
-@media(max-width:650px){.rx-hero{grid-template-columns:1fr;gap:22px;padding-block:34px 42px}.feature-name{margin-bottom:16px;font-size:14px}.rx-intro h1{font-size:clamp(36px,8.9vw,48px);line-height:1.13;max-width:510px}.rx-lead{max-width:465px;margin-bottom:24px}.rx-journey{grid-template-columns:1fr;gap:44px;padding-block:0 35px}.rx-scene-heading{margin-bottom:23px}.rx-scene-heading h2{font-size:22px}.rx-scene-heading .brand-strokes{margin-bottom:19px}.rx-editor{margin-top:0;max-width:430px;margin-inline:auto}.rx-editor-body{padding:22px}.rx-editor-bar{padding-inline:22px}.rx-editor-heading{margin-bottom:18px}.rx-emission-note{margin-inline:0;font-size:14px;gap:12px}.rx-emission-note svg{transform:rotate(90deg)}.rx-states{max-width:365px}.rx-state-option{font-size:13px}.rx-document{padding:20px}.rx-conditions{padding-bottom:38px}.rx-conditions summary{font-size:15px;padding-block:18px}.rx-closing{padding-block:40px}.rx-closing-inner{flex-direction:column;align-items:flex-start;gap:25px}.rx-closing h2{font-size:32px;max-width:480px}.rx-closing-actions{max-width:100%}}
-@media(max-width:359px){.rx-intro h1{font-size:34px}.rx-lead{font-size:15px}.rx-scene-heading h2{font-size:20px}.rx-editor-body,.rx-editor-bar{padding:18px}.rx-medication{padding:12px}.rx-fields dd strong{font-size:16px}.rx-document{padding:15px}.rx-phone{padding-inline:10px}.rx-state-option{font-size:12px}.rx-closing h2{font-size:29px}}
+:root{--rx-ease:cubic-bezier(.23,1,.32,1)}
+.prescriptions-page .product-nav a[aria-current=page] .product-nav-description{color:var(--body)}
+.rx-hero{display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:38px;padding-block:63px 51px;min-height:550px}
+.rx-feature{font-size:14px;font-weight:600;color:var(--blue-text);margin-bottom:20px}
+.rx-hero h1{font-size:59px;line-height:1.12;letter-spacing:-2.4px;max-width:510px;text-wrap:initial}.rx-hero h1 span{color:var(--blue-text);display:block}
+.rx-lead{font-size:18px;line-height:1.65;max-width:468px;margin:25px 0 30px}
+.rx-hero-visual{width:100%;min-width:0;margin:0}.rx-hero-visual img{width:100%;height:auto}.rx-hero-visual figcaption{text-align:center;font-size:11px;color:#697689;margin-top:0}
+.rx-steps{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-block:40px 50px;border-top:1px solid var(--line)}.rx-steps article{display:flex;align-items:center;gap:23px}.rx-steps article+article{border-left:1px solid var(--line);padding-left:36px}.rx-step-art{width:64px;flex-shrink:0}.rx-steps h2{font-size:26px;line-height:1.25;letter-spacing:-.65px;margin-bottom:10px;text-wrap:initial}.rx-steps p{font-size:15px;line-height:1.65;max-width:350px}
+.rx-use{background:#f6f9fe;border-block:1px solid #edf2fa}.rx-use-inner{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center;padding-block:66px}.rx-use h2{font-size:39px;letter-spacing:-1.5px;line-height:1.22;text-wrap:initial}.rx-use-copy>p{font-size:17px;line-height:1.65;max-width:420px;margin-top:21px}.rx-use-copy .rx-wait{border-top:1px solid #dce5f2;padding-top:20px;font-size:14px;max-width:420px;margin-top:24px}.rx-use-art{display:grid;grid-template-columns:1fr 1fr;gap:30px}.rx-use-art>div{text-align:center}.rx-use-art svg{width:160px;max-width:100%;height:auto;margin-inline:auto;margin-bottom:15px}.rx-use-art span{font-size:14px;font-weight:500;color:var(--ink);display:block}
+.rx-questions{padding-block:25px}.rx-questions details{border-bottom:1px solid var(--line)}.rx-questions summary{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;list-style:none;cursor:pointer;font-size:16px;font-weight:500;color:var(--ink)}.rx-questions summary::-webkit-details-marker{display:none}.rx-questions summary svg{width:20px;height:20px;flex:none;stroke:var(--blue-text);stroke-width:1.6;fill:none;transition:transform 180ms var(--rx-ease)}.rx-questions details[open] summary svg{transform:rotate(45deg)}.rx-questions details p{max-width:750px;font-size:15px;line-height:1.75;padding:0 44px 25px 0}
+.rx-closing{display:flex;align-items:center;justify-content:space-between;gap:50px;padding-block:45px 78px}.rx-closing h2{font-size:39px;line-height:1.25;letter-spacing:-1.5px;text-wrap:initial}.rx-closing h2 span{display:block;color:var(--blue-text)}.rx-closing-actions{display:grid;justify-items:center;gap:12px;flex-shrink:0}.rx-email{display:inline-flex;align-items:center;min-height:44px;font-size:14px;color:var(--body);text-decoration:underline;text-underline-offset:4px;text-decoration-color:#ccd6e3}.prescriptions-page .footer{border-top:1px solid var(--line);padding-top:36px}
+.prescriptions-page .button{transition:transform 160ms var(--rx-ease),background-color 160ms ease;box-shadow:none}.prescriptions-page .button:hover{transform:none;box-shadow:none}.prescriptions-page a:hover>.action-chevron{transform:none}.prescriptions-page .button:active{transform:scale(.975)}
+@media(hover:hover) and (pointer:fine){.prescriptions-page .button:hover{background:#ffbc3e}.prescriptions-page .button:hover>.action-chevron{transform:translateX(2px)}.rx-email:hover{color:var(--blue-text);text-decoration-color:currentColor}}
+@media(min-width:901px) and (max-width:1150px){.rx-hero{padding-top:54px;min-height:510px;gap:16px}.rx-hero h1{font-size:49px;letter-spacing:-2px}.rx-lead{font-size:17px}.rx-steps{gap:26px}.rx-steps article+article{padding-left:26px}.rx-use-inner{gap:54px}.rx-closing h2{font-size:34px}}
+@media(max-width:900px){.rx-hero{grid-template-columns:1fr;gap:12px;padding-block:48px 34px;min-height:0}.rx-hero-copy{max-width:620px}.rx-hero h1{font-size:54px;max-width:600px}.rx-hero h1 br{display:none}.rx-lead{max-width:540px}.rx-hero-visual{max-width:530px;justify-self:center}.rx-steps{gap:28px;padding-block:30px 45px}.rx-steps article{align-items:flex-start;gap:16px}.rx-step-art{width:48px}.rx-steps h2{font-size:24px}.rx-steps article+article{padding-left:28px}.rx-use-inner{grid-template-columns:1fr;gap:35px;padding-block:54px}.rx-use-copy>p,.rx-use-copy .rx-wait{max-width:540px}.rx-use-art{max-width:500px;width:100%;margin-inline:auto;gap:50px}.rx-closing{gap:30px;padding-block:36px 68px}.rx-closing h2{font-size:30px}}
+@media(max-width:600px){.rx-hero{padding-top:39px;padding-bottom:27px;gap:12px}.rx-feature{font-size:13px;margin-bottom:17px}.rx-hero h1{font-size:clamp(36px,10.5vw,52px);letter-spacing:-1.55px;line-height:1.13}.rx-hero h1 br{display:block}.rx-lead{font-size:16px;line-height:1.65;margin:22px 0 26px;max-width:400px}.rx-hero .button{min-height:50px;font-size:15px;padding-inline:23px}.rx-hero-visual{width:calc(100% + 20px);max-width:450px;margin:7px -10px 0}.rx-hero-visual figcaption{font-size:10px;margin-top:-2px}.rx-steps{grid-template-columns:1fr;gap:25px;padding-block:29px 36px}.rx-steps article{align-items:center;gap:17px}.rx-steps h2{font-size:25px;margin-bottom:8px}.rx-steps p{font-size:15px;line-height:1.65}.rx-step-art{width:46px}.rx-steps article+article{border-left:0;padding-left:0;padding-top:26px;border-top:1px solid var(--line)}.rx-use-inner{padding-block:43px 42px;gap:28px}.rx-use h2{font-size:33px;letter-spacing:-1.15px}.rx-use-copy>p{font-size:16px;margin-top:18px}.rx-use-art{gap:18px}.rx-use-art svg{width:137px;margin-bottom:12px}.rx-use-art span{font-size:12px}.rx-questions{padding-block:19px 23px}.rx-questions summary{font-size:15px;line-height:1.55;min-height:88px;gap:21px}.rx-questions details p{padding-right:0;font-size:14px}.rx-closing{flex-direction:column;align-items:flex-start;gap:26px;padding-block:32px 45px}.rx-closing h2{font-size:32px;letter-spacing:-1.25px;max-width:430px}.rx-closing-actions{justify-items:start;gap:8px}.prescriptions-page .footer{padding-top:30px}}
+@media(max-width:359px){.rx-hero h1{font-size:35px;letter-spacing:-1.5px}.rx-closing h2{font-size:29px}.rx-use h2{font-size:30px}.rx-use-art{gap:12px}.rx-use-art span{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.prescriptions-page .button,.rx-questions summary svg{transition:none}.prescriptions-page .button:active,.prescriptions-page .button:hover>.action-chevron{transform:none}}
+.prescriptions-page :focus-visible,.rx-questions summary:focus-visible svg,.product-menu summary:focus-visible svg{transition:none!important}

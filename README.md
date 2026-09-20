@@ -54,3 +54,9 @@ Runtime `a47eb69`: Validaciones A refinada, cuatro funcionalidades, navegación 
 Referencia visual elegida: [Validaciones · A refinada de Astra](docs/design/validaciones-astra-a/README.md).
 Incluye composición, copy, SVG, ritmo, mobile e interacciones, para continuar otras páginas con
 el mismo criterio de acabado. [Publicación y rollback](docs/releases/2026-09-20-validaciones-astra-a.md).
+
+## Tres funcionalidades: ilustraciones nuevas
+
+AI Notes, Recetas y Turnos conservan sus textos anteriores con las ilustraciones aprobadas.
+[Decisiones y verificación](docs/design/three-feature-illustrations/README.md) ·
+[Publicación](docs/releases/2026-09-20-three-feature-illustrations.md).

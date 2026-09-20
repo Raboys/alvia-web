@@ -320,3 +320,9 @@ La cuarta feature vende una tarea concreta: reducir el **ausentismo** y mantener
 Pablo eligió la variante D y pidió lenguaje directo. El hero muestra una agenda dinámica con un turno recuperado, pacientes contactados y confirmaciones en curso. Se descartaron la sección «Controlá las reglas y cada cambio» y la referencia a «modalidad y cobertura» porque agregaban explicación sin mejorar la propuesta comercial.
 
 La home suma una cuarta tarjeta enlazada y una mención independiente en beneficios: «Gestioná turnos y reducí el ausentismo». El header incorpora el acceso en desktop y dentro del megamenú mobile. La página mantiene pocas secciones, no presenta la automatización como una promesa clínica y no incorpora métricas inventadas.
+
+## Tres funcionalidades: conservar textos y renovar ilustraciones
+
+Pablo prefirió los textos anteriores de AI Notes, Recetas y Turnos inteligentes junto con las
+ilustraciones nuevas. Esa corrección reemplaza los borradores de copy de la primera preview.
+[Entrega y decisiones](../docs/design/three-feature-illustrations/README.md).

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "ai-notes.css",
+    "identical_to_approved_preview": true,
+    "sha256": "ed67a4a319a574fe3ae1160dcda1248f09fe0bde53c4590d6252e36a68bb19b9"
+  },
+  {
+    "file": "assets/notes-conversation.svg",
+    "identical_to_approved_preview": true,
+    "sha256": "51eccc8ae8fc1559881f45766a9675f7d6a3efb7995d77c2a4639593052c4092"
+  },
+  {
+    "file": "recetas.css",
+    "identical_to_approved_preview": true,
+    "sha256": "720bc970f58a8d7b86542857449e3ae5f2f92b3544080fcc52f314b625e646b2"
+  },
+  {
+    "file": "assets/recetas-entrega.svg",
+    "identical_to_approved_preview": true,
+    "sha256": "a69977a74af535706522af7a93a5177e48b0a0b7d20431d7ee2abe2dee9717bb"
+  },
+  {
+    "file": "turnos-inteligentes.css",
+    "identical_to_approved_preview": true,
+    "sha256": "b79271bd615593895c22220bca4d32549cb73d62e0f6f5a804e403c6db937db9"
+  },
+  {
+    "file": "assets/turnos-oportunidad.svg",
+    "identical_to_approved_preview": true,
+    "sha256": "9b63d786daa60c43d8c1d3eef7349257abac59f391b1ad9a0f9b1019b788665b"
+  }
+]
