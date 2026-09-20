@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "alvia.ar",
+    "width": 1440,
+    "copyCorrect": true,
+    "noOverflow": true
+  },
+  {
+    "domain": "alvia.ar",
+    "width": 390,
+    "copyCorrect": true,
+    "noOverflow": true
+  },
+  {
+    "domain": "www.alvia.ar",
+    "width": 1440,
+    "copyCorrect": true,
+    "noOverflow": true
+  },
+  {
+    "domain": "www.alvia.ar",
+    "width": 390,
+    "copyCorrect": true,
+    "noOverflow": true
+  }
+]

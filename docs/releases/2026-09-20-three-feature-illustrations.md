@@ -57,3 +57,20 @@ PYCODE
 ```
 
 Verificar después las tres páginas, Validaciones, home y `/release.json` en ambos dominios.
+
+## Corrección de copy: cancelación · 2026-09-20 05:01 UTC
+
+Por pedido de Pablo, las dos menciones de «Si un paciente no responde» se reemplazan por
+«Si un paciente cancela», en la bajada y en «Turno recuperado». Preview de Tailscale también
+actualizada. PR #36, runtime `1ea88501f7830c9bac782c098efe580e401aa871`, release
+`/var/www/alvia.ar/releases/v5-1ea8850`. Activación `2026-09-20T05:01:06.335712+00:00`.
+
+Sólo cambia `turnos-inteligentes.html`: 28 archivos, 544.911 bytes. Los demás 27 archivos
+mantienen sus hashes. Se verificaron origen y ambos dominios, y ambas frases/reflujo a 1440/390.
+[Evidencia HTTP](../design/three-feature-illustrations/public-copy-cancelacion/http-checks.json),
+[navegador](../design/three-feature-illustrations/public-copy-cancelacion/browser-checks.json),
+[activación](../design/three-feature-illustrations/public-copy-cancelacion/deployment.json).
+
+Rollback de esta corrección: comprobar que `www/v5` aún resuelva a `v5-1ea8850` y aplicar
+el reemplazo atómico documentado arriba con `previous = v5-c1cfb07`, que se conserva íntegro.
+La corrección editorial no cambia lógica del producto.
