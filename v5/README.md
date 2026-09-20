@@ -70,12 +70,16 @@ Chrome a 1440, 1024, 768, 390 y 320 px: 146 comprobaciones locales y 146 sobre l
 
 La subpágina AI Notes usa `styles.css`, `ai-notes.css`, `header.css` y `ai-notes.js`. Home comparte el estilo del header; conserva su script de calculadora/pestañas. Las escenas son HTML/CSS, no agregan imágenes ni dependencias. La verificación reproducible está en `docs/features/ai-notes/verify.cjs`.
 
-## Validaciones · aprobada y publicada
+## Validaciones · A refinada
 
-[validaciones.html](validaciones.html) reúne identidad, código de credencial y copagos según cobertura. Incluye un ejemplo nativo que alterna entre cobertura con/sin copago, explicaciones de los tres mecanismos y los momentos correctos de pago. Comparar coberturas y abrir el detalle funcionan sin JavaScript. Usa `styles.css`, `validaciones.css` y `header.css`; no agrega imágenes, dependencias ni scripts de feature.
+[validaciones.html](validaciones.html) integra **A refinada de Astra**, elegida por Pablo:
+«Sabé quién está del otro lado», identificación genérica ilustrada, código del afiliado y copagos
+con QR, transferencias y tarjetas. Usa estilos/navegación V5 y un SVG propio, sin dependencias
+ni JS de feature. El desplegable y el menú funcionan sin JavaScript.
 
-[Brief, procedencia y verificación](../docs/features/validaciones/README.md). Para revisar: `python3 -m http.server 8935 --bind 127.0.0.1` y `node docs/features/validaciones/verify.cjs`. Pablo aprobó la página y pidió publicación, documentación, commits y push. Runtime público `2d3380d`: ejemplo de código de tres dígitos, texto breve y «Con todos los medios de pago», según las correcciones de Pablo. Release anterior `v5-60dadfc` conservado.
-
+[Decisión y guía para futuras iteraciones](../docs/design/validaciones-astra-a/README.md)
+· [Brief y pruebas](../docs/features/validaciones/README.md)
+· [Publicación y rollback](../docs/releases/2026-09-20-validaciones-astra-a.md).
 
 ## Recetas · publicada y verificada
 
