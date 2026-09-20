@@ -63,3 +63,10 @@ Las capturas y checks son evidencia técnica, no medición de conversión.
 
 [Paquete revisado](review/package/browser-checks.json).
 [Release y rollback](../../releases/2026-09-20-three-feature-illustrations.md).
+
+## Corrección posterior: cancelación de turnos
+
+Pablo pidió reemplazar «Si un paciente no responde» por «Si un paciente cancela». Se aplica
+en la bajada y en la explicación de «Turno recuperado», conservando el resto del texto y
+las ilustraciones. Esta corrección editorial reemplaza el disparador descrito anteriormente;
+no modifica el comportamiento del producto.
