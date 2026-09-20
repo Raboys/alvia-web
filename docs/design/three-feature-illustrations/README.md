@@ -4,6 +4,10 @@ Pablo revisó tres propuestas realizadas por tres subagentes y pidió recuperar 
 anteriores manteniendo las ilustraciones nuevas. Tras revisar la corrección en Tailscale,
 autorizó publicar las tres páginas. Esta entrega integra exactamente ese contenido principal.
 
+Publicadas desde `c1cfb07` en [AI Notes](https://alvia.ar/ainotes),
+[Recetas](https://alvia.ar/recetas) y [Turnos inteligentes](https://alvia.ar/turnos-inteligentes),
+y en `www.alvia.ar`. [Release y rollback](../../releases/2026-09-20-three-feature-illustrations.md).
+
 ## Decisiones
 
 | Antes | Después | Motivo |
